@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C54-20-7ag">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="drf-5h-tud">
+            <objects>
+                <navigationController storyboardIdentifier="MapViewController" id="C54-20-7ag" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j0t-WM-U7M">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fVN-ay-PYu" kind="relationship" relationship="rootViewController" id="BGK-hp-42Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bur-dc-axd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="90"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="Rqh-Yi-6ef">
+            <objects>
+                <viewController title="MapView" id="fVN-ay-PYu" customClass="MapViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vii-Sj-vgO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2U-09-aYm" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="fVN-ay-PYu" id="7VX-ns-Qpy"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="top" secondItem="7oY-Gl-3dv" secondAttribute="top" id="Ht5-vi-Jtd"/>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="leading" secondItem="7oY-Gl-3dv" secondAttribute="leading" id="kxo-z6-m8s"/>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="trailing" secondItem="7oY-Gl-3dv" secondAttribute="trailing" id="vfK-jp-Ewm"/>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="bottom" secondItem="vii-Sj-vgO" secondAttribute="bottom" id="vqr-qP-LWn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7oY-Gl-3dv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map View" id="t67-Sr-mCe"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="r2U-09-aYm" id="eMD-br-OTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8i-BV-OhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>

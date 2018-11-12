@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="DhP-Du-0hd">
+            <objects>
+                <viewController title="CameraMoveViewController" id="rhY-pc-EIF" customClass="CameraMoveViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLv-UA-mr3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y77-ZQ-KmB" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="rhY-pc-EIF" id="Pky-X7-Zay"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-Vb-IcJ">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="SKr-4M-Dac"/>
+                                    <constraint firstAttribute="height" constant="44" id="s5B-LR-hSc"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="rhY-pc-EIF" eventType="touchUpInside" id="Rid-E2-NZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y77-ZQ-KmB" firstAttribute="top" secondItem="ZcU-JE-L50" secondAttribute="top" id="6Ri-65-LXQ"/>
+                            <constraint firstItem="ZcU-JE-L50" firstAttribute="bottom" secondItem="cY4-Vb-IcJ" secondAttribute="bottom" constant="20" id="BVB-u0-Lg6"/>
+                            <constraint firstItem="y77-ZQ-KmB" firstAttribute="bottom" secondItem="TLv-UA-mr3" secondAttribute="bottom" id="OBE-gN-taX"/>
+                            <constraint firstItem="y77-ZQ-KmB" firstAttribute="leading" secondItem="ZcU-JE-L50" secondAttribute="leading" id="SnG-KD-oIe"/>
+                            <constraint firstItem="ZcU-JE-L50" firstAttribute="trailing" secondItem="cY4-Vb-IcJ" secondAttribute="trailing" constant="20" id="q3s-Tm-Pfu"/>
+                            <constraint firstItem="y77-ZQ-KmB" firstAttribute="trailing" secondItem="ZcU-JE-L50" secondAttribute="trailing" id="sOW-fQ-gVu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZcU-JE-L50"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Move" id="deM-Kp-Pwv"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="y77-ZQ-KmB" id="vwj-Wh-Z9Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zya-TJ-9uD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="3512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mAJ-sU-DMP">
+            <objects>
+                <navigationController storyboardIdentifier="CameraMove" id="tAM-Fv-SYV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZBg-Oc-Dwv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rhY-pc-EIF" kind="relationship" relationship="rootViewController" id="8Ap-bK-q74"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVm-Ry-Od8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="3512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lfg-CS-LUy">
+            <objects>
+                <navigationController storyboardIdentifier="CameraAnimation" id="92e-Uy-kPi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SGf-uw-YrI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IjP-Uu-4eb" kind="relationship" relationship="rootViewController" id="awI-py-93a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioq-uS-ydh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="3511"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="OU6-pf-c5v">
+            <objects>
+                <viewController title="CameraAnimationViewController" id="IjP-Uu-4eb" customClass="CameraAnimationsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qth-wB-FQh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mr5-2a-3Qw" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="IjP-Uu-4eb" id="U62-ds-Rvc"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-tL-cG0">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VSc-ov-Y0Z"/>
+                                    <constraint firstAttribute="width" constant="44" id="lQV-bj-eGv"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="IjP-Uu-4eb" eventType="touchUpInside" id="mWv-yI-jOh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1vK-tL-cG0" secondAttribute="trailing" constant="20" id="Ely-Tz-1ZE"/>
+                            <constraint firstItem="Mr5-2a-3Qw" firstAttribute="top" secondItem="J26-yY-RVY" secondAttribute="top" id="RLY-IP-Rqv"/>
+                            <constraint firstItem="Mr5-2a-3Qw" firstAttribute="bottom" secondItem="Qth-wB-FQh" secondAttribute="bottom" id="XrQ-qm-UjY"/>
+                            <constraint firstItem="Mr5-2a-3Qw" firstAttribute="leading" secondItem="J26-yY-RVY" secondAttribute="leading" id="c6d-3i-2BA"/>
+                            <constraint firstAttribute="bottom" secondItem="1vK-tL-cG0" secondAttribute="bottom" constant="20" id="nuJ-aA-2dX"/>
+                            <constraint firstItem="Mr5-2a-3Qw" firstAttribute="trailing" secondItem="J26-yY-RVY" secondAttribute="trailing" id="z1K-Pa-VhD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J26-yY-RVY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Animations" id="VxM-eM-BFD"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="Mr5-2a-3Qw" id="asF-Fl-p7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hfd-lY-1vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="3512"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="lCZ-vI-7Hz">
+            <objects>
+                <viewController title="CameraUpdateParamsViewController" id="dEG-Zf-nMK" customClass="CameraUpdateParamsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Abo-fg-JtM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-yo-Y34" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="dEG-Zf-nMK" id="gZs-lW-5bt"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-Rv-FWR">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="gXN-Nv-FQ3"/>
+                                    <constraint firstAttribute="height" constant="44" id="kZq-YN-kVe"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="dEG-Zf-nMK" eventType="touchUpInside" id="SZY-Mr-gy2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jeO-jx-0Z7" firstAttribute="trailing" secondItem="YPK-Rv-FWR" secondAttribute="trailing" constant="20" id="Cnq-Xp-Zg6"/>
+                            <constraint firstItem="nBB-yo-Y34" firstAttribute="top" secondItem="jeO-jx-0Z7" secondAttribute="top" id="LQs-iU-zdu"/>
+                            <constraint firstItem="nBB-yo-Y34" firstAttribute="trailing" secondItem="jeO-jx-0Z7" secondAttribute="trailing" id="QcU-kJ-THr"/>
+                            <constraint firstItem="nBB-yo-Y34" firstAttribute="bottom" secondItem="Abo-fg-JtM" secondAttribute="bottom" id="XaB-ZL-nwn"/>
+                            <constraint firstItem="nBB-yo-Y34" firstAttribute="leading" secondItem="jeO-jx-0Z7" secondAttribute="leading" id="dXt-HF-a1E"/>
+                            <constraint firstItem="jeO-jx-0Z7" firstAttribute="bottom" secondItem="YPK-Rv-FWR" secondAttribute="bottom" constant="20" id="vXi-qd-QZz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jeO-jx-0Z7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Update With Parameters" id="V9d-GW-HwC"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="nBB-yo-Y34" id="f0x-cK-EVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Etu-Tw-e4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="4209"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JXr-Ja-jSl">
+            <objects>
+                <navigationController storyboardIdentifier="CameraUpdateParams" id="ui8-Q6-c5I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gdl-YC-uV1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dEG-Zf-nMK" kind="relationship" relationship="rootViewController" id="HLG-qm-ABj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7m-18-nFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="4209"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="BaL-oB-wlz">
+            <objects>
+                <viewController title="FitBoundsViewController" id="gXd-q8-WY8" customClass="FitBoundsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iDf-yu-fUV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-4W-gyM" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="gXd-q8-WY8" id="qKd-FY-lyp"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l0-4r-SZg">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c8q-P3-NPQ"/>
+                                    <constraint firstAttribute="width" constant="44" id="tQd-1f-ThA"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="gXd-q8-WY8" eventType="touchUpInside" id="XlM-Ph-nLd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1vh-4W-gyM" firstAttribute="top" secondItem="bjT-Ke-ORR" secondAttribute="top" id="9gw-d9-q0j"/>
+                            <constraint firstItem="1vh-4W-gyM" firstAttribute="trailing" secondItem="bjT-Ke-ORR" secondAttribute="trailing" id="GN5-XU-Pwv"/>
+                            <constraint firstItem="1vh-4W-gyM" firstAttribute="leading" secondItem="bjT-Ke-ORR" secondAttribute="leading" id="gqB-H6-Mmj"/>
+                            <constraint firstItem="1vh-4W-gyM" firstAttribute="bottom" secondItem="iDf-yu-fUV" secondAttribute="bottom" id="kNv-3d-K74"/>
+                            <constraint firstItem="bjT-Ke-ORR" firstAttribute="trailing" secondItem="8l0-4r-SZg" secondAttribute="trailing" constant="20" id="nu9-9I-bWh"/>
+                            <constraint firstItem="bjT-Ke-ORR" firstAttribute="bottom" secondItem="8l0-4r-SZg" secondAttribute="bottom" constant="20" id="rIx-Ez-PrV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bjT-Ke-ORR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fit Camera To Bounds" id="Y31-9i-fmO"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="1vh-4W-gyM" id="vgu-4N-MFk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVc-cy-30P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="4209"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uVJ-H9-f4R">
+            <objects>
+                <navigationController storyboardIdentifier="FitBounds" id="s4i-dA-Gx4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WsE-pm-Wt1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gXd-q8-WY8" kind="relationship" relationship="rootViewController" id="neS-uG-I4M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nt-v3-m89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="4209"/>
+        </scene>
+        <!--CameraAnimationViewController-->
+        <scene sceneID="LR7-Pe-NOr">
+            <objects>
+                <viewController title="CameraAnimationViewController" id="zXy-jG-OIY" customClass="CameraAnimationsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZa-rz-bn4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-Za-7oq" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-21-hkw">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6SY-hW-QsD"/>
+                                    <constraint firstAttribute="width" constant="44" id="tKR-cP-TD3"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="zXy-jG-OIY" eventType="touchUpInside" id="8D1-br-5W3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LPP-Vg-PIC" firstAttribute="trailing" secondItem="LHT-21-hkw" secondAttribute="trailing" constant="20" id="Evv-7P-gaR"/>
+                            <constraint firstItem="iFh-Za-7oq" firstAttribute="leading" secondItem="LPP-Vg-PIC" secondAttribute="leading" id="FHz-oa-TTC"/>
+                            <constraint firstItem="iFh-Za-7oq" firstAttribute="bottom" secondItem="GZa-rz-bn4" secondAttribute="bottom" id="IJD-ad-n6y"/>
+                            <constraint firstItem="iFh-Za-7oq" firstAttribute="trailing" secondItem="LPP-Vg-PIC" secondAttribute="trailing" id="QL0-Lh-AmB"/>
+                            <constraint firstItem="iFh-Za-7oq" firstAttribute="top" secondItem="LPP-Vg-PIC" secondAttribute="top" id="Qlo-Pj-HHm"/>
+                            <constraint firstItem="LPP-Vg-PIC" firstAttribute="bottom" secondItem="LHT-21-hkw" secondAttribute="bottom" constant="20" id="aoR-j1-h83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LPP-Vg-PIC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Animations" id="8FJ-Da-TYu"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="iFh-Za-7oq" id="fcA-um-T6O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm8-Bv-Ht2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="3512"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="gwa-Xf-m3z">
+            <objects>
+                <viewController title="CameraEventViewController" id="tjK-ZP-MYU" customClass="CameraEventViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7LM-Vl-xGl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MA7-iS-3Xx" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="144" width="600" height="456"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="tjK-ZP-MYU" id="CGe-0N-E6N"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLm-Ur-K64">
+                                <rect key="frame" x="536" y="536" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0a3-cc-B3b"/>
+                                    <constraint firstAttribute="width" constant="44" id="Cd6-0B-iOW"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="ic_stop_white"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="respondToMove:" destination="tjK-ZP-MYU" eventType="touchUpInside" id="74a-Qm-afY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLS-xA-NLe">
+                                <rect key="frame" x="0.0" y="64" width="600" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이동:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFS-JR-926">
+                                        <rect key="frame" x="8" y="8" width="40" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="H9e-tr-hli"/>
+                                            <constraint firstAttribute="height" constant="29" id="wd1-tW-WBO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0, 0) / 0 / 0 / 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8O4-wT-BkQ">
+                                        <rect key="frame" x="56" y="8" width="536" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="jNg-fm-K6D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대기:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-Qg-rtj">
+                                        <rect key="frame" x="8" y="43" width="40" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="dLV-HT-tJp"/>
+                                            <constraint firstAttribute="width" constant="40" id="obU-Fk-il3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0, 0) / 0 / 0 / 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-2Y-sD6">
+                                        <rect key="frame" x="56" y="43" width="536" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="6v7-42-B84"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wgw-2Y-sD6" secondAttribute="trailing" constant="8" id="4ho-Yd-LoK"/>
+                                    <constraint firstItem="8O4-wT-BkQ" firstAttribute="top" secondItem="tLS-xA-NLe" secondAttribute="top" constant="8" id="5NQ-aF-seC"/>
+                                    <constraint firstItem="wgw-2Y-sD6" firstAttribute="leading" secondItem="pHm-Qg-rtj" secondAttribute="trailing" constant="8" id="8Pa-cV-xCk"/>
+                                    <constraint firstItem="8O4-wT-BkQ" firstAttribute="leading" secondItem="mFS-JR-926" secondAttribute="trailing" constant="8" id="BwS-Sp-V1O"/>
+                                    <constraint firstItem="mFS-JR-926" firstAttribute="top" secondItem="tLS-xA-NLe" secondAttribute="top" constant="8" id="FPV-Q5-uTy"/>
+                                    <constraint firstAttribute="bottom" secondItem="wgw-2Y-sD6" secondAttribute="bottom" constant="8" id="Qlm-a9-3o7"/>
+                                    <constraint firstAttribute="height" constant="80" id="Y0h-9H-8lX"/>
+                                    <constraint firstItem="mFS-JR-926" firstAttribute="leading" secondItem="tLS-xA-NLe" secondAttribute="leading" constant="8" id="bNL-Yo-59Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="8O4-wT-BkQ" secondAttribute="trailing" constant="8" id="fMg-bG-uaj"/>
+                                    <constraint firstItem="pHm-Qg-rtj" firstAttribute="leading" secondItem="tLS-xA-NLe" secondAttribute="leading" constant="8" id="gA6-UD-imO"/>
+                                    <constraint firstAttribute="bottom" secondItem="pHm-Qg-rtj" secondAttribute="bottom" constant="8" id="l2Y-Yk-KTd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tLS-xA-NLe" firstAttribute="leading" secondItem="iM7-OP-YoT" secondAttribute="leading" id="AKQ-w3-OLf"/>
+                            <constraint firstItem="MA7-iS-3Xx" firstAttribute="top" secondItem="tLS-xA-NLe" secondAttribute="bottom" id="BZf-JC-LDF"/>
+                            <constraint firstItem="tLS-xA-NLe" firstAttribute="trailing" secondItem="iM7-OP-YoT" secondAttribute="trailing" id="LuG-8g-6wy"/>
+                            <constraint firstItem="MA7-iS-3Xx" firstAttribute="trailing" secondItem="iM7-OP-YoT" secondAttribute="trailing" id="Uef-qO-pQc"/>
+                            <constraint firstItem="iM7-OP-YoT" firstAttribute="trailing" secondItem="TLm-Ur-K64" secondAttribute="trailing" constant="20" id="Up0-zF-AIv"/>
+                            <constraint firstItem="tLS-xA-NLe" firstAttribute="top" secondItem="iM7-OP-YoT" secondAttribute="top" id="bYm-lP-LRa"/>
+                            <constraint firstItem="MA7-iS-3Xx" firstAttribute="leading" secondItem="iM7-OP-YoT" secondAttribute="leading" id="eAK-SZ-sG6"/>
+                            <constraint firstItem="iM7-OP-YoT" firstAttribute="bottom" secondItem="TLm-Ur-K64" secondAttribute="bottom" constant="20" id="eCl-ga-gFe"/>
+                            <constraint firstItem="MA7-iS-3Xx" firstAttribute="bottom" secondItem="7LM-Vl-xGl" secondAttribute="bottom" id="ocA-tE-1KK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iM7-OP-YoT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Event" id="4Qr-QB-xbv"/>
+                    <connections>
+                        <outlet property="changeLabel" destination="8O4-wT-BkQ" id="Lly-Wj-Jc7"/>
+                        <outlet property="idleLabel" destination="wgw-2Y-sD6" id="YTA-DV-2F1"/>
+                        <outlet property="moveButton" destination="TLm-Ur-K64" id="vZu-uR-KD3"/>
+                        <outlet property="naverMapView" destination="MA7-iS-3Xx" id="DQx-g7-8cb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWl-ne-T0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442.39999999999998" y="4920.9895052473767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FWg-lg-3DL">
+            <objects>
+                <navigationController storyboardIdentifier="CameraEvent" id="wXg-ch-ezb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JEu-2M-7l8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tjK-ZP-MYU" kind="relationship" relationship="rootViewController" id="qKy-4Q-UiD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHA-re-KNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="4921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_play_arrow_white" width="48" height="48"/>
+        <image name="ic_stop_white" width="48" height="48"/>
+    </resources>
+</document>
