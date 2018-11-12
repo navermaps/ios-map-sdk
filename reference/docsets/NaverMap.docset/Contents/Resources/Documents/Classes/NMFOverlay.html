@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NMFOverlay Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://map.naver.com/favicon.ico?v20140331' type='image/x-icon' />
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/NMFOverlay" class="dashAnchor"></a>
+
+    <a title="NMFOverlay Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          NAVER Map iOS SDK
+        </a>
+        
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E0%2E0%2Fdocsets%2FNaverMap%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NMFOverlay Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../NMapsGeometry.html">NMapsGeometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLng.html">NMGLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPoint.html">NMGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGBounds">NMGBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLineString.html">NMGLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPolygon.html">NMGPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGMultiPolygon">NMGMultiPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGSegment.html">NMGSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtmk.html">NMGUtmk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGTm128.html">NMGTm128</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGWebMercatorCoord.html">NMGWebMercatorCoord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtils.html">NMGUtils</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Map.html">Map</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMapView.html">NMFMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMapType.html">NMFMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdate.html">NMFCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFCameraUpdateAnimation.html">NMFCameraUpdateAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdateParams.html">NMFCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFProjection.html">NMFProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFSymbol.html">NMFSymbol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFNaverMapView.html">NMFNaverMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Indoor.html">Indoor</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorRegion.html">NMFIndoorRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevel.html">NMFIndoorLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorView.html">NMFIndoorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Overlay.html">Overlay</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlay.html">NMFOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlayImage.html">NMFOverlayImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFOverlayImageDataSource.html">NMFOverlayImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationOverlay.html">NMFLocationOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMarker.html">NMFMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFInfoWindow.html">NMFInfoWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAlign.html">NMFAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFGroundOverlay.html">NMFGroundOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCircleOverlay.html">NMFCircleOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPath.html">NMFPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPathColor.html">NMFPathColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMultipartPath.html">NMFMultipartPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolygonOverlay.html">NMFPolygonOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolylineOverlay.html">NMFPolylineOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFArrowheadPath.html">NMFArrowheadPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:objc(pl)NMFPickable">NMFPickable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineCap.html">NMFOverlayLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineJoin.html">NMFOverlayLineJoin</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../etc.html">etc</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFAuthManager.html">NMFAuthManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAuthState.html">NMFAuthState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFAuthManagerDelegate.html">NMFAuthManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl">NMFMapChangedByControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByDeveloper">NMFMapChangedByDeveloper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByGesture">NMFMapChangedByGesture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByLocation">NMFMapChangedByLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraCommon.h@NMF_DEFAULT_ANIMATION_DURATION">NMF_DEFAULT_ANIMATION_DURATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BICYCLE">NMF_LAYER_GROUP_BICYCLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BUILDING">NMF_LAYER_GROUP_BUILDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_CADASTRAL">NMF_LAYER_GROUP_CADASTRAL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_MOUNTAIN">NMF_LAYER_GROUP_MOUNTAIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRAFFIC">NMF_LAYER_GROUP_TRAFFIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRANSIT">NMF_LAYER_GROUP_TRANSIT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LOCATION_OVERLAY_DEFAULT_COLOR">NMF_LOCATION_OVERLAY_DEFAULT_COLOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFLocationOverlay.h@NMF_LOCATION_OVERLAY_SIZE_AUTO">NMF_LOCATION_OVERLAY_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_BLUE">NMF_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GRAY">NMF_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GREEN">NMF_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_LIGHTBLUE">NMF_MARKER_IMAGE_LIGHTBLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_PINK">NMF_MARKER_IMAGE_PINK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_RED">NMF_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_YELLOW">NMF_MARKER_IMAGE_YELLOW</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGConstants.h@NMG_EARTH_RADIUS">NMG_EARTH_RADIUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LATITUDE">NMG_LAT_LNG_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LONGITUDE">NMG_LAT_LNG_MAXIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LATITUDE">NMG_LAT_LNG_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LONGITUDE">NMG_LAT_LNG_MINIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_X">NMG_TM128_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_Y">NMG_TM128_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_X">NMG_TM128_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_Y">NMG_TM128_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_X">NMG_UTMK_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_Y">NMG_UTMK_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_X">NMG_UTMK_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_Y">NMG_UTMK_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_LATITUDE">NMG_WEB_MERCATOR_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_XY">NMG_WEB_MERCATOR_MAXIMUM_XY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_LATITUDE">NMG_WEB_MERCATOR_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_XY">NMG_WEB_MERCATOR_MINIMUM_XY</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>NMFOverlay</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFOverlay</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Overlay.html#/c:objc(pl)NMFPickable">NMFPickable</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>지도에 오버레이되는 요소를 나타내는 최상위 클래스. 대부분의 오버레이는 <code>mapView</code>를 사용해 동적으로 지도에 추가하거나 지도로부터 제거할 수 있습니다.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)overlayID"></a>
+                    <a name="//apple_ref/objc/Property/overlayID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)overlayID">overlayID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이의 고유 ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">overlayID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">overlayID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)userInfo"></a>
+                    <a name="//apple_ref/objc/Property/userInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)userInfo">userInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>사용자 임의 속성. 필요에 따라서 부가적인 정보를 저장할 수 있습니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">userInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)mapView"></a>
+                    <a name="//apple_ref/objc/Property/mapView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)mapView">mapView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이를 추가할 지도 객체. <code>nil</code>을 지정하면 지도에서 제거됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFMapView.html">NMFMapView</a></span> <span class="o">*</span><span class="n">mapView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMapView.html">NMFMapView</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)hidden"></a>
+                    <a name="//apple_ref/objc/Property/hidden" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)hidden">hidden</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>숨김 속성. <code>YES</code>일 경우 오버레이는 화면에 표시되지 않으며 이벤트도 받지 못합니다.
+숨김 속성은 명시적으로 지정하지 않는 한 변하지 않습니다. 즉, 오버레이가 현재 보이는 지도 영역의 바깥쪽으로
+나가더라도 숨김 속성이 &lsquo;YES&#39;로 변하지는 않습니다.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">hidden</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hidden</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)zIndex"></a>
+                    <a name="//apple_ref/objc/Property/zIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)zIndex">zIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>z 인덱스. 두 오버레이가 겹쳐진 경우, z 인덱스가 큰 오버레이가 작은 오버레이를 덮습니다.
+단, z 인덱스는 동종의 오버레이 간에만 유효합니다. 예를 들어 마커와 지상 오버레이가 겹쳐진 경우에는 z 인덱스가
+적용되지 않으며, 사전에 정의된 순서대로 마커가 지상 오버레이를 덮습니다.</p>
+
+<p>기본값은 <code>0</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">zIndex</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)minZoom"></a>
+                    <a name="//apple_ref/objc/Property/minZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)minZoom">minZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이가 보이는 최소 줌 레벨.</p>
+
+<p>기본값은 <code>NMF_MIN_ZOOM</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">minZoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">minZoom</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)maxZoom"></a>
+                    <a name="//apple_ref/objc/Property/maxZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)maxZoom">maxZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이가 보이는 최대 줌 레벨.</p>
+
+<p>기본값은 <code>NMF_MAX_ZOOM</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">maxZoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxZoom</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)touchHandler"></a>
+                    <a name="//apple_ref/objc/Property/touchHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)touchHandler">touchHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이가 터치될 경우 호출되는 콜백 블록.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span>
+    <span class="n"><a href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a></span> <span class="n">touchHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">touchHandler</span><span class="p">:</span> <span class="kt"><a href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(im)shouldAddOverlayToMap"></a>
+                    <a name="//apple_ref/objc/Method/-shouldAddOverlayToMap" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(im)shouldAddOverlayToMap">-shouldAddOverlayToMap</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이가 유효하여 지도에 추가될 수 있는지 여부를 반환합니다. <code>NMFOverlay</code>를 상속받는 오버레이들은 이 메서드를 재정의할 수 있습니다.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">shouldAddOverlayToMap</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">shouldAddToMap</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>지도에 추가될 수 있다면 <code>YES</code>, 아니면 <code>NO</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section>
+  </body>
+</div>
+</html>

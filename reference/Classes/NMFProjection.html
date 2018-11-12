@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NMFProjection Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://map.naver.com/favicon.ico?v20140331' type='image/x-icon' />
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/NMFProjection" class="dashAnchor"></a>
+
+    <a title="NMFProjection Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          NAVER Map iOS SDK
+        </a>
+        
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E0%2E0%2Fdocsets%2FNaverMap%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NMFProjection Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../NMapsGeometry.html">NMapsGeometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLng.html">NMGLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPoint.html">NMGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGBounds">NMGBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLineString.html">NMGLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPolygon.html">NMGPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGMultiPolygon">NMGMultiPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGSegment.html">NMGSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtmk.html">NMGUtmk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGTm128.html">NMGTm128</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGWebMercatorCoord.html">NMGWebMercatorCoord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtils.html">NMGUtils</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Map.html">Map</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMapView.html">NMFMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMapType.html">NMFMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdate.html">NMFCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFCameraUpdateAnimation.html">NMFCameraUpdateAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdateParams.html">NMFCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFProjection.html">NMFProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFSymbol.html">NMFSymbol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFNaverMapView.html">NMFNaverMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Indoor.html">Indoor</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorRegion.html">NMFIndoorRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevel.html">NMFIndoorLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorView.html">NMFIndoorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Overlay.html">Overlay</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlay.html">NMFOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlayImage.html">NMFOverlayImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFOverlayImageDataSource.html">NMFOverlayImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationOverlay.html">NMFLocationOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMarker.html">NMFMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFInfoWindow.html">NMFInfoWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAlign.html">NMFAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFGroundOverlay.html">NMFGroundOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCircleOverlay.html">NMFCircleOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPath.html">NMFPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPathColor.html">NMFPathColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMultipartPath.html">NMFMultipartPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolygonOverlay.html">NMFPolygonOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolylineOverlay.html">NMFPolylineOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFArrowheadPath.html">NMFArrowheadPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:objc(pl)NMFPickable">NMFPickable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineCap.html">NMFOverlayLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineJoin.html">NMFOverlayLineJoin</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../etc.html">etc</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFAuthManager.html">NMFAuthManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAuthState.html">NMFAuthState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFAuthManagerDelegate.html">NMFAuthManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl">NMFMapChangedByControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByDeveloper">NMFMapChangedByDeveloper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByGesture">NMFMapChangedByGesture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByLocation">NMFMapChangedByLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraCommon.h@NMF_DEFAULT_ANIMATION_DURATION">NMF_DEFAULT_ANIMATION_DURATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BICYCLE">NMF_LAYER_GROUP_BICYCLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BUILDING">NMF_LAYER_GROUP_BUILDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_CADASTRAL">NMF_LAYER_GROUP_CADASTRAL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_MOUNTAIN">NMF_LAYER_GROUP_MOUNTAIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRAFFIC">NMF_LAYER_GROUP_TRAFFIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRANSIT">NMF_LAYER_GROUP_TRANSIT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LOCATION_OVERLAY_DEFAULT_COLOR">NMF_LOCATION_OVERLAY_DEFAULT_COLOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFLocationOverlay.h@NMF_LOCATION_OVERLAY_SIZE_AUTO">NMF_LOCATION_OVERLAY_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_BLUE">NMF_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GRAY">NMF_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GREEN">NMF_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_LIGHTBLUE">NMF_MARKER_IMAGE_LIGHTBLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_PINK">NMF_MARKER_IMAGE_PINK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_RED">NMF_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_YELLOW">NMF_MARKER_IMAGE_YELLOW</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGConstants.h@NMG_EARTH_RADIUS">NMG_EARTH_RADIUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LATITUDE">NMG_LAT_LNG_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LONGITUDE">NMG_LAT_LNG_MAXIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LATITUDE">NMG_LAT_LNG_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LONGITUDE">NMG_LAT_LNG_MINIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_X">NMG_TM128_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_Y">NMG_TM128_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_X">NMG_TM128_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_Y">NMG_TM128_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_X">NMG_UTMK_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_Y">NMG_UTMK_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_X">NMG_UTMK_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_Y">NMG_UTMK_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_LATITUDE">NMG_WEB_MERCATOR_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_XY">NMG_WEB_MERCATOR_MAXIMUM_XY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_LATITUDE">NMG_WEB_MERCATOR_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_XY">NMG_WEB_MERCATOR_MINIMUM_XY</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>NMFProjection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFProjection</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>지리적 좌표와 화면 좌표 간의 변환을 담당하는 클래스. 이 클래스의 인스턴스는 직접 생성할 수 없고
+<code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)projection">NMFMapView.projection</a></code>을 이용해서 가져올 수 있습니다.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)latlngFromPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-latlngFromPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)latlngFromPoint:">-latlngFromPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>화면 좌표를 위경도 좌표로 변환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">latlngFromPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">latlng</span><span class="p">(</span><span class="n">from</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>화면 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>위경도 좌표. <code>point</code>가 <code>nil</code>이거나 화면 좌표의 범위가 위경도 좌표로 표현할 수 있는 범위를 벗어난 경우 유효하지 않은(<code>NMGLatLng.isValid()</code>가 <code>NO</code>인) 좌표가 반환됩니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)pointFromLatLng:"></a>
+                    <a name="//apple_ref/objc/Method/-pointFromLatLng:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)pointFromLatLng:">-pointFromLatLng:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>위경도 좌표를 화면 좌표로 변환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nf">pointFromLatLng</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">coord</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">point</span><span class="p">(</span><span class="n">from</span> <span class="nv">coord</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coord</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>위경도 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>화면 좌표. <code>coord</code>가 <code>nil</code>이거나, 위경도 좌표의 범위가 화면 좌표로 표현할 수 있는 범위를 벗어난 경우 유효하지 않은(<code>CGPoint.x</code> 또는 <code>CGPoint.y</code>가 무한대인) 좌표가 반환됩니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)latlngBoundsFromViewBounds:"></a>
+                    <a name="//apple_ref/objc/Method/-latlngBoundsFromViewBounds:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)latlngBoundsFromViewBounds:">-latlngBoundsFromViewBounds:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>화면의 영역을 위경도 영역으로 변환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">latlngBoundsFromViewBounds</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">viewBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">latlngBounds</span><span class="p">(</span><span class="n">fromViewBounds</span> <span class="nv">viewBounds</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewBounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>화면 영역.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>위경도 영역.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)viewBoundsFromLatLngBounds:"></a>
+                    <a name="//apple_ref/objc/Method/-viewBoundsFromLatLngBounds:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)viewBoundsFromLatLngBounds:">-viewBoundsFromLatLngBounds:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>위경도 영역을 화면 영역으로 변환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CGRect</span><span class="p">)</span><span class="nf">viewBoundsFromLatLngBounds</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">latlngBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">viewBounds</span><span class="p">(</span><span class="n">from</span> <span class="nv">latlngBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGRect</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latlngBounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>위경도 영역.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>화면 영역.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)metersPerPixel"></a>
+                    <a name="//apple_ref/objc/Method/-metersPerPixel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)metersPerPixel">-metersPerPixel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현재 지도의 축척을 반환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLLocationDistance</span><span class="p">)</span><span class="n">metersPerPixel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">metersPerPixel</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">CLLocationDistance</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>축척. 미터/픽셀 단위.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)metersPerPixelAtLatitude:zoom:"></a>
+                    <a name="//apple_ref/objc/Method/-metersPerPixelAtLatitude:zoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)metersPerPixelAtLatitude:zoom:">-metersPerPixelAtLatitude:zoom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라의 위도가 <code>latitude</code>, 줌 레벨이 <code>zoom</code>일 때의 축적을 반환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLLocationDistance</span><span class="p">)</span><span class="nf">metersPerPixelAtLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">latitude</span>
+                                          <span class="nf">zoom</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">metersPerPixel</span><span class="p">(</span><span class="n">atLatitude</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CLLocationDistance</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>위도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>줌 레벨.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>축척. 미터/픽셀 단위.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section>
+  </body>
+</div>
+</html>

@@ -1,0 +1,803 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>카메라 이동 · 네이버 지도 iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.html" />
+    
+    
+    <link rel="prev" href="3-1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">개발 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    상호작용
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="ref://reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >카메라 이동</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xCE74;&#xBA54;&#xB77C;-&#xC774;&#xB3D9;">&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;</h1>
+<p>&#xCE74;&#xBA54;&#xB77C;&#xB294; API &#xD638;&#xCD9C;, &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC81C;&#xC2A4;&#xCC98; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC6C0;&#xC9C1;&#xC77C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. API&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC6C0;&#xC9C1;&#xC774;&#xB824;&#xBA74; <a href="ref://../reference/Classes/NMFCameraUpdate.html" target="_blank"><code>NMFCameraUpdate</code></a> &#xAC1D;&#xCCB4;&#xC640; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29moveCamera:" target="_blank"><code>-moveCamera:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. <code>NMFCameraUpdate</code>&#xC758; &#xB2E4;&#xC591;&#xD55C; &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;, &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;, &#xCF5C;&#xBC31; &#xB4F1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="api-&#xD638;&#xCD9C;&#xB85C;-&#xCE74;&#xBA54;&#xB77C;-&#xC774;&#xB3D9;&#xD558;&#xAE30;">API &#xD638;&#xCD9C;&#xB85C; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xD558;&#xAE30;</h2>
+<p>&#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC6C0;&#xC9C1;&#xC774;&#xB824;&#xBA74; &#xBA3C;&#xC800; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC5B4;&#xB5BB;&#xAC8C; &#xC6C0;&#xC9C1;&#xC77C;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; <code>NMFCameraUpdate</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>NMFCameraUpdate</code>&#xB294; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC774;&#xB3D9;&#xD560; &#xC704;&#xCE58;, &#xBC29;&#xBC95; &#xB4F1;&#xC744; &#xC815;&#xC758;&#xD558;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. <code>NMFCameraUpdate</code> &#xAC1D;&#xCCB4;&#xB294; &#xC624;&#xC9C1; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70;, <code>NMFCameraUpdate</code> &#xD074;&#xB798;&#xC2A4;&#xC5D0; &#xB2E4;&#xC591;&#xD55C; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xBA87; &#xAC00;&#xC9C0; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate(cm" target="_blank"><code>+cameraUpdateWithPosition:</code></a>cameraUpdateWithPosition:): &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xC9C0;&#xC815;&#xD55C; CameraPosition&#xC73C;&#xB85C; &#xC6C0;&#xC9C1;&#xC785;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate(cm" target="_blank"><code>+cameraUpdateWithScrollTo:</code></a>cameraUpdateWithScrollTo:): &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate(cm" target="_blank"><code>+cameraUpdateWithScrollBy:</code></a>cameraUpdateWithScrollBy:): &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xD3EC;&#xC778;&#xD2B8;&#xB9CC;&#xD07C; &#xC0C1;&#xD558;&#xC88C;&#xC6B0;&#xB85C; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate(cm" target="_blank"><code>+cameraUpdateWithZoomTo:</code></a>cameraUpdateWithZoomTo:): &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xAC12;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate(cm" target="_blank"><code>+cameraUpdateWithFitBounds:</code></a>cameraUpdateWithFitBounds:): &#xC601;&#xC5ED;&#xC774; &#xC628;&#xC804;&#xD788; &#xBCF4;&#xC774;&#xB294; &#xC88C;&#xD45C;&#xC640; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xB85C; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xC0DD;&#xC131;&#xD55C; &#xAC1D;&#xCCB4;&#xB97C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC0BC;&#xC544; <code>NMFMapView</code>&#xC758; <code>-moveCamera:</code>&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC744; <code>(37.5666102, 126.9783881)</code>&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB3C4;&#xB85D; &#xC9C0;&#xC815;&#xD558;&#xB294; <code>NMFCameraUpdate</code> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; <code>-moveCamera:</code>&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC6C0;&#xC9C1;&#xC774;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+mapView.moveCamera(cameraUpdate)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+</code></pre>
+<h2 id="&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;">&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</h2>
+<p>&#xC0DD;&#xC131;&#xD55C; <code>NMFCameraUpdate</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC774;&#xC6A9;&#xD574; <code>-moveCamera:</code>&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xAE30; &#xC804;&#xC5D0; <a href="ref://../reference/Classes/NMFCameraUpdate.html#/c:objc%28cs%29NMFCameraUpdate%28py%29animation" target="_blank"><code>NMFCameraUpdate.animation</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xBA74; &#xC77C;&#xC815;&#xD55C; &#xC2DC;&#xAC04; &#xB3D9;&#xC548; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xBAA9;&#xD45C; &#xC9C0;&#xC810;&#xAE4C;&#xC9C0; &#xC11C;&#xC11C;&#xD788; &#xC6C0;&#xC9C1;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;-&#xC720;&#xD615;">&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC720;&#xD615;</h3>
+<p><code>NMFCameraUpdate.animation</code>&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>animation</code>&#xC740; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC758; &#xC720;&#xD615;&#xC744; &#xC758;&#xBBF8;&#xD558;&#xB294; <a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html" target="_blank"><code>NMFCameraUpdateAnimation</code></a> &#xAC1D;&#xCCB4;&#xB97C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;. <code>NMFCameraUpdateAnimation</code> &#xC5F4;&#xAC70;&#xD615;&#xC5D0; &#xB098;&#xC5F4;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC720;&#xD615;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html#/c:@E@NMFCameraUpdateAnimation@NMFCameraUpdateAnimationNone" target="_blank"><code>None</code></a>: &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC5C6;&#xC774; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC785;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html#/c:@E@NMFCameraUpdateAnimation@NMFCameraUpdateAnimationLinear" target="_blank"><code>Linear</code></a>: &#xC77C;&#xC815;&#xD55C; &#xC18D;&#xB3C4;&#xB85C; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html#/c:@E@NMFCameraUpdateAnimation@NMFCameraUpdateAnimationEaseIn" target="_blank"><code>EaseIn</code></a>: &#xBD80;&#xB4DC;&#xB7FD;&#xAC8C; &#xAC00;&#xC18D;&#xD558;&#xBA70; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;. &#xAC00;&#xAE4C;&#xC6B4; &#xAC70;&#xB9AC;&#xB97C; &#xC774;&#xB3D9;&#xD560; &#xB54C; &#xC801;&#xD569;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html#/c:@E@NMFCameraUpdateAnimation@NMFCameraUpdateAnimationEaseOut" target="_blank"><code>EaseOut</code></a>: &#xBD80;&#xB4DC;&#xB7FD;&#xAC8C; &#xAC10;&#xC18D;&#xD558;&#xBA70; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;. &#xAC00;&#xAE4C;&#xC6B4; &#xAC70;&#xB9AC;&#xB97C; &#xC774;&#xB3D9;&#xD560; &#xB54C; &#xC801;&#xD569;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Enums/NMFCameraUpdateAnimation.html#/c:@E@NMFCameraUpdateAnimation@NMFCameraUpdateAnimationFly" target="_blank"><code>Fly</code></a>: &#xBD80;&#xB4DC;&#xB7FD;&#xAC8C; &#xCD95;&#xC18C;&#xB410;&#xB2E4;&#xAC00; &#xD655;&#xB300;&#xB418;&#xBA70; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;. &#xBA3C; &#xAC70;&#xB9AC;&#xB97C; &#xC774;&#xB3D9;&#xD560; &#xB54C; &#xC801;&#xD569;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; <code>EaseIn</code> &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+cameraUpdate.animation = .easeIn
+mapView.moveCamera(cameraUpdate)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+</code></pre>
+<h3 id="&#xC9C0;&#xC18D;-&#xC2DC;&#xAC04;">&#xC9C0;&#xC18D; &#xC2DC;&#xAC04;</h3>
+<p><code>NMFCameraUpdate</code>&#xC758; <code>animationDuration</code> &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC758; &#xC9C0;&#xC18D; &#xC2DC;&#xAC04;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E8;, &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC758; &#xC720;&#xD615;&#xC774; <code>NMFCameraUpdateAnimationNone</code>&#xC77C; &#xACBD;&#xC6B0; &#xC2DC;&#xAC04;&#xC740; &#xBB34;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; <code>animationDuration</code>&#xC774; <code>0</code>&#xC77C; &#xACBD;&#xC6B0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC758; &#xC720;&#xD615;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC5C6;&#xC774; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; <code>Fly</code> &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD558;&#xACE0; &#xC9C0;&#xC18D; &#xC2DC;&#xAC04;&#xC744; 1&#xCD08;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+cameraUpdate.animation = .fly
+cameraUpdate.animationDuration = <span class="hljs-number">1</span>
+mapView.moveCamera(cameraUpdate)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+cameraUpdate.animation = NMFCameraUpdateAnimationFly;
+cameraUpdate.animationDuration = <span class="hljs-number">1</span>;
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+</code></pre>
+<p>&#xC9C0;&#xC18D; &#xC2DC;&#xAC04;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xC9C0;&#xB3C4;&#xC758; &#xAE30;&#xBCF8; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC2DC;&#xAC04;&#xC774; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC2DC;&#xAC04;&#xC740; <code>NMFMapView</code>&#xC758; <code>animationDuration</code> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xC758; &#xAE30;&#xBCF8; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC2DC;&#xAC04;&#xC744; 500&#xBC00;&#xB9AC;&#xCD08;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift">mapView.animationDuration = <span class="hljs-number">0.5</span>
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">mapView.animationDuration = <span class="hljs-number">0.5</span>f;
+</code></pre>
+<h3 id="&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;-&#xCDE8;&#xC18C;">&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xCDE8;&#xC18C;</h3>
+<p>&#xC9C4;&#xD589; &#xC911;&#xC778; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC740; &#xB2E4;&#xC591;&#xD55C; &#xC774;&#xC720;&#xB85C; &#xCDE8;&#xC18C;&#xB418;&#xAC70;&#xB098; &#xCDE8;&#xC18C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>NMFMapView</code>&#xC758; <code>-moveCamera:</code>&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xC0C8;&#xB85C;&#xC6B4; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC744; &#xC2DC;&#xC791;&#xD558;&#xBA74; &#xC774;&#xC804;&#xC5D0; &#xC9C4;&#xD589; &#xC911;&#xC774;&#xB358; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xCDE8;&#xC18C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xC18D; &#xC2DC;&#xAC04;&#xC774; 2&#xCD08;&#xC778; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC2DC;&#xC791;&#xD558;&#xACE0; 1&#xCD08; &#xD6C4; &#xB2E4;&#xB978; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC744; &#xC2DC;&#xC791;&#xD574; &#xAE30;&#xC874; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xCDE8;&#xC18C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> coord1 = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>);
+<span class="hljs-keyword">let</span> coord2 = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57000</span>, lng: <span class="hljs-number">126.97618</span>);
+
+<span class="hljs-comment">// 2&#xCD08;&#xAC04; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</span>
+<span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: coord1)
+cameraUpdate.animation = .easeIn
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>
+mapView.moveCamera(cameraUpdate)
+
+<span class="hljs-comment">// 1&#xCD08; &#xD6C4; &#xB2E4;&#xB978; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC2DC;&#xC791;&#xB418;&#xBA70; &#xAE30;&#xC874; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB428;</span>
+<span class="hljs-type">DispatchQueue</span>.main.asyncAfter(deadline: .now() + <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: coord2)
+    cameraUpdate.animation = .easeIn
+    mapView.moveCamera(cameraUpdate)
+}
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMGLatLng *coord1 = NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>);
+NMGLatLng *coord2 = NMGLatLngMake(<span class="hljs-number">37.57000</span>, <span class="hljs-number">126.97618</span>);
+
+<span class="hljs-comment">// 2&#xCD08;&#xAC04; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</span>
+NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:coord1];
+cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>;
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+
+<span class="hljs-comment">// 1&#xCD08; &#xD6C4; &#xB2E4;&#xB978; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC2DC;&#xC791;&#xB418;&#xBA70; &#xAE30;&#xC874; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB428;</span>
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(<span class="hljs-number">1.0</span> * <span class="hljs-built_in">NSEC_PER_SEC</span>)), dispatch_get_main_queue(), ^{
+    NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:coord2];
+    cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
+    [<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+});
+</code></pre>
+<p><code>NMFMapView</code>&#xC758; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29cancelTransitions" target="_blank"><code>-cancelTransitions</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xBA85;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xCDE8;&#xC18C;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD638;&#xCD9C;&#xD558;&#xBA74; &#xD604;&#xC7AC; &#xC9C4;&#xD589; &#xC911;&#xC778; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB418;&#xACE0; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xD604;&#xC7AC; &#xC704;&#xCE58;&#xC5D0; &#xBA48;&#xCDA5;&#xB2C8;&#xB2E4;. &#xC2A4;&#xD1B1; &#xC81C;&#xC2A4;&#xCC98;&#xAC00; &#xD65C;&#xC131;&#xD654;&#xB418;&#xC5B4; &#xC788;&#xB2E4;&#xBA74; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC9C0;&#xB3C4;&#xB97C; &#xD0ED;&#xD588;&#xC744; &#xB54C;&#xC5D0;&#xB3C4; &#xB3D9;&#xC77C;&#xD55C; &#xACB0;&#xACFC;&#xAC00; &#xC77C;&#xC5B4;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>-cancelTransitions</code>&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xCDE8;&#xC18C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// 2&#xCD08;&#xAC04; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</span>
+<span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: coord1)
+cameraUpdate.animation = .easeIn
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>
+mapView.moveCamera(cameraUpdate)
+
+<span class="hljs-comment">// 1&#xCD08; &#xD6C4; cancelTransitions()&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70; &#xAE30;&#xC874; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB428;</span>
+<span class="hljs-type">DispatchQueue</span>.main.asyncAfter(deadline: .now() + <span class="hljs-number">1</span>) {
+    mapView.cancelTransitions()
+}
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 2&#xCD08;&#xAC04; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</span>
+NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:coord1];
+cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>;
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+
+<span class="hljs-comment">// 1&#xCD08; &#xD6C4; cancelTransitions()&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70; &#xAE30;&#xC874; &#xCE74;&#xBA54;&#xB77C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB428;</span>
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(<span class="hljs-number">1.0</span> * <span class="hljs-built_in">NSEC_PER_SEC</span>)), dispatch_get_main_queue(), ^{
+    [<span class="hljs-keyword">self</span>.mapView cancelTransitions];
+});
+</code></pre>
+<h2 id="&#xCF5C;&#xBC31;&#xACFC;-&#xC774;&#xBCA4;&#xD2B8;">&#xCF5C;&#xBC31;&#xACFC; &#xC774;&#xBCA4;&#xD2B8;</h2>
+<p><code>-moveCamera:</code>&#xB300;&#xC2E0; <code>-moveCamera:completion:</code>&#xC758; completion block&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD55C; &#xBC88;&#xC758; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xB300;&#xD55C; &#xACB0;&#xACFC; &#xCF5C;&#xBC31;&#xC744; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; <code>NMFMapView</code>&#xC5D0; &#xB378;&#xB9AC;&#xAC8C;&#xC774;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC77C;&#xC5B4;&#xB098;&#xB294; &#xBAA8;&#xB4E0; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xB300;&#xD55C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCE74;&#xBA54;&#xB77C;-&#xC774;&#xB3D9;-&#xCF5C;&#xBC31;">&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xCF5C;&#xBC31;</h3>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29moveCamera:completion:" target="_blank"><code>-moveCamera:completion:</code></a>&#xC73C;&#xB85C; &#xCF5C;&#xBC31; &#xBE14;&#xB85D;&#xC744; &#xAD6C;&#xD604;&#xD558;&#xBA74; &#xD574;&#xB2F9;&#xD558;&#xB294; <code>NMFCameraUpdate</code>&#xC5D0; &#xB300;&#xD55C; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC644;&#xB8CC;&#xB410;&#xAC70;&#xB098; &#xC2E4;&#xD328;&#xD588;&#xC744; &#xB54C; &#xCF5C;&#xBC31;&#xC744; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xACE0; &#xADF8; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB418;&#xC5C8;&#xC744; &#xACBD;&#xC6B0; completion block&#xC758; <code>isCancelled</code> &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; <code>YES</code>, &#xADF8; &#xC678;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; <code>NO</code>&#xB85C; &#xC9C0;&#xC815;&#xB429;&#xB2C8;&#xB2E4;. &#xC989;, &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xC73C;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC740; &#xD56D;&#xC0C1; &#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC644;&#xB8CC;&#xB41C; &#xAC83;&#xC73C;&#xB85C; &#xAC04;&#xC8FC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC; &#xBC0F; &#xC2E4;&#xD328; &#xC2DC; &#xD1A0;&#xC2A4;&#xD2B8;&#xB97C; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xCF5C;&#xBC31;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+cameraUpdate.animation = .easeIn
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>
+mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</span>
+    <span class="hljs-keyword">if</span> isCancelled {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC2E4;&#xD328;&quot;</span>)
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC;&quot;</span>)
+    }
+}
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>;
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate completion:^(<span class="hljs-keyword">bool</span> isCancelled) {
+    <span class="hljs-keyword">if</span> (isCancelled) {
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC2E4;&#xD328;&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC;&quot;</span>);
+    }
+}];
+</code></pre>
+<h3 id="&#xCE74;&#xBA54;&#xB77C;-&#xBCC0;&#xACBD;-&#xC774;&#xBCA4;&#xD2B8;">&#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD; &#xC774;&#xBCA4;&#xD2B8;</h3>
+<p>&#xC5B4;&#xB5A4; &#xC774;&#xC720;&#xC5D0; &#xC758;&#xD574;&#xC11C;&#xAC74; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC774;&#xBA74; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. <code>NMFMapView</code>&#xB97C; &#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xBDF0; &#xCEE8;&#xD2B8;&#xB864;&#xB7EC;&#xC5D0; <a href="ref://../reference/Protocols/NMFMapViewDelegate.html" target="_blank"><code>NMFMapViewDelegate</code></a> &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xC120;&#xC5B8;&#xD558;&#xACE0;, <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29delegate" target="_blank"><code>NMFMapView.delegate</code></a>&#xB85C; &#xB4F1;&#xB85D;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xAC00; &#xBCC0;&#xACBD;&#xB418;&#xBA74; <a href="ref://../reference/Protocols/NMFMapViewDelegate.html#/c:objc(pl" target="_blank"><code>-mapViewRegionIsChanging:byReason:</code></a>NMFMapViewDelegate%28im%29mapViewRegionIsChanging:byReason:) &#xCF5C;&#xBC31; &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC2DC;&#xC791;&#xB418;&#xAE30; &#xC804; &#xD638;&#xCD9C;&#xB418;&#xB294; <code>-mapView:regionWillChangeAnimated:byReason:</code>&#xACFC; &#xC774;&#xB3D9;&#xC774; &#xC644;&#xB8CC;&#xB41C; &#xD6C4; &#xD638;&#xCD9C;&#xB418;&#xB294; <code>-mapView:regionDidChangeAnimated:byReason:</code>&#xC5D0;&#xB294; <code>reason</code>&#xACFC; <code>animated</code> &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;. <code>reason</code>&#xC740; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1C;&#xC0DD;&#xC2DC;&#xD0A8; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC758; &#xC6D0;&#xC778;&#xC785;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate%28py%29reason" target="_blank"><code>NMFCameraUpdate.reason</code></a>&#xC744; &#xC774;&#xC6A9;&#xD574; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC758; &#xC6D0;&#xC778;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70;, &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108; &#xB0B4;&#xC5D0;&#xC11C; &#xC774; &#xAC12;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC5B4;&#xB5A4; &#xC6D0;&#xC778;&#xC5D0; &#xC758;&#xD574; &#xBC1C;&#xC0DD;&#xD55C; &#xC774;&#xBCA4;&#xD2B8;&#xC778;&#xC9C0; &#xD310;&#xB2E8;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC81C;&#xC2A4;&#xCC98;, &#xCEE8;&#xD2B8;&#xB864; &#xB4F1; &#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xC758; &#xB0B4;&#xC7A5; &#xAE30;&#xB2A5;&#xC5D0; &#xC758;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC774;&#xB3D9;&#xD55C; &#xACBD;&#xC6B0; &#xBBF8;&#xB9AC; &#xC815;&#xC758;&#xB41C; &#xC74C;&#xC22B;&#xAC12;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB418;&#xBA70;, &#xAC1C;&#xBC1C;&#xC790;&#xAC00; &#xC784;&#xC758;&#xC758; &#xC591;&#xC22B;&#xAC12;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBBF8;&#xB9AC; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC6D0;&#xC778;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><a href="ref://../reference/Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByDeveloper" target="_blank"><code>NMFMapChangedByDeveloper</code></a>: &#xAC1C;&#xBC1C;&#xC790;&#xAC00; API&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC600;&#xC74C;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC785;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByGesture" target="_blank"><code>NMFMapChangedByGesture</code></a>: &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC81C;&#xC2A4;&#xCC98;&#xB85C; &#xC778;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC600;&#xC74C;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl" target="_blank"><code>NMFMapChangedByControl</code></a>: &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xBC84;&#xD2BC; &#xC120;&#xD0DD;&#xC73C;&#xB85C; &#xC778;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC600;&#xC74C;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByLocation" target="_blank"><code>NMFMapChangedByLocation</code></a>: &#xC704;&#xCE58; &#xD2B8;&#xB798;&#xD0B9; &#xAE30;&#xB2A5;&#xC73C;&#xB85C; &#xC778;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC6C0;&#xC9C1;&#xC600;&#xC74C;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD; &#xC2DC; &#xC6D0;&#xC778;&#xC744; &#xB85C;&#xAE45;&#xD558;&#xB294; &#xB378;&#xB9AC;&#xAC8C;&#xC774;&#xD2B8; &#xBA54;&#xC11C;&#xB4DC;&#xC640; &#xC6D0;&#xC778;&#xC744; &#xC9C0;&#xC815;&#xD574; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC774;&#xB3D9;&#xC2DC;&#xD0A4;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapViewRegionIsChanging</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView, byReason reason: Int)</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD; - reason: <span class="hljs-subst">\(reason)</span>&quot;</span>)
+}
+
+<span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+cameraUpdate.animation = .easeIn
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>
+cameraUpdate.reason = <span class="hljs-number">1000</span>
+
+mapView.moveCamera(cameraUpdate)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)mapViewRegionIsChanging:(NMFMapView *)mapView byReason:(<span class="hljs-built_in">NSInteger</span>)reason {
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD; - reason : %ld&quot;</span>, (<span class="hljs-keyword">long</span>)reason);
+}
+
+NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
+cameraUpdate.animationDuration = <span class="hljs-number">2</span>;
+cameraUpdate.reason = <span class="hljs-number">1000</span>;
+
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+</code></pre>
+<h2 id="&#xD53C;&#xBD07;">&#xD53C;&#xBD07;</h2>
+<p><a href="ref://../reference/Classes/NMFCameraUpdate.html#/c%3Aobjc%28cs%29NMFCameraUpdate%28py%29pivot" target="_blank"><code>NMFCameraUpdate.pivot</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC740; &#xD654;&#xBA74;&#xC758; &#xC67C;&#xCABD; &#xC704;&#xB97C; <code>(0, 0)</code>, &#xC624;&#xB978;&#xCABD; &#xC544;&#xB798;&#xB97C; <code>(1, 1)</code>&#xB85C; &#xC0BC;&#xB294; &#xBE44;&#xC728;&#xAC12;&#xC73C;&#xB85C;, &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC6C0;&#xC9C1;&#xC77C; &#xB54C; &#xAE30;&#xC900;&#xC810;&#xC774; &#xB418;&#xB294; &#xD654;&#xBA74;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xBA74; &#xC774;&#xB3D9;, &#xC90C; &#xB808;&#xBCA8; &#xBCC0;&#xACBD;, &#xD68C;&#xC804;&#xC774; &#xD654;&#xBA74; &#xC911;&#xC2EC;&#xC774; &#xC544;&#xB2CC; &#xD574;&#xB2F9; &#xC9C0;&#xC810;&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC744; <code>(0.5, 0.8)</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xACE0; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC774;&#xB3D9;&#xD558;&#xBA74;, &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC644;&#xB8CC;&#xB41C; &#xD6C4; <code>(0.5, 0.8)</code> &#xC9C0;&#xC810;&#xC758; &#xC88C;&#xD45C;&#xAC00; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC758; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xACFC; &#xC77C;&#xCE58;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xB3D9;&#xC77C;&#xD55C; &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xACE0; &#xC9C0;&#xB3C4;&#xB97C; &#xD655;&#xB300;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xC758; &#xC911;&#xC2EC;&#xC774; &#xC544;&#xB2CC; <code>(0.5, 0.8)</code> &#xC9C0;&#xC810;&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC9C0;&#xB3C4;&#xAC00; &#xD655;&#xB300;&#xB429;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC644;&#xB8CC;&#xB41C; &#xD6C4; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xAC00; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0;&#xC11C; &#xC9C0;&#xC815;&#xD588;&#xB358; &#xC704;&#xCE58;&#xC640; &#xB2E4;&#xB97C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD53C;&#xBD07;&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC704;&#xCE58;&#xD574;&#xC57C; &#xD558;&#xB294; &#xD654;&#xBA74;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xC815;&#xD55C;&#xB2E4;&#xB294; &#xCE21;&#xBA74;&#xC5D0;&#xC11C;&#xB294; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xACFC; &#xB3D9;&#xC77C;&#xD55C; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; <code>NMFMapView</code>&#xC758; &#xC18D;&#xC131;&#xC778; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xACFC; &#xB2EC;&#xB9AC; &#xD53C;&#xBD07;&#xC740; <code>NMFCameraUpdate</code>&#xC758; &#xC18D;&#xC131;&#xC774;&#xBBC0;&#xB85C; &#xD558;&#xB098;&#xC758; &#xCE74;&#xBA54;&#xB77C; &#xBCC0;&#xACBD;&#xC5D0;&#xB9CC; &#xC801;&#xC6A9;&#xB418;&#xBA70;, &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xC5D0; &#xC601;&#xAD6C;&#xC801;&#xC73C;&#xB85C; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE58;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD53C;&#xBD07; &#xC9C0;&#xC810;&#xC744; <code>(0.5, 0.8)</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xACE0; &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC774;&#xB3D9;&#xC2DC;&#xD0A4;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+cameraUpdate.pivot = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">0.8</span>)
+
+mapView.moveCamera(cameraUpdate)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(<span class="hljs-number">37.5666102</span>, <span class="hljs-number">126.9783881</span>)];
+cameraUpdate.pivot = <span class="hljs-built_in">CGPointMake</span>(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.8</span>);
+
+[<span class="hljs-keyword">self</span>.mapView moveCamera:cameraUpdate];
+</code></pre>
+<h2 id="&#xC774;&#xB3D9;-&#xC81C;&#xD55C;">&#xC774;&#xB3D9; &#xC81C;&#xD55C;</h2>
+<p><code>NMFMapView</code>&#xC758; &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC774;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xB294; &#xC601;&#xC5ED;&#xACFC; &#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xC744; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCD5C;&#xC18C;-&#xBC0F;-&#xCD5C;&#xB300;-&#xC90C;-&#xB808;&#xBCA8;">&#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;</h3>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29minZoomLevel" target="_blank"><code>minZoomLevel</code></a> &#xBC0F; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29maxZoomLevel" target="_blank"><code>maxZoomLevel</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xC744; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC744; 5~18 &#xBC94;&#xC704;&#xB85C; &#xC81C;&#xD55C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift">mapView.minZoomLevel = <span class="hljs-number">5.0</span>
+mapView.maxZoomLevel = <span class="hljs-number">18.0</span>
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc"><span class="hljs-keyword">self</span>.mapView.minZoomLevel = <span class="hljs-number">5.0</span>;
+<span class="hljs-keyword">self</span>.mapView.maxZoomLevel = <span class="hljs-number">18.0</span>;
+</code></pre>
+<h3 id="&#xCE74;&#xBA54;&#xB77C;-&#xC601;&#xC5ED;-&#xC81C;&#xD55C;">&#xCE74;&#xBA54;&#xB77C; &#xC601;&#xC5ED; &#xC81C;&#xD55C;</h3>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29extent" target="_blank"><code>extent</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xC601;&#xC5ED; &#xB0B4;&#xB85C; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC81C;&#xD55C; &#xC601;&#xC5ED;&#xC744; &#xBC97;&#xC5B4;&#xB098;&#xB3C4;&#xB85D; API&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC774; &#xC601;&#xC5ED; &#xB0B4;&#xB85C; &#xC870;&#xC815;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC744; &#xD55C;&#xBC18;&#xB3C4; &#xC778;&#xADFC;&#xC73C;&#xB85C; &#xC81C;&#xD55C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Swift</p>
+<pre><code class="lang-swift">mapView.extent = <span class="hljs-type">NMGLatLngBounds</span>(southWestLat: <span class="hljs-number">31.43</span>, southWestLng: <span class="hljs-number">122.37</span>, northEastLat: <span class="hljs-number">44.35</span>, northEastLng: <span class="hljs-number">132</span>)
+</code></pre>
+<p>Objective-C</p>
+<pre><code class="lang-objc"><span class="hljs-keyword">self</span>.mapView.extent = NMGLatLngBoundsMake(<span class="hljs-number">31.43</span>, <span class="hljs-number">122.37</span>, <span class="hljs-number">44.35</span>, <span class="hljs-number">132</span>);
+</code></pre>
+<p>&#xCE74;&#xBA54;&#xB77C; &#xC601;&#xC5ED;&#xC744; &#xC81C;&#xD55C;&#xD560; &#xB54C; &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xB3C4; &#xD568;&#xAED8; &#xC81C;&#xD55C;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xC9C0;&#xB3C4;&#xAC00; &#xCD95;&#xC18C;&#xB418;&#xC5C8;&#xC744; &#xB54C; &#xC81C;&#xD55C; &#xC601;&#xC5ED;&#xC774; &#xB108;&#xBB34; &#xC791;&#xAC8C; &#xB098;&#xD0C0;&#xB0A0; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-1.html" class="navigation navigation-prev " aria-label="Previous page: 카메라와 투영">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.html" class="navigation navigation-next " aria-label="Next page: 상호작용">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"카메라 이동","level":"2.3.2","depth":2,"next":{"title":"상호작용","level":"2.4","depth":1,"path":"guide/4.md","ref":"guide/4.md","articles":[]},"previous":{"title":"카메라와 투영","level":"2.3.1","depth":2,"path":"guide/3-1.md","ref":"guide/3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/3-2.md","mtime":"2018-11-12T14:25:34.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-12T14:28:12.731Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

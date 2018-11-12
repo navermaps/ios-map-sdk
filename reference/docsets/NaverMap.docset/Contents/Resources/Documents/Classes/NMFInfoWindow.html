@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NMFInfoWindow Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://map.naver.com/favicon.ico?v20140331' type='image/x-icon' />
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/NMFInfoWindow" class="dashAnchor"></a>
+
+    <a title="NMFInfoWindow Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          NAVER Map iOS SDK
+        </a>
+        
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E0%2E0%2Fdocsets%2FNaverMap%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NMFInfoWindow Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../NMapsGeometry.html">NMapsGeometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLng.html">NMGLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPoint.html">NMGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGBounds">NMGBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLineString.html">NMGLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPolygon.html">NMGPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGMultiPolygon">NMGMultiPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGSegment.html">NMGSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtmk.html">NMGUtmk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGTm128.html">NMGTm128</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGWebMercatorCoord.html">NMGWebMercatorCoord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtils.html">NMGUtils</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Map.html">Map</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMapView.html">NMFMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMapType.html">NMFMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdate.html">NMFCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFCameraUpdateAnimation.html">NMFCameraUpdateAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdateParams.html">NMFCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFProjection.html">NMFProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFSymbol.html">NMFSymbol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFNaverMapView.html">NMFNaverMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Indoor.html">Indoor</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorRegion.html">NMFIndoorRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevel.html">NMFIndoorLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorView.html">NMFIndoorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Overlay.html">Overlay</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlay.html">NMFOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlayImage.html">NMFOverlayImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFOverlayImageDataSource.html">NMFOverlayImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationOverlay.html">NMFLocationOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMarker.html">NMFMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFInfoWindow.html">NMFInfoWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAlign.html">NMFAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFGroundOverlay.html">NMFGroundOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCircleOverlay.html">NMFCircleOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPath.html">NMFPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPathColor.html">NMFPathColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMultipartPath.html">NMFMultipartPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolygonOverlay.html">NMFPolygonOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolylineOverlay.html">NMFPolylineOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFArrowheadPath.html">NMFArrowheadPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:objc(pl)NMFPickable">NMFPickable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineCap.html">NMFOverlayLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineJoin.html">NMFOverlayLineJoin</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../etc.html">etc</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFAuthManager.html">NMFAuthManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAuthState.html">NMFAuthState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFAuthManagerDelegate.html">NMFAuthManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl">NMFMapChangedByControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByDeveloper">NMFMapChangedByDeveloper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByGesture">NMFMapChangedByGesture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByLocation">NMFMapChangedByLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFCameraCommon.h@NMF_DEFAULT_ANIMATION_DURATION">NMF_DEFAULT_ANIMATION_DURATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BICYCLE">NMF_LAYER_GROUP_BICYCLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_BUILDING">NMF_LAYER_GROUP_BUILDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_CADASTRAL">NMF_LAYER_GROUP_CADASTRAL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_MOUNTAIN">NMF_LAYER_GROUP_MOUNTAIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRAFFIC">NMF_LAYER_GROUP_TRAFFIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LAYER_GROUP_TRANSIT">NMF_LAYER_GROUP_TRANSIT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_LOCATION_OVERLAY_DEFAULT_COLOR">NMF_LOCATION_OVERLAY_DEFAULT_COLOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFLocationOverlay.h@NMF_LOCATION_OVERLAY_SIZE_AUTO">NMF_LOCATION_OVERLAY_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_BLUE">NMF_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GRAY">NMF_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_GREEN">NMF_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_LIGHTBLUE">NMF_MARKER_IMAGE_LIGHTBLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_PINK">NMF_MARKER_IMAGE_PINK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_RED">NMF_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:@NMF_MARKER_IMAGE_YELLOW">NMF_MARKER_IMAGE_YELLOW</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGConstants.h@NMG_EARTH_RADIUS">NMG_EARTH_RADIUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LATITUDE">NMG_LAT_LNG_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LONGITUDE">NMG_LAT_LNG_MAXIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LATITUDE">NMG_LAT_LNG_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LONGITUDE">NMG_LAT_LNG_MINIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_X">NMG_TM128_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_Y">NMG_TM128_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_X">NMG_TM128_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_Y">NMG_TM128_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_X">NMG_UTMK_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_Y">NMG_UTMK_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_X">NMG_UTMK_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_Y">NMG_UTMK_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_LATITUDE">NMG_WEB_MERCATOR_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_XY">NMG_WEB_MERCATOR_MAXIMUM_XY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_LATITUDE">NMG_WEB_MERCATOR_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_XY">NMG_WEB_MERCATOR_MINIMUM_XY</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>NMFInfoWindow</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFInfoWindow</span> <span class="p">:</span> <span class="nc"><a href="../Classes/NMFOverlay.html">NMFOverlay</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>지도의 특정 지점 또는 마커 위에 열 수 있는 정보 창. 정보 창은 이미지로 특정 지점을 표시한다는 점에서 마커와 유사하나,
+다음과 같은 차이가 있습니다.</p>
+
+<ul>
+<li>마커처럼 특정 좌표에 열 수 있을 뿐만 아니라 다른 마커 위에도 열 수 있습니다.</li>
+<li>고정된 이미지를 지정하는 마커와 달리 이미지를 반환하는 어댑터를 지정할 수 있으므로, 객체/상황별로 다른 이미지를
+노출할 수 있습니다.</li>
+</ul>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)alpha"></a>
+                    <a name="//apple_ref/objc/Property/alpha" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)alpha">alpha</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>불투명도. <code>0</code>일 경우 완전히 투명, <code>1</code>일 경우
+완전히 불투명함을 의미합니다.</p>
+
+<p>기본값은 <code>1</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGFloat</span> <span class="n">alpha</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)dataSource"></a>
+                    <a name="//apple_ref/objc/Property/dataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)dataSource">dataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창에서 사용할 이미지를 제공해 줄 수 있는 이미지 데이터 소스.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFOverlayImageDataSource.html">NMFOverlayImageDataSource</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">dataSource</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)marker"></a>
+                    <a name="//apple_ref/objc/Property/marker" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)marker">marker</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창이 열려 있는 마커.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)position"></a>
+                    <a name="//apple_ref/objc/Property/position" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)position">position</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>좌표. 좌표는 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(im)openWithMapView:">-openWithMapView:</a></code>를 이용해 정보 창을 여는 경우 사용되며, <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(im)openWithMarker:">-openWithMarker:</a></code>를
+이용해 여는 경우에는 마커의 위치에 정보 창이 열리므로 무시됩니다.</p>
+
+<p>기본값은 유효하지 않은(<code>isValid</code>가 <code>NO</code>인) 좌표입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">position</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">position</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)anchor"></a>
+                    <a name="//apple_ref/objc/Property/anchor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)anchor">anchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>앵커. 앵커는 아이콘 이미지에서 기준이 되는 지점을 의미합니다. 앵커로 지정된 지점이 정보 창의 좌표에
+위치합니다. 값의 범위는 <code>(0, 0)</code>~<code>(1, 1)</code>이며, <code>(0, 0)</code>일 경우 이미지의 왼쪽 위,
+<code>(1, 1)</code>일 경우 이미지의 오른쪽 아래를 의미합니다.</p>
+
+<p>기본값은 <code>(0.5, 1)</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGPoint</span> <span class="n">anchor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">CGPoint</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)offsetX"></a>
+                    <a name="//apple_ref/objc/Property/offsetX" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)offsetX">offsetX</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창과 좌표 또는 마커 간의 X축 방향 여백. pt 단위.</p>
+
+<p>기본값은 <code>0</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">offsetX</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">offsetX</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(py)offsetY"></a>
+                    <a name="//apple_ref/objc/Property/offsetY" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(py)offsetY">offsetY</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창과 좌표 또는 마커 간의 Y축 방향 여백. pt 단위.</p>
+
+<p>기본값은 <code>0</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">offsetY</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">offsetY</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(cm)infoWindow"></a>
+                    <a name="//apple_ref/objc/Method/+infoWindow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(cm)infoWindow">+infoWindow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창을 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">infoWindow</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>NMFInfoWindow</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(im)openWithMarker:"></a>
+                    <a name="//apple_ref/objc/Method/-openWithMarker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(im)openWithMarker:">-openWithMarker:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창을 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)marker">marker</a></code>의 위에 엽니다. <code>-openWithMarker:marker align:NMFAlignTop</code>과 동일합니다.</p>
+
+<p>정보 창을 마커 위에 열기 전에는 반드시 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)dataSource">dataSource</a></code>를 지정해야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openWithMarker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">with</span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMarker.html">NMFMarker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>marker</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>정보 창을 열 마커.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(im)openWithMarker:align:"></a>
+                    <a name="//apple_ref/objc/Method/-openWithMarker:align:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(im)openWithMarker:align:">-openWithMarker:align:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창을 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)marker">marker</a></code>에 엽니다. 정보 창을 열 마커는 반드시 지도에 추가된 상태여야 하며, 그렇지 않을 경우
+무시됩니다. <code>align</code>을 이용하면 마커의 어느 방향에 정보 창의 앵커를 위치시킬지 지정할 수 있습니다.</p>
+
+<p>정보 창을 마커 위에 열기 전에는 반드시 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)dataSource">dataSource</a></code>를 지정해야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openWithMarker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">marker</span> <span class="nf">align</span><span class="p">:(</span><span class="n"><a href="../Enums/NMFAlign.html">NMFAlign</a></span><span class="p">)</span><span class="nv">align</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">with</span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMarker.html">NMFMarker</a></span><span class="p">,</span> <span class="nv">align</span><span class="p">:</span> <span class="kt"><a href="../Enums/NMFAlign.html">NMFAlign</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>marker</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>정보 창을 열 마커.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>align</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>정보 창을 열 방향.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(im)openWithMapView:"></a>
+                    <a name="//apple_ref/objc/Method/-openWithMapView:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(im)openWithMapView:">-openWithMapView:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창을 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)position">position</a></code> 지점에 엽니다.</p>
+
+<p>정보 창을 특정 지점에 열기 전에는 반드시 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)position">position</a></code>과 <code><a href="../Classes/NMFInfoWindow.html#/c:objc(cs)NMFInfoWindow(py)dataSource">dataSource</a></code>를 지정해야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openWithMapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMFMapView.html">NMFMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">with</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMapView.html">NMFMapView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>정보 창을 열 지도 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(im)close"></a>
+                    <a name="//apple_ref/objc/Method/-close" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(im)close">-close</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>정보 창을 닫습니다. 정보 창이 열려 있지 않은 경우 무시됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">close</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFInfoWindow(im)invalidate"></a>
+                    <a name="//apple_ref/objc/Method/-invalidate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFInfoWindow(im)invalidate">-invalidate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>이미지를 다시 그립니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">invalidate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">invalidate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section>
+  </body>
+</div>
+</html>
