@@ -1,5 +1,5 @@
  /*
-  Copyright 2018 NAVER Corp.
+  Copyright 2018-2019 NAVER Corp.
   
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@ class MarkerViewController: MapViewController {
         let markerWithCaption = NMFMarker(position: NMGLatLng(lat: 37.56436, lng: 126.97499))
         markerWithCaption.iconImage = NMF_MARKER_IMAGE_YELLOW
         markerWithCaption.captionAlign = .left
-        markerWithCaption.captionText = "캡션이 있는 마커"
+        markerWithCaption.captionText = "☀캡션이 있는 마커🎉"
         markerWithCaption.mapView = mapView
         
         let markerWithSubCaption = NMFMarker(position: NMGLatLng(lat: 37.56138, lng: 126.97970))
@@ -61,7 +61,7 @@ class MarkerViewController: MapViewController {
         markerWithSubCaption.captionText = "서브 캡션이 있는 마커"
         markerWithSubCaption.subCaptionTextSize = 10
         markerWithSubCaption.subCaptionColor = UIColor.gray
-        markerWithSubCaption.subCaptionText = "서브 캡션"
+        markerWithSubCaption.subCaptionText = "서브 캡션👩🏿‍🍳"
         markerWithSubCaption.mapView = mapView
     }
 }

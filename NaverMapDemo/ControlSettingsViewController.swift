@@ -1,5 +1,5 @@
  /*
-  Copyright 2018 NAVER Corp.
+  Copyright 2018-2019 NAVER Corp.
   
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -47,6 +47,16 @@ class ControlSettingsViewController: MapViewController {
         default:
             break
         }
+    }
+    
+    @IBAction func respondToLogoPosition(_ sender: UIButton) {
+        var align = mapView.logoAlign
+        if align.rawValue >= 3 {
+            align = .leftBottom
+        } else {
+            align = NMFLogoAlign(rawValue: align.rawValue + 1) ?? .leftBottom
+        }
+        mapView.logoAlign = align
     }
 
 }
