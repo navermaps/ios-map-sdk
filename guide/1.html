@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -236,16 +240,48 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="4.html">
+        <li class="chapter " data-level="2.4" >
             
-                <a href="4.html">
+                <span>
             
                     
                     상호작용
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -392,6 +428,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/wiki/Changelog">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -521,8 +570,15 @@
 <h3 id="api&#xB97C;-&#xD638;&#xCD9C;&#xD574;-&#xC9C0;&#xC815;">API&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xC9C0;&#xC815;</h3>
 <p><code>info.plist</code>&#xB97C; &#xC218;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xACE0; API&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; ID&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate" target="_blank"><code>AppDelegate</code></a>&#xC758; <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application" target="_blank"><code>-application:didFinishLaunchingWithOptions:</code></a> &#xB0B4;&#xC5D0;&#xC11C; <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.clientId</code></a>&#xC5D0; &#xC9C1;&#xC811; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>NMFAuthManager</code>&#xB294; &#xC2F1;&#xAE00;&#xD134; &#xD074;&#xB798;&#xC2A4;&#xC774;&#xBBC0;&#xB85C; <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>+shared</code></a>&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC5BB;&#xC5B4;&#xC640;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; API&#xB97C; &#xD638;&#xCD9C;&#xD574; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; ID&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+<p><div id="440ad0405f8e3b193d0895340a2efd70" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-38d16f64116c728aaed5a1a76a932334" class="gbcg-selector gbcg-active" data-tab="Swift-0-38d16f64116c728aaed5a1a76a932334" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-61bf69470fb45d7f9a88bab749a34bcd" class="gbcg-selector" data-tab="Objective-C-1-61bf69470fb45d7f9a88bab749a34bcd" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-38d16f64116c728aaed5a1a76a932334" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
     <span class="hljs-type">NMFAuthManager</span>.shared().clientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
 
@@ -530,34 +586,86 @@
 
 }
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">- (<span class="hljs-built_in">BOOL</span>)application:(<span class="hljs-built_in">UIApplication</span> *)application didFinishLaunchingWithOptions:(<span class="hljs-built_in">NSDictionary</span> *)launchOptions {
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-38d16f64116c728aaed5a1a76a932334" id="swift">Swift</h3>
+        <div id="Swift-0-38d16f64116c728aaed5a1a76a932334" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
-    [NMFAuthManager shared].clientId = <span class="hljs-string">@&quot;YOUR_CLIENT_ID_HERE&quot;</span>;
+    <span class="hljs-type">NMFAuthManager</span>.shared().clientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
 
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">YES</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
 
 }
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-61bf69470fb45d7f9a88bab749a34bcd" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-61bf69470fb45d7f9a88bab749a34bcd" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [NMFAuthManager shared].clientId = @&quot;YOUR_CLIENT_ID_HERE&quot;;
+
+    return YES;
+
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h2 id="&#xC9C0;&#xB3C4;-&#xD45C;&#xC2DC;">&#xC9C0;&#xB3C4; &#xD45C;&#xC2DC;</h2>
 <p>&#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; ID&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xACE0; <code>NMFMapView</code>&#xB97C; &#xBDF0; &#xCEE8;&#xD2B8;&#xB864;&#xB7EC;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xAC00; &#xD654;&#xBA74;&#xC5D0; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xCF54;&#xB4DC;&#xC5D0;&#xC11C; &#xC9C1;&#xC811; <code>NMFMapView</code>&#xB97C; &#xCD94;&#xAC00;&#xD574; &#xC9C0;&#xB3C4;&#xB97C; &#xD654;&#xBA74;&#xC5D0; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">viewDidLoad</span><span class="hljs-params">()</span></span> {
+<p><div id="544c58dc202022863fa0a7d5d23cc0ff" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-4ab3cf67cd30dd0f668f536460e722e5" class="gbcg-selector gbcg-active" data-tab="Swift-0-4ab3cf67cd30dd0f668f536460e722e5" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-49a22f6eb0eec25d53068ea6d2c12a93" class="gbcg-selector" data-tab="Objective-C-1-49a22f6eb0eec25d53068ea6d2c12a93" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-4ab3cf67cd30dd0f668f536460e722e5" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">viewDidLoad</span><span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">super</span>.viewDidLoad()
 
     <span class="hljs-keyword">let</span> mapView = <span class="hljs-type">NMFMapView</span>(frame: view.frame)
     view.addSubview(mapView)
 }
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)viewDidLoad {
-    [<span class="hljs-keyword">super</span> viewDidLoad];
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-4ab3cf67cd30dd0f668f536460e722e5" id="swift">Swift</h3>
+        <div id="Swift-0-4ab3cf67cd30dd0f668f536460e722e5" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">viewDidLoad</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-keyword">super</span>.viewDidLoad()
 
-    NMFMapView *mapView = [[NMFMapView alloc] initWithFrame:<span class="hljs-keyword">self</span>.view.frame];
-    [<span class="hljs-keyword">self</span>.view addSubview:mapView];
+    <span class="hljs-keyword">let</span> mapView = <span class="hljs-type">NMFMapView</span>(frame: view.frame)
+    view.addSubview(mapView)
 }
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-49a22f6eb0eec25d53068ea6d2c12a93" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-49a22f6eb0eec25d53068ea6d2c12a93" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    NMFMapView *mapView = [[NMFMapView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:mapView];
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p><code>XIB</code>&#xB098; <code>storyboard</code> &#xB4F1;&#xC758; Interface Builder&#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;&#xBA74;, <code>UIView</code>&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xACE0; <code>Custom Class</code>&#xB85C; <code>NMFMapView</code>&#xB97C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/1-ib.png" alt="Interface Builder&#xC5D0;&#xC11C; &#xC9C0;&#xB3C4; &#xCD94;&#xAC00;&#xD558;&#xAE30;"></p>
 <h2 id="&#xC778;&#xC99D;-&#xC2E4;&#xD328;-&#xCC98;&#xB9AC;">&#xC778;&#xC99D; &#xC2E4;&#xD328; &#xCC98;&#xB9AC;</h2>
@@ -586,13 +694,9 @@
 <td>800</td>
 <td>&#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; ID&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC74C;</td>
 </tr>
-<tr>
-<td>900</td>
-<td>&#xB0B4;&#xBD80; &#xC624;&#xB958;</td>
-</tr>
 </tbody>
 </table>
-<p>&#xADF8; &#xC678;&#xC758; &#xACF5;&#xD1B5; &#xC5D0;&#xB7EC; &#xCF54;&#xB4DC;&#xB294; <a href="https://docs.ncloud.com/ko/naveropenapi_v3/api-guide.html#error" target="_blank">&#xC5EC;&#xAE30;</a>&#xB97C; &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</p>
+<p>&#xADF8; &#xC678;&#xC758; &#xC6D0;&#xC778;&#xC73C;&#xB85C; &#xC778;&#xC99D;&#xC5D0; &#xC2E4;&#xD328;&#xD558;&#xBA74; <code>AuthFailedException</code>&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xACF5;&#xD1B5; &#xC5D0;&#xB7EC; &#xCF54;&#xB4DC;&#xB294; <a href="https://docs.ncloud.com/ko/naveropenapi_v3/api-guide.html#error" target="_blank">&#xC5EC;&#xAE30;</a>&#xB97C; &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;.</p>
 
                                 
                                 </section>
@@ -632,7 +736,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"시작하기","level":"2.1","depth":1,"next":{"title":"지도와 좌표","level":"2.2","depth":1,"ref":"","articles":[{"title":"지도 객체","level":"2.2.1","depth":2,"path":"guide/2-1.md","ref":"guide/2-1.md","articles":[]},{"title":"좌표 객체","level":"2.2.2","depth":2,"path":"guide/2-2.md","ref":"guide/2-2.md","articles":[]},{"title":"지도 옵션","level":"2.2.3","depth":2,"path":"guide/2-3.md","ref":"guide/2-3.md","articles":[]}]},"previous":{"title":"소개","level":"1.2","depth":1,"path":"guide/0.md","ref":"guide/0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/1.md","mtime":"2018-11-12T14:02:52.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-12T14:28:12.731Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"시작하기","level":"2.1","depth":1,"next":{"title":"지도와 좌표","level":"2.2","depth":1,"ref":"","articles":[{"title":"지도 객체","level":"2.2.1","depth":2,"path":"guide/2-1.md","ref":"guide/2-1.md","articles":[]},{"title":"좌표 객체","level":"2.2.2","depth":2,"path":"guide/2-2.md","ref":"guide/2-2.md","articles":[]},{"title":"지도 옵션","level":"2.2.3","depth":2,"path":"guide/2-3.md","ref":"guide/2-3.md","articles":[]}]},"previous":{"title":"소개","level":"1.2","depth":1,"path":"guide/0.md","ref":"guide/0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/1.md","mtime":"2019-01-21T02:23:45.128Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-21T02:40:10.815Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -643,6 +747,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codegroup/code.group.js"></script>
         
     
         

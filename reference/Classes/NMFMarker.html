@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E0%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E1%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -336,6 +336,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enumerations.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFLogoAlign.html">NMFLogoAlign</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -626,6 +634,40 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFMarker(py)isHideCollidedMarkers"></a>
+                    <a name="//apple_ref/objc/Property/isHideCollidedMarkers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMarker(py)isHideCollidedMarkers">isHideCollidedMarkers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>마커와 다른 마커가 겹칠 경우 다른 마커를 숨길지 여부.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isHideCollidedMarkers</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isHideCollidedMarkers</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFMarker(py)isHideCollidedCaptions"></a>
                     <a name="//apple_ref/objc/Property/isHideCollidedCaptions" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFMarker(py)isHideCollidedCaptions">isHideCollidedCaptions</a>
@@ -651,6 +693,40 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isHideCollidedCaptions</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMarker(py)isForceShowIcon"></a>
+                    <a name="//apple_ref/objc/Property/isForceShowIcon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMarker(py)isForceShowIcon">isForceShowIcon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>마커가 <code><a href="../Classes/NMFMarker.html#/c:objc(cs)NMFMarker(py)isHideCollidedMarkers">isHideCollidedMarkers</a></code>이 <code>YES</code>인 다른 마커와 겹치더라도 아이콘을 무조건 표시할지 여부.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isForceShowIcon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isForceShowIcon</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -911,7 +987,7 @@
                       <div class="abstract">
                         <p>캡션의 텍스트 크기. pt 단위.</p>
 
-<p>기본값은 <code>6</code>입니다.</p>
+<p>기본값은 <code>12</code>입니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -1083,7 +1159,7 @@
                       <div class="abstract">
                         <p>보조 캡션의 텍스트 크기. pt 단위.</p>
 
-<p>기본값은 <code>6</code>입니다.</p>
+<p>기본값은 <code>12</code>입니다.</p>
 
                       </div>
                       <div class="declaration">

@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -238,16 +242,48 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="4.html">
+        <li class="chapter " data-level="2.4" >
             
-                <a href="4.html">
+                <span>
             
                     
                     상호작용
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -394,6 +430,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/wiki/Changelog">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -492,16 +541,42 @@
 <h3 id="nmglatlng">NMGLatLng</h3>
 <p><a href="ref://../reference/Classes/NMGLatLng.html" target="_blank"><code>NMGLatLng</code></a>&#xB294; &#xD558;&#xB098;&#xC758; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMGLatLng.html#/c:objc(cs" target="_blank"><code>lat</code></a>NMGLatLng(py)lat) &#xC18D;&#xC131;&#xC774; &#xC704;&#xB3C4;&#xB97C;, <a href="ref://../reference/Classes/NMGLatLng.html#/c:objc(cs" target="_blank"><code>lng</code></a>NMGLatLng(py)lng) &#xC18D;&#xC131;&#xC774; &#xACBD;&#xB3C4;&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. <code>NMGLatLng</code>&#xC758; &#xBAA8;&#xB4E0; &#xC18D;&#xC131;&#xC740; &#xC0DD;&#xC131;&#xC790;&#xB85C;&#xB9CC; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xACE0;, &#xD55C; &#xBC88; &#xC0DD;&#xC131;&#xB41C; &#xAC1D;&#xCCB4;&#xC758; &#xC18D;&#xC131;&#xC740; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; <code>NMGLatLng</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xCF58;&#xC194;&#xC5D0; &#xC704;&#xB3C4;&#xC640; &#xACBD;&#xB3C4;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> coord = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
+<p><div id="6eab5f3a8588b762838552f14a5adef3" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-79ad0ddafd7924d5eb144b0fcdcf404a" class="gbcg-selector gbcg-active" data-tab="Swift-0-79ad0ddafd7924d5eb144b0fcdcf404a" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-c6fb80979224e1fa6b8028f59c35f0dd" class="gbcg-selector" data-tab="Objective-C-1-c6fb80979224e1fa6b8028f59c35f0dd" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-79ad0ddafd7924d5eb144b0fcdcf404a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
 
 <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC704;&#xB3C4;: <span class="hljs-subst">\(coord.lat)</span>, &#xACBD;&#xB3C4;: <span class="hljs-subst">\(coord.lng)</span>&quot;</span>)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">NMGLatLng *coord = NMGLatLngMake(<span class="hljs-number">37.5670135</span>, <span class="hljs-number">126.9783740</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-79ad0ddafd7924d5eb144b0fcdcf404a" id="swift">Swift</h3>
+        <div id="Swift-0-79ad0ddafd7924d5eb144b0fcdcf404a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
 
-<span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#xC704;&#xB3C4;: %f, &#xACBD;&#xB3C4;: %f&quot;</span>, coord.lat, coord.lng);
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC704;&#xB3C4;: <span class="hljs-subst">\(coord.lat)</span>, &#xACBD;&#xB3C4;: <span class="hljs-subst">\(coord.lng)</span>&quot;</span>)
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-c6fb80979224e1fa6b8028f59c35f0dd" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-c6fb80979224e1fa6b8028f59c35f0dd" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGLatLng *coord = NMGLatLngMake(37.5670135, 126.9783740);
+
+NSLog(@&quot;&#xC704;&#xB3C4;: %f, &#xACBD;&#xB3C4;: %f&quot;, coord.lat, coord.lng);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h3 id="&#xB2E4;&#xB978;-&#xC88C;&#xD45C;&#xACC4;">&#xB2E4;&#xB978; &#xC88C;&#xD45C;&#xACC4;</h3>
 <p>&#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; <code>NMGLatLng</code> &#xC678;&#xC5D0;&#xB3C4; &#xBA87; &#xAC00;&#xC9C0; &#xC790;&#xC8FC; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xC88C;&#xD45C;&#xACC4;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
@@ -511,38 +586,114 @@
 </ul>
 <p>&#xAC01; &#xD074;&#xB798;&#xC2A4;&#xC758; <code>-toLatLng</code> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xB2E4;&#xB978; &#xC88C;&#xD45C;&#xB97C; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xAC70;&#xB098;, <code>NMGLatLng</code>&#xB97C; &#xD30C;&#xB77C;&#xBA54;&#xD130;&#xB85C; &#xBC1B;&#xB294; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xB97C; &#xD574;&#xB2F9;&#xD558;&#xB294; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; <code>NMGUtmk</code>&#xB97C; <code>NMGLatLng</code>&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> utmk = <span class="hljs-type">NMGUtmk</span>(x: <span class="hljs-number">953935.5</span>, y: <span class="hljs-number">1952044.1</span>)
+<p><div id="237a3b82c36200f86864c05e84e820bb" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-3905608da3d78e409382b267e67253fa" class="gbcg-selector gbcg-active" data-tab="Swift-0-3905608da3d78e409382b267e67253fa" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-66325690e608e2e786623098a44fdcec" class="gbcg-selector" data-tab="Objective-C-1-66325690e608e2e786623098a44fdcec" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-3905608da3d78e409382b267e67253fa" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> utmk = <span class="hljs-type">NMGUtmk</span>(x: <span class="hljs-number">953935.5</span>, y: <span class="hljs-number">1952044.1</span>)
 <span class="hljs-keyword">let</span> latLng = utmk.toLatLng()
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">NMGUtmk *utmk = NMGUtmkMake(<span class="hljs-number">953935.5</span>, <span class="hljs-number">1952044.1</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-3905608da3d78e409382b267e67253fa" id="swift">Swift</h3>
+        <div id="Swift-0-3905608da3d78e409382b267e67253fa" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> utmk = <span class="hljs-type">NMGUtmk</span>(x: <span class="hljs-number">953935.5</span>, y: <span class="hljs-number">1952044.1</span>)
+<span class="hljs-keyword">let</span> latLng = utmk.toLatLng()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-66325690e608e2e786623098a44fdcec" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-66325690e608e2e786623098a44fdcec" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGUtmk *utmk = NMGUtmkMake(953935.5, 1952044.1);
 NMGLatLng *latLng = utmk.toLatLng();
 </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C;&#xC740; <code>NMGLatLng</code>&#xB97C; <code>NMGUtmk</code>&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> latLng = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666103</span>, lng: <span class="hljs-number">126.9783882</span>)
+<p><div id="932d8bf55e52e5b86f4b58fb4cf71414" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-c82ad9a7ea211f4e53f97d1ac65b0d29" class="gbcg-selector gbcg-active" data-tab="Swift-0-c82ad9a7ea211f4e53f97d1ac65b0d29" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-8c3e50a906f3cf5804616992ec6b567c" class="gbcg-selector" data-tab="Objective-C-1-8c3e50a906f3cf5804616992ec6b567c" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-c82ad9a7ea211f4e53f97d1ac65b0d29" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> latLng = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666103</span>, lng: <span class="hljs-number">126.9783882</span>)
 <span class="hljs-keyword">let</span> utmk = <span class="hljs-type">NMGUtmk</span>(from: latLng)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">NMGLatLng *latLng = NMGLatLngMake(<span class="hljs-number">37.5666103</span>, <span class="hljs-number">126.9783882</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-c82ad9a7ea211f4e53f97d1ac65b0d29" id="swift">Swift</h3>
+        <div id="Swift-0-c82ad9a7ea211f4e53f97d1ac65b0d29" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> latLng = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666103</span>, lng: <span class="hljs-number">126.9783882</span>)
+<span class="hljs-keyword">let</span> utmk = <span class="hljs-type">NMGUtmk</span>(from: latLng)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-8c3e50a906f3cf5804616992ec6b567c" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-8c3e50a906f3cf5804616992ec6b567c" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGLatLng *latLng = NMGLatLngMake(37.5666103, 126.9783882);
 NMGUtmk *utmk = [NMGUtmk utmkFromLatLng:latlng];
 </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h2 id="mbr">MBR</h2>
 <p>&#xAC01;&#xAC01; &#xB0A8;&#xC11C;&#xCABD;&#xACFC; &#xBD81;&#xB3D9;&#xCABD; &#xAF2D;&#xC9C0;&#xC810;&#xC744; &#xC758;&#xBBF8;&#xD558;&#xB294; &#xB450; &#xAC1C;&#xC758; &#xC88C;&#xD45C;&#xAC00; &#xC8FC;&#xC5B4;&#xC9C4;&#xB2E4;&#xBA74; &#xC9C1;&#xC0AC;&#xAC01;&#xD615; &#xD615;&#xD0DC;&#xC758; &#xC601;&#xC5ED;&#xC744; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; <a href="https://terms.naver.com/entry.nhn?docId=3479529&amp;cid=58439&amp;categoryId=58439" target="_blank">&#xCD5C;&#xC18C; &#xACBD;&#xACC4; &#xC0AC;&#xAC01;&#xD615;</a> &#xB610;&#xB294; MBR(Minimum Bounding Rectangle)&#xC774;&#xB77C;&#xACE0; &#xBD80;&#xB985;&#xB2C8;&#xB2E4;. MBR&#xC740; &#xD558;&#xB098;&#xC758; &#xC601;&#xC5ED;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xAC00;&#xC7A5; &#xAC04;&#xB2E8;&#xD55C; &#xBC29;&#xBC95;&#xC774;&#xBBC0;&#xB85C; &#xC601;&#xC5ED;&#xC744; &#xB2E4;&#xB8E8;&#xB294; API&#xC5D0;&#xC11C; &#xC790;&#xC8FC; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
 <h3 id="nmglatlngbounds">NMGLatLngBounds</h3>
 <p><a href="ref://../reference/Classes/NMGLatLngBounds.html" target="_blank"><code>NMGLatLngBounds</code></a>&#xB294; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C4; &#xD558;&#xB098;&#xC758; MBR&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMGLatLngBounds.html#/c:objc(cs" target="_blank"><code>southWest</code></a>NMGLatLngBounds(py)southWest) &#xC18D;&#xC131;&#xC774; &#xB0A8;&#xC11C;&#xCABD; &#xC88C;&#xD45C;&#xB97C;, <a href="ref://../reference/Classes/NMGLatLngBounds.html#/c:objc(cs" target="_blank"><code>northEast</code></a>NMGLatLngBounds(py)northEast) &#xC18D;&#xC131;&#xC774; &#xBD81;&#xB3D9;&#xCABD; &#xC88C;&#xD45C;&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. <code>NMGLatLngBounds</code>&#xC758; &#xBAA8;&#xB4E0; &#xC18D;&#xC131;&#xC740; <code>readonly</code>&#xC774;&#xBBC0;&#xB85C; &#xAC01; &#xC18D;&#xC131;&#xC740; &#xC0DD;&#xC131;&#xC790;&#xB85C;&#xB9CC; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xACE0;, &#xD55C; &#xBC88; &#xC0DD;&#xC131;&#xB41C; &#xAC1D;&#xCCB4;&#xC758; &#xC18D;&#xC131;&#xC740; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; <code>NMGLatLngBounds</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> southWest = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">31.43</span>, lng: <span class="hljs-number">122.37</span>)
+<p><div id="d0f6b17c0f0c1ce3eb0bb45e67cb79b7" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-ccca8b5a222b725c465145367ff2e78a" class="gbcg-selector gbcg-active" data-tab="Swift-0-ccca8b5a222b725c465145367ff2e78a" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-c755b9310e86036cca8e5b1315fa4ae1" class="gbcg-selector" data-tab="Objective-C-1-c755b9310e86036cca8e5b1315fa4ae1" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-ccca8b5a222b725c465145367ff2e78a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> southWest = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">31.43</span>, lng: <span class="hljs-number">122.37</span>)
 <span class="hljs-keyword">let</span> northEast = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">44.35</span>, lng: <span class="hljs-number">132</span>)
 <span class="hljs-keyword">let</span> bounds = <span class="hljs-type">NMGLatLngBounds</span>(southWest: southWest, northEast: northEast)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">NMGLatLng *southWest = NMGLatLngMake(<span class="hljs-number">31.43</span>, <span class="hljs-number">122.37</span>);
-NMGLatLng *northEast = NMGLatLngMake(<span class="hljs-number">44.35</span>, <span class="hljs-number">132</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-ccca8b5a222b725c465145367ff2e78a" id="swift">Swift</h3>
+        <div id="Swift-0-ccca8b5a222b725c465145367ff2e78a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> southWest = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">31.43</span>, lng: <span class="hljs-number">122.37</span>)
+<span class="hljs-keyword">let</span> northEast = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">44.35</span>, lng: <span class="hljs-number">132</span>)
+<span class="hljs-keyword">let</span> bounds = <span class="hljs-type">NMGLatLngBounds</span>(southWest: southWest, northEast: northEast)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-c755b9310e86036cca8e5b1315fa4ae1" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-c755b9310e86036cca8e5b1315fa4ae1" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGLatLng *southWest = NMGLatLngMake(31.43, 122.37);
+NMGLatLng *northEast = NMGLatLngMake(44.35, 132);
 NMGLatLngBounds *bounds = [NMGLatLngBounds latLngBoundsSouthWest:southWest northEast:northEast];
 </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 
                                 
                                 </section>
@@ -586,7 +737,7 @@ NMGLatLngBounds *bounds = [NMGLatLngBounds latLngBoundsSouthWest:southWest north
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"좌표 객체","level":"2.2.2","depth":2,"next":{"title":"지도 옵션","level":"2.2.3","depth":2,"path":"guide/2-3.md","ref":"guide/2-3.md","articles":[]},"previous":{"title":"지도 객체","level":"2.2.1","depth":2,"path":"guide/2-1.md","ref":"guide/2-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/2-2.md","mtime":"2018-11-12T14:02:52.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-12T14:28:12.731Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"좌표 객체","level":"2.2.2","depth":2,"next":{"title":"지도 옵션","level":"2.2.3","depth":2,"path":"guide/2-3.md","ref":"guide/2-3.md","articles":[]},"previous":{"title":"지도 객체","level":"2.2.1","depth":2,"path":"guide/2-1.md","ref":"guide/2-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/2-2.md","mtime":"2019-01-21T02:23:45.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-21T02:40:10.815Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -597,6 +748,10 @@ NMGLatLngBounds *bounds = [NMGLatLngBounds latLngBoundsSouthWest:southWest north
     
         
         <script src="../gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codegroup/code.group.js"></script>
         
     
         

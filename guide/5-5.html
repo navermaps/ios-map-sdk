@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -238,16 +242,48 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="4.html">
+        <li class="chapter " data-level="2.4" >
             
-                <a href="4.html">
+                <span>
             
                     
                     상호작용
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -394,6 +430,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/wiki/Changelog">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -491,97 +540,295 @@
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html" target="_blank"><code>NMFLocationOverlay</code></a> &#xAC1D;&#xCCB4;&#xB294; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xC5D0; &#xC885;&#xC18D;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xB098;&#xC758; &#xC9C0;&#xB3C4;&#xC5D0; &#xB2E8; &#xD558;&#xB098;&#xB9CC; &#xC874;&#xC7AC;&#xD558;&#xBBC0;&#xB85C; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC9C1;&#xC811; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC5C6;&#xACE0; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29locationOverlay" target="_blank"><code>NMFMapView.locationOverlay</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xAC00;&#xC838;&#xC640;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xD56D;&#xC0C1; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; <code>mapView</code> &#xC18D;&#xC131;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. <code>mapView</code>&#xC5D0; <code>nil</code>&#xC744; &#xC9C0;&#xC815;&#xD558;&#xAC70;&#xB098; &#xB2E4;&#xB978; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xC544;&#xBB34; &#xC77C;&#xB3C4; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB530;&#xB77C;&#xC11C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xAC70;&#xB098; &#xC228;&#xAE30;&#xB824;&#xBA74; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29hidden" target="_blank"><code>NMFOverlay.hidden</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xAC00;&#xC2DC;&#xC131;&#xC744; &#xBCC0;&#xACBD;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xB85C;&#xBD80;&#xD130; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB97C; &#xAC00;&#xC838;&#xC640; <code>hidden</code> &#xC18D;&#xC131;&#xC744; <code>YES</code>&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> locationOverlay = mapView.locationOverlay
+<p><div id="16865f55678b6186a56520aa0322d036" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-d1a1ca469f401682187da2c16a13e042" class="gbcg-selector gbcg-active" data-tab="Swift-0-d1a1ca469f401682187da2c16a13e042" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-4680d108dcb9e9d0632649b920df13cf" class="gbcg-selector" data-tab="Objective-C-1-4680d108dcb9e9d0632649b920df13cf" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-d1a1ca469f401682187da2c16a13e042" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> locationOverlay = mapView.locationOverlay
 overlay.hidden = <span class="hljs-literal">true</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">NMFLocationOverlay *locationOverlay = <span class="hljs-keyword">self</span>.mapView.locationOverlay;
-overlay.hidden = <span class="hljs-literal">YES</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-d1a1ca469f401682187da2c16a13e042" id="swift">Swift</h3>
+        <div id="Swift-0-d1a1ca469f401682187da2c16a13e042" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> locationOverlay = mapView.locationOverlay
+overlay.hidden = <span class="hljs-literal">true</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-4680d108dcb9e9d0632649b920df13cf" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-4680d108dcb9e9d0632649b920df13cf" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFLocationOverlay *locationOverlay = self.mapView.locationOverlay;
+overlay.hidden = YES;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h2 id="&#xC88C;&#xD45C;&#xC640;-&#xD5E4;&#xB529;">&#xC88C;&#xD45C;&#xC640; &#xD5E4;&#xB529;</h2>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29location" target="_blank"><code>location</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCC98;&#xC74C; &#xC0DD;&#xC131;&#xB41C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xCD08;&#xAE30; &#xC88C;&#xD45C;&#xC5D0; &#xC704;&#xCE58;&#xD574; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.position = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
+<p><div id="58ed811e008dc098f9434ef08ba099e3" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-555f5eed5ff36a7240ed79417fa747bd" class="gbcg-selector gbcg-active" data-tab="Swift-0-555f5eed5ff36a7240ed79417fa747bd" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-8ea6d135be97218046c7fc4cc095da9f" class="gbcg-selector" data-tab="Objective-C-1-8ea6d135be97218046c7fc4cc095da9f" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-555f5eed5ff36a7240ed79417fa747bd" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.position = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.position = NMGLatLngMake(<span class="hljs-number">37.5670135</span>, <span class="hljs-number">126.9783740</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-555f5eed5ff36a7240ed79417fa747bd" id="swift">Swift</h3>
+        <div id="Swift-0-555f5eed5ff36a7240ed79417fa747bd" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.position = <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5670135</span>, lng: <span class="hljs-number">126.9783740</span>)
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-8ea6d135be97218046c7fc4cc095da9f" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-8ea6d135be97218046c7fc4cc095da9f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.position = NMGLatLngMake(37.5670135, 126.9783740);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29heading" target="_blank"><code>heading</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD5E4;&#xB529;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>flat</code>&#xC774; <code>YES</code>&#xC778; &#xB9C8;&#xCEE4;&#xC758; <code>angle</code>&#xACFC; &#xC720;&#xC0AC;&#xD558;&#xAC8C; &#xC544;&#xC774;&#xCF58;&#xC774; &#xC9C0;&#xB3C4;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD68C;&#xC804;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD5E4;&#xB529;&#xC744; &#xB3D9;&#xCABD; &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.heading = <span class="hljs-number">90</span>
+<p><div id="2617ecc11a1a79d4a85718680b9c2774" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-d6a5b0dcac872d9f2d37cb60daf6620c" class="gbcg-selector gbcg-active" data-tab="Swift-0-d6a5b0dcac872d9f2d37cb60daf6620c" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-1c9c459ef9f9190bd37c2285f0fd5a07" class="gbcg-selector" data-tab="Objective-C-1-1c9c459ef9f9190bd37c2285f0fd5a07" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-d6a5b0dcac872d9f2d37cb60daf6620c" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.heading = <span class="hljs-number">90</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.heading = <span class="hljs-number">90</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-d6a5b0dcac872d9f2d37cb60daf6620c" id="swift">Swift</h3>
+        <div id="Swift-0-d6a5b0dcac872d9f2d37cb60daf6620c" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.heading = <span class="hljs-number">90</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-1c9c459ef9f9190bd37c2285f0fd5a07" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-1c9c459ef9f9190bd37c2285f0fd5a07" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.heading = 90;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h2 id="&#xC544;&#xC774;&#xCF58;">&#xC544;&#xC774;&#xCF58;</h2>
 <p>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xD604;&#xC7AC; &#xC704;&#xCE58;&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. &#xC544;&#xC774;&#xCF58;&#xC740; &#xC0DD;&#xB7B5;&#xD560; &#xC218; &#xC5C6;&#xC73C;&#xBA70;, &#xC774;&#xBBF8;&#xC9C0;&#xC640; &#xD06C;&#xAE30; &#xB4F1;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <h3 id="&#xC774;&#xBBF8;&#xC9C0;">&#xC774;&#xBBF8;&#xC9C0;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29icon" target="_blank"><code>icon</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; <a href="ref://../reference/Classes/NMFOverlayImage.html" target="_blank"><code>NMFOverlayImage</code></a> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>NMFOverlayImage</code>&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xBE44;&#xD2B8;&#xB9F5; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB85C;, &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC5D0;&#xC14B;, <code>UIImage</code>, <code>NSBundle</code>, &#xBDF0; &#xB4F1;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.icon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_icon&quot;</span>)
+<p><div id="85348cb1ea758cc4f9d39b90dcc13030" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-489d83b43b8d85c51227b5420a1b60a1" class="gbcg-selector gbcg-active" data-tab="Swift-0-489d83b43b8d85c51227b5420a1b60a1" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-bf0988ce1e93b70e400fb09cc5df4b64" class="gbcg-selector" data-tab="Objective-C-1-bf0988ce1e93b70e400fb09cc5df4b64" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-489d83b43b8d85c51227b5420a1b60a1" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.icon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_icon&quot;</span>)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.icon = [NMFOverlayImage overlayImageWithName:<span class="hljs-string">@&quot;location_overlay_icon&quot;</span>];
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-489d83b43b8d85c51227b5420a1b60a1" id="swift">Swift</h3>
+        <div id="Swift-0-489d83b43b8d85c51227b5420a1b60a1" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.icon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_icon&quot;</span>)
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-bf0988ce1e93b70e400fb09cc5df4b64" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-bf0988ce1e93b70e400fb09cc5df4b64" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.icon = [NMFOverlayImage overlayImageWithName:@&quot;location_overlay_icon&quot;];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-set-icon.png" alt="&#xC624;&#xBC84;&#xB808;&#xC774; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h3 id="&#xD06C;&#xAE30;">&#xD06C;&#xAE30;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29iconWidth" target="_blank"><code>iconWidth</code></a>&#xC640; <a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29iconHeight" target="_blank"><code>iconHeight</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC544;&#xC774;&#xCF58;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC544;&#xC774;&#xCF58;&#xC758; &#xB108;&#xBE44;&#xC640; &#xB192;&#xC774;&#xB97C; 20pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.iconWidth = <span class="hljs-number">20</span>
+<p><div id="ccdba88a8bf5d83803fc1676401a90dc" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-ed505a0a75bcb0d582a5546ee1eeeeea" class="gbcg-selector gbcg-active" data-tab="Swift-0-ed505a0a75bcb0d582a5546ee1eeeeea" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-a7ee8db53a02731890f8ba5cb6b5e0eb" class="gbcg-selector" data-tab="Objective-C-1-a7ee8db53a02731890f8ba5cb6b5e0eb" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-ed505a0a75bcb0d582a5546ee1eeeeea" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.iconWidth = <span class="hljs-number">20</span>
 locationOverlay.iconHeight = <span class="hljs-number">20</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.iconWidth = <span class="hljs-number">20</span>;
-locationOverlay.iconHeight = <span class="hljs-number">20</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-ed505a0a75bcb0d582a5546ee1eeeeea" id="swift">Swift</h3>
+        <div id="Swift-0-ed505a0a75bcb0d582a5546ee1eeeeea" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.iconWidth = <span class="hljs-number">20</span>
+locationOverlay.iconHeight = <span class="hljs-number">20</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-a7ee8db53a02731890f8ba5cb6b5e0eb" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-a7ee8db53a02731890f8ba5cb6b5e0eb" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.iconWidth = 20;
+locationOverlay.iconHeight = 20;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC544;&#xC774;&#xCF58;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xC704;&#xC640; &#xAC19;&#xC774; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-set-icon-size.png" alt="&#xC544;&#xC774;&#xCF58;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xBCC0;&#xACBD;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <p><code>iconWidth</code> &#xB610;&#xB294; <code>iconHeight</code>&#xB97C; &#xAE30;&#xBCF8;&#xAC12;&#xC778; <code>NMF_LOCATION_OVERLAY_SIZE_AUTO</code>&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xACBD;&#xC6B0; &#xB108;&#xBE44; &#xB610;&#xB294; &#xB192;&#xC774;&#xAC00; &#xC774;&#xBBF8;&#xC9C0;&#xC758; &#xD06C;&#xAE30;&#xC5D0; &#xB9DE;&#xCDB0;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC544;&#xC774;&#xCF58;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.iconWidth = <span class="hljs-type">NMF_LOCATION_OVERLAY_SIZE_AUTO</span>
+<p><div id="3af4b063b13c54fd4bca0767c2193d6d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-35e364614c8cc5544cd10dd61d18117b" class="gbcg-selector gbcg-active" data-tab="Swift-0-35e364614c8cc5544cd10dd61d18117b" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-b30a0fc67d276e095bcd4f03b835ac11" class="gbcg-selector" data-tab="Objective-C-1-b30a0fc67d276e095bcd4f03b835ac11" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-35e364614c8cc5544cd10dd61d18117b" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.iconWidth = <span class="hljs-type">NMF_LOCATION_OVERLAY_SIZE_AUTO</span>
 locationOverlay.iconHeight = <span class="hljs-type">NMF_LOCATION_OVERLAY_SIZE_AUTO</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.iconWidth = NMF_LO<span class="hljs-built_in">CATION_OVERLAY_SIZE_AUTO</span>;
-locationOverlay.iconHeight = NMF_LO<span class="hljs-built_in">CATION_OVERLAY_SIZE_AUTO</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-35e364614c8cc5544cd10dd61d18117b" id="swift">Swift</h3>
+        <div id="Swift-0-35e364614c8cc5544cd10dd61d18117b" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.iconWidth = <span class="hljs-type">NMF_LOCATION_OVERLAY_SIZE_AUTO</span>
+locationOverlay.iconHeight = <span class="hljs-type">NMF_LOCATION_OVERLAY_SIZE_AUTO</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-b30a0fc67d276e095bcd4f03b835ac11" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-b30a0fc67d276e095bcd4f03b835ac11" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.iconWidth = NMF_LOCATION_OVERLAY_SIZE_AUTO;
+locationOverlay.iconHeight = NMF_LOCATION_OVERLAY_SIZE_AUTO;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <h3 id="&#xC575;&#xCEE4;">&#xC575;&#xCEE4;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29anchor" target="_blank"><code>anchor</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xAC00;&#xB9AC;&#xD0A4;&#xB294; &#xC9C0;&#xC810;&#xACFC; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC704;&#xCE58;&#xD55C; &#xC9C0;&#xC810;&#xC744; &#xC77C;&#xCE58;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC575;&#xCEE4;&#xB294; &#xC544;&#xC774;&#xCF58; &#xC774;&#xBBF8;&#xC9C0;&#xC5D0;&#xC11C; &#xAE30;&#xC900;&#xC774; &#xB418;&#xB294; &#xC9C0;&#xC810;&#xC744; &#xC758;&#xBBF8;&#xD558;&#xB294; &#xAC12;&#xC73C;&#xB85C;, &#xC544;&#xC774;&#xCF58;&#xC5D0;&#xC11C; &#xC575;&#xCEE4;&#xB85C; &#xC9C0;&#xC815;&#xB41C; &#xC9C0;&#xC810;&#xC774; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5D0; &#xC704;&#xCE58;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xC67C;&#xCABD; &#xC704;&#xAC00; <code>(0, 0)</code>, &#xC624;&#xB978;&#xCABD; &#xC544;&#xB798;&#xAC00; <code>(1, 1)</code>&#xC778; &#xBE44;&#xC728;&#xAC12;&#xC73C;&#xB85C; &#xD45C;&#xD604;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xC575;&#xCEE4; &#xC18D;&#xC131;&#xC740; &#xAE30;&#xBCF8; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xC744; &#xB54C; &#xC720;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xACFC; &#xAC19;&#xC774; &#xC911;&#xC559; &#xC544;&#xB798;&#xC5D0; &#xAF2C;&#xB9AC;&#xAC00; &#xB2EC;&#xB824; &#xC788;&#xB294; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74;, &#xC774;&#xBBF8;&#xC9C0;&#xC5D0;&#xC11C; &#xAC00;&#xB9AC;&#xD0A4;&#xB294; &#xC9C0;&#xC810;&#xC740; &#xC911;&#xC559; &#xC544;&#xB798;&#xC774;&#xC9C0;&#xB9CC; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC815;&#xC911;&#xC559;&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC9C0;&#xB3C4;&#xC5D0; &#xD45C;&#xC2DC;&#xB418;&#xBBC0;&#xB85C; &#xC774;&#xBBF8;&#xC9C0;&#xC640; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C; &#xAC04;&#xC5D0; &#xC774;&#xACA9;&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-no-anchor.png" alt="&#xC774;&#xBBF8;&#xC9C0;&#xC640; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC88C;&#xD45C;&#xAC04;&#xC5D0; &#xC774;&#xACA9;&#xC774; &#xBC1C;&#xC0DD;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <p>&#xC774; &#xACBD;&#xC6B0; &#xC575;&#xCEE4;&#xB97C; &#xC911;&#xC559; &#xC544;&#xB798;&#xB97C; &#xC758;&#xBBF8;&#xD558;&#xB294; <code>(0.5, 1)</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC774;&#xBBF8;&#xC9C0;&#xC640; &#xB9C8;&#xCEE4;&#xC758; &#xC88C;&#xD45C; &#xAC04; &#xC774;&#xACA9;&#xC744; &#xD574;&#xC18C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC575;&#xCEE4;&#xB97C; &#xC544;&#xC774;&#xCF58;&#xC758; &#xC911;&#xC559; &#xC544;&#xB798;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.anchor = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">1</span>)
+<p><div id="2074aa3bed0dffec50e8aedbf76cd9d5" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-94aaec3081dd7cae472dd6a4747b26f5" class="gbcg-selector gbcg-active" data-tab="Swift-0-94aaec3081dd7cae472dd6a4747b26f5" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-f24f140dff25dc1e0789e0f5d2236866" class="gbcg-selector" data-tab="Objective-C-1-f24f140dff25dc1e0789e0f5d2236866" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-94aaec3081dd7cae472dd6a4747b26f5" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.anchor = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">1</span>)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.anchor = <span class="hljs-built_in">CGPointMake</span>(<span class="hljs-number">0.5</span>f, <span class="hljs-number">1</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-94aaec3081dd7cae472dd6a4747b26f5" id="swift">Swift</h3>
+        <div id="Swift-0-94aaec3081dd7cae472dd6a4747b26f5" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.anchor = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">1</span>)
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-f24f140dff25dc1e0789e0f5d2236866" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-f24f140dff25dc1e0789e0f5d2236866" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.anchor = CGPointMake(0.5f, 1);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC575;&#xCEE4;&#xB97C; &#xC544;&#xC774;&#xCF58;&#xC758; &#xC911;&#xC559; &#xC544;&#xB798;&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-set-anchor.png" alt="&#xC575;&#xCEE4; &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h3 id="&#xBCF4;&#xC870;-&#xC544;&#xC774;&#xCF58;">&#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;</h3>
 <p>&#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC740; &#xC8FC; &#xC544;&#xC774;&#xCF58;&#xC758; &#xB4A4;&#xC5D0; &#xC704;&#xCE58;&#xD558;&#xB294; &#xCD94;&#xAC00;&#xC801;&#xC778; &#xC544;&#xC774;&#xCF58;&#xC785;&#xB2C8;&#xB2E4;. &#xC8FC; &#xC544;&#xC774;&#xCF58;&#xACFC; &#xBCC4;&#xAC1C;&#xB85C; &#xC774;&#xBBF8;&#xC9C0;, &#xD06C;&#xAE30;, &#xC575;&#xCEE4;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC740; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC9C0; &#xBABB;&#xD558;&#xBBC0;&#xB85C; &#xBD80;&#xAC00;&#xC801;&#xC778; &#xC815;&#xBCF4;&#xB97C; &#xD45C;&#xD604;&#xD558;&#xB294; &#xB370; &#xC801;&#xD569;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC758; &#xC18D;&#xC131;&#xBA85;&#xC740; &#xC8FC; &#xC544;&#xC774;&#xCF58;&#xACFC; &#xB300;&#xBD80;&#xBD84; &#xB3D9;&#xC77C;&#xD558;&#xB098; <a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29subIcon" target="_blank"><code>subIcon</code></a>, <a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29subIconWidth" target="_blank"><code>subIconWidth</code></a>, <a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29subIconHeight" target="_blank"><code>subIconHeight</code></a>, <a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29subAnchor" target="_blank"><code>subAnchor</code></a>&#xC640; &#xAC19;&#xC774; sub&#xB85C; &#xC2DC;&#xC791;&#xD569;&#xB2C8;&#xB2E4;. <code>subIcon</code>&#xC744; <code>nil</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC774; &#xB098;&#xD0C0;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.subIcon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_sub_icon&quot;</span>)
+<p><div id="3ade725ccad0180d081da014948ddce1" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-d54ccf88d9740638150a13c0d540c09e" class="gbcg-selector gbcg-active" data-tab="Swift-0-d54ccf88d9740638150a13c0d540c09e" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-4ccf3464cb6ab823eb6e10287c396343" class="gbcg-selector" data-tab="Objective-C-1-4ccf3464cb6ab823eb6e10287c396343" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-d54ccf88d9740638150a13c0d540c09e" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.subIcon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_sub_icon&quot;</span>)
 locationOverlay.subIconWidth = <span class="hljs-number">40</span>
 locationOverlay.subIconHeight = <span class="hljs-number">20</span>
 locationOverlay.subAnchor = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">1</span>)
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.subIcon = [NMFOverlayImage overlayImageWithName:<span class="hljs-string">@&quot;location_overlay_sub_icon&quot;</span>];
-locationOverlay.subIconWidth = <span class="hljs-number">40</span>;
-locationOverlay.subIconHeight = <span class="hljs-number">20</span>;
-locationOverlay.subAnchor = <span class="hljs-built_in">CGPointMake</span>(<span class="hljs-number">0.5</span>f, <span class="hljs-number">1</span>);
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-d54ccf88d9740638150a13c0d540c09e" id="swift">Swift</h3>
+        <div id="Swift-0-d54ccf88d9740638150a13c0d540c09e" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.subIcon = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;location_overlay_sub_icon&quot;</span>)
+locationOverlay.subIconWidth = <span class="hljs-number">40</span>
+locationOverlay.subIconHeight = <span class="hljs-number">20</span>
+locationOverlay.subAnchor = <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0.5</span>, y: <span class="hljs-number">1</span>)
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-4ccf3464cb6ab823eb6e10287c396343" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-4ccf3464cb6ab823eb6e10287c396343" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.subIcon = [NMFOverlayImage overlayImageWithName:@&quot;location_overlay_sub_icon&quot;];
+locationOverlay.subIconWidth = 40;
+locationOverlay.subIconHeight = 20;
+locationOverlay.subAnchor = CGPointMake(0.5f, 1);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-sub-icon.png" alt="&#xBCF4;&#xC870; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h2 id="&#xC6D0;">&#xC6D0;</h2>
@@ -589,45 +836,141 @@ locationOverlay.subAnchor = <span class="hljs-built_in">CGPointMake</span>(<span
 <h3 id="&#xD06C;&#xAE30;">&#xD06C;&#xAE30;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29circleRadius" target="_blank"><code>circleRadius</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC6D0;&#xC758; &#xBC18;&#xACBD;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xACBD;&#xC744; <code>0</code>&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC6D0;&#xC774; &#xB098;&#xD0C0;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xACBD;&#xC758; &#xB2E8;&#xC704;&#xB294; pt&#xC774;&#xBBC0;&#xB85C;, &#xC704;&#xCE58; &#xC815;&#xD655;&#xB3C4;&#xC640; &#xAC19;&#xC740; &#xC815;&#xBCF4;&#xB97C; &#xD45C;&#xD604;&#xD558;&#xACE0;&#xC790; &#xD560; &#xB54C;&#xB294; &#xC9C0;&#xB9AC;&#xC801;&#xC778; &#xD06C;&#xAE30;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC778; <a href="ref://../reference/Classes/NMFCircleOverlay.html" target="_blank"><code>NMFCircleOverlay</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xBC18;&#xC9C0;&#xB984;&#xC744; 50pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.circleRadius = <span class="hljs-number">50</span>
+<p><div id="1a3cc119699b46699bc1cef5f60c6eaf" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-52258ddeadc53b0e2cefc5ec7c376fb8" class="gbcg-selector gbcg-active" data-tab="Swift-0-52258ddeadc53b0e2cefc5ec7c376fb8" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-54b82d4e68b554382bca3eee6426dbb3" class="gbcg-selector" data-tab="Objective-C-1-54b82d4e68b554382bca3eee6426dbb3" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-52258ddeadc53b0e2cefc5ec7c376fb8" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.circleRadius = <span class="hljs-number">50</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.circleRadius = <span class="hljs-number">50</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-52258ddeadc53b0e2cefc5ec7c376fb8" id="swift">Swift</h3>
+        <div id="Swift-0-52258ddeadc53b0e2cefc5ec7c376fb8" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.circleRadius = <span class="hljs-number">50</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-54b82d4e68b554382bca3eee6426dbb3" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-54b82d4e68b554382bca3eee6426dbb3" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.circleRadius = 50;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xBC18;&#xC9C0;&#xB984;&#xC744; 50pt&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-circle.png" alt="&#xC6D0;&#xC758; &#xBC18;&#xACBD;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h3 id="&#xC0C9;&#xC0C1;">&#xC0C9;&#xC0C1;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29circleColor" target="_blank"><code>circleColor</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC6D0;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xC0C9;&#xC0C1;&#xC744; &#xD30C;&#xB780;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.circleColor = <span class="hljs-type">UIColor</span>.blue
+<p><div id="299645b6aaa8fbb444938d5708f22eac" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-a39a7dd954304d9cf5fe7b5c2a786edc" class="gbcg-selector gbcg-active" data-tab="Swift-0-a39a7dd954304d9cf5fe7b5c2a786edc" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-e12e0a3e64cd92ae2411977cadb3afb5" class="gbcg-selector" data-tab="Objective-C-1-e12e0a3e64cd92ae2411977cadb3afb5" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-a39a7dd954304d9cf5fe7b5c2a786edc" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.circleColor = <span class="hljs-type">UIColor</span>.blue
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.circleColor = <span class="hljs-built_in">UIColor</span>.blueColor;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-a39a7dd954304d9cf5fe7b5c2a786edc" id="swift">Swift</h3>
+        <div id="Swift-0-a39a7dd954304d9cf5fe7b5c2a786edc" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.circleColor = <span class="hljs-type">UIColor</span>.blue
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-e12e0a3e64cd92ae2411977cadb3afb5" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-e12e0a3e64cd92ae2411977cadb3afb5" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.circleColor = UIColor.blueColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xC0C9;&#xC0C1;&#xC744; &#xD30C;&#xB780;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-circle-color.png" alt="&#xC6D0;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h3 id="&#xD14C;&#xB450;&#xB9AC;">&#xD14C;&#xB450;&#xB9AC;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29circleOutlineWidth" target="_blank"><code>circleOutlineWidth</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC6D0;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB450;&#xAED8;&#xB97C; <code>0</code>&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xD14C;&#xB450;&#xB9AC;&#xAC00; &#xB098;&#xD0C0;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;&#xB97C; 10pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.circleOutlineWidth = <span class="hljs-number">10</span>
+<p><div id="3bbbfdc6ea501c96d61dde93c6a64a49" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-bc665668dc65b71db03458f3d484f5cf" class="gbcg-selector gbcg-active" data-tab="Swift-0-bc665668dc65b71db03458f3d484f5cf" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-a4a50118e28b66f93256deba64eefc30" class="gbcg-selector" data-tab="Objective-C-1-a4a50118e28b66f93256deba64eefc30" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-bc665668dc65b71db03458f3d484f5cf" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.circleOutlineWidth = <span class="hljs-number">10</span>
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.circleOutlineWidth = <span class="hljs-number">10</span>;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-bc665668dc65b71db03458f3d484f5cf" id="swift">Swift</h3>
+        <div id="Swift-0-bc665668dc65b71db03458f3d484f5cf" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.circleOutlineWidth = <span class="hljs-number">10</span>
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-a4a50118e28b66f93256deba64eefc30" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-a4a50118e28b66f93256deba64eefc30" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.circleOutlineWidth = 10;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;&#xB97C; 10pt&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-circle-outline.png" alt="&#xC6D0;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 <h3 id="&#xD14C;&#xB450;&#xB9AC;-&#xC0C9;&#xC0C1;">&#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;</h3>
 <p><a href="ref://../reference/Classes/NMFLocationOverlay.html#/c%3Aobjc%28cs%29NMFLocationOverlay%28py%29circleOutlineColor" target="_blank"><code>circleOutlineColor</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xC6D0;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>Swift</p>
-<pre><code class="lang-swift">locationOverlay.<span class="hljs-type">CircleOutlineColor</span> = <span class="hljs-type">UIColor</span>.green
+<p><div id="18cb6ac663e80fb351cdb1165fb588c2" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-Swift-0-8ce6256d78606433bed57f61b75bfa49" class="gbcg-selector gbcg-active" data-tab="Swift-0-8ce6256d78606433bed57f61b75bfa49" data-code-lang="Swift">Swift</a>
+    <a id="select-Objective-C-1-dfe928e8c4e0ef59b0fff1b9ba3b709f" class="gbcg-selector" data-tab="Objective-C-1-dfe928e8c4e0ef59b0fff1b9ba3b709f" data-code-lang="Objective-C">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="Swift-0-8ce6256d78606433bed57f61b75bfa49" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">locationOverlay.<span class="hljs-type">CircleOutlineColor</span> = <span class="hljs-type">UIColor</span>.green
 </code></pre>
-<p>Objective-C</p>
-<pre><code class="lang-objc">locationOverlay.circleOutlineColor = <span class="hljs-built_in">UIColor</span>.greenColor;
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname Swift-0-8ce6256d78606433bed57f61b75bfa49" id="swift">Swift</h3>
+        <div id="Swift-0-8ce6256d78606433bed57f61b75bfa49" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">locationOverlay.<span class="hljs-type">CircleOutlineColor</span> = <span class="hljs-type">UIColor</span>.green
 </code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname Objective-C-1-dfe928e8c4e0ef59b0fff1b9ba3b709f" id="objective-c">Objective-C</h3>
+        <div id="Objective-C-1-dfe928e8c4e0ef59b0fff1b9ba3b709f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">locationOverlay.circleOutlineColor = UIColor.greenColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 <p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC6D0; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/5-5-circle-outline-color.png" alt="&#xC6D0;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
 
@@ -673,7 +1016,7 @@ locationOverlay.subAnchor = <span class="hljs-built_in">CGPointMake</span>(<span
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"위치 오버레이","level":"2.5.5","depth":2,"next":{"title":"지상 오버레이","level":"2.5.6","depth":2,"path":"guide/5-6.md","ref":"guide/5-6.md","articles":[]},"previous":{"title":"셰이프","level":"2.5.4","depth":2,"path":"guide/5-4.md","ref":"guide/5-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/5-5.md","mtime":"2018-11-12T14:02:52.088Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-12T14:28:12.731Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"위치 오버레이","level":"2.5.5","depth":2,"next":{"title":"지상 오버레이","level":"2.5.6","depth":2,"path":"guide/5-6.md","ref":"guide/5-6.md","articles":[]},"previous":{"title":"셰이프","level":"2.5.4","depth":2,"path":"guide/5-4.md","ref":"guide/5-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"네이버 지도 iOS SDK","gitbook":"*"},"file":{"path":"guide/5-5.md","mtime":"2019-01-21T02:23:45.138Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-21T02:40:10.815Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -684,6 +1027,10 @@ locationOverlay.subAnchor = <span class="hljs-built_in">CGPointMake</span>(<span
     
         
         <script src="../gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codegroup/code.group.js"></script>
         
     
         
