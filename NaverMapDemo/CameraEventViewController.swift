@@ -17,7 +17,7 @@
 
 import UIKit
 import NMapsMap
-
+ 
 class CameraEventViewController: MapViewController {
     
     @IBOutlet weak var moveButton: UIButton!
@@ -33,6 +33,11 @@ class CameraEventViewController: MapViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let marker1 = NMFMarker(position: COORD_1)
+        marker1.mapView = mapView
+        let marker2 = NMFMarker(position: COORD_2)
+        marker2.mapView = mapView
     }
     
     // MARK:- MapView Delegate
