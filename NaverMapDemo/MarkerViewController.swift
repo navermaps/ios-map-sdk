@@ -30,7 +30,6 @@ class MarkerViewController: MapViewController {
         mapView.moveCamera(NMFCameraUpdate(params: param))
 
         let marker = NMFMarker(position: NMGLatLng(lat: 37.5666102, lng: 126.9783881))
-        marker.iconImage = NMF_MARKER_IMAGE_BLACK
         marker.mapView = mapView
         
         let markerWithCustomIcon = NMFMarker(position: NMGLatLng(lat: 37.57000, lng: 126.97618))
@@ -64,11 +63,5 @@ class MarkerViewController: MapViewController {
         markerWithSubCaption.subCaptionColor = UIColor.gray
         markerWithSubCaption.subCaptionText = "🇰🇷서브 캡션👩🏿‍🍳"
         markerWithSubCaption.mapView = mapView
-
-        let tintColorMarker = NMFMarker(position: NMGLatLng(lat: 37.56500, lng: 126.9783881))
-        tintColorMarker.iconImage = NMF_MARKER_IMAGE_BLACK
-        tintColorMarker.iconTintColor = UIColor.red
-        tintColorMarker.alpha = 0.5
-        tintColorMarker.mapView = mapView
     }
 }
