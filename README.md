@@ -26,7 +26,7 @@ pod install --repo-update
 
 - [개발 가이드](https://navermaps.github.io/ios-map-sdk/)
 - [API 레퍼런스](https://navermaps.github.io/ios-map-sdk/reference/)
-- [Changelog](https://github.com/navermaps/ios-map-sdk/wiki/Changelog)
+- [Changelog](https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md)
 
 ## License
 
