@@ -1,10 +1,35 @@
+# 3.3.0
+
+Release Date: 2019-04-08
+
+### 새로운 기능
+
+- 유형이 다른 오버레이간의 겹침 우선순위를 지정하는 기능 추가
+  - `NMFOverlay.globalZIndex`
+- 마커 아이콘에 색상을 덧입히는 기능 추가
+  - `NMFMarker.iconTintColor`
+- 현재 화면을 커버하는 타일 ID를 가져오는 기능 추가
+  - `NMFTileCoverHelper`
+
+### 개선
+
+- 심벌 렌더링 성능 개선
+- bitcode 적용
+- 내위치 버튼을 사용하지 않아도 positionMode 가 동작하도록 개선
+
+### 버그 수정
+
+- 빌딩 레이어 그룹(`NMF_LAYER_GROUP_BUILDING`)이 기본적으로 비활성화되어 있는 오류 수정
+- 특정 심벌 피킹시 간혹 크래시가 발생하는 오류 수정
+- 지도 SDK 사용시 `LocalizedString`이 동작하지않는 오류 수정
+
 # 3.2.1
 
 Release Date: 2019-02-22
 
 ### 개선
 
-- ​​지도 로딩 속도 및 데이터 사용량 개선
+- 지도 로딩 속도 및 데이터 사용량 개선
 
 ### 버그 수정
 
