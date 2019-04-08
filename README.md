@@ -5,9 +5,11 @@
 ### CocoaPods 구성
 
 - CocoaPods 인스톨이 필요합니다.
+- 대용량 파일을 받기위해 [git-lfs](https://git-lfs.github.com/) 설치가 필요합니다.
 
 ```ruby
 sudo gem install cocoapods
+brew install git-lfs  // homebrew 사용시 git-lfs 설치
 pod install --repo-update
 ```
 
