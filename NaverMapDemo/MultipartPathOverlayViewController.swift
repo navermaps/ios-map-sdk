@@ -22,7 +22,6 @@ class MultipartPathOverlayViewController: MapViewController {
 
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var progressLabel: UILabel!
-    var progressMultipartPath: NMFMultipartPath?
     
     let COORDS_1: [NMGLineString<NMGLatLng>] = [
         NMGLineString(points: [
@@ -183,6 +182,8 @@ class MultipartPathOverlayViewController: MapViewController {
         NMFPathColor(color: UIColor.darkGray, outlineColor: UIColor.white, passedColor: UIColor.darkGray, passedOutlineColor: UIColor.white)
     ]
     
+    var progressMultipartPath: NMFMultipartPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -206,6 +207,14 @@ class MultipartPathOverlayViewController: MapViewController {
         multipartPathWithPattern.mapView = naverMapView.mapView
     }
     
+    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+        if let multipartPathOverlay = progressMultipartPath {
+            let progress = NMFGeometryUtils.progress(with: multipartPathOverlay.coordParts, targetLatLng: latlng)
+            multipartPathOverlay.progress = progress
+            progressSlider.value = Float(progress)
+            progressLabel.text = "\(Int(progress * 100))%"
+        }
+    }
     
     // MARK: - IBAction
     

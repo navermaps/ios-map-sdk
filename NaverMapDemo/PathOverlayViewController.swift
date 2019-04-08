@@ -151,6 +151,7 @@ class PathOverlayViewController: MapViewController {
                    NMGLatLng(lat: 37.5589081, lng: 126.9786365),
                    NMGLatLng(lat: 37.5587088, lng: 126.9784125),
                    NMGLatLng(lat: 37.5586699, lng: 126.9783698)]
+    
     var progressPathOverlay: NMFPath?
 
     override func viewDidLoad() {
@@ -177,6 +178,15 @@ class PathOverlayViewController: MapViewController {
         pathOverlayWithPattern.patternIcon = NMFOverlayImage(image: #imageLiteral(resourceName: "route_path_arrow"))
         pathOverlayWithPattern.patternInterval = 10
         pathOverlayWithPattern.mapView = mapView
+    }
+    
+    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+        if let pathOverlay = progressPathOverlay {
+            let progress = NMFGeometryUtils.progress(with: pathOverlay.points, targetLatLng: latlng)
+            pathOverlay.progress = Double(progress)
+            progressSlider.value = Float(progress)
+            progressLabel.text = "\(Int(progress * 100))%"
+        }
     }
     
     // MARK: - IBAction

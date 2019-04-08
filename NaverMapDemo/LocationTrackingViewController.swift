@@ -81,5 +81,9 @@ class LocationTrackingViewController: MapViewController {
             present(alertController, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func respondToShowSwitch(_ sender: UISwitch) {
+        naverMapView.showLocationButton = sender.isOn
+    }
 
 }
