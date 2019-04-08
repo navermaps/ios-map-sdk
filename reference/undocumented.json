@@ -624,6 +624,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/garoad/Documents/workspace/vectormap_app/ios/src/NMFUtils.h",
+      "line": 6,
+      "symbol": "ScreenScaleFactor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/garoad/Documents/workspace/vectormap_app/ios/src/NMFUtils.h",
+      "line": 16,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/garoad/Documents/workspace/vectormap_app/ios/src/NMapsMap.h",
       "line": 6,
       "symbol": "NaverMapFrameworkVersionNumber",

@@ -1,0 +1,1668 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>경로선과 화살표 · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="5-6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">마이그레이션 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="migration.html">
+            
+                <a href="migration.html">
+            
+                    
+                    2.x → 3.x 마이그레이션 가이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">개발 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    상호작용
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="ref://../reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="ref://../guide-en/">
+            
+                    
+                    English(영어)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >경로선과 화살표</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xACBD;&#xB85C;&#xC120;&#xACFC;-&#xD654;&#xC0B4;&#xD45C;">&#xACBD;&#xB85C;&#xC120;&#xACFC; &#xD654;&#xC0B4;&#xD45C;</h1>
+<p>&#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; &#xACBD;&#xB85C;&#xC120;, &#xD654;&#xC0B4;&#xD45C; &#xB4F1; &#xB0B4;&#xBE44;&#xAC8C;&#xC774;&#xC158; &#xC11C;&#xBE44;&#xC2A4;&#xC5D0; &#xD2B9;&#xD654;&#xB41C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xACBD;&#xB85C;&#xC120;-&#xC624;&#xBC84;&#xB808;&#xC774;">&#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;</h2>
+<p><a href="ref://../reference/Classes/NMFPath.html" target="_blank"><code>NMFPath</code></a>&#xB294; &#xACBD;&#xB85C;&#xC120;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xB370; &#xD2B9;&#xD654;&#xB41C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC785;&#xB2C8;&#xB2E4;. &#xD558;&#xB098;&#xC758; &#xC120;&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;&#xB294; &#xCE21;&#xBA74;&#xC5D0;&#xC11C;&#xB294; <a href="ref://../reference/Classes/NMFPolylineOverlay.html" target="_blank"><code>PolylineOverlay</code></a>&#xC640; &#xC720;&#xC0AC;&#xD558;&#xB098;, &#xACBD;&#xB85C;&#xC120;&#xC5D0; &#xD2B9;&#xD654;&#xB41C; &#xAE30;&#xB2A5;&#xC744; &#xAC16;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD14C;&#xB450;&#xB9AC;&#xC640; &#xD328;&#xD134; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC801;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70; &#xC9C0;&#xB3C4;&#xB97C; &#xAE30;&#xC6B8;&#xC774;&#xB354;&#xB77C;&#xB3C4; &#xB450;&#xAED8;&#xAC00; &#xC77C;&#xC815;&#xD558;&#xAC8C; &#xC720;&#xC9C0;&#xB429;&#xB2C8;&#xB2E4;. &#xD14C;&#xB450;&#xB9AC;&#xC640; &#xD328;&#xD134;&#xC740; &#xC790;&#xAE30;&#xAD50;&#xCC28;(self-intersection)&#xAC00; &#xC77C;&#xC5B4;&#xB098;&#xB354;&#xB77C;&#xB3C4; &#xC790;&#xC5F0;&#xC2A4;&#xB7FD;&#xAC8C; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xC9C4;&#xCC99;&#xB960;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70;, &#xC9C0;&#xB098;&#xC624;&#xAC70;&#xB098; &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC5D0; &#xAC01;&#xAC01; &#xB2E4;&#xB978; &#xC0C9;&#xC0C1;&#xACFC; &#xD14C;&#xB450;&#xB9AC;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCD94;&#xAC00;-&#xBC0F;-&#xC0AD;&#xC81C;">&#xCD94;&#xAC00; &#xBC0F; &#xC0AD;&#xC81C;</h3>
+<p>&#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xD074;&#xB798;&#xC2A4; &#xAC1D;&#xCCB4;&#xCC98;&#xB7FC; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; <a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29points" target="_blank"><code>points</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xD6C4; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29mapView" target="_blank"><code>mapView</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;. &#xB2E8;, <code>mapView</code>&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xAE30; &#xC804;&#xC5D0;&#xB294; &#xBC18;&#xB4DC;&#xC2DC; <code>points</code>&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD558;&#xBA70;, &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="8606481796568085d0f0f9e340bdceb4" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-0c4e965425c67f135d73266a1a0cd0ea" class="gbcg-selector gbcg-active" data-tab="0-0c4e965425c67f135d73266a1a0cd0ea" data-tab-category="undefined">Swift</a>
+    <a id="select-1-82304cf68d071ddccc8e94b40c732814" class="gbcg-selector" data-tab="1-82304cf68d071ddccc8e94b40c732814" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-0c4e965425c67f135d73266a1a0cd0ea" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> path = <span class="hljs-type">NMFPath</span>()
+path.points = [<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)]
+path.mapView = mapView
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-0c4e965425c67f135d73266a1a0cd0ea" id="swift">Swift</h3>
+        <div id="0-0c4e965425c67f135d73266a1a0cd0ea" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> path = <span class="hljs-type">NMFPath</span>()
+path.points = [<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)]
+path.mapView = mapView
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-82304cf68d071ddccc8e94b40c732814" id="objective-c">Objective-C</h3>
+        <div id="1-82304cf68d071ddccc8e94b40c732814" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFPath *path = [NMFPath new];
+path.points = @[
+                NMGLatLngMake(37.57152, 126.97714),
+                NMGLatLngMake(37.56607, 126.98268),
+                NMGLatLngMake(37.56445, 126.97707),
+                NMGLatLngMake(37.55855, 126.97822)
+                ];
+path.mapView = self.mapView;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-path.png" alt="&#xC9C0;&#xB3C4;&#xC5D0; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xCD94;&#xAC00;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<p><code>mapView</code>&#xC5D0; <code>nil</code>&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC0AC;&#xB77C;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="a8d464af57a919597bec83e49013d320" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-6f5f3bc8de824b71f2a7fe518d530389" class="gbcg-selector gbcg-active" data-tab="0-6f5f3bc8de824b71f2a7fe518d530389" data-tab-category="undefined">Swift</a>
+    <a id="select-1-01e4604762f82f754faf39a5c784d7d3" class="gbcg-selector" data-tab="1-01e4604762f82f754faf39a5c784d7d3" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-6f5f3bc8de824b71f2a7fe518d530389" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-6f5f3bc8de824b71f2a7fe518d530389" id="swift">Swift</h3>
+        <div id="0-6f5f3bc8de824b71f2a7fe518d530389" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-01e4604762f82f754faf39a5c784d7d3" id="objective-c">Objective-C</h3>
+        <div id="1-01e4604762f82f754faf39a5c784d7d3" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.mapView = nil;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC88C;&#xD45C;&#xC5F4;">&#xC88C;&#xD45C;&#xC5F4;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29points" target="_blank"><code>points</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC88C;&#xD45C;&#xC5F4;&#xC740; &#xD544;&#xC218;&#xC801;&#xC778; &#xC18D;&#xC131;&#xC73C;&#xB85C;, &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xC88C;&#xD45C;&#xC5F4;&#xC758; &#xD06C;&#xAE30;&#xAC00; <code>2</code> &#xBBF8;&#xB9CC;&#xC774;&#xAC70;&#xB098; <code>nil</code>&#xC778; &#xC6D0;&#xC18C;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.
+<div id="34ce084e0946b698acc7cc56b0bb2486" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-010ddd12de24899c27c8882920f25265" class="gbcg-selector gbcg-active" data-tab="0-010ddd12de24899c27c8882920f25265" data-tab-category="undefined">Swift</a>
+    <a id="select-1-c4cf8190cbea2e4b2f1a591cdfb7e135" class="gbcg-selector" data-tab="1-c4cf8190cbea2e4b2f1a591cdfb7e135" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-010ddd12de24899c27c8882920f25265" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.points = [<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)]
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-010ddd12de24899c27c8882920f25265" id="swift">Swift</h3>
+        <div id="0-010ddd12de24899c27c8882920f25265" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.points = [<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+               <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)]
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-c4cf8190cbea2e4b2f1a591cdfb7e135" id="objective-c">Objective-C</h3>
+        <div id="1-c4cf8190cbea2e4b2f1a591cdfb7e135" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.points = @[
+                NMGLatLngMake(37.57152, 126.97714),
+                NMGLatLngMake(37.56607, 126.98268),
+                NMGLatLngMake(37.56445, 126.97707),
+                NMGLatLngMake(37.55855, 126.97822)
+                ];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><code>points</code> &#xC18D;&#xC131;&#xC73C;&#xB85C; &#xC5BB;&#xC5B4;&#xC628; &#xC88C;&#xD45C;&#xC5F4; &#xAC1D;&#xCCB4;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBCC0;&#xACBD; &#xC0AC;&#xD56D;&#xC774; &#xBC18;&#xC601;&#xB418;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xC601;&#xD558;&#xB824;&#xBA74; &#xC88C;&#xD45C;&#xC5F4; &#xAC1D;&#xCCB4;&#xB97C; &#xB2E4;&#xC2DC; <code>points</code> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5F4; &#xC911; &#xC77C;&#xBD80;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="95dda60503af7fa3e3c2cf05c2d835fe" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-d0a0b06a30575683358092c932938ca9" class="gbcg-selector gbcg-active" data-tab="0-d0a0b06a30575683358092c932938ca9" data-tab-category="undefined">Swift</a>
+    <a id="select-1-294bd366f18d69a86aa982aa91ff45de" class="gbcg-selector" data-tab="1-294bd366f18d69a86aa982aa91ff45de" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-d0a0b06a30575683358092c932938ca9" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coords = path.points;
+coords.insert(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>), at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+path.points = coords <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-d0a0b06a30575683358092c932938ca9" id="swift">Swift</h3>
+        <div id="0-d0a0b06a30575683358092c932938ca9" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coords = path.points;
+coords.insert(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>), at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+path.points = coords <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-294bd366f18d69a86aa982aa91ff45de" id="objective-c">Objective-C</h3>
+        <div id="1-294bd366f18d69a86aa982aa91ff45de" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">var coords = path.points;
+coords.insert(NMGLatLng(lat: 37.5734571, lng: 126.975335), at: 0) // &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;
+path.points = coords // &#xBC18;&#xC601;&#xB428;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB450;&#xAED8;">&#xB450;&#xAED8;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29width" target="_blank"><code>width</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xB450;&#xAED8;&#xB97C; 15pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="53643eb242462a398f33ec211b1fefb7" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-398d4f6c948c1b5cbc689acad2131418" class="gbcg-selector gbcg-active" data-tab="0-398d4f6c948c1b5cbc689acad2131418" data-tab-category="undefined">Swift</a>
+    <a id="select-1-42208632b831455a0a883a3a70dd7859" class="gbcg-selector" data-tab="1-42208632b831455a0a883a3a70dd7859" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-398d4f6c948c1b5cbc689acad2131418" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.width = <span class="hljs-number">15</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-398d4f6c948c1b5cbc689acad2131418" id="swift">Swift</h3>
+        <div id="0-398d4f6c948c1b5cbc689acad2131418" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.width = <span class="hljs-number">15</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-42208632b831455a0a883a3a70dd7859" id="objective-c">Objective-C</h3>
+        <div id="1-42208632b831455a0a883a3a70dd7859" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.width = 15;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xB450;&#xAED8;&#xB97C; 15pt&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-path-width.png" alt="&#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xD14C;&#xB450;&#xB9AC;-&#xB450;&#xAED8;">&#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29outlineWidth" target="_blank"><code>outlineWidth</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xD14C;&#xB450;&#xB9AC;&#xC758; &#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>0</code>&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xD14C;&#xB450;&#xB9AC;&#xAC00; &#xADF8;&#xB824;&#xC9C0;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;&#xB97C; 2.5pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="3b025cee8f9f38449c741f5ea759e98e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-e011223b4cee2fb694650b460f726e41" class="gbcg-selector gbcg-active" data-tab="0-e011223b4cee2fb694650b460f726e41" data-tab-category="undefined">Swift</a>
+    <a id="select-1-adba00265fc35249d6f0c38d0a0e7c63" class="gbcg-selector" data-tab="1-adba00265fc35249d6f0c38d0a0e7c63" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-e011223b4cee2fb694650b460f726e41" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.outlineWidth = <span class="hljs-number">2.5</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-e011223b4cee2fb694650b460f726e41" id="swift">Swift</h3>
+        <div id="0-e011223b4cee2fb694650b460f726e41" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.outlineWidth = <span class="hljs-number">2.5</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-adba00265fc35249d6f0c38d0a0e7c63" id="objective-c">Objective-C</h3>
+        <div id="1-adba00265fc35249d6f0c38d0a0e7c63" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.outlineWidth = 2.5;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xD328;&#xD134;">&#xD328;&#xD134;</h3>
+<p>&#xD328;&#xD134;&#xC740; &#xACBD;&#xB85C;&#xC120;&#xC5D0; &#xC77C;&#xC815; &#xAC04;&#xACA9;&#xC73C;&#xB85C; &#xB418;&#xD480;&#xC774;&#xB418;&#xC5B4; &#xB098;&#xD0C0;&#xB098;&#xB294; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xACBD;&#xB85C;&#xC758; &#xC9C4;&#xD589; &#xBC29;&#xD5A5; &#xB4F1;&#xC744; &#xD45C;&#xD604;&#xD558;&#xB294; &#xC6A9;&#xB3C4;&#xB85C; &#xC720;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29patternIcon" target="_blank"><code>patternIcon</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xD328;&#xD134; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>nil</code>&#xC77C; &#xACBD;&#xC6B0; &#xD328;&#xD134;&#xC774; &#xADF8;&#xB824;&#xC9C0;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD328;&#xD134; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; <a href="ref://../reference/Classes/NMFOverlayImage.html" target="_blank"><code>NMFOverlayImage</code></a> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>NMFOverlayImage</code> &#xD074;&#xB798;&#xC2A4;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC774;&#xBBF8;&#xC9C0; &#xC5D0;&#xC14B;, <code>UIImage</code>, <code>NSBundle</code> &#xB4F1;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29patternInterval" target="_blank"><code>patternInterval</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD328;&#xD134; &#xC774;&#xBBF8;&#xC9C0; &#xAC04; &#xAC04;&#xACA9;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>0</code>&#xC77C; &#xACBD;&#xC6B0; &#xD328;&#xD134;&#xC774; &#xADF8;&#xB824;&#xC9C0;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xD328;&#xD134; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xACE0;, &#xADF8; &#xAC04;&#xACA9;&#xC744; 5pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="6acced7cc1169b04031987e4a1ef085b" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1fc07b1a1c8b4e263146408218753fac" class="gbcg-selector gbcg-active" data-tab="0-1fc07b1a1c8b4e263146408218753fac" data-tab-category="undefined">Swift</a>
+    <a id="select-1-1e963fa39b1f5c1cf10523c6d6834d1a" class="gbcg-selector" data-tab="1-1e963fa39b1f5c1cf10523c6d6834d1a" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1fc07b1a1c8b4e263146408218753fac" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.patternImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;path_pattern&quot;</span>)
+path.patternInterval = <span class="hljs-number">5</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1fc07b1a1c8b4e263146408218753fac" id="swift">Swift</h3>
+        <div id="0-1fc07b1a1c8b4e263146408218753fac" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.patternImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;path_pattern&quot;</span>)
+path.patternInterval = <span class="hljs-number">5</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-1e963fa39b1f5c1cf10523c6d6834d1a" id="objective-c">Objective-C</h3>
+        <div id="1-1e963fa39b1f5c1cf10523c6d6834d1a" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.patternImage = [NMFOverlayImage overlayImageWithName:@&quot;path_pattern&quot;];
+path.patternInterval = 5;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xD328;&#xD134;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-path-pattern.png" alt="&#xD328;&#xD134;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xC9C4;&#xCC99;&#xB960;">&#xC9C4;&#xCC99;&#xB960;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29progress" target="_blank"><code>progress</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC9C4;&#xCC99;&#xB960;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC12;&#xC758; &#xBC94;&#xC704;&#xB294; <code>0</code>~<code>1</code>&#xC774;&#xBA70;, <code>0</code>&#xC77C; &#xACBD;&#xC6B0; &#xCD9C;&#xBC1C; &#xC9C0;&#xC810;, <code>1</code>&#xC77C; &#xACBD;&#xC6B0; &#xB3C4;&#xCC29; &#xC9C0;&#xC810;&#xC5D0; &#xB3C4;&#xB2EC;&#xD588;&#xC74C;&#xC744; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB098;&#xC628; &#xAD6C;&#xAC04;&#xACFC; &#xC9C0;&#xB098;&#xAC08; &#xAD6C;&#xAC04;&#xC5D0; &#xB300;&#xD55C; &#xC0C9;&#xC0C1;&#xC744; &#xB2EC;&#xB9AC; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC9C4;&#xCC99;&#xB960;&#xC5D0; &#xB530;&#xB77C; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC9C4;&#xCC99;&#xB960;&#xC744; 50%&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="b435d48a868c152c70107878b82933ff" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-6920ad7ef4b7a28587a91837f90a1598" class="gbcg-selector gbcg-active" data-tab="0-6920ad7ef4b7a28587a91837f90a1598" data-tab-category="undefined">Swift</a>
+    <a id="select-1-0fcb639c43418250350e41fac54485b6" class="gbcg-selector" data-tab="1-0fcb639c43418250350e41fac54485b6" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-6920ad7ef4b7a28587a91837f90a1598" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.progress = <span class="hljs-number">0.5</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-6920ad7ef4b7a28587a91837f90a1598" id="swift">Swift</h3>
+        <div id="0-6920ad7ef4b7a28587a91837f90a1598" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.progress = <span class="hljs-number">0.5</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-0fcb639c43418250350e41fac54485b6" id="objective-c">Objective-C</h3>
+        <div id="1-0fcb639c43418250350e41fac54485b6" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.progress = 0.5;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC0C9;&#xC0C1;">&#xC0C9;&#xC0C1;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29color" target="_blank"><code>color</code></a>&#xC640; <a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29passedColor" target="_blank"><code>passedColor</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xAC01;&#xAC01; &#xC9C0;&#xB098;&#xAC08;, &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C;, &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="37f8ac2db5ff4617bb0bb5a5712f7b12" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-dbe15ac413b7efaf023d16b4715a1225" class="gbcg-selector gbcg-active" data-tab="0-dbe15ac413b7efaf023d16b4715a1225" data-tab-category="undefined">Swift</a>
+    <a id="select-1-56614f7f58bf1b6c8f1b9c0eae684be5" class="gbcg-selector" data-tab="1-56614f7f58bf1b6c8f1b9c0eae684be5" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-dbe15ac413b7efaf023d16b4715a1225" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.color = <span class="hljs-type">UIColor</span>.green
+path.passedColor = <span class="hljs-type">UIColor</span>.gray
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-dbe15ac413b7efaf023d16b4715a1225" id="swift">Swift</h3>
+        <div id="0-dbe15ac413b7efaf023d16b4715a1225" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.color = <span class="hljs-type">UIColor</span>.green
+path.passedColor = <span class="hljs-type">UIColor</span>.gray
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-56614f7f58bf1b6c8f1b9c0eae684be5" id="objective-c">Objective-C</h3>
+        <div id="1-56614f7f58bf1b6c8f1b9c0eae684be5" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.color = UIColor.greenColor;
+path.passedColor = UIColor.grayColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC704;&#xC640; &#xAC19;&#xC774; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-path-color.png" alt="&#xACBD;&#xB85C;&#xC120;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xD14C;&#xB450;&#xB9AC;-&#xC0C9;&#xC0C1;">&#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;</h3>
+<p><a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29outlineColor" target="_blank"><code>outlineColor</code></a>&#xC640; <a href="ref://../reference/Classes/NMFPath.html#/c%3Aobjc%28cs%29NMFPath%28py%29passedOutlineColor" target="_blank"><code>passedOutlineColor</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xAC01;&#xAC01; &#xC9C0;&#xB098;&#xAC08;, &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xD770;&#xC0C9;&#xC73C;&#xB85C;, &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="7c261a7bcd701e9df9d7a87df49d061e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-7b71c6751fb36e49f490bb7d14d8c905" class="gbcg-selector gbcg-active" data-tab="0-7b71c6751fb36e49f490bb7d14d8c905" data-tab-category="undefined">Swift</a>
+    <a id="select-1-6b57e45fde17d5db7bb1eea7ab23d5c1" class="gbcg-selector" data-tab="1-6b57e45fde17d5db7bb1eea7ab23d5c1" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-7b71c6751fb36e49f490bb7d14d8c905" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">path.outlineColor = <span class="hljs-type">UIColor</span>.white
+path.passedOutlineColor = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-7b71c6751fb36e49f490bb7d14d8c905" id="swift">Swift</h3>
+        <div id="0-7b71c6751fb36e49f490bb7d14d8c905" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">path.outlineColor = <span class="hljs-type">UIColor</span>.white
+path.passedOutlineColor = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-6b57e45fde17d5db7bb1eea7ab23d5c1" id="objective-c">Objective-C</h3>
+        <div id="1-6b57e45fde17d5db7bb1eea7ab23d5c1" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">path.outlineColor = UIColor.whiteColor;
+path.passedOutlineColor = UIColor.greenColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xACBD;&#xB85C;&#xC120; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC704;&#xC640; &#xAC19;&#xC774; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-path-linecolor.png" alt="&#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h2 id="&#xBA40;&#xD2F0;&#xD30C;&#xD2B8;-&#xACBD;&#xB85C;&#xC120;-&#xC624;&#xBC84;&#xB808;&#xC774;">&#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;</h2>
+<p><a href="ref://../reference/Classes/NMFMultipartPath.html" target="_blank"><code>NMFMultipartPath</code></a>&#xB294; &#xACBD;&#xB85C;&#xC120;&#xC744; &#xC5EC;&#xB7EC; &#xD30C;&#xD2B8;&#xB85C; &#xB098;&#xB204;&#xC5B4; &#xAC01;&#xAE30; &#xB2E4;&#xB978; &#xC0C9;&#xC0C1;&#xC744; &#xBD80;&#xC5EC;&#xD560; &#xC218; &#xC788;&#xB294; &#xD2B9;&#xC218;&#xD55C; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC785;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC591;&#xD55C; &#xC0C9;&#xC0C1;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xB41C; &#xACBD;&#xB85C;&#xC120;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xACE0;&#xC790; &#xD560; &#xACBD;&#xC6B0; &#xC5EC;&#xB7EC; &#xAC1C;&#xC758; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xBCF4;&#xB2E4; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC27D;&#xACE0; &#xD6A8;&#xC728;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCD94;&#xAC00;-&#xBC0F;-&#xC0AD;&#xC81C;">&#xCD94;&#xAC00; &#xBC0F; &#xC0AD;&#xC81C;</h3>
+<p>&#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xD074;&#xB798;&#xC2A4; &#xAC1D;&#xCCB4;&#xCC98;&#xB7FC; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; <a href="ref://../reference/Classes/NMFMultipartPath.html#/c%3Aobjc%28cs%29NMFMultipartPath%28py%29coordParts" target="_blank"><code>coordParts</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC744;, <a href="ref://../reference/Classes/NMFMultipartPath.html#/c%3Aobjc%28cs%29NMFMultipartPath%28py%29colorParts" target="_blank"><code>colorParts</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xD6C4; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29mapView" target="_blank"><code>mapView</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;. &#xB2E8;, <code>mapView</code>&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xAE30; &#xC804;&#xC5D0;&#xB294; &#xBC18;&#xB4DC;&#xC2DC; <code>coordParts</code>&#xC640; <code>colorParts</code>&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD558;&#xBA70;, &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xAC70;&#xB098; &#xB450; &#xD30C;&#xD2B8;&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xB2E4;&#xB97C; &#xACBD;&#xC6B0; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="87d5a78557db78b056bfaeb126687c49" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-746afe6a72733a9cc929f2fac618925f" class="gbcg-selector gbcg-active" data-tab="0-746afe6a72733a9cc929f2fac618925f" data-tab-category="undefined">Swift</a>
+    <a id="select-1-af11a6f2d374cba6a17805eaa07c008c" class="gbcg-selector" data-tab="1-af11a6f2d374cba6a17805eaa07c008c" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-746afe6a72733a9cc929f2fac618925f" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> multipartPath = <span class="hljs-type">NMFMultipartPath</span>()
+multipartPath.coordParts = [
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5744287</span>, lng: <span class="hljs-number">126.982625</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>)
+        ])
+    ,
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+        ])
+]
+multipartPath.colorParts = [
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.red, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.gray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray),
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.green, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.darkGray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray)
+]
+multipartPath.mapView = mapView
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-746afe6a72733a9cc929f2fac618925f" id="swift">Swift</h3>
+        <div id="0-746afe6a72733a9cc929f2fac618925f" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> multipartPath = <span class="hljs-type">NMFMultipartPath</span>()
+multipartPath.coordParts = [
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5744287</span>, lng: <span class="hljs-number">126.982625</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>)
+        ])
+    ,
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+        ])
+]
+multipartPath.colorParts = [
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.red, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.gray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray),
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.green, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.darkGray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray)
+]
+multipartPath.mapView = mapView
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-af11a6f2d374cba6a17805eaa07c008c" id="objective-c">Objective-C</h3>
+        <div id="1-af11a6f2d374cba6a17805eaa07c008c" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFMultipartPath *multipartPath = [NMFMultipartPath new];
+multipartPath.coordParts = @[
+    [NMGLineString lineStringWithPoints:@[
+        NMGLatLngMake(37.5744287, 126.982625),
+        NMGLatLngMake(37.57152, 126.97714),
+        NMGLatLngMake(37.56607, 126.98268)
+        ]],
+    [NMGLineString lineStringWithPoints:@[
+        NMGLatLngMake(37.56607, 126.98268),
+        NMGLatLngMake(37.56445, 126.97707),
+        NMGLatLngMake(37.55855, 126.97822)
+        ]]
+];
+multipartPath.colorParts = @[
+    [NMFPathColor pathColorWithColor:UIColor.redColor outlineColor:UIColor.whiteColor passedColor:UIColor.grayColor passedOutlineColor:UIColor.lightGrayColor],
+    [NMFPathColor pathColorWithColor:UIColor.greenColor outlineColor:UIColor.whiteColor passedColor:UIColor.darkGrayColor passedOutlineColor:UIColor.lightGrayColor]
+];
+multipartPath.mapView = self.mapView;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120;&#xC744; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-multipart.png" alt="&#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120;&#xC744; &#xCD94;&#xAC00;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="7d74356ec23cd870e9aba4e3e7d73862" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-94cf8dab4a875029207d09e2952509fd" class="gbcg-selector gbcg-active" data-tab="0-94cf8dab4a875029207d09e2952509fd" data-tab-category="undefined">Swift</a>
+    <a id="select-1-78325bc27b3dc8371a54ad5a6a73e318" class="gbcg-selector" data-tab="1-78325bc27b3dc8371a54ad5a6a73e318" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-94cf8dab4a875029207d09e2952509fd" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">multipartPath.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-94cf8dab4a875029207d09e2952509fd" id="swift">Swift</h3>
+        <div id="0-94cf8dab4a875029207d09e2952509fd" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">multipartPath.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-78325bc27b3dc8371a54ad5a6a73e318" id="objective-c">Objective-C</h3>
+        <div id="1-78325bc27b3dc8371a54ad5a6a73e318" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">multipartPath.mapView = nil;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC88C;&#xD45C;&#xC5F4;-&#xD30C;&#xD2B8;">&#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;</h3>
+<p><a href="ref://../reference/Classes/NMFMultipartPath.html#/c%3Aobjc%28cs%29NMFMultipartPath%28py%29coordParts" target="_blank"><code>coordParts</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC740; &#xD544;&#xC218;&#xC801;&#xC778; &#xC18D;&#xC131;&#xC73C;&#xB85C;, &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC740; &#xC88C;&#xD45C;&#xC5F4;&#xC5D0; &#xB300;&#xD55C; &#xB9AC;&#xC2A4;&#xD2B8;, &#xC989; &#xC88C;&#xD45C;&#xC5D0; &#xB300;&#xD55C; 2&#xCC28;&#xC6D0; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xD45C;&#xD604;&#xB429;&#xB2C8;&#xB2E4;. &#xBAA9;&#xB85D;&#xC5D0;&#xB294; &#xCD5C;&#xC18C;&#xD55C; &#xD558;&#xB098;&#xC758; &#xD30C;&#xD2B8;&#xAC00; &#xC874;&#xC7AC;&#xD574;&#xC57C; &#xD558;&#xBA70; &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xAC01; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC758; &#xD06C;&#xAE30;&#xAC00; <code>2</code> &#xBBF8;&#xB9CC;&#xC774;&#xAC70;&#xB098; <code>nil</code>&#xC778; &#xC6D0;&#xC18C;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xB450; &#xAC1C;&#xC758; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="ff9621114a0e1409cce0aae5c41a310c" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-32a731613cfcad50f5aa5e2b2415cb21" class="gbcg-selector gbcg-active" data-tab="0-32a731613cfcad50f5aa5e2b2415cb21" data-tab-category="undefined">Swift</a>
+    <a id="select-1-940006d7c9cf7802af9a674d4471041d" class="gbcg-selector" data-tab="1-940006d7c9cf7802af9a674d4471041d" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-32a731613cfcad50f5aa5e2b2415cb21" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">multipartPath.coordParts = [
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5744287</span>, lng: <span class="hljs-number">126.982625</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>)
+        ])
+    ,
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+        ])
+]
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-32a731613cfcad50f5aa5e2b2415cb21" id="swift">Swift</h3>
+        <div id="0-32a731613cfcad50f5aa5e2b2415cb21" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">multipartPath.coordParts = [
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5744287</span>, lng: <span class="hljs-number">126.982625</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>)
+        ])
+    ,
+    <span class="hljs-type">NMGLineString</span>(points: [
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+        <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+        ])
+]
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-940006d7c9cf7802af9a674d4471041d" id="objective-c">Objective-C</h3>
+        <div id="1-940006d7c9cf7802af9a674d4471041d" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">multipartPath.coordParts = @[
+    [NMGLineString lineStringWithPoints:@[
+        NMGLatLngMake(37.5744287, 126.982625),
+        NMGLatLngMake(37.57152, 126.97714),
+        NMGLatLngMake(37.56607, 126.98268)
+        ]],
+    [NMGLineString lineStringWithPoints:@[
+        NMGLatLngMake(37.56607, 126.98268),
+        NMGLatLngMake(37.56445, 126.97707),
+        NMGLatLngMake(37.55855, 126.97822)
+        ]]
+];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><code>coordParts</code> &#xC18D;&#xC131;&#xC73C;&#xB85C; &#xC5BB;&#xC5B4;&#xC628; &#xAC1D;&#xCCB4;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBCC0;&#xACBD; &#xC0AC;&#xD56D;&#xC774; &#xBC18;&#xC601;&#xB418;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xC601;&#xD558;&#xB824;&#xBA74; &#xAC1D;&#xCCB4;&#xB97C; &#xB2E4;&#xC2DC; <code>coords</code> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5F4; &#xC911; &#xC77C;&#xBD80;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="def91b6d3498301e5a2d0e5c3f46a649" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-525386f7dd66aa5749d3c3616d7474fc" class="gbcg-selector gbcg-active" data-tab="0-525386f7dd66aa5749d3c3616d7474fc" data-tab-category="undefined">Swift</a>
+    <a id="select-1-177ac2baf3ff6aecfc3b1416149f942f" class="gbcg-selector" data-tab="1-177ac2baf3ff6aecfc3b1416149f942f" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-525386f7dd66aa5749d3c3616d7474fc" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coordParts = multipartPath.coordParts
+coordParts[<span class="hljs-number">0</span>].insertPoint(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>), at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+multipartPath.coordParts = coordParts; <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-525386f7dd66aa5749d3c3616d7474fc" id="swift">Swift</h3>
+        <div id="0-525386f7dd66aa5749d3c3616d7474fc" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coordParts = multipartPath.coordParts
+coordParts[<span class="hljs-number">0</span>].insertPoint(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>), at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+multipartPath.coordParts = coordParts; <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-177ac2baf3ff6aecfc3b1416149f942f" id="objective-c">Objective-C</h3>
+        <div id="1-177ac2baf3ff6aecfc3b1416149f942f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NSMutableArray&lt;NMGLineString *&gt; *coordParts = [NSMutableArray arrayWithArray:multipartPath.coordParts];
+[coordParts[0] insertPoint:NMGLatLngMake(37.5734571, 126.975335) atIndex:0]; // &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;
+multipartPath.coordParts = coordParts; // &#xBC18;&#xC601;&#xB428;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC0C9;&#xC0C1;-&#xD30C;&#xD2B8;">&#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;</h3>
+<p><a href="ref://../reference/Classes/NMFMultipartPath.html#/c%3Aobjc%28cs%29NMFMultipartPath%28py%29colorParts" target="_blank"><code>colorParts</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;&#xC758; &#xBAA9;&#xB85D;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; <a href="ref://../reference/Classes/NMFPathColor.html" target="_blank"><code>NMFPathColor</code></a> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>ColorPart</code>&#xB294; &#xD558;&#xB098;&#xC758; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC5D0; &#xC5B4;&#xB5A4; &#xC0C9;&#xC0C1;&#xC744; &#xBD80;&#xC5EC;&#xD574;&#xC57C; &#xD558;&#xB294;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xC815;&#xBCF4;&#xB97C; &#xD45C;&#xD604;&#xD558;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xACFC; &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xAC01;&#xAC01; &#xC120;&#xC758; &#xC0C9;&#xC0C1;&#xACFC; &#xD14C;&#xB450;&#xB9AC;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMFPathColor</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="51a9fe3dd2986ae8852d517542faf739" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-4fb38ff763e15b6fa6cda01bb96f51a0" class="gbcg-selector gbcg-active" data-tab="0-4fb38ff763e15b6fa6cda01bb96f51a0" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2f44fd32d12b49c971dedb6444923c01" class="gbcg-selector" data-tab="1-2f44fd32d12b49c971dedb6444923c01" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-4fb38ff763e15b6fa6cda01bb96f51a0" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> colorPart = <span class="hljs-type">NMFPathColor</span>(
+    color: <span class="hljs-type">UIColor</span>.red, <span class="hljs-comment">// &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xBE68;&#xAC04;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    outlineColor: <span class="hljs-type">UIColor</span>.white, <span class="hljs-comment">// &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xD770;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    passedColor: <span class="hljs-type">UIColor</span>.gray,<span class="hljs-comment">// &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray <span class="hljs-comment">// &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xBC1D;&#xC740; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-4fb38ff763e15b6fa6cda01bb96f51a0" id="swift">Swift</h3>
+        <div id="0-4fb38ff763e15b6fa6cda01bb96f51a0" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> colorPart = <span class="hljs-type">NMFPathColor</span>(
+    color: <span class="hljs-type">UIColor</span>.red, <span class="hljs-comment">// &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xBE68;&#xAC04;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    outlineColor: <span class="hljs-type">UIColor</span>.white, <span class="hljs-comment">// &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xD770;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    passedColor: <span class="hljs-type">UIColor</span>.gray,<span class="hljs-comment">// &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+    passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray <span class="hljs-comment">// &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xBC1D;&#xC740; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;</span>
+)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2f44fd32d12b49c971dedb6444923c01" id="objective-c">Objective-C</h3>
+        <div id="1-2f44fd32d12b49c971dedb6444923c01" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFPathColor *colorPart = [NMFPathColor
+    pathColorWithColor:UIColor.redColor // &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xBE68;&#xAC04;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;
+    outlineColor:UIColor.whiteColor // &#xC9C0;&#xB098;&#xAC08; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xD770;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;
+    passedColor:UIColor.grayColor // &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xC120; &#xC0C9;&#xC0C1;&#xC744; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;
+    passedOutlineColor:UIColor.lightGrayColor // &#xC9C0;&#xB098;&#xC628; &#xACBD;&#xB85C;&#xC120;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xBC1D;&#xC740; &#xD68C;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;
+];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><code>colorParts</code> &#xC18D;&#xC131;&#xC5D0; <code>ColorPart</code>&#xC5D0; &#xB300;&#xD55C; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC0C9;&#xC0C1;&#xC774; &#xBC18;&#xC601;&#xB429;&#xB2C8;&#xB2E4;. <code>colorParts</code>&#xC758; &#xAC01; &#xD30C;&#xD2B8;&#xB294; <code>coordParts</code>&#xC5D0; &#xC788;&#xB294; &#xB3D9;&#xC77C;&#xD55C; &#xC21C;&#xBC88;&#xC758; &#xD30C;&#xD2B8;&#xC5D0; &#xB300;&#xC751;&#xB429;&#xB2C8;&#xB2E4;. &#xC989;, 0&#xBC88;&#xC9F8; &#xC88C;&#xD45C;&#xC5F4; &#xD30C;&#xD2B8;&#xC5D0; &#xB300;&#xD55C; &#xC0C9;&#xC0C1;&#xC740; 0&#xBC88;&#xC9F8; &#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;&#xC758; &#xAC12;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xB429;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; <code>coordParts</code>&#xB294; &#xD544;&#xC218;&#xC801;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD558;&#xBA70;, &#xADF8; &#xD06C;&#xAE30; &#xB610;&#xD55C; <code>colorParts</code>&#xC758; &#xD06C;&#xAE30;&#xC640; &#xB3D9;&#xC77C;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBAA9;&#xB85D;&#xC5D0; <code>nil</code>&#xC778; &#xC6D0;&#xC18C;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xB450; &#xAC1C;&#xC758; &#xC0C9;&#xC0C1; &#xD30C;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="1a9860eccb2bb4e75a92fa6d590e7357" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-388b20a7441e3b7b650b02116a8c7d25" class="gbcg-selector gbcg-active" data-tab="0-388b20a7441e3b7b650b02116a8c7d25" data-tab-category="undefined">Swift</a>
+    <a id="select-1-5fc223a02d74ba29ca13db9213558bdc" class="gbcg-selector" data-tab="1-5fc223a02d74ba29ca13db9213558bdc" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-388b20a7441e3b7b650b02116a8c7d25" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">multipartPath.colorParts = [
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.red, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.gray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray),
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.green, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.darkGray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray)
+]
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-388b20a7441e3b7b650b02116a8c7d25" id="swift">Swift</h3>
+        <div id="0-388b20a7441e3b7b650b02116a8c7d25" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">multipartPath.colorParts = [
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.red, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.gray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray),
+    <span class="hljs-type">NMFPathColor</span>(color: <span class="hljs-type">UIColor</span>.green, outlineColor: <span class="hljs-type">UIColor</span>.white, passedColor: <span class="hljs-type">UIColor</span>.darkGray, passedOutlineColor: <span class="hljs-type">UIColor</span>.lightGray)
+]
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-5fc223a02d74ba29ca13db9213558bdc" id="objective-c">Objective-C</h3>
+        <div id="1-5fc223a02d74ba29ca13db9213558bdc" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">multipartPath.colorParts = @[
+    [NMFPathColor pathColorWithColor:UIColor.redColor outlineColor:UIColor.whiteColor passedColor:UIColor.grayColor passedOutlineColor:UIColor.lightGrayColor],
+    [NMFPathColor pathColorWithColor:UIColor.greenColor outlineColor:UIColor.whiteColor passedColor:UIColor.darkGrayColor passedOutlineColor:UIColor.lightGrayColor]
+];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xACBD;&#xB85C;&#xC120;-&#xC624;&#xBC84;&#xB808;&#xC774;-&#xACF5;&#xD1B5;-&#xC18D;&#xC131;">&#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774; &#xACF5;&#xD1B5; &#xC18D;&#xC131;</h3>
+<p>&#xBA40;&#xD2F0;&#xD30C;&#xD2B8; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xBAA8;&#xB4E0; &#xAE30;&#xB2A5;&#xC744; &#xC9C0;&#xC6D0;&#xD569;&#xB2C8;&#xB2E4;. &#xB450;&#xAED8;, &#xD14C;&#xB450;&#xB9AC; &#xB450;&#xAED8;, &#xD328;&#xD134;, &#xC9C4;&#xCC99;&#xB960;&#xC744; &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC640; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xD654;&#xC0B4;&#xD45C;-&#xC624;&#xBC84;&#xB808;&#xC774;">&#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;</h2>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html" target="_blank"><code>NMFArrowheadPath</code></a>&#xB294; &#xD654;&#xC0B4;&#xD45C; &#xD615;&#xD0DC;&#xB85C; &#xBC29;&#xD5A5; &#xB610;&#xB294; &#xD68C;&#xC804; &#xC9C0;&#xC810;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC785;&#xB2C8;&#xB2E4;. &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC640; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xC9C0;&#xB9CC; &#xC9C4;&#xCC99;&#xB960;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC5C6;&#xACE0;, &#xB05D; &#xC9C0;&#xC810;&#xC5D0; &#xD654;&#xC0B4;&#xD45C; &#xBAA8;&#xC591;&#xC758; &#xBA38;&#xB9AC;&#xAC00; &#xCD94;&#xAC00;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCD94;&#xAC00;-&#xBC0F;-&#xC0AD;&#xC81C;">&#xCD94;&#xAC00; &#xBC0F; &#xC0AD;&#xC81C;</h3>
+<p>&#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xD074;&#xB798;&#xC2A4; &#xAC1D;&#xCCB4;&#xCC98;&#xB7FC; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; <a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29points" target="_blank"><code>points</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xD6C4; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29mapView" target="_blank"><code>mapView</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;. &#xB2E8;, <code>mapView</code>&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xAE30; &#xC804;&#xC5D0;&#xB294; &#xBC18;&#xB4DC;&#xC2DC; <code>points</code>&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD558;&#xBA70;, &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="65486cd45e1d5f4ba031528602be83d9" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-c286e665d5435c170e50684d3246dfad" class="gbcg-selector gbcg-active" data-tab="0-c286e665d5435c170e50684d3246dfad" data-tab-category="undefined">Swift</a>
+    <a id="select-1-a4ccf09fd7b873194da27d245a4cf280" class="gbcg-selector" data-tab="1-a4ccf09fd7b873194da27d245a4cf280" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-c286e665d5435c170e50684d3246dfad" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> arrowheadPath = <span class="hljs-type">NMFArrowheadPath</span>()
+arrowheadPath.points = [
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.568003</span>, lng: <span class="hljs-number">126.9772503</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5701573</span>, lng: <span class="hljs-number">126.9772503</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5701573</span>, lng: <span class="hljs-number">126.9793745</span>)
+]
+arrowheadPath.mapView = mapView
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-c286e665d5435c170e50684d3246dfad" id="swift">Swift</h3>
+        <div id="0-c286e665d5435c170e50684d3246dfad" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> arrowheadPath = <span class="hljs-type">NMFArrowheadPath</span>()
+arrowheadPath.points = [
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.568003</span>, lng: <span class="hljs-number">126.9772503</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5701573</span>, lng: <span class="hljs-number">126.9772503</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5701573</span>, lng: <span class="hljs-number">126.9793745</span>)
+]
+arrowheadPath.mapView = mapView
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-a4ccf09fd7b873194da27d245a4cf280" id="objective-c">Objective-C</h3>
+        <div id="1-a4ccf09fd7b873194da27d245a4cf280" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFArrowheadPath *arrowheadPath = [NMFArrowheadPath new];
+arrowheadPath.points = @[
+                        NMGLatLngMake(37.568003, 126.9772503),
+                        NMGLatLngMake(37.5701573, 126.9772503),
+                        NMGLatLngMake(37.5701573, 126.9793745)
+                        ];
+arrowheadPath.mapView = self.mapView;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-turnsignal.png" alt="&#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xCD94;&#xAC00;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<p><code>mapView</code>&#xC5D0; <code>nil</code>&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC0AC;&#xB77C;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="02944b1a2cb0b915b87db4ef72a4424f" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-29780b8a97cf4aea4d92c14ac5afe6f6" class="gbcg-selector gbcg-active" data-tab="0-29780b8a97cf4aea4d92c14ac5afe6f6" data-tab-category="undefined">Swift</a>
+    <a id="select-1-97c768203fcb94c87dd3b8bd60863fc9" class="gbcg-selector" data-tab="1-97c768203fcb94c87dd3b8bd60863fc9" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-29780b8a97cf4aea4d92c14ac5afe6f6" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-29780b8a97cf4aea4d92c14ac5afe6f6" id="swift">Swift</h3>
+        <div id="0-29780b8a97cf4aea4d92c14ac5afe6f6" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-97c768203fcb94c87dd3b8bd60863fc9" id="objective-c">Objective-C</h3>
+        <div id="1-97c768203fcb94c87dd3b8bd60863fc9" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.mapView = nil;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC88C;&#xD45C;&#xC5F4;">&#xC88C;&#xD45C;&#xC5F4;</h3>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29points" target="_blank"><code>points</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC88C;&#xD45C;&#xC5F4;&#xC740; &#xD544;&#xC218;&#xC801;&#xC778; &#xC18D;&#xC131;&#xC73C;&#xB85C;, &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xC88C;&#xD45C;&#xC5F4;&#xC758; &#xD06C;&#xAE30;&#xAC00; <code>2</code> &#xBBF8;&#xB9CC;&#xC774;&#xAC70;&#xB098; <code>nil</code>&#xC778; &#xC6D0;&#xC18C;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC00;&#xC7A5; &#xB9C8;&#xC9C0;&#xB9C9; &#xC88C;&#xD45C;&#xC5D0;&#xB294; &#xD654;&#xC0B4;&#xD45C; &#xBAA8;&#xC591;&#xC758; &#xBA38;&#xB9AC;&#xAC00; &#xADF8;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5F4;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="a8fe3e9fee3e8127160413f4464a496f" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-4a182f23e0b4db7fa36025b6183f9a3b" class="gbcg-selector gbcg-active" data-tab="0-4a182f23e0b4db7fa36025b6183f9a3b" data-tab-category="undefined">Swift</a>
+    <a id="select-1-dd47ef298b78a0ed354c09c8a9cdbb4a" class="gbcg-selector" data-tab="1-dd47ef298b78a0ed354c09c8a9cdbb4a" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-4a182f23e0b4db7fa36025b6183f9a3b" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.points = [
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+]
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-4a182f23e0b4db7fa36025b6183f9a3b" id="swift">Swift</h3>
+        <div id="0-4a182f23e0b4db7fa36025b6183f9a3b" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.points = [
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.57152</span>, lng: <span class="hljs-number">126.97714</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56607</span>, lng: <span class="hljs-number">126.98268</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.56445</span>, lng: <span class="hljs-number">126.97707</span>),
+    <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.55855</span>, lng: <span class="hljs-number">126.97822</span>)
+]
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-dd47ef298b78a0ed354c09c8a9cdbb4a" id="objective-c">Objective-C</h3>
+        <div id="1-dd47ef298b78a0ed354c09c8a9cdbb4a" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.points = @[
+    NMGLatLngMake(37.57152, 126.97714),
+    NMGLatLngMake(37.56607, 126.98268),
+    NMGLatLngMake(37.56445, 126.97707),
+    NMGLatLngMake(37.55855, 126.97822)
+];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><code>points</code> &#xC18D;&#xC131;&#xC73C;&#xB85C; &#xC5BB;&#xC5B4;&#xC628; &#xC88C;&#xD45C;&#xC5F4; &#xAC1D;&#xCCB4;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBCC0;&#xACBD; &#xC0AC;&#xD56D;&#xC774; &#xBC18;&#xC601;&#xB418;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xC601;&#xD558;&#xB824;&#xBA74; &#xC88C;&#xD45C;&#xC5F4; &#xAC1D;&#xCCB4;&#xB97C; &#xB2E4;&#xC2DC; <code>points</code> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC88C;&#xD45C;&#xC5F4; &#xC911; &#xC77C;&#xBD80;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="68f2a44e5a59e001166f4db980c6503d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-59dbfe8bec39d62c1e32d0df0f3d5c63" class="gbcg-selector gbcg-active" data-tab="0-59dbfe8bec39d62c1e32d0df0f3d5c63" data-tab-category="undefined">Swift</a>
+    <a id="select-1-0adb910e67cf22a5b1c0942029c1a7f2" class="gbcg-selector" data-tab="1-0adb910e67cf22a5b1c0942029c1a7f2" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-59dbfe8bec39d62c1e32d0df0f3d5c63" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coords = arrowheadPath.points
+coords.insert(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>, at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+arrowheadPath.points = coords <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-59dbfe8bec39d62c1e32d0df0f3d5c63" id="swift">Swift</h3>
+        <div id="0-59dbfe8bec39d62c1e32d0df0f3d5c63" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">var</span> coords = arrowheadPath.points
+coords.insert(<span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5734571</span>, lng: <span class="hljs-number">126.975335</span>, at: <span class="hljs-number">0</span>) <span class="hljs-comment">// &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;</span>
+arrowheadPath.points = coords <span class="hljs-comment">// &#xBC18;&#xC601;&#xB428;</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-0adb910e67cf22a5b1c0942029c1a7f2" id="objective-c">Objective-C</h3>
+        <div id="1-0adb910e67cf22a5b1c0942029c1a7f2" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NSMutableArray *coords = [NSMutableArray arrayWithArray:arrowheadPath.points];
+[coords insertObject:NMGLatLngMake(37.5734571, 126.975335) atIndex:0]; // &#xC544;&#xC9C1; &#xBC18;&#xC601;&#xB418;&#xC9C0; &#xC54A;&#xC74C;
+arrowheadPath.points = coords; // &#xBC18;&#xC601;&#xB428;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB450;&#xAED8;">&#xB450;&#xAED8;</h3>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29width" target="_blank"><code>width</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xB450;&#xAED8;&#xB97C; 20pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="70160d6b9ca9a62a187b0766c24d47b8" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1be6ccd4c6c5908764b1f249733ecff0" class="gbcg-selector gbcg-active" data-tab="0-1be6ccd4c6c5908764b1f249733ecff0" data-tab-category="undefined">Swift</a>
+    <a id="select-1-3d456f354ac623690948d18c87fec641" class="gbcg-selector" data-tab="1-3d456f354ac623690948d18c87fec641" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1be6ccd4c6c5908764b1f249733ecff0" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.width = <span class="hljs-number">20</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1be6ccd4c6c5908764b1f249733ecff0" id="swift">Swift</h3>
+        <div id="0-1be6ccd4c6c5908764b1f249733ecff0" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.width = <span class="hljs-number">20</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-3d456f354ac623690948d18c87fec641" id="objective-c">Objective-C</h3>
+        <div id="1-3d456f354ac623690948d18c87fec641" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.width = 20;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xB450;&#xAED8;&#xB97C; 20pt&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-turnsignal-width.png" alt="&#xB450;&#xAED8;&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xBA38;&#xB9AC;-&#xD06C;&#xAE30;">&#xBA38;&#xB9AC; &#xD06C;&#xAE30;</h3>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29headSizeRatio" target="_blank"><code>headSizeRatio</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xBA38;&#xB9AC; &#xD06C;&#xAE30;&#xC758; &#xBC30;&#xC728;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB450;&#xAED8;&#xC5D0; &#xBC30;&#xC728;&#xC744; &#xACF1;&#xD55C; &#xAC12;&#xC774; &#xBA38;&#xB9AC;&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xBA38;&#xB9AC; &#xD06C;&#xAE30;&#xB97C; &#xB450;&#xAED8;&#xC758; 4&#xBC30;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="d7a90f67dd39cfc2d74ab91127bcbd8d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-b544daf10ef27355866cd761d0d0e727" class="gbcg-selector gbcg-active" data-tab="0-b544daf10ef27355866cd761d0d0e727" data-tab-category="undefined">Swift</a>
+    <a id="select-1-a654ec16e29a7be311a00dc53a71d809" class="gbcg-selector" data-tab="1-a654ec16e29a7be311a00dc53a71d809" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-b544daf10ef27355866cd761d0d0e727" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.headSizeRatio = <span class="hljs-number">4</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-b544daf10ef27355866cd761d0d0e727" id="swift">Swift</h3>
+        <div id="0-b544daf10ef27355866cd761d0d0e727" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.headSizeRatio = <span class="hljs-number">4</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-a654ec16e29a7be311a00dc53a71d809" id="objective-c">Objective-C</h3>
+        <div id="1-a654ec16e29a7be311a00dc53a71d809" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.headSizeRatio = 4;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-7-arrowheadPath-head-size.png" alt="&#xBA38;&#xB9AC; &#xD06C;&#xAE30;&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xC0C9;&#xC0C1;">&#xC0C9;&#xC0C1;</h3>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29color" target="_blank"><code>color</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="6005b14d452fe94587a31fe547b33240" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-25df92dfb21c0a8dbd7cf40f8036dfe1" class="gbcg-selector gbcg-active" data-tab="0-25df92dfb21c0a8dbd7cf40f8036dfe1" data-tab-category="undefined">Swift</a>
+    <a id="select-1-c31a2c7c0e02e6de7fb0dce7ebcec9c0" class="gbcg-selector" data-tab="1-c31a2c7c0e02e6de7fb0dce7ebcec9c0" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-25df92dfb21c0a8dbd7cf40f8036dfe1" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.color = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-25df92dfb21c0a8dbd7cf40f8036dfe1" id="swift">Swift</h3>
+        <div id="0-25df92dfb21c0a8dbd7cf40f8036dfe1" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.color = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-c31a2c7c0e02e6de7fb0dce7ebcec9c0" id="objective-c">Objective-C</h3>
+        <div id="1-c31a2c7c0e02e6de7fb0dce7ebcec9c0" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.color = UIColor.greenColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-turnsignal-color.png" alt="&#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xD14C;&#xB450;&#xB9AC;-&#xC0C9;&#xC0C1;">&#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;</h3>
+<p><a href="ref://../reference/Classes/NMFArrowheadPath.html#/c%3Aobjc%28cs%29NMFArrowheadPath%28py%29outlineColor" target="_blank"><code>outlineColor</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xD14C;&#xB450;&#xB9AC;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="49db85bf115ddf7047d3ea795592c3bf" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-d289183b0c0267c26290c94cfd6e143b" class="gbcg-selector gbcg-active" data-tab="0-d289183b0c0267c26290c94cfd6e143b" data-tab-category="undefined">Swift</a>
+    <a id="select-1-67ba9ef5bca6404b0dcfde7022550154" class="gbcg-selector" data-tab="1-67ba9ef5bca6404b0dcfde7022550154" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-d289183b0c0267c26290c94cfd6e143b" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">arrowheadPath.outlineColor = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-d289183b0c0267c26290c94cfd6e143b" id="swift">Swift</h3>
+        <div id="0-d289183b0c0267c26290c94cfd6e143b" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">arrowheadPath.outlineColor = <span class="hljs-type">UIColor</span>.green
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-67ba9ef5bca6404b0dcfde7022550154" id="objective-c">Objective-C</h3>
+        <div id="1-67ba9ef5bca6404b0dcfde7022550154" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">arrowheadPath.outlineColor = UIColor.greenColor;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC740; &#xD654;&#xC0B4;&#xD45C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xB179;&#xC0C9;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xACB0;&#xACFC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/5-7-turnsignal-linecolor.png" alt="&#xD14C;&#xB450;&#xB9AC; &#xC0C9;&#xC0C1;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5-6.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 지상 오버레이">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"경로선과 화살표","level":"3.5.7","depth":2,"next":{"title":"API 레퍼런스","level":"4.1","depth":1,"url":"ref://../reference","ref":"ref://../reference","articles":[]},"previous":{"title":"지상 오버레이","level":"3.5.6","depth":2,"path":"5-6.md","ref":"5-6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-7.md","mtime":"2019-04-08T05:07:38.410Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:40.657Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -8,7 +8,7 @@ require([
 
     var getCodeGroupStore = function () {
         var codeGroupStore = gitbook.storage.get(storageKey);
-        return codeGroupStore || {defaultLang: null};
+        return codeGroupStore || {};
     };
 
     var selectTab = function(element) {
@@ -23,34 +23,32 @@ require([
         $selector.addClass(active);
     };
 
-    var selectLang = function(codeLang) {
-        var i, elements = $("[data-code-lang='" + codeLang + "']");
+    var selectAll = function(tabCategory, tabName) {
+        var i, elements = $("[data-tab-category='" + tabCategory + "']").filter("a:contains('" + tabName + "')");
         for (i = 0; i < elements.length; ++i) {
             selectTab(elements[i]);
         }
     };
 
-    self.showtab = function showtab(event) {
-        var codeLang = $(this).attr('data-code-lang');
+    self.showtab = function(event) {
+        var tabCategory = $(this).attr('data-tab-category');
+        var tabName = $(this).text();
+        var codeGroupStore = getCodeGroupStore();
         event.preventDefault();
         event.stopPropagation();
-        selectLang(codeLang);
-        var codeGroupStore = getCodeGroupStore();
-        codeGroupStore.defaultLang = codeLang;
+        selectAll(tabCategory, tabName);
+        codeGroupStore[tabCategory] = tabName;
         gitbook.storage.set(storageKey, codeGroupStore);
     };
 
     var setup = function () {
+        var codeGroupStore = getCodeGroupStore();
         var $selectors = $('.gbcg-selector');
         $selectors.unbind('click', self.showtab);
         $selectors.click(self.showtab);
-
-        $('.gbcg-codegroup').each(function () {
-            var lang = getCodeGroupStore().defaultLang;
-            if (lang) {
-                selectLang(lang);
-            }
-        });
+        for (var category in codeGroupStore) {
+            selectAll(category, codeGroupStore[category]);
+        }
     };
 
     gitbook.events.bind('page.change', setup);

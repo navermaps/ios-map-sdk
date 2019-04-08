@@ -1,0 +1,933 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Camera and Projection · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3-2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developer Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    Get Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Map and Coordinates
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    Map Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    Coordinates Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    Map Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Camera
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    Camera and Projection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    Camera Movement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    Interaction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    User Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                    Overlay
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    Overlays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    Marker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    Info Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    Shapes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    Location Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    Ground Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    Path and Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Reference</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="ref://../reference/">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    Demo Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">See Also</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="ref://../guide-ko/">
+            
+                    
+                    한국어(Korean)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    NAVER CLOUD PLATFORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    Questions / Contact Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Camera and Projection</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="camera-and-projection">Camera and Projection</h1>
+<p>The NAVER Maps SDK displays a map in a way of a camera looking at the map on the other side of your screen. By moving, zooming in or out, tilting and rotating the camera, you can move your map as you want.</p>
+<h2 id="camera-position">Camera position</h2>
+<p>The position of a camera is represented with coordinates of the target position where the camera is located, zoom level, tilt, and bearing of the camera. <a href="ref://../reference/Classes/NMFCameraPosition.html" target="_blank"><code>NMFCameraPosition</code></a> is a class that represents the position of a camera. All properties of the <code>NMFCameraPosition</code> class are <code>readonly</code>, so each of them can be specified by a constructor, and properties of the object once created cannot be modified.</p>
+<p>The following code example creates an <code>NMFCameraPosition</code> object.</p>
+<p><div id="9b63edcfd6c1df023ae6785bb38b66db" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-selector gbcg-active" data-tab="0-1b68f7c56368258a3a6d8a1cc4b1805f" data-tab-category="undefined">Swift</a>
+    <a id="select-1-cb8ea13dbfbea5cab2274795925d34cc" class="gbcg-selector" data-tab="1-cb8ea13dbfbea5cab2274795925d34cc" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = <span class="hljs-type">NMFCameraPosition</span>()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1b68f7c56368258a3a6d8a1cc4b1805f" id="swift">Swift</h3>
+        <div id="0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = <span class="hljs-type">NMFCameraPosition</span>()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-cb8ea13dbfbea5cab2274795925d34cc" id="objective-c">Objective-C</h3>
+        <div id="1-cb8ea13dbfbea5cab2274795925d34cc" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFCameraPosition *cameraPosition = [NMFCameraPosition new];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="target-position">Target position</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c:objc%28cs%29NMFCameraPosition%28py%29target" target="_blank"><code>target</code></a> is a property that represents coordinates of the target position where the camera is located. If the target position changes, the map moves in the four cardinal directions.</p>
+<p><img src="../assets/3-1-target-en.png" alt="Target position"></p>
+<h3 id="zoom-level">Zoom level</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c:objc%28cs%29NMFCameraPosition%28py%29zoom" target="_blank"><code>zoom</code></a> is a property that represents the zoom level of the camera. The zoom level represents the scale of the map. The smaller the zoom level is, the smaller the scale of the map is, and vice versa. At larger zoom levels, more detailed information is displayed on the map.</p>
+<h3 id="tilt">Tilt</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c%3Aobjc%28cs%29NMFCameraPosition%28py%29tilt" target="_blank"><code>tilt</code></a> is a property that represents the viewing angle of the camera. The camera looks down the ground slantingly by the tilt angle. If the tilt angle is 0, the camera vertically looks down the ground; as the tilt angle increases, the camera view is gradually tilted towards the ground. Therefore, the bigger the tilt angle is, the farther the camera can view. If the camera is tilted, the map is shown in perspective mode. That is, based on the center of the map, distant locations become smaller while closer locations become larger.</p>
+<p><img src="../assets/3-1-tilt-en.png" alt="Tilt angle"></p>
+<h3 id="heading-angle">Heading angle</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c%3Aobjc%28cs%29NMFCameraPosition%28py%29heading" target="_blank"><code>heading</code></a> is a property that represents the heading angle of the camera. Heading is the direction in which the camera looks. The heading angle is 0 when the camera faces the north, being measured in degrees clockwise from north. Accordingly, the bearing angle is 90 when the camera faces the east, and 180 when the west.</p>
+<p><img src="../assets/3-1-bearing-en.png" alt="Heading (bearing) angle"></p>
+<h2 id="view-and-camera">View and camera</h2>
+<p>The camera is basically located at the center of the map view. However, content padding affects the position of the camera.</p>
+<h3 id="current-camera-position">Current camera position</h3>
+<p>You can call <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29cameraPosition" target="_blank"><code>NMFMapView.cameraPosition</code></a> to get the current position of the camera.</p>
+<p>The following code example gets the camera&#x2019;s current position.</p>
+<p><div id="e87daf416ba5856c1117d7cd6f0bcf11" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-selector gbcg-active" data-tab="0-eaee18a1f0d30593f4b130699c23c0a7" data-tab-category="undefined">Swift</a>
+    <a id="select-1-8d9e56b8159c7635aed8eaf65d946a54" class="gbcg-selector" data-tab="1-8d9e56b8159c7635aed8eaf65d946a54" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = mapView.cameraPosition
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-eaee18a1f0d30593f4b130699c23c0a7" id="swift">Swift</h3>
+        <div id="0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = mapView.cameraPosition
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-8d9e56b8159c7635aed8eaf65d946a54" id="objective-c">Objective-C</h3>
+        <div id="1-8d9e56b8159c7635aed8eaf65d946a54" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CameraPosition *cameraPosition = self.mapView.cameraPosition;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="content-padding">Content padding</h3>
+<p>You can call <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29contentInset" target="_blank"><code>NMFMapView.contentInset</code></a> with a <code>UIEdgeInsets</code> object to specify content padding. When user interfaces are displayed on the map as shown in the figure below, the position of the camera located at the center of the map view does not match the center of the map users actually view.</p>
+<p><img src="../assets/3-1-contentspadding1-en.png" alt="Map center mismatch"></p>
+<p>In this case, you can specify content padding to exclude the area covered by the UI elements. Then, the camera position is located at the center of the remaining area.</p>
+<p><img src="../assets/3-1-contentspadding2-en.png" alt="Content padding specified"></p>
+<p>The following code example sets 200 px of content padding at the bottom.</p>
+<p><div id="a7de93734b2eb033a8253632509501df" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-selector gbcg-active" data-tab="0-486a5f56d59f0d04c4d6e5a8dd06cb96" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2447b069d64681e56f463f177454ff06" class="gbcg-selector" data-tab="1-2447b069d64681e56f463f177454ff06" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">mapView.contentInset = <span class="hljs-type">UIEdgeInsets</span>(top: <span class="hljs-number">0</span>, <span class="hljs-keyword">left</span>: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">200</span>, <span class="hljs-keyword">right</span>: <span class="hljs-number">0</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-486a5f56d59f0d04c4d6e5a8dd06cb96" id="swift">Swift</h3>
+        <div id="0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">mapView.contentInset = <span class="hljs-type">UIEdgeInsets</span>(top: <span class="hljs-number">0</span>, <span class="hljs-keyword">left</span>: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">200</span>, <span class="hljs-keyword">right</span>: <span class="hljs-number">0</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2447b069d64681e56f463f177454ff06" id="objective-c">Objective-C</h3>
+        <div id="1-2447b069d64681e56f463f177454ff06" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">self.mapView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>(Image)</p>
+<p>Content padding does not change what users actually see. It does, however, change the center of the map where the camera is located, and thus, the position of the camera is changed. </p>
+<h2 id="projection">Projection</h2>
+<p>The screen uses a coordinate system in pixels based on the upper left point, while the map uses a geographical latitude/longitude coordinate system. Using methods of the <a href="ref://../reference/Classes/NMFProjection.html" target="_blank"><code>NMFProjection</code></a> class, you can convert between screen pixel coordinates and latitude/longitude coordinates. You cannot directly create an instance of the <code>NMFProjection</code> class, so you should call <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29projection" target="_blank"><code>NMFMapView.projection</code></a> to get an instance.</p>
+<p>The following code example gets an instance of the <code>NMFProjection</code> class.</p>
+<p><div id="abde8765df0175e323103ca235b8a14d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-e5adcf896fefee96956706ad64af7782" class="gbcg-selector gbcg-active" data-tab="0-e5adcf896fefee96956706ad64af7782" data-tab-category="undefined">Swift</a>
+    <a id="select-1-08885efbe3e2606e6fe8ad33d3451dab" class="gbcg-selector" data-tab="1-08885efbe3e2606e6fe8ad33d3451dab" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-e5adcf896fefee96956706ad64af7782" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> projection = mapView.projection
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-e5adcf896fefee96956706ad64af7782" id="swift">Swift</h3>
+        <div id="0-e5adcf896fefee96956706ad64af7782" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> projection = mapView.projection
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-08885efbe3e2606e6fe8ad33d3451dab" id="objective-c">Objective-C</h3>
+        <div id="1-08885efbe3e2606e6fe8ad33d3451dab" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFProjection *projection = self.mapView.projection;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="conversion-between-screen-coordinates-and-map-coordinates">Conversion between screen coordinates and map coordinates</h3>
+<p>You can use <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29latlngFromPoint:" target="_blank"><code>-latlngFromPoint:</code></a> to convert screen coordinates into latitude/longitude coordinates, and <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29pointFromLatLng:" target="_blank"><code>-pointFromLatLng:</code></a> to convert latitude/longitude coordinates into screen coordinates.</p>
+<p>The following code example converts the screen coordinates, <code>(100, 100)</code> into latitude/longitude coordinates.</p>
+<p><div id="9eb192d306996e565f681fdfe7b7d25e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-selector gbcg-active" data-tab="0-3d1bdcb810269ecdf9b710d2b481afac" data-tab-category="undefined">Swift</a>
+    <a id="select-1-0bcd888f3338864a6e7581c7abed5567" class="gbcg-selector" data-tab="1-0bcd888f3338864a6e7581c7abed5567" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = projection.latlng(from: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">100</span>, y: <span class="hljs-number">100</span>))
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-3d1bdcb810269ecdf9b710d2b481afac" id="swift">Swift</h3>
+        <div id="0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = projection.latlng(from: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">100</span>, y: <span class="hljs-number">100</span>))
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-0bcd888f3338864a6e7581c7abed5567" id="objective-c">Objective-C</h3>
+        <div id="1-0bcd888f3338864a6e7581c7abed5567" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGLatLng *coord = [projection latlngFromPoint:CGPointMake(100, 100)];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>The following code example converts the latitude/longitude coordinates on the map, <code>(37.5666102, 126.9783881)</code> into the screen coordinates.</p>
+<p><div id="ad7ac9225e8a75a9ab9e2a965aae1f46" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-selector gbcg-active" data-tab="0-04470d112d3418efd8d7e35b9a468b7c" data-tab-category="undefined">Swift</a>
+    <a id="select-1-9c293dc751d08d809256ccbbc4f475aa" class="gbcg-selector" data-tab="1-9c293dc751d08d809256ccbbc4f475aa" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> point = projection.point(from: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-04470d112d3418efd8d7e35b9a468b7c" id="swift">Swift</h3>
+        <div id="0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> point = projection.point(from: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-9c293dc751d08d809256ccbbc4f475aa" id="objective-c">Objective-C</h3>
+        <div id="1-9c293dc751d08d809256ccbbc4f475aa" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CGPoint point = [projection pointFromLatLng:NMGLatLngMake(37.5666102, 126.9783881)];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="scale">Scale</h3>
+<p>Since the earth is the shape of a sphere in three dimensions, the earth&#x2019;s surface cannot be represented in two dimensions without distortion. The NAVER Maps SDK uses <a href="https://en.wikipedia.org/wiki/Web_Mercator_projection" target="_blank">Web Mercator projection</a> to render a three dimensional ellipsoid of the earth to a two dimensional map surface, causing the scale of the map to change depending on a zoom level as well as latitude. Using <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29metersPerPixel" target="_blank"><code>metersPerPixel</code></a>, you can get the scale of the current camera position.</p>
+<p>The following code example gets the scale of the current camera position.</p>
+<p><div id="f7be626e3fe378464dad0ac1964169b8" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1594f168264752d4cebb7ec3da24471a" class="gbcg-selector gbcg-active" data-tab="0-1594f168264752d4cebb7ec3da24471a" data-tab-category="undefined">Swift</a>
+    <a id="select-1-be832151079487a6484a72cbf70061d2" class="gbcg-selector" data-tab="1-be832151079487a6484a72cbf70061d2" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1594f168264752d4cebb7ec3da24471a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> metersPerPixel = projection.metersPerPixel()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1594f168264752d4cebb7ec3da24471a" id="swift">Swift</h3>
+        <div id="0-1594f168264752d4cebb7ec3da24471a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> metersPerPixel = projection.metersPerPixel()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-be832151079487a6484a72cbf70061d2" id="objective-c">Objective-C</h3>
+        <div id="1-be832151079487a6484a72cbf70061d2" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CLLocationDistance metersPerPixel = projection.metersPerPixel;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>Using <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29metersPerPixelAtLatitude:zoom:" target="_blank"><code>-metersPerPixelAtLatitude:zoom:</code></a>, you can get the scale based on a specified latitude and zoom level, regardless of the current camera position.</p>
+<p>The following code example gets the scale based on various latitudes and zoom levels.</p>
+<p><div id="6e85dcd4e9c2705ae3b151a62fca67df" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-4a83e893739b94aa054e4b955c992437" class="gbcg-selector gbcg-active" data-tab="0-4a83e893739b94aa054e4b955c992437" data-tab-category="undefined">Swift</a>
+    <a id="select-1-0d20629087f78712f14904b88b662975" class="gbcg-selector" data-tab="1-0d20629087f78712f14904b88b662975" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-4a83e893739b94aa054e4b955c992437" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-comment">// Equator, zoom level 10</span>
+<span class="hljs-keyword">let</span> metersPerPixel1 = projection.metersPerPixel(atLatitude: <span class="hljs-number">0</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// Latitude 35 degrees, zoom level 10: The scale gets bigger than the equator.</span>
+<span class="hljs-keyword">let</span> metersPerPixel2 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// Latitude 35 degrees, zoom level 14: The scale gets bigger than the zoom level 10.</span>
+<span class="hljs-keyword">let</span> metersPerPixel3 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">14</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-4a83e893739b94aa054e4b955c992437" id="swift">Swift</h3>
+        <div id="0-4a83e893739b94aa054e4b955c992437" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-comment">// Equator, zoom level 10</span>
+<span class="hljs-keyword">let</span> metersPerPixel1 = projection.metersPerPixel(atLatitude: <span class="hljs-number">0</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// Latitude 35 degrees, zoom level 10: The scale gets bigger than the equator.</span>
+<span class="hljs-keyword">let</span> metersPerPixel2 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// Latitude 35 degrees, zoom level 14: The scale gets bigger than the zoom level 10.</span>
+<span class="hljs-keyword">let</span> metersPerPixel3 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">14</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-0d20629087f78712f14904b88b662975" id="objective-c">Objective-C</h3>
+        <div id="1-0d20629087f78712f14904b88b662975" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">// Equator, zoom level 10
+CLLocationDistance metersPerPixel1 = [projection metersPerPixelAtLatitude:0 zoom:10];
+
+// Latitude 35 degrees, zoom level 10: The scale gets bigger than the equator.
+CLLocationDistance metersPerPixel2 = [projection metersPerPixelAtLatitude:35 zoom:10];
+
+// Latitude 35 degrees, zoom level 14: The scale gets bigger than the zoom level 10.
+CLLocationDistance metersPerPixel3 = [projection metersPerPixelAtLatitude:35 zoom:14];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="3-2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Camera Movement">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Camera and Projection","level":"2.3.1","depth":2,"next":{"title":"Camera Movement","level":"2.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]},"previous":{"title":"Camera","level":"2.3","depth":1,"ref":"","articles":[{"title":"Camera and Projection","level":"2.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},{"title":"Camera Movement","level":"2.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-1.md","mtime":"2019-04-08T05:07:43.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:45.475Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

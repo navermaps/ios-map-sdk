@@ -1,0 +1,1493 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>오버레이 공통 · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5-2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">마이그레이션 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="migration.html">
+            
+                <a href="migration.html">
+            
+                    
+                    2.x → 3.x 마이그레이션 가이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">개발 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    상호작용
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="ref://../reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="ref://../guide-en/">
+            
+                    
+                    English(영어)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >오버레이 공통</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC624;&#xBC84;&#xB808;&#xC774;-&#xACF5;&#xD1B5;">&#xC624;&#xBC84;&#xB808;&#xC774; &#xACF5;&#xD1B5;</h1>
+<p>&#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC9C0;&#xB9AC;&#xC801; &#xC815;&#xBCF4;&#xB97C; &#xC2DC;&#xAC01;&#xC801;&#xC73C;&#xB85C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC694;&#xC18C;&#xB85C;, &#xAC1C;&#xBC1C;&#xC790;&#xAC00; &#xC9C0;&#xB3C4; &#xC704;&#xC5D0; &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xBC30;&#xCE58;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; &#xB9C8;&#xCEE4;, &#xC815;&#xBCF4; &#xCC3D;, &#xC170;&#xC774;&#xD504; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xC720;&#xD615;&#xC758; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#xAC01; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC124;&#xBA85;&#xC744; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+<h2 id="&#xCD94;&#xAC00;-&#xBC0F;-&#xC0AD;&#xC81C;">&#xCD94;&#xAC00; &#xBC0F; &#xC0AD;&#xC81C;</h2>
+<h3 id="&#xAC1D;&#xCCB4;-&#xC0DD;&#xC131;">&#xAC1D;&#xCCB4; &#xC0DD;&#xC131;</h3>
+<p>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xD074;&#xB798;&#xC2A4; &#xAC1D;&#xCCB4;&#xCC98;&#xB7FC; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="d90d9f85be0ccf8a918a8cc2db0f923d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-414d0133e9c11d2044f63800695c94f5" class="gbcg-selector gbcg-active" data-tab="0-414d0133e9c11d2044f63800695c94f5" data-tab-category="undefined">Swift</a>
+    <a id="select-1-dece4bcddfd25f86a8514663f06eaf77" class="gbcg-selector" data-tab="1-dece4bcddfd25f86a8514663f06eaf77" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-414d0133e9c11d2044f63800695c94f5" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> marker = <span class="hljs-type">NMFMarker</span>()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-414d0133e9c11d2044f63800695c94f5" id="swift">Swift</h3>
+        <div id="0-414d0133e9c11d2044f63800695c94f5" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> marker = <span class="hljs-type">NMFMarker</span>()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-dece4bcddfd25f86a8514663f06eaf77" id="objective-c">Objective-C</h3>
+        <div id="1-dece4bcddfd25f86a8514663f06eaf77" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFMarker *marker = [NMFMarker new];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB294; <code>NMFMapView</code>&#xC758; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29locationOverlay" target="_blank"><code>locationOverlay</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB97C; &#xAC00;&#xC838;&#xC624;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="f7b81312b327173b599c19239580fa0b" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-8e1ba5bdb586536c831244567eaf9d1a" class="gbcg-selector gbcg-active" data-tab="0-8e1ba5bdb586536c831244567eaf9d1a" data-tab-category="undefined">Swift</a>
+    <a id="select-1-f3bb0bb97db40d5c1b14ba39e125b2f6" class="gbcg-selector" data-tab="1-f3bb0bb97db40d5c1b14ba39e125b2f6" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-8e1ba5bdb586536c831244567eaf9d1a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> locationOverlay = mapView.locationOverlay
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-8e1ba5bdb586536c831244567eaf9d1a" id="swift">Swift</h3>
+        <div id="0-8e1ba5bdb586536c831244567eaf9d1a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> locationOverlay = mapView.locationOverlay
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-f3bb0bb97db40d5c1b14ba39e125b2f6" id="objective-c">Objective-C</h3>
+        <div id="1-f3bb0bb97db40d5c1b14ba39e125b2f6" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFLocationOverlay *locationOverlay = self.mapView.locationOverlay;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC624;&#xBC84;&#xB808;&#xC774;-&#xCD94;&#xAC00;">&#xC624;&#xBC84;&#xB808;&#xC774; &#xCD94;&#xAC00;</h3>
+<p>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29mapView" target="_blank"><code>mapView</code></a> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD574; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; <a href="5-5.html">&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;</a> &#xBB38;&#xC11C;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB9C8;&#xCEE4;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="095462c0cc824f2aef391c1e9aa70a26" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-9c86bbb3070df5ca157d574147cdbfed" class="gbcg-selector gbcg-active" data-tab="0-9c86bbb3070df5ca157d574147cdbfed" data-tab-category="undefined">Swift</a>
+    <a id="select-1-5eb89ecdb9256154b774b09938a95b44" class="gbcg-selector" data-tab="1-5eb89ecdb9256154b774b09938a95b44" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-9c86bbb3070df5ca157d574147cdbfed" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">marker.mapView = mapView
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-9c86bbb3070df5ca157d574147cdbfed" id="swift">Swift</h3>
+        <div id="0-9c86bbb3070df5ca157d574147cdbfed" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">marker.mapView = mapView
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-5eb89ecdb9256154b774b09938a95b44" id="objective-c">Objective-C</h3>
+        <div id="1-5eb89ecdb9256154b774b09938a95b44" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">marker.mapView = self.mapView;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xC815;&#xBCF4; &#xCC3D;&#xC740; <code>mapView</code> &#xC18D;&#xC131; &#xC678;&#xC5D0;&#xB3C4; <a href="ref://../reference/Classes/NMFInfoWindow.html#/c%3Aobjc%28cs%29NMFInfoWindow%28im%29openWithMarker:" target="_blank"><code>-openWithMarker:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xC9C0;&#xB3C4; &#xB610;&#xB294; &#xB9C8;&#xCEE4;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xC5F4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB9C8;&#xCEE4;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xC815;&#xBCF4; &#xCC3D;&#xC744; &#xC5EC;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="3fbb11e8f37f857f1503dfc6c01f2d4e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-6783d3aa0dfbe9204ec3cb35788683f1" class="gbcg-selector gbcg-active" data-tab="0-6783d3aa0dfbe9204ec3cb35788683f1" data-tab-category="undefined">Swift</a>
+    <a id="select-1-97d21780c2d4a06ce896b019149a89bd" class="gbcg-selector" data-tab="1-97d21780c2d4a06ce896b019149a89bd" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-6783d3aa0dfbe9204ec3cb35788683f1" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">infoWindow.open(with: marker)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-6783d3aa0dfbe9204ec3cb35788683f1" id="swift">Swift</h3>
+        <div id="0-6783d3aa0dfbe9204ec3cb35788683f1" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">infoWindow.open(with: marker)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-97d21780c2d4a06ce896b019149a89bd" id="objective-c">Objective-C</h3>
+        <div id="1-97d21780c2d4a06ce896b019149a89bd" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">[infoWindow openWithMarker:marker];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><code>mapView</code>&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC18D;&#xC131;&#xC774;&#xBBC0;&#xB85C;, &#xD558;&#xB098;&#xC758; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xB3D9;&#xC2DC;&#xC5D0; &#xB450; &#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB0A0; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xBBF8; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB098; &#xC788;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xC0C8;&#xB85C;&#xC774; <code>mapView</code> &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xAE30;&#xC874;&#xC758; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC0AC;&#xB77C;&#xC9C0;&#xACE0; &#xC0C8;&#xB85C;&#xC6B4; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC624;&#xBC84;&#xB808;&#xC774;-&#xC81C;&#xAC70;">&#xC624;&#xBC84;&#xB808;&#xC774; &#xC81C;&#xAC70;</h3>
+<p>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; <code>mapView</code> &#xC18D;&#xC131;&#xC744; <code>nil</code>&#xB85C; &#xC9C0;&#xC815;&#xD574; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC0AD;&#xC81C;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; <a href="5-5.html">&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;</a> &#xBB38;&#xC11C;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB9C8;&#xCEE4;&#xB97C; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="9ce53a9fc2c67ecd9c6511c815aa06c7" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-f9cd749ee5476f2e4a923e8befcde2a1" class="gbcg-selector gbcg-active" data-tab="0-f9cd749ee5476f2e4a923e8befcde2a1" data-tab-category="undefined">Swift</a>
+    <a id="select-1-7e4db5f27de4055b045b823c9c756622" class="gbcg-selector" data-tab="1-7e4db5f27de4055b045b823c9c756622" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-f9cd749ee5476f2e4a923e8befcde2a1" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">marker.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-f9cd749ee5476f2e4a923e8befcde2a1" id="swift">Swift</h3>
+        <div id="0-f9cd749ee5476f2e4a923e8befcde2a1" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">marker.mapView = <span class="hljs-literal">nil</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-7e4db5f27de4055b045b823c9c756622" id="objective-c">Objective-C</h3>
+        <div id="1-7e4db5f27de4055b045b823c9c756622" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">marker.mapView = nil;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xC815;&#xBCF4; &#xCC3D;&#xC740; <code>mapView</code> &#xC18D;&#xC131; &#xC678;&#xC5D0;&#xB3C4; <a href="ref://../reference/Classes/NMFInfoWindow.html#/c%3Aobjc%28cs%29NMFInfoWindow%28im%29close" target="_blank"><code>-close</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xB2EB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC815;&#xBCF4; &#xCC3D;&#xC744; &#xB2EB;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="05fcf6d5b70d6be1563d2fcbd9551e83" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1c9ccf2386197a62035653f4c5d9a585" class="gbcg-selector gbcg-active" data-tab="0-1c9ccf2386197a62035653f4c5d9a585" data-tab-category="undefined">Swift</a>
+    <a id="select-1-b244f93773f82e5d3c3469678d0e65c4" class="gbcg-selector" data-tab="1-b244f93773f82e5d3c3469678d0e65c4" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1c9ccf2386197a62035653f4c5d9a585" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">infoWindow.close();
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1c9ccf2386197a62035653f4c5d9a585" id="swift">Swift</h3>
+        <div id="0-1c9ccf2386197a62035653f4c5d9a585" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">infoWindow.close();
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-b244f93773f82e5d3c3469678d0e65c4" id="objective-c">Objective-C</h3>
+        <div id="1-b244f93773f82e5d3c3469678d0e65c4" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">[infoWindow close];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xBA40;&#xD2F0;&#xC2A4;&#xB808;&#xB529;">&#xBA40;&#xD2F0;&#xC2A4;&#xB808;&#xB529;</h3>
+<p>&#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xB294; &#xC544;&#xBB34; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C;&#xB098; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC18D;&#xC131;&#xC740; &#xC2A4;&#xB808;&#xB4DC; &#xC548;&#xC804;&#xC131;&#xC774; &#xBCF4;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xC73C;&#xBBC0;&#xB85C; &#xC5EC;&#xB7EC; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xB3D9;&#xC2DC;&#xC5D0; &#xC811;&#xADFC;&#xD574;&#xC11C;&#xB294; &#xC548;&#xB429;&#xB2C8;&#xB2E4;. &#xD2B9;&#xD788; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB41C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC18D;&#xC131;&#xC740; &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C;&#xB9CC; &#xC811;&#xADFC;&#xD574;&#xC57C; &#xD558;&#xBA70;, &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; <a href="https://developer.apple.com/documentation/foundation/nsobjectinaccessibleexception?language=objc" target="_blank"><code>NSObjectInaccessibleException</code></a>&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E8;, &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74; &#xB2E4;&#xB978; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC18D;&#xC131;&#xC5D0; &#xC811;&#xADFC;&#xD574;&#xB3C4; &#xC608;&#xC678;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xB300;&#xB7C9;&#xC758; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xB2E4;&#xB8F0; &#xACBD;&#xC6B0; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xCD08;&#xAE30; &#xC635;&#xC158;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xC740; &#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xC218;&#xD589;&#xD558;&#xACE0; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xB9CC;&#xC744; &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xC218;&#xD589;&#xD558;&#xBA74; &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;&#xB97C; &#xD6A8;&#xC728;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; 1000&#xAC1C;&#xC758; &#xB9C8;&#xCEE4;&#xB97C; &#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC18D;&#xC131;&#xC744; &#xC9C0;&#xC815;&#xD55C; &#xD6C4; &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;&#xC5D0;&#xC11C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="41ed158031c4ef87198289d5dd23fbc1" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-6cf3b8cec29820b678782695d69931e8" class="gbcg-selector gbcg-active" data-tab="0-6cf3b8cec29820b678782695d69931e8" data-tab-category="undefined">Swift</a>
+    <a id="select-1-334d71231ef8b593665800c49c4e80de" class="gbcg-selector" data-tab="1-334d71231ef8b593665800c49c4e80de" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-6cf3b8cec29820b678782695d69931e8" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-type">DispatchQueue</span>.global(qos: .<span class="hljs-keyword">default</span>).async {
+    <span class="hljs-comment">// &#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; &#xC2A4;&#xB808;&#xB4DC;</span>
+    <span class="hljs-keyword">var</span> markers = [<span class="hljs-type">NMFMarker</span>]()
+    <span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">1000</span> {
+        <span class="hljs-keyword">let</span> marker = <span class="hljs-type">NMFMarker</span>(position: ...)
+        marker.iconImage = ...
+        marker.captionText = ...
+        markers.append(marker)
+    }
+
+    <span class="hljs-type">DispatchQueue</span>.main.async { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] <span class="hljs-keyword">in</span>
+        <span class="hljs-comment">// &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;</span>
+        <span class="hljs-keyword">for</span> marker <span class="hljs-keyword">in</span> markers {
+            marker.mapView = <span class="hljs-keyword">self</span>?.mapView
+        }
+    }
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-6cf3b8cec29820b678782695d69931e8" id="swift">Swift</h3>
+        <div id="0-6cf3b8cec29820b678782695d69931e8" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-type">DispatchQueue</span>.global(qos: .<span class="hljs-keyword">default</span>).async {
+    <span class="hljs-comment">// &#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; &#xC2A4;&#xB808;&#xB4DC;</span>
+    <span class="hljs-keyword">var</span> markers = [<span class="hljs-type">NMFMarker</span>]()
+    <span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">1000</span> {
+        <span class="hljs-keyword">let</span> marker = <span class="hljs-type">NMFMarker</span>(position: ...)
+        marker.iconImage = ...
+        marker.captionText = ...
+        markers.append(marker)
+    }
+
+    <span class="hljs-type">DispatchQueue</span>.main.async { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] <span class="hljs-keyword">in</span>
+        <span class="hljs-comment">// &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;</span>
+        <span class="hljs-keyword">for</span> marker <span class="hljs-keyword">in</span> markers {
+            marker.mapView = <span class="hljs-keyword">self</span>?.mapView
+        }
+    }
+}
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-334d71231ef8b593665800c49c4e80de" id="objective-c">Objective-C</h3>
+        <div id="1-334d71231ef8b593665800c49c4e80de" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">__block ViewController *weakSelf = self;
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    // &#xBC31;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; &#xC2A4;&#xB808;&#xB4DC;
+    NSMutableArray&lt;NMFMarker *&gt; *markers = [NSMutableArray array];
+    for (NSInteger i = 0; i &lt; 1000; i++) {
+        NMFMarker *marker = [NMFMarker markerWithPosition:...];
+        marker.iconImage = ...;
+        marker.captionText = ...;
+        [markers addObject:marker];
+    }
+
+    dispatch_async(dispatch_get_main_queue(), ^(){
+        // &#xBA54;&#xC778; &#xC2A4;&#xB808;&#xB4DC;
+        for (NMFMarker *marker in markers) {
+            marker.mapView = weakSelf.mapView;
+        }
+    });
+});
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h2 id="&#xBE44;&#xD2B8;&#xB9F5;-&#xC0AC;&#xC6A9;">&#xBE44;&#xD2B8;&#xB9F5; &#xC0AC;&#xC6A9;</h2>
+<p>&#xB9C8;&#xCEE4;, &#xC815;&#xBCF4; &#xCC3D;, &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;, &#xC9C0;&#xC0C1; &#xC624;&#xBC84;&#xB808;&#xC774;, &#xACBD;&#xB85C;&#xC120; &#xC624;&#xBC84;&#xB808;&#xC774; &#xB4F1; &#xB9CE;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xBE44;&#xD2B8;&#xB9F5; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0;&#xC11C; &#xBE44;&#xD2B8;&#xB9F5; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74; <code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="nmfoverlayimage-&#xAC1D;&#xCCB4;-&#xC0DD;&#xC131;">NMFOverlayImage &#xAC1D;&#xCCB4; &#xC0DD;&#xC131;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlayImage.html" target="_blank"><code>NMFOverlayImage</code></a>&#xB294; &#xC544;&#xC774;&#xCF58;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xB420; &#xC218; &#xC788;&#xB294; &#xBE44;&#xD2B8;&#xB9F5; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xBD88;&#xBCC0; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. <code>NMFOverlayImage</code> &#xD074;&#xB798;&#xC2A4;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC774;&#xBBF8;&#xC9C0; &#xC5D0;&#xC14B;, <code>UIImage</code>, <code>NSBundle</code> &#xB4F1;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xBA87; &#xAC00;&#xC9C0; &#xD329;&#xD1A0;&#xB9AC; &#xBA54;&#xC11C;&#xB4DC;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><a href="ref://../reference/Classes/NMFOverlayImage.html#/c%3Aobjc%28cs%29NMFOverlayImage(cm" target="_blank"><code>+overlayImageWithName:</code></a>overlayImageWithName:): &#xC9C0;&#xC815;&#xB41C; &#xC774;&#xB984;&#xC758; &#xC774;&#xBBF8;&#xC9C0; &#xC5D0;&#xC14B;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFOverlayImage.html#/c%3Aobjc%28cs%29NMFOverlayImage(cm" target="_blank"><code>+overlayImageWithImage:</code></a>overlayImageWithImage:): <code>UIImage</code>&#xB85C;&#xBD80;&#xD130; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><a href="ref://../reference/Classes/NMFOverlayImage.html#/c%3Aobjc%28cs%29NMFOverlayImage(cm" target="_blank"><code>+overlayImageWithName:inBundle:</code></a>overlayImageWithName:inBundle:): &#xC9C0;&#xC815;&#xB41C; &#xBC88;&#xB4E4; &#xC548;&#xC5D0; &#xC788;&#xB294; &#xC774;&#xBBF8;&#xC9C0; &#xC5D0;&#xC14B;&#xC5D0;&#xC11C; &#xC9C0;&#xC815;&#xB41C; &#xC774;&#xB984;&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xCC3E;&#xC544; &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC774;&#xBBF8;&#xC9C0; &#xC5D0;&#xC14B; &#xB9AC;&#xC18C;&#xC2A4;&#xB85C;&#xBD80;&#xD130; <code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="efb77d70d8b948b0fc07fa2ae7f763c5" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-cbcdddcb88a920de88bea013f5390044" class="gbcg-selector gbcg-active" data-tab="0-cbcdddcb88a920de88bea013f5390044" data-tab-category="undefined">Swift</a>
+    <a id="select-1-135e957ba47a6a827a69c71e67ab653f" class="gbcg-selector" data-tab="1-135e957ba47a6a827a69c71e67ab653f" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-cbcdddcb88a920de88bea013f5390044" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-cbcdddcb88a920de88bea013f5390044" id="swift">Swift</h3>
+        <div id="0-cbcdddcb88a920de88bea013f5390044" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-135e957ba47a6a827a69c71e67ab653f" id="objective-c">Objective-C</h3>
+        <div id="1-135e957ba47a6a827a69c71e67ab653f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFOverlayImage *image = [NMFOverlayImage overlayImageWithName:@&quot;marker_icon&quot;];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xD544;&#xC694;&#xB85C; &#xD558;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC18D;&#xC131;&#xC5D0; <code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xBC18;&#xC601;&#xB429;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#xAC01; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC00;&#xC774;&#xB4DC;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB9C8;&#xCEE4;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="d92471adc6dcf9e9d11054bedd63efc5" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-502a43e2e4d0559fb301daef0a11912f" class="gbcg-selector gbcg-active" data-tab="0-502a43e2e4d0559fb301daef0a11912f" data-tab-category="undefined">Swift</a>
+    <a id="select-1-cf977787f92b2769cecf0fe3bd36d3f4" class="gbcg-selector" data-tab="1-cf977787f92b2769cecf0fe3bd36d3f4" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-502a43e2e4d0559fb301daef0a11912f" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker.iconImage = image
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-502a43e2e4d0559fb301daef0a11912f" id="swift">Swift</h3>
+        <div id="0-502a43e2e4d0559fb301daef0a11912f" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker.iconImage = image
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-cf977787f92b2769cecf0fe3bd36d3f4" id="objective-c">Objective-C</h3>
+        <div id="1-cf977787f92b2769cecf0fe3bd36d3f4" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFOverlayImage *image = [NMFOverlayImage overlayImageWithName:@&quot;marker_icon&quot;];
+marker.iconImage = image;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="uiview&#xB97C;-&#xC0AC;&#xC6A9;&#xD55C;-nmfoverlayimage">UIView&#xB97C; &#xC0AC;&#xC6A9;&#xD55C; NMFOverlayImage</h3>
+<p>&#xBE44;&#xD2B8;&#xB9F5; &#xC774;&#xBBF8;&#xC9C0; &#xC678;&#xC5D0;&#xB3C4; &#xCEE4;&#xC2A4;&#xD140; &#xBDF0;&#xB97C; &#xC0AC;&#xC6A9;&#xD55C; <code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>NMFOverlayImage</code>&#xB85C; &#xB9CC;&#xB4E4; &#xCEE4;&#xC2A4;&#xD140; &#xBDF0;&#xC5D0;  <a href="ref://../reference/Protocols/NMFOverlayImageDataSource.html" target="_blank"><code>NMFOverlayImageDataSource</code></a> &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xAD6C;&#xD604;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD560; <code>NMFOverlay</code> &#xAC1D;&#xCCB4;&#xC758; <code>dataSource</code>&#xB85C; &#xB4F1;&#xB85D;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xBA54;&#xBAA8;&#xB9AC;-&#xAD00;&#xB9AC;">&#xBA54;&#xBAA8;&#xB9AC; &#xAD00;&#xB9AC;</h3>
+<p><code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB294; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xB2E4;&#xB8E8;&#xBBC0;&#xB85C; &#xC0AC;&#xC6A9; &#xC2DC; &#xBA54;&#xBAA8;&#xB9AC; &#xAD00;&#xB9AC;&#xC5D0; &#xC720;&#xC758;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xAC19;&#xC740; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; <code>NMFOverlayImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xD558;&#xB098;&#xB9CC; &#xB9CC;&#xB4E4;&#xC5B4; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>marker1</code>&#xACFC; <code>marker2</code>&#xB294; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;&#xD558;&#xC9C0;&#xB9CC;, <code>marker3</code>&#xACFC; <code>marker4</code>&#xB294; &#xB3D9;&#xC77C;&#xD55C; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xC911;&#xBCF5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xC798;&#xBABB;&#xB41C; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="b8975f0271b46492282a81c42f8964d0" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-acf9ae714dbaf9de2144a7b9c306e4a0" class="gbcg-selector gbcg-active" data-tab="0-acf9ae714dbaf9de2144a7b9c306e4a0" data-tab-category="undefined">Swift</a>
+    <a id="select-1-241cecb1b5ab201045fc4068af2592f7" class="gbcg-selector" data-tab="1-241cecb1b5ab201045fc4068af2592f7" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-acf9ae714dbaf9de2144a7b9c306e4a0" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-comment">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;</span>
+<span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker1.iconImage = image
+marker2.iconImage = image
+
+<span class="hljs-comment">// Bad: marker3, 4&#xAC00; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xC911;&#xBCF5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;</span>
+marker3.iconImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker4.iconImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-acf9ae714dbaf9de2144a7b9c306e4a0" id="swift">Swift</h3>
+        <div id="0-acf9ae714dbaf9de2144a7b9c306e4a0" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-comment">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;</span>
+<span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker1.iconImage = image
+marker2.iconImage = image
+
+<span class="hljs-comment">// Bad: marker3, 4&#xAC00; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xC911;&#xBCF5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;</span>
+marker3.iconImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+marker4.iconImage = <span class="hljs-type">NMFOverlayImage</span>(name: <span class="hljs-string">&quot;marker_icon&quot;</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-241cecb1b5ab201045fc4068af2592f7" id="objective-c">Objective-C</h3>
+        <div id="1-241cecb1b5ab201045fc4068af2592f7" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;
+NMFOverlayImage *image = NMFOverlayImage overlayImageWithName:@&quot;marker_icon&quot;];
+marker1.iconImage = image;
+marker2.iconImage = image;
+
+// Bad: marker3, 4&#xAC00; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xC911;&#xBCF5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;
+marker3.iconImage = [NMFOverlayImage overlayImageWithName:@&quot;marker_icon&quot;];
+marker4.iconImage = [NMFOverlayImage overlayImageWithName:@&quot;marker_icon&quot;];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E8;, <code>UIImage</code> &#xAC1D;&#xCCB4;&#xB85C;&#xBD80;&#xD130; <code>NMFOverlayImage</code> &#xAC1D;&#xCCB4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB2E4;&#xBA74;, <code>NMFOverlayImage</code>&#xAC00; &#xB098;&#xD0C0;&#xB0B4;&#xB294; <code>UIImage</code>&#xAC00; &#xB3D9;&#xC77C;&#xD560; &#xACBD;&#xC6B0; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xAC00; &#xB2E4;&#xB974;&#xB354;&#xB77C;&#xB3C4; &#xB3D9;&#xC77C;&#xD55C; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>marker1</code>, <code>marker2</code>, <code>marker3</code>, <code>marker4</code> &#xBAA8;&#xB450; &#xB3D9;&#xC77C;&#xD55C; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="1aa93e399094e71224ea60417d4ac904" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-656580c3baa6c38fb972c54be50ddfcb" class="gbcg-selector gbcg-active" data-tab="0-656580c3baa6c38fb972c54be50ddfcb" data-tab-category="undefined">Swift</a>
+    <a id="select-1-4ddd48631742d5a7431866499af66735" class="gbcg-selector" data-tab="1-4ddd48631742d5a7431866499af66735" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-656580c3baa6c38fb972c54be50ddfcb" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-comment">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;</span>
+<span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+marker1.iconImage = image
+marker2.iconImage = image
+
+<span class="hljs-comment">// OK: marker3, 4&#xAC00; &#xB2E4;&#xB978; NMFOverlayImage &#xAC1D;&#xCCB4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0;&#xB9CC; &#xCC38;&#xC870;&#xD558;&#xB294; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xAC19;&#xC73C;&#xBBC0;&#xB85C; &#xBE44;&#xD2B8;&#xB9F5;&#xB3C4; &#xACF5;&#xC720;</span>
+marker3.iconImage = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+marker4.iconImage = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-656580c3baa6c38fb972c54be50ddfcb" id="swift">Swift</h3>
+        <div id="0-656580c3baa6c38fb972c54be50ddfcb" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-comment">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;</span>
+<span class="hljs-keyword">let</span> image = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+marker1.iconImage = image
+marker2.iconImage = image
+
+<span class="hljs-comment">// OK: marker3, 4&#xAC00; &#xB2E4;&#xB978; NMFOverlayImage &#xAC1D;&#xCCB4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0;&#xB9CC; &#xCC38;&#xC870;&#xD558;&#xB294; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xAC19;&#xC73C;&#xBBC0;&#xB85C; &#xBE44;&#xD2B8;&#xB9F5;&#xB3C4; &#xACF5;&#xC720;</span>
+marker3.iconImage = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+marker4.iconImage = <span class="hljs-type">NMFOverlayImage</span>(image: bitmap)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-4ddd48631742d5a7431866499af66735" id="objective-c">Objective-C</h3>
+        <div id="1-4ddd48631742d5a7431866499af66735" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">// Good: marker1, 2&#xAC00; &#xAC19;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC744; &#xACF5;&#xC720;
+NMFOverlayImage *image = [NMFOverlayImage overlayImageWithImage:bitmap];
+marker1.iconImage = image;
+marker2.iconImage = image;
+
+// OK: marker3, 4&#xAC00; &#xB2E4;&#xB978; OverlayImage &#xAC1D;&#xCCB4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0;&#xB9CC; &#xCC38;&#xC870;&#xD558;&#xB294; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xAC19;&#xC73C;&#xBBC0;&#xB85C; &#xBE44;&#xD2B8;&#xB9F5;&#xB3C4; &#xACF5;&#xC720;
+marker3.iconImage = [NMFOverlayImage overlayImageWithImage:bitmap];
+marker4.iconImage = [NMFOverlayImage overlayImageWithImage:bitmap];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xC9C0;&#xB3C4;&#xAC00; &#xAC10;&#xB2F9;&#xD560; &#xC218; &#xC5C6;&#xC744; &#xC815;&#xB3C4;&#xB85C; &#xB9CE;&#xC740; &#xBE44;&#xD2B8;&#xB9F5;&#xC774; &#xC0AC;&#xC6A9;&#xB418;&#xBA74; XCode console&#xC5D0; &quot;Overlay image atlas overflow&quot;&#xB77C;&#xB294; &#xACBD;&#xACE0;&#xAC00; &#xB85C;&#xAE45;&#xB418;&#xACE0; &#xB80C;&#xB354;&#xB9C1;&#xC774; &#xBB34;&#xCC99; &#xB290;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;. &#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC6A9;&#xB7C9;&#xC774; &#xB354;&#xC6B1; &#xC99D;&#xAC00;&#xD574; &#xC2DC;&#xC2A4;&#xD15C;&#xC774; &#xAC10;&#xB2F9;&#xD560; &#xC218; &#xC5C6;&#xC744; &#xC815;&#xB3C4;&#xAC00; &#xB418;&#xBA74; OOM(Out of memory)&#xC73C;&#xB85C; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; &#xC885;&#xB8CC;&#xB420; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xACB9;&#xCE68;-&#xC6B0;&#xC120;&#xC21C;&#xC704;">&#xACB9;&#xCE68; &#xC6B0;&#xC120;&#xC21C;&#xC704;</h2>
+<p>&#xC5EC;&#xB7EC; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD654;&#xBA74;&#xC5D0;&#xC11C; &#xACB9;&#xCCD0;&#xC9C0;&#xBA74; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xAC00; &#xB192;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xB0AE;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xB36E;&#xC2B5;&#xB2C8;&#xB2E4;. &#xACB9;&#xCE68; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC720;&#xD615;&#xC5D0; &#xB530;&#xB77C; &#xC9C0;&#xC815;&#xB418;&#xC9C0;&#xB9CC; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC804;&#xC5ED;-z-&#xC778;&#xB371;&#xC2A4;">&#xC804;&#xC5ED; Z &#xC778;&#xB371;&#xC2A4;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29globalZIndex" target="_blank"><code>globalZIndex</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xACB9;&#xCE68; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>globalZIndex</code>&#xAC00; <code>0</code> &#xC774;&#xC0C1;&#xC774;&#xBA74; &#xC2EC;&#xBC8C; &#xC704;&#xC5D0;, <code>0</code> &#xBBF8;&#xB9CC;&#xC774;&#xBA74; &#xC2EC;&#xBC8C; &#xC544;&#xB798;&#xC5D0; &#xADF8;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;. &#xB2E8;, <code>globalZIndex</code>&#xAC00; &#xC544;&#xBB34;&#xB9AC; &#xC791;&#xB354;&#xB77C;&#xB3C4; &#xC9C0;&#xB3C4; &#xBC30;&#xACBD;&#xBCF4;&#xB2E4;&#xB294; &#xC704;&#xC5D0; &#xADF8;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;. &#xAC01; &#xC624;&#xBC84;&#xB808;&#xC774; &#xC720;&#xD615;&#xBCC4; <code>globalZIndex</code> &#xAE30;&#xBCF8;&#xAC12;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xC815;&#xBCF4; &#xCC3D;: <code>400000</code></li>
+<li>&#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;: <code>300000</code></li>
+<li>&#xB9C8;&#xCEE4;: <code>200000</code></li>
+<li>&#xD654;&#xC0B4;&#xD45C; &#xACBD;&#xB85C; &#xC624;&#xBC84;&#xB808;&#xC774;: <code>100000</code></li>
+<li><em>(&#xC9C0;&#xB3C4; &#xC2EC;&#xBC8C;)</em></li>
+<li>&#xACBD;&#xB85C;&#xC120;: <code>-100000</code></li>
+<li>&#xC170;&#xC774;&#xD504;(&#xD3F4;&#xB9AC;&#xACE4;, &#xD3F4;&#xB9AC;&#xB77C;&#xC778;, &#xC11C;&#xD074;): <code>-200000</code></li>
+<li>&#xC9C0;&#xC0C1; &#xC624;&#xBC84;&#xB808;&#xC774;: <code>-300000</code></li>
+<li><em>(&#xC9C0;&#xB3C4; &#xBC30;&#xACBD;)</em></li>
+</ul>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xACBD;&#xB85C;&#xC120;&#xC740; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC170;&#xC774;&#xD504;&#xC758; &#xC704;, &#xC9C0;&#xB3C4; &#xC2EC;&#xBC8C;&#xC758; &#xC544;&#xB798;&#xC5D0; &#xADF8;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xACBD;&#xB85C;&#xC120;&#xC758; <code>globalZIndex</code>&#xB97C; <code>250000</code>&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xB9C8;&#xCEE4;&#xC758; &#xC704;, &#xC704;&#xCE58; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC544;&#xB798;&#xC5D0; &#xADF8;&#xB824;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC138; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xACB9;&#xCE68; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB97C; &#xD3F4;&#xB9AC;&#xACE4; -&gt; &#xACBD;&#xB85C;&#xC120; -&gt; &#xB9C8;&#xCEE4; &#xC21C;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<p><div id="33bdbae9a363b10d4e867a3c6d661765" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-07de9ddb8d0ec2cf188979a72bb8eb7e" class="gbcg-selector gbcg-active" data-tab="0-07de9ddb8d0ec2cf188979a72bb8eb7e" data-tab-category="undefined">Swift</a>
+    <a id="select-1-3bbc0641e8e05d8749a9693f803e444f" class="gbcg-selector" data-tab="1-3bbc0641e8e05d8749a9693f803e444f" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-07de9ddb8d0ec2cf188979a72bb8eb7e" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">polygon.globalZIndex = <span class="hljs-number">150000</span>
+path.globalZIndex = <span class="hljs-number">50000</span>
+marker.globalZIndex = -<span class="hljs-number">500000</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-07de9ddb8d0ec2cf188979a72bb8eb7e" id="swift">Swift</h3>
+        <div id="0-07de9ddb8d0ec2cf188979a72bb8eb7e" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">polygon.globalZIndex = <span class="hljs-number">150000</span>
+path.globalZIndex = <span class="hljs-number">50000</span>
+marker.globalZIndex = -<span class="hljs-number">500000</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-3bbc0641e8e05d8749a9693f803e444f" id="objective-c">Objective-C</h3>
+        <div id="1-3bbc0641e8e05d8749a9693f803e444f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">polygon.globalZIndex = 150000;
+path.globalZIndex = 50000;
+marker.globalZIndex = -50000;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-1-z-index.png" alt="&#xC804;&#xC5ED; z-index&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h3 id="&#xBCF4;&#xC870;-z-&#xC778;&#xB371;&#xC2A4;">&#xBCF4;&#xC870; Z &#xC778;&#xB371;&#xC2A4;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29zIndex" target="_blank"><code>zIndex</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; <code>globalZIndex</code>&#xAC00; &#xB3D9;&#xC77C;&#xD55C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC04;&#xC758; &#xACB9;&#xCE68; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC989;, &#xB450; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; <code>globalZIndex</code>&#xAC00; &#xB3D9;&#xC77C;&#xD558;&#xB2E4;&#xBA74; <code>zIndex</code>&#xAC00; &#xD070; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC791;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xB36E;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xB9C8;&#xCEE4;&#xC758; <code>zIndex</code>&#xB97C; <code>1</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xACE0;, &#xC9C0;&#xC0C1; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; <code>zIndex</code>&#xB97C; <code>2</code>&#xB85C; &#xC9C0;&#xC815;&#xD588;&#xB2E4; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xB9C8;&#xCEE4;&#xC758; &#xAE30;&#xBCF8; <code>globalZIndex</code>&#xB294; <code>200000</code>, &#xC9C0;&#xC0C1; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xAE30;&#xBCF8; <code>globalZIndex</code>&#xB294; <code>-300000</code> &#xC774;&#xBBC0;&#xB85C; &#xB9C8;&#xCEE4;&#xAC00; &#xC9C0;&#xC0C1; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xB36E;&#xC2B5;&#xB2C8;&#xB2E4;. <code>zIndex</code>&#xC758; &#xAE30;&#xBCF8;&#xAC12;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC720;&#xD615;&#xACFC; &#xBB34;&#xAD00;&#xD558;&#xAC8C; <code>0</code>&#xC774;&#xBBC0;&#xB85C;, &#xB3D9;&#xC77C;&#xD55C; &#xC720;&#xD615;&#xC758; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC04;&#xC758; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB9CC;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xACBD;&#xC6B0; <code>globalZIndex</code>&#xBCF4;&#xB2E4; &#xC9C1;&#xAD00;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC138; &#xB9C8;&#xCEE4;&#xC758; &#xB178;&#xCD9C; &#xC21C;&#xC11C;&#xB97C; &#xB178;&#xB780;&#xC0C9; -&gt; &#xB179;&#xC0C9; -&gt; &#xD30C;&#xB780;&#xC0C9; &#xC21C;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<p><div id="2cc4ee41ef659cf79d6451dd94da4ede" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-8fc59988699bf2e41f852872800940b5" class="gbcg-selector gbcg-active" data-tab="0-8fc59988699bf2e41f852872800940b5" data-tab-category="undefined">Swift</a>
+    <a id="select-1-e09c951c759b21b18117328de5b82f8e" class="gbcg-selector" data-tab="1-e09c951c759b21b18117328de5b82f8e" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-8fc59988699bf2e41f852872800940b5" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">yellowMarker.zIndex = <span class="hljs-number">100</span>
+greenMarker.zIndex = <span class="hljs-number">0</span>
+blueMarker.zIndex = -<span class="hljs-number">10</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-8fc59988699bf2e41f852872800940b5" id="swift">Swift</h3>
+        <div id="0-8fc59988699bf2e41f852872800940b5" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">yellowMarker.zIndex = <span class="hljs-number">100</span>
+greenMarker.zIndex = <span class="hljs-number">0</span>
+blueMarker.zIndex = -<span class="hljs-number">10</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-e09c951c759b21b18117328de5b82f8e" id="objective-c">Objective-C</h3>
+        <div id="1-e09c951c759b21b18117328de5b82f8e" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">yellowMarker.zIndex = 100;
+greenMarker.zIndex = 0;
+blueMarker.zIndex = -10;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-2-use-zindex.png" alt="&#xB9C8;&#xCEE4;&#xC758; z-index&#xB97C; &#xC9C0;&#xC815;&#xD55C; &#xBAA8;&#xC2B5;"></p>
+<h2 id="&#xB178;&#xCD9C;-&#xC81C;&#xC5B4;">&#xB178;&#xCD9C; &#xC81C;&#xC5B4;</h2>
+<p>&#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0;&#xB294; &#xAC00;&#xC2DC;&#xC131;, &#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xC5D0; &#xB300;&#xD55C; &#xC18D;&#xC131;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC77C;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xB610;&#xB294; &#xD2B9;&#xC815;&#xD55C; &#xC0C1;&#xD669;&#xC5D0;&#xB9CC; &#xC228;&#xAE30;&#xACE0;&#xC790; &#xD560; &#xACBD;&#xC6B0; <code>mapView</code> &#xC18D;&#xC131;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xAC83;&#xBCF4;&#xB2E4; &#xC774;&#xB7EC;&#xD55C; &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD6A8;&#xC728;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xAC00;&#xC2DC;&#xC131;">&#xAC00;&#xC2DC;&#xC131;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29hidden" target="_blank"><code>hidden</code></a> &#xC18D;&#xC131;&#xC744; <code>YES</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD654;&#xBA74;&#xC5D0;&#xC11C; &#xC228;&#xACA8;&#xC9D1;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC640; &#xC9C0;&#xB3C4; &#xAC04;&#xC758; &#xAD00;&#xACC4;&#xB294; &#xC5EC;&#xC804;&#xD788; &#xC720;&#xC9C0;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB97C; &#xC228;&#xAE30;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="84d01e27a95ede4db21818248e2e565a" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-13da35eb29b189c7d93a19375f18f2f2" class="gbcg-selector gbcg-active" data-tab="0-13da35eb29b189c7d93a19375f18f2f2" data-tab-category="undefined">Swift</a>
+    <a id="select-1-ce79977d440a0ffcd60b44272dfe868a" class="gbcg-selector" data-tab="1-ce79977d440a0ffcd60b44272dfe868a" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-13da35eb29b189c7d93a19375f18f2f2" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">overlay.hidden = <span class="hljs-literal">true</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-13da35eb29b189c7d93a19375f18f2f2" id="swift">Swift</h3>
+        <div id="0-13da35eb29b189c7d93a19375f18f2f2" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">overlay.hidden = <span class="hljs-literal">true</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-ce79977d440a0ffcd60b44272dfe868a" id="objective-c">Objective-C</h3>
+        <div id="1-ce79977d440a0ffcd60b44272dfe868a" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">overlay.hidden = YES;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xCD5C;&#xC18C;-&#xBC0F;-&#xCD5C;&#xB300;-&#xC90C;-&#xB808;&#xBCA8;">&#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29minZoom" target="_blank"><code>minZoom</code></a> &#xBC0F; <a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29maxZoom" target="_blank"><code>maxZoom</code></a> &#xC18D;&#xC131;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xD2B9;&#xC815; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C;&#xB9CC; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xB098;&#xD0C0;&#xB098;&#xB3C4;&#xB85D; &#xC9C0;&#xC815;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC774; <code>minZoom</code>&#xACFC; <code>maxZoom</code> &#xBC94;&#xC704;&#xB97C; &#xBC97;&#xC5B4;&#xB098;&#xBA74; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC228;&#xACA8;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; 12~16 &#xB808;&#xBCA8; &#xC0AC;&#xC774;&#xC5D0;&#xC11C;&#xB9CC; &#xB098;&#xD0C0;&#xB098;&#xB3C4;&#xB85D; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="b08dc873d4ffa8f16bb72f2ebee007b6" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-7c132c148ef7f14c46b89919fb78ecb0" class="gbcg-selector gbcg-active" data-tab="0-7c132c148ef7f14c46b89919fb78ecb0" data-tab-category="undefined">Swift</a>
+    <a id="select-1-8e3e724c567ee482a546b2698b97256c" class="gbcg-selector" data-tab="1-8e3e724c567ee482a546b2698b97256c" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-7c132c148ef7f14c46b89919fb78ecb0" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">overlay.minZoom = <span class="hljs-number">12</span>
+overlay.maxZoom = <span class="hljs-number">16</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-7c132c148ef7f14c46b89919fb78ecb0" id="swift">Swift</h3>
+        <div id="0-7c132c148ef7f14c46b89919fb78ecb0" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">overlay.minZoom = <span class="hljs-number">12</span>
+overlay.maxZoom = <span class="hljs-number">16</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-8e3e724c567ee482a546b2698b97256c" id="objective-c">Objective-C</h3>
+        <div id="1-8e3e724c567ee482a546b2698b97256c" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">overlay.minZoom = 12;
+overlay.maxZoom = 16;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h2 id="&#xC774;&#xBCA4;&#xD2B8;">&#xC774;&#xBCA4;&#xD2B8;</h2>
+<p>&#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xACE0; &#xC18C;&#xBE44;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xB300;&#xD55C; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB294; &#xC9C0;&#xB3C4;&#xAC00; &#xC544;&#xB2CC; &#xAC01; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xD130;&#xCE58;-&#xC774;&#xBCA4;&#xD2B8;">&#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;</h3>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29touchHandler" target="_blank"><code>touchHandler</code></a> &#xC18D;&#xC131;&#xC5D0; <a href="ref://../reference/Overlay.html#/c:NMFOverlay.h@T@overlayTouchHandler" target="_blank"><code>overlayTouchHandler</code></a> &#xD0C0;&#xC785;&#xC744; &#xAD6C;&#xD604;&#xD558;&#xC5EC; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xB300;&#xD55C; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD0ED;&#xB418;&#xBA74; <code>touchHandler</code>&#xC5D0; &#xAD6C;&#xD604;&#xB41C; block &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD0ED;&#xB41C; &#xC624;&#xBC84;&#xB808;&#xC774; &#xAC1D;&#xCCB4;&#xAC00; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD0ED;&#xB420; &#xB54C;&#xB9C8;&#xB2E4; &quot;&#xC624;&#xBC84;&#xB808;&#xC774; &#xD130;&#xCE58;&#xB428;&quot; &#xB85C;&#xADF8;&#xAC00; &#xCD9C;&#xB825;&#xB418;&#xB3C4;&#xB85D; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<p><div id="7d52d3fff035bc9ecb63a262db18204e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-92c2b223ee81c36092fa0d247cb05123" class="gbcg-selector gbcg-active" data-tab="0-92c2b223ee81c36092fa0d247cb05123" data-tab-category="undefined">Swift</a>
+    <a id="select-1-17a7df99b08e9d85cdcf629a3d636e97" class="gbcg-selector" data-tab="1-17a7df99b08e9d85cdcf629a3d636e97" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-92c2b223ee81c36092fa0d247cb05123" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">overlay.touchHandler = { (overlay: <span class="hljs-type">NMFOverlay</span>) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC624;&#xBC84;&#xB808;&#xC774; &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-92c2b223ee81c36092fa0d247cb05123" id="swift">Swift</h3>
+        <div id="0-92c2b223ee81c36092fa0d247cb05123" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">overlay.touchHandler = { (overlay: <span class="hljs-type">NMFOverlay</span>) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC624;&#xBC84;&#xB808;&#xC774; &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-17a7df99b08e9d85cdcf629a3d636e97" id="objective-c">Objective-C</h3>
+        <div id="1-17a7df99b08e9d85cdcf629a3d636e97" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">overlay.touchHandler =  ^BOOL(NMFOverlay *overlay) {
+    NSLog(@&quot;&#xC624;&#xBC84;&#xB808;&#xC774; &#xD130;&#xCE58;&#xB428;&quot;);
+    return YES;
+};
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xD558;&#xB098;&#xC758; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0;&#xB294; &#xD558;&#xB098;&#xC758; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB9CC; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xD574;&#xC81C;&#xD558;&#xB824;&#xBA74; <code>touchHandler</code> &#xC18D;&#xC131;&#xC5D0; <code>nil</code>&#xC744; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xB97C; &#xD574;&#xC81C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="5a5143e6a4dd348731ce2d7119d5e2b2" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-393e142432652bcd5e78b707134b79f4" class="gbcg-selector gbcg-active" data-tab="0-393e142432652bcd5e78b707134b79f4" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2886aec970b39ae9e1247f3c5948c620" class="gbcg-selector" data-tab="1-2886aec970b39ae9e1247f3c5948c620" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-393e142432652bcd5e78b707134b79f4" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">overlay.touchHandler = <span class="hljs-literal">nil</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-393e142432652bcd5e78b707134b79f4" id="swift">Swift</h3>
+        <div id="0-393e142432652bcd5e78b707134b79f4" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">overlay.touchHandler = <span class="hljs-literal">nil</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2886aec970b39ae9e1247f3c5948c620" id="objective-c">Objective-C</h3>
+        <div id="1-2886aec970b39ae9e1247f3c5948c620" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">overlay.touchHandler = nil;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xB294; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xACE0;&#xC790; &#xD558;&#xB294; &#xBAA8;&#xB4E0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xB2E4;&#xBA74; &#xADF8; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB294; &#xD0ED;&#xB410;&#xC744; &#xB54C; &#xBB34;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;. &#xC989;, &#xB450; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xACB9;&#xCCD0;&#xC838; &#xC788;&#xACE0; &#xC704;&#xC5D0; &#xC788;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xB2E4;&#xBA74; &#xC544;&#xB798;&#xC5D0; &#xC788;&#xB294; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xC5D0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC5C6;&#xAC70;&#xB098; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xB2E4;&#xBA74; &#xC9C0;&#xB3C4;&#xAC00; &#xD0ED;&#xB41C; &#xAC83;&#xC73C;&#xB85C; &#xAC04;&#xC8FC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC774;&#xBCA4;&#xD2B8;-&#xC804;&#xD30C;-&#xBC0F;-&#xC18C;&#xBE44;">&#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C; &#xBC0F; &#xC18C;&#xBE44;</h3>
+<p>&#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB294; &#xC9C0;&#xB3C4;&#xB85C; &#xC804;&#xD30C;&#xB420; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC9C0;&#xB3C4;&#xB85C; &#xC804;&#xD30C;&#xD558;&#xB824;&#xBA74; <code>touchHandler</code>&#xC758; &#xAC12;&#xC73C;&#xB85C; <code>NO</code>&#xB97C; &#xBC18;&#xD658;&#xD558;&#xB3C4;&#xB85D; &#xAD6C;&#xD604;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xAC8C; &#xD558;&#xBA74; <code>touchHandler</code>&#xAC00; &#xBC18;&#xD658;&#xB41C; &#xD6C4; &#xC9C0;&#xB3C4;&#xC758; <code>-didTapMapView:LatLng:</code> &#xB378;&#xB9AC;&#xAC8C;&#xC774;&#xD2B8; &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;. &#xBC18;&#xB300;&#xB85C; <code>touchHandler</code>&#xAC00; <code>YES</code>&#xB97C; &#xBC18;&#xD658;&#xD560; &#xACBD;&#xC6B0; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC18C;&#xBE44;&#xD55C; &#xAC83;&#xC73C;&#xB85C; &#xAC04;&#xC8FC;&#xB418;&#xC5B4; &#xC9C0;&#xB3C4;&#xC758; <code>-didTapMapView:LatLng:</code>&#xB294; &#xD638;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>marker1</code>&#xC740; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC804;&#xD30C;&#xD558;&#xACE0; <code>marker2</code>&#xB294; &#xC18C;&#xBE44;&#xD558;&#xB3C4;&#xB85D; &#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. <code>marker1</code>&#xC774; &#xD0ED;&#xB420; &#xB54C;&#xC5D0;&#xB294; &quot;&#xB9C8;&#xCEE4; &#xD130;&#xCE58;&#xB428;&quot; &#xB85C;&#xADF8;&#xC640; &quot;&#xC9C0;&#xB3C4; &#xD130;&#xCE58;&#xB428;&quot; &#xB85C;&#xADF8;&#xAC00; &#xBAA8;&#xB450; &#xB178;&#xCD9C;&#xB418;&#xC9C0;&#xB9CC;, <code>marker2</code>&#xAC00; &#xD0ED;&#xB420; &#xB54C;&#xC5D0;&#xB294; &quot;&#xB9C8;&#xCEE4; 2 &#xD130;&#xCE58;&#xB428;&quot; &#xB85C;&#xADF8;&#xB9CC; &#xB178;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><div id="4b2dfc9fc7ec014101307b3fae5ff062" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-25ce10bc07ac1bea4021b2c54c9da2ab" class="gbcg-selector gbcg-active" data-tab="0-25ce10bc07ac1bea4021b2c54c9da2ab" data-tab-category="undefined">Swift</a>
+    <a id="select-1-26fb2bea5ba661f4ad129eda50d76a64" class="gbcg-selector" data-tab="1-26fb2bea5ba661f4ad129eda50d76a64" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-25ce10bc07ac1bea4021b2c54c9da2ab" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">marker1.touchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; 1 &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-comment">// &#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}
+
+marker2.touchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; 2 &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">didTapMapView</span><span class="hljs-params">(<span class="hljs-number">_</span> point: CGPoint, latLng latlng: NMGLatLng)</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC9C0;&#xB3C4; &#xD130;&#xCE58;&#xB428;&quot;</span>)
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-25ce10bc07ac1bea4021b2c54c9da2ab" id="swift">Swift</h3>
+        <div id="0-25ce10bc07ac1bea4021b2c54c9da2ab" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">marker1.touchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; 1 &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-comment">// &#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}
+
+marker2.touchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; 2 &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">didTapMapView</span><span class="hljs-params">(<span class="hljs-number">_</span> point: CGPoint, latLng latlng: NMGLatLng)</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC9C0;&#xB3C4; &#xD130;&#xCE58;&#xB428;&quot;</span>)
+}
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-26fb2bea5ba661f4ad129eda50d76a64" id="objective-c">Objective-C</h3>
+        <div id="1-26fb2bea5ba661f4ad129eda50d76a64" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">marker1.touchHandler =  ^BOOL(NMFOverlay *overlay) {
+    NSLog(@&quot;&#xB9C8;&#xCEE4; 1 &#xD130;&#xCE58;&#xB428;&quot;);
+    // &#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C;
+    return NO;
+};
+
+marker2.touchHandler =  ^BOOL(NMFOverlay *overlay) {
+    NSLog(@&quot;&#xB9C8;&#xCEE4; 1 &#xD130;&#xCE58;&#xB428;&quot;);
+    // &#xC774;&#xBCA4;&#xD2B8; &#xC18C;&#xBE44;
+    return YES;
+};
+
+- (void)didTapMapView:(CGPoint)point LatLng:(NMGLatLng*)latlng {
+    NSLog(@&quot;&#xC9C0;&#xB3C4; &#xD130;&#xCE58;&#xB428;&quot;);
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0;&#xC11C; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xC804;&#xD30C;&#xB418;&#xB294; &#xACF3;&#xC740; &#xC624;&#xC9C1; &#xC9C0;&#xB3C4;&#xBFD0;&#xC785;&#xB2C8;&#xB2E4;. &#xC989;, &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC758; &#xC544;&#xB798;&#xC5D0; &#xB2E4;&#xB978; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB098; &#xC2EC;&#xBC8C;&#xC774; &#xACB9;&#xCCD0;&#xC838; &#xC788;&#xB354;&#xB77C;&#xB3C4; &#xC774; &#xC624;&#xBC84;&#xB808;&#xC774;&#xB098; &#xC2EC;&#xBC8C;&#xB85C;&#xB294; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xC804;&#xD30C;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="userinfo">userInfo</h2>
+<p><a href="ref://../reference/Classes/NMFOverlay.html#/c%3Aobjc%28cs%29NMFOverlay%28py%29userInfo" target="_blank"><code>userInfo</code></a> &#xC18D;&#xC131;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC624;&#xBC84;&#xB808;&#xC774;&#xC5D0; &#xCD94;&#xAC00;&#xC801;&#xC778; &#xC815;&#xBCF4;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xC18D;&#xC131;&#xC740; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xC640; &#xACB0;&#xD569;&#xD574; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD2B9;&#xD788; &#xC720;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. <code>touchHandler</code>&#xC5D0;&#xC11C; <code>userInfo</code>&#xC5D0; &#xC800;&#xC7A5;&#xB41C; &#xC815;&#xBCF4;&#xB97C; &#xD655;&#xC778;&#xD574; &#xC5B4;&#xB5A4; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD0ED;&#xB418;&#xC5C8;&#xB294;&#xC9C0;&#xB97C; &#xC2DD;&#xBCC4;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC5EC;&#xB7EC; &#xC624;&#xBC84;&#xB808;&#xC774;&#xAC00; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xB97C; &#xACF5;&#xC720;&#xD558;&#xB3C4;&#xB85D; &#xAD6C;&#xD604;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>marker1</code>&#xACFC; <code>marker2</code>&#xC5D0; <code>userInfo</code>&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xD130;&#xCE58; &#xD578;&#xB4E4;&#xB7EC;&#xB97C; &#xACF5;&#xC720;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="7a17c6e191b4401327cecbf342f2ed42" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-fa53b713d856e1b63cc4aabc65e75eff" class="gbcg-selector gbcg-active" data-tab="0-fa53b713d856e1b63cc4aabc65e75eff" data-tab-category="undefined">Swift</a>
+    <a id="select-1-4a046f4840db779bcb9ba7079f0a895a" class="gbcg-selector" data-tab="1-4a046f4840db779bcb9ba7079f0a895a" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-fa53b713d856e1b63cc4aabc65e75eff" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> handler: overlayTouchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; <span class="hljs-subst">\(overlay.userInfo[&quot;tag&quot;] ?? &quot;tag&quot;)</span> &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}
+
+marker1.userInfo = [<span class="hljs-string">&quot;tag&quot;</span>: <span class="hljs-number">1</span>]
+marker2.userInfo = [<span class="hljs-string">&quot;tag&quot;</span>: <span class="hljs-number">2</span>]
+
+marker1.touchHandler = handler
+marker2.touchHandler = handler
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-fa53b713d856e1b63cc4aabc65e75eff" id="swift">Swift</h3>
+        <div id="0-fa53b713d856e1b63cc4aabc65e75eff" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> handler: overlayTouchHandler = { (overlay) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB9C8;&#xCEE4; <span class="hljs-subst">\(overlay.userInfo[&quot;tag&quot;] ?? &quot;tag&quot;)</span> &#xD130;&#xCE58;&#xB428;&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}
+
+marker1.userInfo = [<span class="hljs-string">&quot;tag&quot;</span>: <span class="hljs-number">1</span>]
+marker2.userInfo = [<span class="hljs-string">&quot;tag&quot;</span>: <span class="hljs-number">2</span>]
+
+marker1.touchHandler = handler
+marker2.touchHandler = handler
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-4a046f4840db779bcb9ba7079f0a895a" id="objective-c">Objective-C</h3>
+        <div id="1-4a046f4840db779bcb9ba7079f0a895a" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">overlayTouchHandler handler = ^BOOL(NMFOverlay *overlay) {
+    NSLog(@&quot;&#xB9C8;&#xCEE4; %@ &#xD130;&#xCE58;&#xB428;&quot;, overlay.userInfo[@&quot;tag&quot;]);
+    return NO;
+};
+
+marker1.userInfo = @{@&quot;tag&quot;:@1};
+marker2.userInfo = @{@&quot;tag&quot;:@2};
+
+marker1.touchHandler = handler;
+marker2.touchHandler = handler;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="5-2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 마커">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"오버레이 공통","level":"3.5.1","depth":2,"next":{"title":"마커","level":"3.5.2","depth":2,"path":"5-2.md","ref":"5-2.md","articles":[]},"previous":{"title":"오버레이","level":"3.5","depth":1,"ref":"","articles":[{"title":"오버레이 공통","level":"3.5.1","depth":2,"path":"5-1.md","ref":"5-1.md","articles":[]},{"title":"마커","level":"3.5.2","depth":2,"path":"5-2.md","ref":"5-2.md","articles":[]},{"title":"정보 창","level":"3.5.3","depth":2,"path":"5-3.md","ref":"5-3.md","articles":[]},{"title":"셰이프","level":"3.5.4","depth":2,"path":"5-4.md","ref":"5-4.md","articles":[]},{"title":"위치 오버레이","level":"3.5.5","depth":2,"path":"5-5.md","ref":"5-5.md","articles":[]},{"title":"지상 오버레이","level":"3.5.6","depth":2,"path":"5-6.md","ref":"5-6.md","articles":[]},{"title":"경로선과 화살표","level":"3.5.7","depth":2,"path":"5-7.md","ref":"5-7.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-1.md","mtime":"2019-04-08T05:07:38.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:40.657Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

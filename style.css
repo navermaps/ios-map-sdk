@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "나눔바른고딕", NanumBarunGothic, "나눔고딕", NanumGothic, "Malgun Gothic", "돋움", dotum, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.header {
+  background-color: #282c34;
+  color: #f9f9f9;
+  height: 55px;
+}
+
+h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+h1 .logo-ncp {
+  margin-right: 10px;
+}
+
+#body {
+  margin-top: 100px;
+}
+
+.hello {
+  padding: 0 100px 0 100px;
+}
+
+#langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#langs li {
+  display: inline-block;
+}
+
+#langs a {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: #00bf46;
+  border: 2px solid #00bf46;
+  border-radius: 30px;
+}
+
+#langs a:hover {
+  color: #ffffff;
+  background-color: #00bf46;
+}
+
+@media (min-width: 768px) {
+  #langs a {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #langs a {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #langs a {
+    width: 500px;
+  }
+}

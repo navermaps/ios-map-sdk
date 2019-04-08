@@ -1,0 +1,953 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>카메라와 투영 · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3-2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">마이그레이션 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="migration.html">
+            
+                <a href="migration.html">
+            
+                    
+                    2.x → 3.x 마이그레이션 가이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">개발 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    상호작용
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="ref://../reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="ref://../guide-en/">
+            
+                    
+                    English(영어)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >카메라와 투영</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xCE74;&#xBA54;&#xB77C;&#xC640;-&#xD22C;&#xC601;">&#xCE74;&#xBA54;&#xB77C;&#xC640; &#xD22C;&#xC601;</h1>
+<p>&#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; &#xAE30;&#xAE30; &#xD654;&#xBA74; &#xAC74;&#xB108;&#xD3B8;&#xC758; &#xC9C0;&#xB3C4;&#xB97C; &#xCE74;&#xBA54;&#xB77C;&#xB85C; &#xBC14;&#xB77C;&#xBCF4;&#xB294; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC9C0;&#xB3C4;&#xB97C; &#xD45C;&#xD604;&#xD569;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xB97C; &#xC774;&#xB3D9;, &#xD655;&#xB300; &#xBC0F; &#xCD95;&#xC18C;, &#xAE30;&#xC6B8;&#xC784;, &#xD68C;&#xC804;&#xC2DC;&#xD0B4;&#xC73C;&#xB85C;&#xC368; &#xD654;&#xBA74;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xB97C; &#xC790;&#xC720;&#xC790;&#xC7AC;&#xB85C; &#xC6C0;&#xC9C1;&#xC77C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xCE74;&#xBA54;&#xB77C;&#xC758;-&#xC704;&#xCE58;">&#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;</h2>
+<p>&#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xB294; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xB193;&#xC5EC; &#xC788;&#xB294; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC758; &#xC88C;&#xD45C;&#xC640; &#xC90C; &#xB808;&#xBCA8;, &#xAE30;&#xC6B8;&#xAE30;, &#xBCA0;&#xC5B4;&#xB9C1;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMFCameraPosition.html" target="_blank"><code>NMFCameraPosition</code></a>&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. <code>NMFCameraPosition</code>&#xC758; &#xBAA8;&#xB4E0; &#xC18D;&#xC131;&#xC740; <code>readonly</code>&#xC774;&#xBBC0;&#xB85C; &#xC0DD;&#xC131;&#xC790;&#xB85C;&#xB9CC; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xACE0;, &#xD55C; &#xBC88; &#xC0DD;&#xC131;&#xB41C; &#xAC1D;&#xCCB4;&#xC758; &#xC18D;&#xC131;&#xC740; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMFCameraPosition</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="9b63edcfd6c1df023ae6785bb38b66db" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-selector gbcg-active" data-tab="0-1b68f7c56368258a3a6d8a1cc4b1805f" data-tab-category="undefined">Swift</a>
+    <a id="select-1-cb8ea13dbfbea5cab2274795925d34cc" class="gbcg-selector" data-tab="1-cb8ea13dbfbea5cab2274795925d34cc" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = <span class="hljs-type">NMFCameraPosition</span>()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1b68f7c56368258a3a6d8a1cc4b1805f" id="swift">Swift</h3>
+        <div id="0-1b68f7c56368258a3a6d8a1cc4b1805f" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = <span class="hljs-type">NMFCameraPosition</span>()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-cb8ea13dbfbea5cab2274795925d34cc" id="objective-c">Objective-C</h3>
+        <div id="1-cb8ea13dbfbea5cab2274795925d34cc" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFCameraPosition *cameraPosition = [NMFCameraPosition new];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB300;&#xC0C1;-&#xC9C0;&#xC810;">&#xB300;&#xC0C1; &#xC9C0;&#xC810;</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c:objc%28cs%29NMFCameraPosition%28py%29target" target="_blank"><code>target</code></a>&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xB193;&#xC5EC; &#xC788;&#xB294; &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC18D;&#xC131;&#xC785;&#xB2C8;&#xB2E4;. &#xB300;&#xC0C1; &#xC9C0;&#xC810;&#xC774; &#xBCC0;&#xACBD;&#xB418;&#xBA74; &#xC9C0;&#xB3C4;&#xAC00; &#xB3D9;&#xC11C;&#xB0A8;&#xBD81;&#xC73C;&#xB85C; &#xC6C0;&#xC9C1;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/3-1-target.png" alt="&#xB300;&#xC0C1; &#xC9C0;&#xC810;"></p>
+<h3 id="&#xC90C;-&#xB808;&#xBCA8;">&#xC90C; &#xB808;&#xBCA8;</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c:objc%28cs%29NMFCameraPosition%28py%29zoom" target="_blank"><code>zoom</code></a>&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC18D;&#xC131;&#xC785;&#xB2C8;&#xB2E4;. &#xC90C; &#xB808;&#xBCA8;&#xC740; &#xC9C0;&#xB3C4;&#xC758; &#xCD95;&#xCC99;&#xC744; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. &#xC989;, &#xC90C; &#xB808;&#xBCA8;&#xC774; &#xC791;&#xC744;&#xC218;&#xB85D; &#xC9C0;&#xB3C4;&#xAC00; &#xCD95;&#xC18C;&#xB418;&#xACE0; &#xD074;&#xC218;&#xB85D; &#xD655;&#xB300;&#xB429;&#xB2C8;&#xB2E4;. &#xC90C; &#xB808;&#xBCA8;&#xC774; &#xCEE4;&#xC9C0;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB098;&#xB294; &#xC815;&#xBCF4;&#xB3C4; &#xB354;&#xC6B1; &#xC138;&#xBC00;&#xD574;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xAE30;&#xC6B8;&#xC784;-&#xAC01;&#xB3C4;">&#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c%3Aobjc%28cs%29NMFCameraPosition%28py%29tilt" target="_blank"><code>tilt</code></a>&#xB294; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC18D;&#xC131;&#xC785;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xB294; &#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;&#xB9CC;&#xD07C; &#xC9C0;&#xBA74;&#xC744; &#xBE44;&#xC2A4;&#xB4EC;&#xD558;&#xAC8C; &#xB0B4;&#xB824;&#xB2E4;&#xBD05;&#xB2C8;&#xB2E4;. &#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;&#xAC00; 0&#xB3C4;&#xC774;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC9C0;&#xBA74;&#xC744; &#xC218;&#xC9C1;&#xC73C;&#xB85C; &#xB0B4;&#xB824;&#xB2E4;&#xBCF4;&#xBA70;, &#xAC01;&#xB3C4;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC2DC;&#xC120;&#xB3C4; &#xC810;&#xC810; &#xC218;&#xD3C9;&#xC5D0; &#xAC00;&#xAE5D;&#xAC8C; &#xAE30;&#xC6B8;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;&#xAC00; &#xD074;&#xC218;&#xB85D; &#xB354; &#xBA3C; &#xACF3;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xAE30;&#xC6B8;&#xC5B4;&#xC9C0;&#xBA74; &#xD654;&#xBA74;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0; &#xC6D0;&#xADFC;&#xAC10;&#xC774; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xC989;, &#xD654;&#xBA74;&#xC758; &#xC911;&#xC2EC;&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xBA3C; &#xACF3;&#xC740; &#xB354; &#xC791;&#xAC8C; &#xBCF4;&#xC774;&#xACE0; &#xAC00;&#xAE4C;&#xC6B4; &#xACF3;&#xC740; &#xB354; &#xD06C;&#xAC8C; &#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/3-1-tilt.png" alt="&#xAE30;&#xC6B8;&#xC784; &#xAC01;&#xB3C4;"></p>
+<h3 id="&#xD5E4;&#xB529;-&#xAC01;&#xB3C4;">&#xD5E4;&#xB529; &#xAC01;&#xB3C4;</h3>
+<p><a href="ref://../reference/Classes/NMFCameraPosition.html#/c%3Aobjc%28cs%29NMFCameraPosition%28py%29heading" target="_blank"><code>heading</code></a>&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xD5E4;&#xB529; &#xAC01;&#xB3C4;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xC18D;&#xC131;&#xC785;&#xB2C8;&#xB2E4;. &#xD5E4;&#xB529;&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xBC14;&#xB77C;&#xBCF4;&#xB294; &#xBC29;&#xC704;&#xB97C; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC815;&#xBD81; &#xBC29;&#xD5A5;&#xC744; &#xBC14;&#xB77C;&#xBCFC; &#xB54C; &#xD5E4;&#xB529; &#xAC01;&#xB3C4;&#xB294; 0&#xB3C4;&#xC774;&#xBA70;, &#xC2DC;&#xACC4; &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xAC12;&#xC774; &#xC99D;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;. &#xC989;, &#xB3D9;&#xCABD;&#xC744; &#xBC14;&#xB77C;&#xBCFC; &#xB54C; 90&#xB3C4;, &#xB0A8;&#xCABD;&#xC744; &#xBC14;&#xB77C;&#xBCFC; &#xB54C; 180&#xB3C4;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/3-1-bearing.png" alt="&#xD5E4;&#xB529;(&#xBCA0;&#xC5B4;&#xB9C1;) &#xAC01;&#xB3C4;"></p>
+<h2 id="&#xBDF0;&#xC640;-&#xCE74;&#xBA54;&#xB77C;">&#xBDF0;&#xC640; &#xCE74;&#xBA54;&#xB77C;</h2>
+<p>&#xCE74;&#xBA54;&#xB77C;&#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC9C0;&#xB3C4; &#xBDF0;&#xC758; &#xC911;&#xC2EC;&#xC5D0; &#xC704;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xC5D0; &#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE69;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xCE74;&#xBA54;&#xB77C;&#xC758;-&#xD604;&#xC7AC;-&#xC704;&#xCE58;">&#xCE74;&#xBA54;&#xB77C;&#xC758; &#xD604;&#xC7AC; &#xC704;&#xCE58;</h3>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29cameraPosition" target="_blank"><code>NMFMapView.cameraPosition</code></a>&#xC744; &#xD638;&#xCD9C;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xD604;&#xC7AC; &#xC704;&#xCE58;&#xB97C; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xD604;&#xC7AC; &#xC704;&#xCE58;&#xB97C; &#xC5BB;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="e87daf416ba5856c1117d7cd6f0bcf11" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-selector gbcg-active" data-tab="0-eaee18a1f0d30593f4b130699c23c0a7" data-tab-category="undefined">Swift</a>
+    <a id="select-1-8d9e56b8159c7635aed8eaf65d946a54" class="gbcg-selector" data-tab="1-8d9e56b8159c7635aed8eaf65d946a54" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = mapView.cameraPosition
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-eaee18a1f0d30593f4b130699c23c0a7" id="swift">Swift</h3>
+        <div id="0-eaee18a1f0d30593f4b130699c23c0a7" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraPosition = mapView.cameraPosition
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-8d9e56b8159c7635aed8eaf65d946a54" id="objective-c">Objective-C</h3>
+        <div id="1-8d9e56b8159c7635aed8eaf65d946a54" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CameraPosition *cameraPosition = self.mapView.cameraPosition;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xCF58;&#xD150;&#xCE20;-&#xD328;&#xB529;">&#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;</h3>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29contentInset" target="_blank"><code>NMFMapView.contentInset</code></a>&#xC5D0; <code>UIEdgeInsets</code> &#xAC1D;&#xCCB4;&#xB85C; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xACFC; &#xAC19;&#xC774; UI &#xC694;&#xC18C;&#xAC00; &#xC9C0;&#xB3C4;&#xC758; &#xC77C;&#xBD80;&#xB97C; &#xB36E;&#xC744; &#xACBD;&#xC6B0;, &#xCE74;&#xBA54;&#xB77C;&#xB294; &#xC9C0;&#xB3C4; &#xBDF0;&#xC758; &#xC911;&#xC2EC;&#xC5D0; &#xC704;&#xCE58;&#xD558;&#xBBC0;&#xB85C; &#xC2E4;&#xC81C;&#xB85C; &#xBCF4;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC758; &#xC911;&#xC2EC;&#xACFC; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xAC00; &#xBD88;&#xC77C;&#xCE58;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/3-1-contentspadding1.png" alt="&#xC9C0;&#xB3C4; &#xC911;&#xC2EC; &#xBD88;&#xC77C;&#xCE58;"></p>
+<p>&#xC774; &#xACBD;&#xC6B0; UI &#xC694;&#xC18C;&#xC5D0; &#xAC00;&#xB824;&#xC9C4; &#xC601;&#xC5ED;&#xC744; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xB294; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC744; &#xC81C;&#xC678;&#xD55C; &#xC601;&#xC5ED;&#xC758; &#xC911;&#xC2EC;&#xC5D0; &#xC704;&#xCE58;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/3-1-contentspadding2.png" alt="&#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529; &#xC801;&#xC6A9;"></p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC544;&#xB798;&#xCABD; &#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC744; 200pt&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="a7de93734b2eb033a8253632509501df" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-selector gbcg-active" data-tab="0-486a5f56d59f0d04c4d6e5a8dd06cb96" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2447b069d64681e56f463f177454ff06" class="gbcg-selector" data-tab="1-2447b069d64681e56f463f177454ff06" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">mapView.contentInset = <span class="hljs-type">UIEdgeInsets</span>(top: <span class="hljs-number">0</span>, <span class="hljs-keyword">left</span>: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">200</span>, <span class="hljs-keyword">right</span>: <span class="hljs-number">0</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-486a5f56d59f0d04c4d6e5a8dd06cb96" id="swift">Swift</h3>
+        <div id="0-486a5f56d59f0d04c4d6e5a8dd06cb96" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">mapView.contentInset = <span class="hljs-type">UIEdgeInsets</span>(top: <span class="hljs-number">0</span>, <span class="hljs-keyword">left</span>: <span class="hljs-number">0</span>, bottom: <span class="hljs-number">200</span>, <span class="hljs-keyword">right</span>: <span class="hljs-number">0</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2447b069d64681e56f463f177454ff06" id="objective-c">Objective-C</h3>
+        <div id="1-2447b069d64681e56f463f177454ff06" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">self.mapView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0);
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>(&#xADF8;&#xB9BC;)</p>
+<p>&#xCF58;&#xD150;&#xCE20; &#xD328;&#xB529;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xB208;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xC9C0;&#xB3C4;&#xC5D0;&#xB294; &#xBCC0;&#xD654;&#xAC00; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC704;&#xCE58;&#xD560; &#xC9C0;&#xB3C4;&#xC758; &#xC911;&#xC2EC;&#xC774; &#xBCC0;&#xACBD;&#xB418;&#xBBC0;&#xB85C; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xB3C4; &#xBCC0;&#xACBD;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xD22C;&#xC601;">&#xD22C;&#xC601;</h2>
+<p>&#xD654;&#xBA74;&#xC740; &#xC67C;&#xCABD; &#xC704;&#xB97C; &#xAE30;&#xC900;&#xC810;&#xC73C;&#xB85C; &#xC0BC;&#xB294; pt &#xB2E8;&#xC704; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xACE0;, &#xC9C0;&#xB3C4;&#xB294; &#xC9C0;&#xB9AC;&#xC801; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMFProjection.html" target="_blank"><code>NMFProjection</code></a> &#xD074;&#xB798;&#xC2A4;&#xC758; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xC640; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xB97C; &#xC11C;&#xB85C; &#xBCC0;&#xD658;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>NMFProjection</code> &#xD074;&#xB798;&#xC2A4;&#xC758; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB294; &#xC9C1;&#xC811; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC5C6;&#xACE0; <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%29projection" target="_blank"><code>NMFMapView.projection</code></a>&#xC744; &#xD638;&#xCD9C;&#xD574; &#xAC00;&#xC838;&#xC640;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMFProjection</code> &#xD074;&#xB798;&#xC2A4;&#xC758; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC5BB;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="abde8765df0175e323103ca235b8a14d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-e5adcf896fefee96956706ad64af7782" class="gbcg-selector gbcg-active" data-tab="0-e5adcf896fefee96956706ad64af7782" data-tab-category="undefined">Swift</a>
+    <a id="select-1-08885efbe3e2606e6fe8ad33d3451dab" class="gbcg-selector" data-tab="1-08885efbe3e2606e6fe8ad33d3451dab" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-e5adcf896fefee96956706ad64af7782" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> projection = mapView.projection
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-e5adcf896fefee96956706ad64af7782" id="swift">Swift</h3>
+        <div id="0-e5adcf896fefee96956706ad64af7782" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> projection = mapView.projection
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-08885efbe3e2606e6fe8ad33d3451dab" id="objective-c">Objective-C</h3>
+        <div id="1-08885efbe3e2606e6fe8ad33d3451dab" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFProjection *projection = self.mapView.projection;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xD654;&#xBA74;-&#xC88C;&#xD45C;&#xC640;-&#xC9C0;&#xB3C4;-&#xC88C;&#xD45C;-&#xAC04;-&#xBCC0;&#xD658;">&#xD654;&#xBA74; &#xC88C;&#xD45C;&#xC640; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C; &#xAC04; &#xBCC0;&#xD658;</h3>
+<p><a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29latlngFromPoint:" target="_blank"><code>-latlngFromPoint:</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xB97C; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xB85C;, <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29pointFromLatLng:" target="_blank"><code>-pointFromLatLng:</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xB97C; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD654;&#xBA74;&#xC758; <code>(100, 100)</code> &#xC9C0;&#xC810;&#xC744; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="9eb192d306996e565f681fdfe7b7d25e" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-selector gbcg-active" data-tab="0-3d1bdcb810269ecdf9b710d2b481afac" data-tab-category="undefined">Swift</a>
+    <a id="select-1-0bcd888f3338864a6e7581c7abed5567" class="gbcg-selector" data-tab="1-0bcd888f3338864a6e7581c7abed5567" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = projection.latlng(from: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">100</span>, y: <span class="hljs-number">100</span>))
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-3d1bdcb810269ecdf9b710d2b481afac" id="swift">Swift</h3>
+        <div id="0-3d1bdcb810269ecdf9b710d2b481afac" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> coord = projection.latlng(from: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">100</span>, y: <span class="hljs-number">100</span>))
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-0bcd888f3338864a6e7581c7abed5567" id="objective-c">Objective-C</h3>
+        <div id="1-0bcd888f3338864a6e7581c7abed5567" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMGLatLng *coord = [projection latlngFromPoint:CGPointMake(100, 100)];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xC758; <code>(37.5666102, 126.9783881)</code> &#xC9C0;&#xC810;&#xC744; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="ad7ac9225e8a75a9ab9e2a965aae1f46" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-selector gbcg-active" data-tab="0-04470d112d3418efd8d7e35b9a468b7c" data-tab-category="undefined">Swift</a>
+    <a id="select-1-9c293dc751d08d809256ccbbc4f475aa" class="gbcg-selector" data-tab="1-9c293dc751d08d809256ccbbc4f475aa" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> point = projection.point(from: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-04470d112d3418efd8d7e35b9a468b7c" id="swift">Swift</h3>
+        <div id="0-04470d112d3418efd8d7e35b9a468b7c" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> point = projection.point(from: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-9c293dc751d08d809256ccbbc4f475aa" id="objective-c">Objective-C</h3>
+        <div id="1-9c293dc751d08d809256ccbbc4f475aa" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CGPoint point = [projection pointFromLatLng:NMGLatLngMake(37.5666102, 126.9783881)];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xCD95;&#xCC99;">&#xCD95;&#xCC99;</h3>
+<p>&#xC9C0;&#xB3C4;&#xB294; 3&#xCC28;&#xC6D0;&#xC778; &#xC9C0;&#xAD6C;&#xC758; &#xD45C;&#xBA74;&#xC744; 2&#xCC28;&#xC6D0;&#xC73C;&#xB85C; &#xD45C;&#xD604;&#xD558;&#xB294; &#xAC83;&#xC774;&#xBBC0;&#xB85C; &#xC65C;&#xACE1;&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; <a href="https://en.wikipedia.org/wiki/Web_Mercator_projection" target="_blank">&#xC6F9; &#xBA54;&#xB974;&#xCE74;&#xD1A0;&#xB974; &#xD22C;&#xC601;&#xBC95;</a>&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC9C0;&#xAD6C; &#xAD6C;&#xCCB4;&#xB97C; &#xD3C9;&#xBA74;&#xC73C;&#xB85C; &#xD45C;&#xD604;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC90C; &#xB808;&#xBCA8;&#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xC704;&#xB3C4;&#xC5D0; &#xB530;&#xB77C;&#xC11C;&#xB3C4; &#xCD95;&#xCC99;&#xC774; &#xB2EC;&#xB77C;&#xC9D1;&#xB2C8;&#xB2E4;. <a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29metersPerPixel" target="_blank"><code>metersPerPixel</code></a>&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD604;&#xC7AC; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC704;&#xCE58;&#xD55C; &#xC9C0;&#xC810;&#xC758; &#xCD95;&#xCC99;&#xC744; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD604;&#xC7AC; &#xCE74;&#xBA54;&#xB77C;&#xAC00; &#xC704;&#xCE58;&#xD55C; &#xC9C0;&#xC810;&#xC758; &#xCD95;&#xCC99;&#xC744; &#xC5BB;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="f7be626e3fe378464dad0ac1964169b8" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1594f168264752d4cebb7ec3da24471a" class="gbcg-selector gbcg-active" data-tab="0-1594f168264752d4cebb7ec3da24471a" data-tab-category="undefined">Swift</a>
+    <a id="select-1-be832151079487a6484a72cbf70061d2" class="gbcg-selector" data-tab="1-be832151079487a6484a72cbf70061d2" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1594f168264752d4cebb7ec3da24471a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> metersPerPixel = projection.metersPerPixel()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1594f168264752d4cebb7ec3da24471a" id="swift">Swift</h3>
+        <div id="0-1594f168264752d4cebb7ec3da24471a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> metersPerPixel = projection.metersPerPixel()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-be832151079487a6484a72cbf70061d2" id="objective-c">Objective-C</h3>
+        <div id="1-be832151079487a6484a72cbf70061d2" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">CLLocationDistance metersPerPixel = projection.metersPerPixel;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><a href="ref://../reference/Classes/NMFProjection.html#/c%3Aobjc%28cs%29NMFProjection%28im%29metersPerPixelAtLatitude:zoom:" target="_blank"><code>-metersPerPixelAtLatitude:zoom:</code></a>&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD604;&#xC7AC; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC704;&#xCE58;&#xC640; &#xBB34;&#xAD00;&#xD558;&#xAC8C; &#xD2B9;&#xC815;&#xD55C; &#xC704;&#xB3C4;&#xC640; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C;&#xC758; &#xCD95;&#xCC99;&#xC744; &#xAD6C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB2E4;&#xC591;&#xD55C; &#xC704;&#xB3C4;&#xC640; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C;&#xC758; &#xCD95;&#xCC99;&#xC744; &#xAD6C;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="4864aef4451c9692306a01ed5ca4bb64" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-b79d722717e94a707b7bc56c82a271af" class="gbcg-selector gbcg-active" data-tab="0-b79d722717e94a707b7bc56c82a271af" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2fe3661336a3b2859c56aa829b41e0f9" class="gbcg-selector" data-tab="1-2fe3661336a3b2859c56aa829b41e0f9" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-b79d722717e94a707b7bc56c82a271af" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-comment">// &#xC801;&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10</span>
+<span class="hljs-keyword">let</span> metersPerPixel1 = projection.metersPerPixel(atLatitude: <span class="hljs-number">0</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10: &#xC801;&#xB3C4;&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;</span>
+<span class="hljs-keyword">let</span> metersPerPixel2 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 14: &#xC90C; &#xB808;&#xBCA8; 10&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;</span>
+<span class="hljs-keyword">let</span> metersPerPixel3 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">14</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-b79d722717e94a707b7bc56c82a271af" id="swift">Swift</h3>
+        <div id="0-b79d722717e94a707b7bc56c82a271af" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-comment">// &#xC801;&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10</span>
+<span class="hljs-keyword">let</span> metersPerPixel1 = projection.metersPerPixel(atLatitude: <span class="hljs-number">0</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10: &#xC801;&#xB3C4;&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;</span>
+<span class="hljs-keyword">let</span> metersPerPixel2 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">10</span>)
+
+<span class="hljs-comment">// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 14: &#xC90C; &#xB808;&#xBCA8; 10&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;</span>
+<span class="hljs-keyword">let</span> metersPerPixel3 = projection.metersPerPixel(atLatitude: <span class="hljs-number">35</span>, zoom: <span class="hljs-number">14</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2fe3661336a3b2859c56aa829b41e0f9" id="objective-c">Objective-C</h3>
+        <div id="1-2fe3661336a3b2859c56aa829b41e0f9" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">// &#xC801;&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10
+CLLocationDistance metersPerPixel1 = [projection metersPerPixelAtLatitude:0 zoom:10];
+
+// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 10: &#xC801;&#xB3C4;&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;
+CLLocationDistance metersPerPixel2 = [projection metersPerPixelAtLatitude:35 zoom:10];
+
+// &#xC704;&#xB3C4; 35&#xB3C4;, &#xC90C; &#xB808;&#xBCA8; 14: &#xC90C; &#xB808;&#xBCA8; 10&#xBCF4;&#xB2E4; &#xCD95;&#xCC99;&#xC774; &#xCEE4;&#xC9D0;
+CLLocationDistance metersPerPixel3 = [projection metersPerPixelAtLatitude:35 zoom:14];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="3-2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 카메라 이동">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"카메라와 투영","level":"3.3.1","depth":2,"next":{"title":"카메라 이동","level":"3.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]},"previous":{"title":"카메라","level":"3.3","depth":1,"ref":"","articles":[{"title":"카메라와 투영","level":"3.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},{"title":"카메라 이동","level":"3.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-1.md","mtime":"2019-04-08T05:07:38.398Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:40.657Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
