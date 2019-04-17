@@ -15,6 +15,7 @@ Release Date: 2019-04-08
 
 - 심벌 렌더링 성능 개선
 - bitcode 적용
+  - 바이너리 용량 증대로 [git-lfs](https://git-lfs.github.com/)가 적용되었습니다. [git-lfs](https://git-lfs.github.com/)를 필수로 설치해야합니다.
 - 내위치 버튼을 사용하지 않아도 positionMode 가 동작하도록 개선
 
 ### 버그 수정
