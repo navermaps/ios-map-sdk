@@ -10,6 +10,7 @@
 ```ruby
 sudo gem install cocoapods
 brew install git-lfs  // homebrew 사용시 git-lfs 설치
+git-lfs install       // git-lfs 이니셜라이즈
 pod install --repo-update
 ```
 
