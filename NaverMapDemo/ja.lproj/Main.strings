@@ -1,0 +1,255 @@
+
+/* Class = "UILabel"; text = "네이버지도 SDK Demo"; ObjectID = "0XM-y9-sOw"; */
+"0XM-y9-sOw.text" = "네이버지도 SDK Demo";
+
+/* Class = "UILabel"; text = "컨텐츠 패딩 사용"; ObjectID = "0bg-mg-Hpk"; */
+"0bg-mg-Hpk.text" = "컨텐츠 패딩 사용";
+
+/* Class = "UILabel"; text = "Map Click Event"; ObjectID = "1l3-3V-6L7"; */
+"1l3-3V-6L7.text" = "Map Click Event";
+
+/* Class = "UILabel"; text = "Camera Event"; ObjectID = "20K-nq-F8D"; */
+"20K-nq-F8D.text" = "Camera Event";
+
+/* Class = "UILabel"; text = "Path"; ObjectID = "3Kr-lu-svI"; */
+"3Kr-lu-svI.text" = "Path";
+
+/* Class = "UILabel"; text = "지도 영역 제한"; ObjectID = "3Vs-sC-Obq"; */
+"3Vs-sC-Obq.text" = "지도 영역 제한";
+
+/* Class = "UILabel"; text = "카메라 이동시 애니메이션 적용"; ObjectID = "3lF-Bi-QZl"; */
+"3lF-Bi-QZl.text" = "카메라 이동시 애니메이션 적용";
+
+/* Class = "UILabel"; text = "Fit Camera to Bounds"; ObjectID = "5pJ-iQ-vca"; */
+"5pJ-iQ-vca.text" = "Fit Camera to Bounds";
+
+/* Class = "UILabel"; text = "저사양 모드 지도 사용"; ObjectID = "6Gf-zd-Z0X"; */
+"6Gf-zd-Z0X.text" = "저사양 모드 지도 사용";
+
+/* Class = "UILabel"; text = "서클 오버레이"; ObjectID = "6NI-ce-GWj"; */
+"6NI-ce-GWj.text" = "서클 오버레이";
+
+/* Class = "UILabel"; text = "Marker Collision"; ObjectID = "6ub-84-cjg"; */
+"6ub-84-cjg.text" = "Marker Collision";
+
+/* Class = "UILabel"; text = "Indoor Map"; ObjectID = "7NK-jY-eOc"; */
+"7NK-jY-eOc.text" = "Indoor Map";
+
+/* Class = "UITableViewController"; title = "Naver Map iOS SDK Demo"; ObjectID = "7bK-jq-Zjz"; */
+"7bK-jq-Zjz.title" = "Naver Map iOS SDK Demo";
+
+/* Class = "UILabel"; text = "최소/최대 줌레벨 제한"; ObjectID = "8lh-Wt-T4i"; */
+"8lh-Wt-T4i.text" = "최소/최대 줌레벨 제한";
+
+/* Class = "UILabel"; text = "마커 충돌 및 z-인덱스 제어"; ObjectID = "9A1-le-Ey8"; */
+"9A1-le-Ey8.text" = "마커 충돌 및 z-인덱스 제어";
+
+/* Class = "UILabel"; text = "지도 컨트롤 사용"; ObjectID = "9po-za-N8N"; */
+"9po-za-N8N.text" = "지도 컨트롤 사용";
+
+/* Class = "UILabel"; text = "Map View"; ObjectID = "Bo4-zR-xVu"; */
+"Bo4-zR-xVu.text" = "Map View";
+
+/* Class = "UIViewController"; title = "NaverMap iOS SDK Demo"; ObjectID = "JEX-9P-axG"; */
+"JEX-9P-axG.title" = "NaverMap iOS SDK Demo";
+
+/* Class = "UILabel"; text = "건물 높이 등 디스플레이 옵션 지정"; ObjectID = "Jgt-FO-Yz7"; */
+"Jgt-FO-Yz7.text" = "건물 높이 등 디스플레이 옵션 지정";
+
+/* Class = "UILabel"; text = "Ground Overlay"; ObjectID = "K8a-8e-yA1"; */
+"K8a-8e-yA1.text" = "Ground Overlay";
+
+/* Class = "UILabel"; text = "로케이션(현위치) 오버레이"; ObjectID = "KP0-AP-F4T"; */
+"KP0-AP-F4T.text" = "로케이션(현위치) 오버레이";
+
+/* Class = "UILabel"; text = "Pick All Overlays & Symbols"; ObjectID = "KmF-Db-H6G"; */
+"KmF-Db-H6G.text" = "Pick All Overlays & Symbols";
+
+/* Class = "UILabel"; text = "Polyline"; ObjectID = "Knv-Ok-2RY"; */
+"Knv-Ok-2RY.text" = "Polyline";
+
+/* Class = "UILabel"; text = "Overlay Click Event"; ObjectID = "LPG-Gy-NH8"; */
+"LPG-Gy-NH8.text" = "Overlay Click Event";
+
+/* Class = "UILabel"; text = "Marker"; ObjectID = "MEZ-7D-fEK"; */
+"MEZ-7D-fEK.text" = "Marker";
+
+/* Class = "UILabel"; text = "Arrowhead Path"; ObjectID = "MTq-KO-1pP"; */
+"MTq-KO-1pP.text" = "Arrowhead Path";
+
+/* Class = "UILabel"; text = "Min/Max Zoom"; ObjectID = "Mzs-Kn-ONJ"; */
+"Mzs-Kn-ONJ.text" = "Min/Max Zoom";
+
+/* Class = "UITableViewSection"; headerTitle = "CAMERA"; ObjectID = "NOx-87-Fdv"; */
+"NOx-87-Fdv.headerTitle" = "CAMERA";
+
+/* Class = "UILabel"; text = "Tile Cover Helper"; ObjectID = "PWI-FD-7qZ"; */
+"PWI-FD-7qZ.text" = "Tile Cover Helper";
+
+/* Class = "UITableViewSection"; headerTitle = "MAP EVENT"; ObjectID = "R4F-mQ-WFg"; */
+"R4F-mQ-WFg.headerTitle" = "MAP EVENT";
+
+/* Class = "UINavigationController"; title = "Master"; ObjectID = "RMx-3f-FxP"; */
+"RMx-3f-FxP.title" = "Master";
+
+/* Class = "UILabel"; text = "다양한 파라메터를 이용한 카메라 이동"; ObjectID = "Rpz-Tx-Lm7"; */
+"Rpz-Tx-Lm7.text" = "다양한 파라메터를 이용한 카메라 이동";
+
+/* Class = "UILabel"; text = "Gesture Settings"; ObjectID = "RsP-kd-T9w"; */
+"RsP-kd-T9w.text" = "Gesture Settings";
+
+/* Class = "UITableViewSection"; headerTitle = "MAP OPTIONS"; ObjectID = "SRD-rn-EGt"; */
+"SRD-rn-EGt.headerTitle" = "MAP OPTIONS";
+
+/* Class = "UILabel"; text = "Location Overlay"; ObjectID = "T4D-bT-z5k"; */
+"T4D-bT-z5k.text" = "Location Overlay";
+
+/* Class = "UILabel"; text = "마커"; ObjectID = "Tle-k2-cWq"; */
+"Tle-k2-cWq.text" = "마커";
+
+/* Class = "UILabel"; text = "Display Options"; ObjectID = "UCh-kW-fQE"; */
+"UCh-kW-fQE.text" = "Display Options";
+
+/* Class = "UILabel"; text = "오버레이간 계층 지정"; ObjectID = "VBO-9O-ExX"; */
+"VBO-9O-ExX.text" = "오버레이간 계층 지정";
+
+/* Class = "UILabel"; text = "심벌 로케일 지정"; ObjectID = "VK5-OJ-oz6"; */
+"VK5-OJ-oz6.text" = "심벌 로케일 지정";
+
+/* Class = "UINavigationItem"; title = "NaverMap iOS SDK Demo"; ObjectID = "VUp-9T-DJM"; */
+"VUp-9T-DJM.title" = "NaverMap iOS SDK Demo";
+
+/* Class = "UILabel"; text = "Multipart Path"; ObjectID = "Vr7-3P-itS"; */
+"Vr7-3P-itS.text" = "Multipart Path";
+
+/* Class = "UILabel"; text = "내비게이션 야간 모드 사용"; ObjectID = "WNd-7a-1ao"; */
+"WNd-7a-1ao.text" = "내비게이션 야간 모드 사용";
+
+/* Class = "UILabel"; text = "Circle"; ObjectID = "XFz-2H-hCC"; */
+"XFz-2H-hCC.text" = "Circle";
+
+/* Class = "UILabel"; text = "경로선 오버레이"; ObjectID = "XRo-xw-BOZ"; */
+"XRo-xw-BOZ.text" = "경로선 오버레이";
+
+/* Class = "UILabel"; text = "Map Types & Layer Groups"; ObjectID = "YSg-uA-vfc"; */
+"YSg-uA-vfc.text" = "Map Types & Layer Groups";
+
+/* Class = "UILabel"; text = "Snapshot"; ObjectID = "ZAG-nh-sVr"; */
+"ZAG-nh-sVr.text" = "Snapshot";
+
+/* Class = "UILabel"; text = "Location Tracking"; ObjectID = "ZCN-rA-2Fv"; */
+"ZCN-rA-2Fv.text" = "Location Tracking";
+
+/* Class = "UITableViewSection"; headerTitle = "OVERLAY"; ObjectID = "a4S-Or-dJ7"; */
+"a4S-Or-dJ7.headerTitle" = "OVERLAY";
+
+/* Class = "UILabel"; text = "위치 트래킹 기능 사용"; ObjectID = "abM-Er-n6w"; */
+"abM-Er-n6w.text" = "위치 트래킹 기능 사용";
+
+/* Class = "UILabel"; text = "지도 유형 및 레이어 그룹 지정"; ObjectID = "alH-yh-6QH"; */
+"alH-yh-6QH.text" = "지도 유형 및 레이어 그룹 지정";
+
+/* Class = "UILabel"; text = "Symbol Click Event"; ObjectID = "bjh-m5-0tO"; */
+"bjh-m5-0tO.text" = "Symbol Click Event";
+
+/* Class = "UILabel"; text = "Global Z-Index"; ObjectID = "cOG-kG-wmR"; */
+"cOG-kG-wmR.text" = "Global Z-Index";
+
+/* Class = "UITableViewSection"; headerTitle = "BASIC"; ObjectID = "eer-CL-0ln"; */
+"eer-CL-0ln.headerTitle" = "BASIC";
+
+/* Class = "UILabel"; text = "Camera Animations"; ObjectID = "f09-xJ-wau"; */
+"f09-xJ-wau.text" = "Camera Animations";
+
+/* Class = "UILabel"; text = "인포윈도우"; ObjectID = "hYh-SR-YCu"; */
+"hYh-SR-YCu.text" = "인포윈도우";
+
+/* Class = "UILabel"; text = "화살표 모양 오버레이"; ObjectID = "iRw-gF-lhe"; */
+"iRw-gF-lhe.text" = "화살표 모양 오버레이";
+
+/* Class = "UILabel"; text = "제스처 설정"; ObjectID = "iXc-Xg-EFQ"; */
+"iXc-Xg-EFQ.text" = "제스처 설정";
+
+/* Class = "UILabel"; text = "Control Settings"; ObjectID = "imp-jN-BGW"; */
+"imp-jN-BGW.text" = "Control Settings";
+
+/* Class = "UILabel"; text = "Map Extent"; ObjectID = "ioL-om-T3p"; */
+"ioL-om-T3p.text" = "Map Extent";
+
+/* Class = "UILabel"; text = "Content Padding"; ObjectID = "lB8-CA-5rx"; */
+"lB8-CA-5rx.text" = "Content Padding";
+
+/* Class = "UILabel"; text = "폴리곤 오버레이"; ObjectID = "m3J-hj-UZr"; */
+"m3J-hj-UZr.text" = "폴리곤 오버레이";
+
+/* Class = "UINavigationItem"; title = "NaverMap iOS SDK Demo"; ObjectID = "mOI-FS-AaM"; */
+"mOI-FS-AaM.title" = "NaverMap iOS SDK Demo";
+
+/* Class = "UILabel"; text = "카메라 이벤트 사용"; ObjectID = "mWu-iz-8jX"; */
+"mWu-iz-8jX.text" = "카메라 이벤트 사용";
+
+/* Class = "UITableViewSection"; headerTitle = "MISC"; ObjectID = "mxf-N2-vde"; */
+"mxf-N2-vde.headerTitle" = "MISC";
+
+/* Class = "UILabel"; text = "지도 화면에 대한 스냅샷 촬영"; ObjectID = "oca-cl-YSq"; */
+"oca-cl-YSq.text" = "지도 화면에 대한 스냅샷 촬영";
+
+/* Class = "UILabel"; text = "경로선 오버레이"; ObjectID = "olR-Ny-19v"; */
+"olR-Ny-19v.text" = "경로선 오버레이";
+
+/* Class = "UILabel"; text = "Night Mode"; ObjectID = "pXC-wk-bqS"; */
+"pXC-wk-bqS.text" = "Night Mode";
+
+/* Class = "UILabel"; text = "Locale"; ObjectID = "qOj-0Y-2Ku"; */
+"qOj-0Y-2Ku.text" = "Locale";
+
+/* Class = "UILabel"; text = "Polygon"; ObjectID = "rTu-bo-cS8"; */
+"rTu-bo-cS8.text" = "Polygon";
+
+/* Class = "UILabel"; text = "MapView를 사용한 지도 디스플레이"; ObjectID = "rbh-LS-adK"; */
+"rbh-LS-adK.text" = "MapView를 사용한 지도 디스플레이";
+
+/* Class = "UILabel"; text = "Lite Mode"; ObjectID = "sb6-i0-87Q"; */
+"sb6-i0-87Q.text" = "Lite Mode";
+
+/* Class = "UILabel"; text = "실내지도 사용"; ObjectID = "t2c-0N-l3i"; */
+"t2c-0N-l3i.text" = "실내지도 사용";
+
+/* Class = "UILabel"; text = "Info Window"; ObjectID = "toq-2d-2Ci"; */
+"toq-2d-2Ci.text" = "Info Window";
+
+/* Class = "UITableViewSection"; headerTitle = "MAP"; ObjectID = "tsa-Zb-6Lt"; */
+"tsa-Zb-6Lt.headerTitle" = "MAP";
+
+/* Class = "UILabel"; text = "그라운드 오버레이"; ObjectID = "umn-dH-1dx"; */
+"umn-dH-1dx.text" = "그라운드 오버레이";
+
+/* Class = "UILabel"; text = "특정 지점 주변의 모든 오버레이와 심벌을 피킹"; ObjectID = "uqg-Pj-zHK"; */
+"uqg-Pj-zHK.text" = "특정 지점 주변의 모든 오버레이와 심벌을 피킹";
+
+/* Class = "UILabel"; text = "간단한 카메라 이동"; ObjectID = "v8X-yV-krT"; */
+"v8X-yV-krT.text" = "간단한 카메라 이동";
+
+/* Class = "UILabel"; text = "폴리라인 오버레이"; ObjectID = "vCg-Oa-jOg"; */
+"vCg-Oa-jOg.text" = "폴리라인 오버레이";
+
+/* Class = "UILabel"; text = "클릭 & 롱 클릭 이벤트 처리"; ObjectID = "vR1-t1-5r0"; */
+"vR1-t1-5r0.text" = "클릭 & 롱 클릭 이벤트 처리";
+
+/* Class = "UILabel"; text = "타일 커버 헬퍼 사용"; ObjectID = "wcR-9W-CBg"; */
+"wcR-9W-CBg.text" = "타일 커버 헬퍼 사용";
+
+/* Class = "UILabel"; text = "Camera Move"; ObjectID = "xrN-IK-CIm"; */
+"xrN-IK-CIm.text" = "Camera Move";
+
+/* Class = "UILabel"; text = "오버레이 클릭 이벤트 처리 및 소비"; ObjectID = "y4C-ba-BrT"; */
+"y4C-ba-BrT.text" = "오버레이 클릭 이벤트 처리 및 소비";
+
+/* Class = "UILabel"; text = "영역이 보이는 위치로 카메라 이동"; ObjectID = "yn5-Fp-U19"; */
+"yn5-Fp-U19.text" = "영역이 보이는 위치로 카메라 이동";
+
+/* Class = "UILabel"; text = "Camera Update With Parameters"; ObjectID = "zdH-9C-P4L"; */
+"zdH-9C-P4L.text" = "Camera Update With Parameters";
+
+/* Class = "UILabel"; text = "심벌 클릭 이벤트 처리"; ObjectID = "zuJ-7X-stK"; */
+"zuJ-7X-stK.text" = "심벌 클릭 이벤트 처리";

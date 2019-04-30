@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CustomInfoWindowView" customModule="NaverMapDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgInfowindow11" translatesAutoresizingMaskIntoConstraints="NO" id="XAG-gA-yuj">
+                    <rect key="frame" x="0.0" y="0.0" width="27" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="GWK-es-hIn"/>
+                        <constraint firstAttribute="width" constant="27" id="eNH-Cf-pqa"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgInfowindow12" translatesAutoresizingMaskIntoConstraints="NO" id="LJm-Yb-BN9">
+                    <rect key="frame" x="25" y="0.0" width="30" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="gdz-Kt-gQL"/>
+                        <constraint firstAttribute="height" constant="88" id="jHN-UA-7ve"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgInfowindow13" translatesAutoresizingMaskIntoConstraints="NO" id="hRI-gL-5I1">
+                    <rect key="frame" x="55" y="0.0" width="441" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="WL7-14-pNd"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseline_gps_fixed_black_24pt" translatesAutoresizingMaskIntoConstraints="NO" id="jO0-nX-vrR">
+                    <rect key="frame" x="20" y="27" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="OeN-CA-fY9"/>
+                        <constraint firstAttribute="width" constant="24" id="QmG-RT-cdG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwm-2n-XWu">
+                    <rect key="frame" x="54" y="28.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XAG-gA-yuj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1n0-1V-vUL"/>
+                <constraint firstAttribute="trailing" secondItem="hRI-gL-5I1" secondAttribute="trailing" id="9H9-GD-mIr"/>
+                <constraint firstItem="hRI-gL-5I1" firstAttribute="leading" secondItem="LJm-Yb-BN9" secondAttribute="trailing" id="FS0-uQ-jje"/>
+                <constraint firstItem="LJm-Yb-BN9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HZH-Mf-Si3"/>
+                <constraint firstItem="XAG-gA-yuj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RSS-e8-QWN"/>
+                <constraint firstItem="jO0-nX-vrR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="U51-HG-8Rd"/>
+                <constraint firstItem="jO0-nX-vrR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="YC1-UE-7hm"/>
+                <constraint firstItem="hRI-gL-5I1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="j8d-xi-4Bd"/>
+                <constraint firstItem="Uwm-2n-XWu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="lxi-Yt-VeF"/>
+                <constraint firstItem="LJm-Yb-BN9" firstAttribute="leading" secondItem="XAG-gA-yuj" secondAttribute="trailing" constant="-2" id="mGe-Xk-G1j"/>
+                <constraint firstItem="Uwm-2n-XWu" firstAttribute="leading" secondItem="jO0-nX-vrR" secondAttribute="trailing" constant="10" id="pgJ-Md-0dR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="jO0-nX-vrR" id="XRy-Na-0YZ"/>
+                <outlet property="textLabel" destination="Uwm-2n-XWu" id="WwU-s5-ijX"/>
+            </connections>
+            <point key="canvasLocation" x="198.55072463768118" y="175.44642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baseline_gps_fixed_black_24pt" width="24" height="24"/>
+        <image name="imgInfowindow11" width="24" height="88"/>
+        <image name="imgInfowindow12" width="30" height="88"/>
+        <image name="imgInfowindow13" width="27" height="88"/>
+    </resources>
+</document>

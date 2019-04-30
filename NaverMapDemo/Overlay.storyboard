@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -899,6 +899,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jva-Uh-VVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="311" y="3511"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T2k-jG-3N5">
+            <objects>
+                <navigationController storyboardIdentifier="CustomInfoWindow" id="GP9-vE-1L6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DMg-Ed-9A0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x4z-gV-0q8" kind="relationship" relationship="rootViewController" id="i4W-5J-8eG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ds7-2m-zwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2566" y="752"/>
+        </scene>
+        <!--Custom Info Window-->
+        <scene sceneID="CbO-qR-b9A">
+            <objects>
+                <viewController title="CustomInfoWindowViewController" id="x4z-gV-0q8" userLabel="Custom Info Window" customClass="CustomInfoWindowViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lck-re-v6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzR-Af-fVZ" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="x4z-gV-0q8" id="ZQi-ux-eNv"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LzR-Af-fVZ" firstAttribute="bottom" secondItem="lck-re-v6b" secondAttribute="bottom" id="H3R-Gx-S7E"/>
+                            <constraint firstItem="LzR-Af-fVZ" firstAttribute="top" secondItem="F31-9A-CXq" secondAttribute="top" id="Sb6-vE-fJV"/>
+                            <constraint firstItem="LzR-Af-fVZ" firstAttribute="trailing" secondItem="F31-9A-CXq" secondAttribute="trailing" id="aJe-mh-2nW"/>
+                            <constraint firstItem="LzR-Af-fVZ" firstAttribute="leading" secondItem="F31-9A-CXq" secondAttribute="leading" id="ii0-Q2-Tp8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F31-9A-CXq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Info Window" id="if1-1J-zuM"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="LzR-Af-fVZ" id="pV9-jL-u4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcU-mD-5be" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1855" y="752"/>
         </scene>
     </scenes>
 </document>
