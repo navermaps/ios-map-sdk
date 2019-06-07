@@ -20,18 +20,18 @@ import NMapsMap
 
 class ExtentViewController: MapViewController {
 
-    let EXTENT = NMGLatLngBounds(southWestLat: 31.43, southWestLng: 122.37, northEastLat: 44.35, northEastLng: 132)
+    let extent = NMGLatLngBounds(southWestLat: 31.43, southWestLng: 122.37, northEastLat: 44.35, northEastLng: 132)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mapView.extent = EXTENT
-        mapView.moveCamera(NMFCameraUpdate(fit: EXTENT, padding: 24))
-        let polylineOverlay = NMFPolylineOverlay(points: [EXTENT.southWest,
-                                                          NMGLatLng(lat: EXTENT.southWestLat, lng: EXTENT.northEastLng),
-                                                          EXTENT.northEast,
-                                                          NMGLatLng(lat: EXTENT.northEastLat, lng: EXTENT.southWestLng),
-                                                          EXTENT.southWest])
+        mapView.extent = extent
+        mapView.moveCamera(NMFCameraUpdate(fit: extent, padding: 24))
+        let polylineOverlay = NMFPolylineOverlay([extent.southWest,
+                                                  NMGLatLng(lat: extent.southWestLat, lng: extent.northEastLng),
+                                                  extent.northEast,
+                                                  NMGLatLng(lat: extent.northEastLat, lng: extent.southWestLng),
+                                                  extent.southWest])
         polylineOverlay?.mapView = mapView
     }
 

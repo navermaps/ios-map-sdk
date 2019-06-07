@@ -20,25 +20,25 @@ import NMapsMap
 
 class PolylineOverlayViewController: MapViewController {
 
-    let COORDS_1 = [NMGLatLng(lat: 37.57152, lng: 126.97714),
-                    NMGLatLng(lat: 37.56607, lng: 126.98268),
-                    NMGLatLng(lat: 37.56445, lng: 126.97707),
-                    NMGLatLng(lat: 37.55855, lng: 126.97822)]
-    let COORDS_2 = [NMGLatLng(lat: 37.57152, lng: 126.97714),
-                    NMGLatLng(lat: 37.5744287, lng: 126.982625)]
+    let coords1 = [NMGLatLng(lat: 37.57152, lng: 126.97714),
+                   NMGLatLng(lat: 37.56607, lng: 126.98268),
+                   NMGLatLng(lat: 37.56445, lng: 126.97707),
+                   NMGLatLng(lat: 37.55855, lng: 126.97822)]
+    let coords2 = [NMGLatLng(lat: 37.57152, lng: 126.97714),
+                   NMGLatLng(lat: 37.5744287, lng: 126.982625)]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let lineString = NMGLineString(points: COORDS_1)
-        let polylineOverlay = NMFPolylineOverlay(lineString as? NMGLineString<AnyObject>)
+        let lineString = NMGLineString(points: coords1)
+        let polylineOverlay = NMFPolylineOverlay(lineString as! NMGLineString<AnyObject>)
         polylineOverlay?.width = 3
         polylineOverlay?.color = primaryColor
         polylineOverlay?.mapView = mapView
         
-        let lineString2 = NMGLineString(points: COORDS_2)
-        let polylineOverlay2 = NMFPolylineOverlay(lineString2 as? NMGLineString<AnyObject>)
+        let lineString2 = NMGLineString(points: coords2)
+        let polylineOverlay2 = NMFPolylineOverlay(lineString2 as! NMGLineString<AnyObject>)
         polylineOverlay2?.width = 3
         polylineOverlay2?.pattern = [10, 10]
         polylineOverlay2?.color = UIColor.gray

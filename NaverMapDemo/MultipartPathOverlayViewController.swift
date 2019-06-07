@@ -23,7 +23,7 @@ class MultipartPathOverlayViewController: MapViewController {
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var progressLabel: UILabel!
     
-    let COORDS_1: [NMGLineString<NMGLatLng>] = [
+    let lineString1: [NMGLineString<NMGLatLng>] = [
         NMGLineString(points: [
             NMGLatLng(lat: 37.5594084, lng: 126.9745830),
             NMGLatLng(lat: 37.5599980, lng: 126.9748245),
@@ -112,14 +112,14 @@ class MultipartPathOverlayViewController: MapViewController {
             NMGLatLng(lat: 37.5701955, lng: 126.9820897),
             NMGLatLng(lat: 37.5701996, lng: 126.9821860)])
     ]
-    let COLORS_1: [NMFPathColor] = [
+    let colors1: [NMFPathColor] = [
         NMFPathColor(color: UIColor.red, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.yellow, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.green, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.red, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.yellow, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white)
     ]
-    let COORDS_2: [NMGLineString<NMGLatLng>] = [
+    let lineString2: [NMGLineString<NMGLatLng>] = [
         NMGLineString(points: [
             NMGLatLng(lat: 37.5660645, lng: 126.9826732),
             NMGLatLng(lat: 37.5660294, lng: 126.9826723),
@@ -176,7 +176,7 @@ class MultipartPathOverlayViewController: MapViewController {
             NMGLatLng(lat: 37.5587088, lng: 126.9784125),
             NMGLatLng(lat: 37.5586699, lng: 126.9783698)])
     ]
-    let COLORS_2: [NMFPathColor] = [
+    let colors2: [NMFPathColor] = [
         NMFPathColor(color: UIColor.lightGray, outlineColor: UIColor.white, passedColor: UIColor.lightGray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.gray, outlineColor: UIColor.white, passedColor: UIColor.gray, passedOutlineColor: UIColor.white),
         NMFPathColor(color: UIColor.darkGray, outlineColor: UIColor.white, passedColor: UIColor.darkGray, passedOutlineColor: UIColor.white)
@@ -190,26 +190,28 @@ class MultipartPathOverlayViewController: MapViewController {
         let width: CGFloat = 8
         let outlineWidth: CGFloat = 2
         
-        let multipartPathOverlay = NMFMultipartPath(coordParts: COORDS_1)
-        multipartPathOverlay.colorParts = COLORS_1
-        multipartPathOverlay.width = width
-        multipartPathOverlay.outlineWidth = outlineWidth
-        multipartPathOverlay.progress = 0.3
-        multipartPathOverlay.mapView = naverMapView.mapView
-        progressMultipartPath = multipartPathOverlay
+        if let multipartPathOverlay = NMFMultipartPath(lineString1 as! [NMGLineString<AnyObject>]) {
+            multipartPathOverlay.colorParts = colors1
+            multipartPathOverlay.width = width
+            multipartPathOverlay.outlineWidth = outlineWidth
+            multipartPathOverlay.progress = 0.3
+            multipartPathOverlay.mapView = naverMapView.mapView
+            progressMultipartPath = multipartPathOverlay
+        }
         
-        let multipartPathWithPattern = NMFMultipartPath(coordParts: COORDS_2)
-        multipartPathWithPattern.colorParts = COLORS_2
-        multipartPathWithPattern.width = width
-        multipartPathWithPattern.outlineWidth = 0
-        multipartPathWithPattern.patternIcon = NMFOverlayImage(image: #imageLiteral(resourceName: "route_path_arrow"))
-        multipartPathWithPattern.patternInterval = 10
-        multipartPathWithPattern.mapView = naverMapView.mapView
+        if let multipartPathWithPattern = NMFMultipartPath(lineString2 as! [NMGLineString<AnyObject>]) {
+            multipartPathWithPattern.colorParts = colors2
+            multipartPathWithPattern.width = width
+            multipartPathWithPattern.outlineWidth = 0
+            multipartPathWithPattern.patternIcon = NMFOverlayImage(image: #imageLiteral(resourceName: "route_path_arrow"))
+            multipartPathWithPattern.patternInterval = 10
+            multipartPathWithPattern.mapView = naverMapView.mapView
+        }
     }
     
     func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
         if let multipartPathOverlay = progressMultipartPath {
-            let progress = NMFGeometryUtils.progress(with: multipartPathOverlay.coordParts, targetLatLng: latlng)
+            let progress = NMFGeometryUtils.progress(with: multipartPathOverlay.lineParts, targetLatLng: latlng)
             multipartPathOverlay.progress = progress
             progressSlider.value = Float(progress)
             progressLabel.text = "\(Int(progress * 100))%"

@@ -20,7 +20,7 @@ import NMapsMap
 
 class CameraUpdateParamsViewController: MapViewController {
 
-    let COORD = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
+    let coord = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
     var step: Int = 0
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class CameraUpdateParamsViewController: MapViewController {
     @IBAction func respondToMove(_ sender: UIButton) {
         let params = NMFCameraUpdateParams()
         if step == 0 {
-            params.scroll(to: COORD)
+            params.scroll(to: coord)
             params.zoom(to: 10)
             params.rotate(to: 0)
         } else if step == 1 {

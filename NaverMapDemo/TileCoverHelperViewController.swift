@@ -42,11 +42,11 @@ import NMapsMap
                                                                       NMGLatLng(lat: bounds.southWestLat, lng: bounds.northEastLng),
                                                                       bounds.southWest]))
                 let overlay = NMFPolygonOverlay(polygon as! NMGPolygon<AnyObject>)
-                overlay.fillColor = UIColor(red: CGFloat(Float(arc4random()) / Float(UINT32_MAX)),
+                overlay?.fillColor = UIColor(red: CGFloat(Float(arc4random()) / Float(UINT32_MAX)),
                                             green: CGFloat(Float(arc4random()) / Float(UINT32_MAX)),
                                             blue: CGFloat(Float(arc4random()) / Float(UINT32_MAX)),
                                             alpha: 0.3)
-                overlay.mapView = mapView
+                overlay?.mapView = mapView
                 overlays[tileId] = overlay
             }
         }

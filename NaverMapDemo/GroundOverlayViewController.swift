@@ -23,7 +23,11 @@ class GroundOverlayViewController: MapViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let groundOverlay = NMFGroundOverlay(bounds: NMGLatLngBounds(southWestLat: 37.566351, southWestLng: 126.977234, northEastLat: 37.568528, northEastLng: 126.979980), image: NMFOverlayImage(name: "groundimage"))
+        let groundOverlay = NMFGroundOverlay(bounds: NMGLatLngBounds(southWestLat: 37.566351,
+                                                                     southWestLng: 126.977234,
+                                                                     northEastLat: 37.568528,
+                                                                     northEastLng: 126.979980),
+                                             image: NMFOverlayImage(name: "groundimage"))
         groundOverlay.mapView = mapView
     }
     

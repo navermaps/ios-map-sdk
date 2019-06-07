@@ -20,19 +20,19 @@ import NMapsMap
 
 class ArrowheadPathOverlayViewController: MapViewController {
 
-    let COORDS = [NMGLatLng(lat: 37.568003, lng: 126.9772503),
+    let coord = [NMGLatLng(lat: 37.568003, lng: 126.9772503),
                   NMGLatLng(lat: 37.5701573, lng: 126.9772503),
                   NMGLatLng(lat: 37.5701573, lng: 126.9793745)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let turnSignalOverlay = NMFArrowheadPath(points: COORDS)
-        turnSignalOverlay.width = 10
-        turnSignalOverlay.color = UIColor.white
-        turnSignalOverlay.outlineWidth = 2
-        turnSignalOverlay.outlineColor = primaryColor
-        turnSignalOverlay.mapView = mapView
+        let turnSignalOverlay = NMFArrowheadPath(coord)
+        turnSignalOverlay?.width = 10
+        turnSignalOverlay?.color = UIColor.white
+        turnSignalOverlay?.outlineWidth = 2
+        turnSignalOverlay?.outlineColor = primaryColor
+        turnSignalOverlay?.mapView = mapView
     }
 
 }

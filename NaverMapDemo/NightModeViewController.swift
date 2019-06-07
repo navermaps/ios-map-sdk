@@ -20,7 +20,7 @@ import NMapsMap
 
 class NightModeViewController: MapViewController {
     
-    let MARKER_COORDS: [NMGLatLng] = [
+    let markerCoords: [NMGLatLng] = [
         NMGLatLng(lat: 37.5666102, lng: 126.9783881),
         NMGLatLng(lat: 37.57000, lng: 126.97618),
         NMGLatLng(lat: 37.56138, lng: 126.97970)
@@ -33,7 +33,7 @@ class NightModeViewController: MapViewController {
         mapView.mapType = .navi
         mapView.isNightModeEnabled = true
 
-        for latlng in MARKER_COORDS {
+        for latlng in markerCoords {
             let marker = NMFMarker(position: latlng)
             marker.iconImage = NMFOverlayImage(name: "mSNormalNight", in: Bundle.naverMapFramework())
             marker.mapView = mapView

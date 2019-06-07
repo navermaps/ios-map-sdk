@@ -20,24 +20,24 @@ import NMapsMap
 
 class ContentPaddingViewController: MapViewController {
 
-    let COORD_1 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
-    let COORD_2 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
+    let coord1 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
+    let coord2 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
     var positionFlag: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let marker1 = NMFMarker(position: COORD_1)
+        let marker1 = NMFMarker(position: coord1)
         marker1.mapView = mapView
-        let marker2 = NMFMarker(position: COORD_2)
+        let marker2 = NMFMarker(position: coord2)
         marker2.mapView = mapView
         
         mapView.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 100, right: 60)
-        mapView.moveCamera(NMFCameraUpdate(scrollTo: COORD_1))
+        mapView.moveCamera(NMFCameraUpdate(scrollTo: coord1))
     }
     
     @IBAction func respondToMoveCamera(_ sender: UIButton) {
-        let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? COORD_1 : COORD_2)
+        let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? coord1 : coord2)
         camUpdate.animation = .fly
         camUpdate.animationDuration = 3
         mapView.moveCamera(camUpdate)

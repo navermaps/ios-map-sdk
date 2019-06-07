@@ -20,29 +20,29 @@ import NMapsMap
 
 class FitBoundsViewController: MapViewController {
     
-    let BOUNDS_1 = NMGLatLngBounds(southWest: NMGLatLng(lat: 37.4282975, lng: 126.7644840),
-                                   northEast: NMGLatLng(lat: 37.7014553, lng: 127.1837949))
-    let BOUNDS_2 = NMGLatLngBounds(southWest: NMGLatLng(lat: 34.8357234, lng: 128.7614072),
-                                   northEast: NMGLatLng(lat: 35.3890374, lng: 129.3055979))
+    let bounds1 = NMGLatLngBounds(southWest: NMGLatLng(lat: 37.4282975, lng: 126.7644840),
+                                  northEast: NMGLatLng(lat: 37.7014553, lng: 127.1837949))
+    let bounds2 = NMGLatLngBounds(southWest: NMGLatLng(lat: 34.8357234, lng: 128.7614072),
+                                  northEast: NMGLatLng(lat: 35.3890374, lng: 129.3055979))
     var boundsFlag = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let ne1 = NMFMarker(position: BOUNDS_1.northEast)
+        let ne1 = NMFMarker(position: bounds1.northEast)
         ne1.mapView = mapView
-        let sw1 = NMFMarker(position: BOUNDS_1.southWest)
+        let sw1 = NMFMarker(position: bounds1.southWest)
         sw1.mapView = mapView
-        let ne2 = NMFMarker(position: BOUNDS_2.northEast)
+        let ne2 = NMFMarker(position: bounds2.northEast)
         ne2.mapView = mapView
-        let sw2 = NMFMarker(position: BOUNDS_2.southWest)
+        let sw2 = NMFMarker(position: bounds2.southWest)
         sw2.mapView = mapView
     }
     
     // MARK:- IBActions
     
     @IBAction func respondToMove(_ sender: UIButton) {
-        let camUpdate = NMFCameraUpdate(fit: boundsFlag ? BOUNDS_2 : BOUNDS_1, padding: 24)
+        let camUpdate = NMFCameraUpdate(fit: boundsFlag ? bounds2 : bounds1, padding: 24)
         camUpdate.animation = .fly
         camUpdate.animationDuration = 5
         naverMapView.mapView.moveCamera(camUpdate)

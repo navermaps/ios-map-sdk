@@ -34,7 +34,7 @@ class CustomInfoWindowDataSource: NSObject, NMFOverlayImageDataSource {
         
         if infoWindow.marker != nil {
             rootView.iconView.image = UIImage(named: "baseline_room_black_24pt")
-            rootView.textLabel.text = infoWindow.marker.userInfo["title"] as? String
+            rootView.textLabel.text = infoWindow.marker?.userInfo["title"] as? String
         } else {
             rootView.iconView.image = UIImage(named: "baseline_gps_fixed_black_24pt")
             rootView.textLabel.text = "\(infoWindow.position.lat), \(infoWindow.position.lng)"

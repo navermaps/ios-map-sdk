@@ -20,24 +20,24 @@ import NMapsMap
 
 class CameraAnimationsViewController: MapViewController {
     
-    let POSITION_1 = NMFCameraPosition(NMGLatLng(lat: 37.5666102, lng: 126.9783881), zoom: 6)
-    let POSITION_2 = NMFCameraPosition(NMGLatLng(lat: 35.1798159, lng: 129.0750222), zoom: 8)
+    let position1 = NMFCameraPosition(NMGLatLng(lat: 37.5666102, lng: 126.9783881), zoom: 6)
+    let position2 = NMFCameraPosition(NMGLatLng(lat: 35.1798159, lng: 129.0750222), zoom: 8)
     var positionFlag: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let marker1 = NMFMarker(position: POSITION_1.target)
+        let marker1 = NMFMarker(position: position1.target)
         marker1.mapView = mapView
         
-        let marker2 = NMFMarker(position: POSITION_2.target)
+        let marker2 = NMFMarker(position: position2.target)
         marker2.mapView = mapView
     }
     
     // MARK:- IBActions
     
     @IBAction func respondToMove(_ sender: UIButton) {
-        let camUpdate = NMFCameraUpdate(position: positionFlag ? POSITION_2 : POSITION_1)
+        let camUpdate = NMFCameraUpdate(position: positionFlag ? position2 : position1)
         camUpdate.animation = .easeIn
         camUpdate.animationDuration = 5
         mapView.moveCamera(camUpdate)

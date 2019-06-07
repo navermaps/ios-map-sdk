@@ -44,6 +44,8 @@ class LocationTrackingViewController: MapViewController {
             stateStr = "Follow"
         case .compass:
             stateStr = "Face"
+        default:
+            stateStr = "None"
         }
         selectButton.title = stateStr
     }

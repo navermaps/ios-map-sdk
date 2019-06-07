@@ -160,29 +160,31 @@ class PathOverlayViewController: MapViewController {
         let width: CGFloat = 8
         let outlineWidth: CGFloat = 2
         
-        let pathOverlay = NMFPath(points: coords1)
-        pathOverlay.width = width
-        pathOverlay.outlineWidth = outlineWidth
-        pathOverlay.color = primaryColor
-        pathOverlay.outlineColor = UIColor.white
-        pathOverlay.passedColor = UIColor.gray
-        pathOverlay.passedOutlineColor = UIColor.white
-        pathOverlay.progress = 0.3
-        pathOverlay.mapView = mapView
-        progressPathOverlay = pathOverlay
+        if let pathOverlay = NMFPath(points: coords1) {
+            pathOverlay.width = width
+            pathOverlay.outlineWidth = outlineWidth
+            pathOverlay.color = primaryColor
+            pathOverlay.outlineColor = UIColor.white
+            pathOverlay.passedColor = UIColor.gray
+            pathOverlay.passedOutlineColor = UIColor.white
+            pathOverlay.progress = 0.3
+            pathOverlay.mapView = mapView
+            progressPathOverlay = pathOverlay
+        }
         
-        let pathOverlayWithPattern = NMFPath(points: coords2)
-        pathOverlayWithPattern.width = width
-        pathOverlayWithPattern.outlineWidth = 0
-        pathOverlayWithPattern.color = UIColor.blue
-        pathOverlayWithPattern.patternIcon = NMFOverlayImage(image: #imageLiteral(resourceName: "route_path_arrow"))
-        pathOverlayWithPattern.patternInterval = 10
-        pathOverlayWithPattern.mapView = mapView
+        if let pathOverlayWithPattern = NMFPath(points: coords2) {
+            pathOverlayWithPattern.width = width
+            pathOverlayWithPattern.outlineWidth = 0
+            pathOverlayWithPattern.color = UIColor.blue
+            pathOverlayWithPattern.patternIcon = NMFOverlayImage(image: #imageLiteral(resourceName: "route_path_arrow"))
+            pathOverlayWithPattern.patternInterval = 10
+            pathOverlayWithPattern.mapView = mapView
+        }
     }
     
     func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
         if let pathOverlay = progressPathOverlay {
-            let progress = NMFGeometryUtils.progress(with: pathOverlay.points, targetLatLng: latlng)
+            let progress = NMFGeometryUtils.progress(with: pathOverlay.path.points as! [NMGLatLng], targetLatLng: latlng)
             pathOverlay.progress = Double(progress)
             progressSlider.value = Float(progress)
             progressLabel.text = "\(Int(progress * 100))%"

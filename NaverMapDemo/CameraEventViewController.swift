@@ -25,8 +25,8 @@ class CameraEventViewController: MapViewController {
     @IBOutlet weak var idleLabel: UILabel!
     
     let camPositionFormat = "(%.5f, %.5f) / %.2f / %.2f / %.2f"
-    let COORD_1 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
-    let COORD_2 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
+    let coord1 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
+    let coord2 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
     
     var positionFlag: Bool = false
     var moving: Bool = false
@@ -34,9 +34,9 @@ class CameraEventViewController: MapViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let marker1 = NMFMarker(position: COORD_1)
+        let marker1 = NMFMarker(position: coord1)
         marker1.mapView = mapView
-        let marker2 = NMFMarker(position: COORD_2)
+        let marker2 = NMFMarker(position: coord2)
         marker2.mapView = mapView
     }
     
@@ -58,7 +58,7 @@ class CameraEventViewController: MapViewController {
         if moving {
             mapView.cancelTransitions()
         } else {
-            let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? COORD_2 : COORD_1)
+            let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? coord2 : coord1)
             camUpdate.animation = .fly
             camUpdate.animationDuration = 5
             

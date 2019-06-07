@@ -24,10 +24,10 @@ class CircleOverlayViewController: MapViewController {
         super.viewDidLoad()
 
         let circleOverlay = NMFCircleOverlay(NMGLatLng(lat: 37.5666102, lng: 126.9783881), radius: 500)
-        circleOverlay?.fillColor = primaryColor.withAlphaComponent(31/255)
-        circleOverlay?.outlineColor = primaryColor
-        circleOverlay?.outlineWidth = 3
-        circleOverlay?.mapView = mapView
+        circleOverlay.fillColor = primaryColor.withAlphaComponent(31/255)
+        circleOverlay.outlineColor = primaryColor
+        circleOverlay.outlineWidth = 3
+        circleOverlay.mapView = mapView
     }
 
 }
