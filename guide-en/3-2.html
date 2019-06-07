@@ -850,24 +850,24 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), 
 <h2 id="callback-and-event">Callback and event</h2>
 <p>With the completion block of <code>-moveCamera:completion:</code>, instead of <code>-moveCamera:</code>, you can get a result called back for a camera movement. You can also add a delegate to the <code>NMFMapView</code> to get events for all camera movements in your map.</p>
 <h3 id="camera-movement-callback">Camera movement callback</h3>
-<p>Implement a callback block with <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29moveCamera:completion:" target="_blank"><code>-moveCamera:completion:</code></a>, and you can get a callback when a camera movement for the <code>NMFCameraUpdate</code> is finished or cancelled. If an animation set for camera movements is cancelled, the <code>isCancelled</code> parameter of the completion block is set to <code>YES</code>; otherwise, it is set to <code>NO</code>. In other words, if no animation is set for camera movements, a camera movement is always considered to be successfully completed.</p>
+<p>Implement a callback block with <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29moveCamera:completion:" target="_blank"><code>-moveCamera:completion:</code></a>, and you can get a callback when a camera movement for the <code>NMFCameraUpdate</code> is completed or cancelled. If an animation set for camera movements is cancelled, the <code>isCancelled</code> parameter of the completion block is set to <code>YES</code>; otherwise, it is set to <code>NO</code>. In other words, if no animation is set for camera movements, a camera movement is always considered to be successfully finished.</p>
 <p>The following code example sets a callback that displays toast messages when a camera movement is finished or cancelled.</p>
-<p><div id="79a6bf1952ad6f60e85323008f4ac10a" class="gbcg gbcg-codegroup">
+<p><div id="333874f5b3c4605ce0d73b969eddd9c0" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-a6dcfb8d1823c4b90ba8923ba1b48601" class="gbcg-selector gbcg-active" data-tab="0-a6dcfb8d1823c4b90ba8923ba1b48601" data-tab-category="undefined">Swift</a>
-    <a id="select-1-8139d53664f7f5a1837505997c30f50a" class="gbcg-selector" data-tab="1-8139d53664f7f5a1837505997c30f50a" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-a48595e33e988609e2b9527a4cd833ec" class="gbcg-selector gbcg-active" data-tab="0-a48595e33e988609e2b9527a4cd833ec" data-tab-category="undefined">Swift</a>
+    <a id="select-1-c6c76a4570862a6b41fe34069449bb0d" class="gbcg-selector" data-tab="1-c6c76a4570862a6b41fe34069449bb0d" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-a6dcfb8d1823c4b90ba8923ba1b48601" class="gbcg-tab-item gbcb-Swift">
+      <div id="0-a48595e33e988609e2b9527a4cd833ec" class="gbcg-tab-item gbcb-Swift">
         <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
 cameraUpdate.animation = .easeIn
 cameraUpdate.animationDuration = <span class="hljs-number">2</span>
 mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</span>
     <span class="hljs-keyword">if</span> isCancelled {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement failed&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement cancelled&quot;</span>)
     } <span class="hljs-keyword">else</span> {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement completed&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement finished&quot;</span>)
     }
 }
 </code></pre>
@@ -875,32 +875,32 @@ mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-a6dcfb8d1823c4b90ba8923ba1b48601" id="swift">Swift</h3>
-        <div id="0-a6dcfb8d1823c4b90ba8923ba1b48601" class="gbcg-tab-item gbcb-Swift">
+        <h3 class="gbcg-tabname 0-a48595e33e988609e2b9527a4cd833ec" id="swift">Swift</h3>
+        <div id="0-a48595e33e988609e2b9527a4cd833ec" class="gbcg-tab-item gbcb-Swift">
           <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
 cameraUpdate.animation = .easeIn
 cameraUpdate.animationDuration = <span class="hljs-number">2</span>
 mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</span>
     <span class="hljs-keyword">if</span> isCancelled {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement failed&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement cancelled&quot;</span>)
     } <span class="hljs-keyword">else</span> {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement completed&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Camera movement finished&quot;</span>)
     }
 }
 </code></pre>
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-8139d53664f7f5a1837505997c30f50a" id="objective-c">Objective-C</h3>
-        <div id="1-8139d53664f7f5a1837505997c30f50a" class="gbcg-tab-item gbcb-Objective-C">
+        <h3 class="gbcg-tabname 1-c6c76a4570862a6b41fe34069449bb0d" id="objective-c">Objective-C</h3>
+        <div id="1-c6c76a4570862a6b41fe34069449bb0d" class="gbcg-tab-item gbcb-Objective-C">
           <pre><code class="lang-Objective-C">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(37.5666102, 126.9783881)];
 cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
 cameraUpdate.animationDuration = 2;
 [self.mapView moveCamera:cameraUpdate completion:^(bool isCancelled) {
     if (isCancelled) {
-        NSLog(@&quot;Camera movement failed&quot;);
+        NSLog(@&quot;Camera movement cancelled&quot;);
     } else {
-        NSLog(@&quot;Camera movement completed&quot;);
+        NSLog(@&quot;Camera movement finished&quot;);
     }
 }];
 </code></pre>
@@ -1131,7 +1131,7 @@ self.mapView.maxZoomLevel = 18.0;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Camera Movement","level":"2.3.2","depth":2,"next":{"title":"Interaction","level":"2.4","depth":1,"ref":"","articles":[{"title":"User Interface","level":"2.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"Location","level":"2.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"previous":{"title":"Camera and Projection","level":"2.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-2.md","mtime":"2019-04-08T05:07:43.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:45.475Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Camera Movement","level":"2.3.2","depth":2,"next":{"title":"Interaction","level":"2.4","depth":1,"ref":"","articles":[{"title":"User Interface","level":"2.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"Location","level":"2.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"previous":{"title":"Camera and Projection","level":"2.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-2.md","mtime":"2019-06-07T09:18:44.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-07T09:18:46.143Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

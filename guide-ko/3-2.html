@@ -872,20 +872,20 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), 
 <h3 id="&#xCE74;&#xBA54;&#xB77C;-&#xC774;&#xB3D9;-&#xCF5C;&#xBC31;">&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xCF5C;&#xBC31;</h3>
 <p><a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28im%29moveCamera:completion:" target="_blank"><code>-moveCamera:completion:</code></a>&#xC73C;&#xB85C; &#xCF5C;&#xBC31; &#xBE14;&#xB85D;&#xC744; &#xAD6C;&#xD604;&#xD558;&#xBA74; &#xD574;&#xB2F9;&#xD558;&#xB294; <code>NMFCameraUpdate</code>&#xC5D0; &#xB300;&#xD55C; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC774; &#xC644;&#xB8CC;&#xB410;&#xAC70;&#xB098; &#xC2E4;&#xD328;&#xD588;&#xC744; &#xB54C; &#xCF5C;&#xBC31;&#xC744; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xACE0; &#xADF8; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xCDE8;&#xC18C;&#xB418;&#xC5C8;&#xC744; &#xACBD;&#xC6B0; completion block&#xC758; <code>isCancelled</code> &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; <code>YES</code>, &#xADF8; &#xC678;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; <code>NO</code>&#xB85C; &#xC9C0;&#xC815;&#xB429;&#xB2C8;&#xB2E4;. &#xC989;, &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC5D0; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC774; &#xC9C0;&#xC815;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xC73C;&#xBA74; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9;&#xC740; &#xD56D;&#xC0C1; &#xC131;&#xACF5;&#xC801;&#xC73C;&#xB85C; &#xC644;&#xB8CC;&#xB41C; &#xAC83;&#xC73C;&#xB85C; &#xAC04;&#xC8FC;&#xB429;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC; &#xBC0F; &#xC2E4;&#xD328; &#xC2DC; &#xD1A0;&#xC2A4;&#xD2B8;&#xB97C; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xCF5C;&#xBC31;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p><div id="91fac31651057fc83a0134a04df867a9" class="gbcg gbcg-codegroup">
+<p><div id="a68be63b37c2c1c1906b146c17f77088" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-06fdc62eeb1c35726ef54f7ff5780103" class="gbcg-selector gbcg-active" data-tab="0-06fdc62eeb1c35726ef54f7ff5780103" data-tab-category="undefined">Swift</a>
-    <a id="select-1-294144fa1c9585790effd7faba4126c7" class="gbcg-selector" data-tab="1-294144fa1c9585790effd7faba4126c7" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-4ce842131b6e9855fbf4af7727d8ce1b" class="gbcg-selector gbcg-active" data-tab="0-4ce842131b6e9855fbf4af7727d8ce1b" data-tab-category="undefined">Swift</a>
+    <a id="select-1-97055bebdfd7e69b29e0ba3c36ab3b5b" class="gbcg-selector" data-tab="1-97055bebdfd7e69b29e0ba3c36ab3b5b" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-06fdc62eeb1c35726ef54f7ff5780103" class="gbcg-tab-item gbcb-Swift">
+      <div id="0-4ce842131b6e9855fbf4af7727d8ce1b" class="gbcg-tab-item gbcb-Swift">
         <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
 cameraUpdate.animation = .easeIn
 cameraUpdate.animationDuration = <span class="hljs-number">2</span>
 mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</span>
     <span class="hljs-keyword">if</span> isCancelled {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC2E4;&#xD328;&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xCDE8;&#xC18C;&quot;</span>)
     } <span class="hljs-keyword">else</span> {
         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC;&quot;</span>)
     }
@@ -895,14 +895,14 @@ mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-06fdc62eeb1c35726ef54f7ff5780103" id="swift">Swift</h3>
-        <div id="0-06fdc62eeb1c35726ef54f7ff5780103" class="gbcg-tab-item gbcb-Swift">
+        <h3 class="gbcg-tabname 0-4ce842131b6e9855fbf4af7727d8ce1b" id="swift">Swift</h3>
+        <div id="0-4ce842131b6e9855fbf4af7727d8ce1b" class="gbcg-tab-item gbcb-Swift">
           <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> cameraUpdate = <span class="hljs-type">NMFCameraUpdate</span>(scrollTo: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.5666102</span>, lng: <span class="hljs-number">126.9783881</span>))
 cameraUpdate.animation = .easeIn
 cameraUpdate.animationDuration = <span class="hljs-number">2</span>
 mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</span>
     <span class="hljs-keyword">if</span> isCancelled {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC2E4;&#xD328;&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xCDE8;&#xC18C;&quot;</span>)
     } <span class="hljs-keyword">else</span> {
         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC;&quot;</span>)
     }
@@ -911,14 +911,14 @@ mapView.moveCamera(cameraUpdate) { (isCancelled) <span class="hljs-keyword">in</
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-294144fa1c9585790effd7faba4126c7" id="objective-c">Objective-C</h3>
-        <div id="1-294144fa1c9585790effd7faba4126c7" class="gbcg-tab-item gbcb-Objective-C">
+        <h3 class="gbcg-tabname 1-97055bebdfd7e69b29e0ba3c36ab3b5b" id="objective-c">Objective-C</h3>
+        <div id="1-97055bebdfd7e69b29e0ba3c36ab3b5b" class="gbcg-tab-item gbcb-Objective-C">
           <pre><code class="lang-Objective-C">NMFCameraUpdate *cameraUpdate = [NMFCameraUpdate cameraUpdateWithScrollTo:NMGLatLngMake(37.5666102, 126.9783881)];
 cameraUpdate.animation = NMFCameraUpdateAnimationEaseIn;
 cameraUpdate.animationDuration = 2;
 [self.mapView moveCamera:cameraUpdate completion:^(bool isCancelled) {
     if (isCancelled) {
-        NSLog(@&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC2E4;&#xD328;&quot;);
+        NSLog(@&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xCDE8;&#xC18C;&quot;);
     } else {
         NSLog(@&quot;&#xCE74;&#xBA54;&#xB77C; &#xC774;&#xB3D9; &#xC644;&#xB8CC;&quot;);
     }
@@ -1151,7 +1151,7 @@ self.mapView.maxZoomLevel = 18.0;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"카메라 이동","level":"3.3.2","depth":2,"next":{"title":"상호작용","level":"3.4","depth":1,"ref":"","articles":[{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"previous":{"title":"카메라와 투영","level":"3.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-2.md","mtime":"2019-04-08T05:07:38.411Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-08T05:07:40.657Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"카메라 이동","level":"3.3.2","depth":2,"next":{"title":"상호작용","level":"3.4","depth":1,"ref":"","articles":[{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"previous":{"title":"카메라와 투영","level":"3.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"3-2.md","mtime":"2019-06-07T09:18:37.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-07T09:18:39.850Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
