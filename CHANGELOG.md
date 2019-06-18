@@ -1,3 +1,26 @@
+# 3.4.0
+
+Release Date: 2019-06-07
+
+### 새로운 기능
+
+- Path 및 Polygon 오버레이에서 속성 및 생성자 추가
+  - `NMFPath.pathWithLineString`
+  - `NMFMultipartPath.multipartPath`
+  - `NMFPolygonOverlay.polygonOverlayWith`
+- Projection, InfoWindow 데모 추가
+
+### 개선
+
+- Path 및 Polygon 오버레이의 속성 및 메서드 변경
+  - `NMFPath.points` -> `NMFPath.path`
+  - `NMFPath.pathWithPoints` 매개변수로 `NMGLatLng` 배열 받음
+  - `NMFMultipartPath.coordParts` -> `NMFMultipartPath.lineParts`
+  - `NMFMultipartPath.multipartPathWithCoordParts` -> `NMFMultipartPath.multipartPathWith`
+  - `NMFPolygonOverlay.updatePolygon` -> `NMFPolygonOverlay.polygon`
+- 실내지도 층 컨트롤 연결층 텍스트 추가
+- 앱 사용중에만 위치 권한을 받도록 수정
+
 # 3.3.0
 
 Release Date: 2019-04-08
