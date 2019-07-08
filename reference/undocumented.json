@@ -268,14 +268,14 @@
     },
     {
       "file": "/Users/garoad/Documents/workspace/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 37,
+      "line": 36,
       "symbol": "NMGMultiPointable",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/garoad/Documents/workspace/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 57,
+      "line": 56,
       "symbol": "NMGBoundable",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
