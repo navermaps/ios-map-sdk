@@ -5,12 +5,13 @@
 ### CocoaPods 구성
 
 - CocoaPods 인스톨이 필요합니다.
-- 대용량 파일을 받기위해 [git-lfs](https://git-lfs.github.com/) 설치가 필요합니다.
+- # **<span style="color:red">대용량 파일을 받기 위해 [git-lfs](https://git-lfs.github.com) 설치가 필요합니다.</span>**
+- git-lfs를 설치하지 않으면 바이너리대신 설정파일만 받아오게 되어 [컴파일시 오류](https://github.com/navermaps/ios-map-sdk/issues/1)가 납니다. 정상적으로 다운받은 프레임워크의 용량은 대략 190MB 내외입니다.
 
-```ruby
-sudo gem install cocoapods
-brew install git-lfs  // homebrew 사용시 git-lfs 설치
-git-lfs install       // git-lfs 이니셜라이즈
+```
+sudo gem install cocoapods // cocoapods 설치
+brew install git-lfs       // homebrew 사용시 git-lfs 설치
+git-lfs install            // git-lfs 이니셜라이즈
 pod install --repo-update
 ```
 
