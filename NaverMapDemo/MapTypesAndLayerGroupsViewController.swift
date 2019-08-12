@@ -48,6 +48,10 @@ class MapTypesAndLayerGroupsViewController: MapViewController {
             self?.mapView.mapType = .terrain
             sender.setTitle("Terrain", for: .normal)
         }))
+        alertController.addAction(UIAlertAction(title: "None", style: .default, handler: { [weak self] (action) in
+            self?.mapView.mapType = .none
+            sender.setTitle("None", for: .normal)
+        }))
         if UIDevice.current.userInterfaceIdiom == .pad {
             if let popoverController = alertController.popoverPresentationController {
                 popoverController.sourceView = view
