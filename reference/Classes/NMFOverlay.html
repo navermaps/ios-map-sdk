@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E4%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E5%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -542,7 +542,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>숨김 속성. <code>YES</code>일 경우 오버레이는 화면에 표시되지 않으며 이벤트도 받지 못합니다.
+                        <p>숨김 속성. <code>YES</code>일 경우 오버레이는 화면에 나타나지 않으며 이벤트도 받지 못합니다.
 숨김 속성은 명시적으로 지정하지 않는 한 변하지 않습니다. 즉, 오버레이가 현재 보이는 지도 영역의 바깥쪽으로
 나가더라도 숨김 속성이 &lsquo;YES&#39;로 변하지는 않습니다.</p>
 
@@ -578,7 +578,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>보조 z 인덱스. 전역 Z 인덱스가 동일한 여러 오버레이가 화면에서 겹쳐지면 보조 Z 인덱스가 큰
+                        <p>보조 Z 인덱스. 전역 Z 인덱스가 동일한 여러 오버레이가 화면에서 겹쳐지면 보조 Z 인덱스가 큰
 오버레이가 작은 오버레이를 덮습니다.</p>
 
 <p>기본값은 <code>0</code>입니다.</p>
@@ -613,7 +613,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>전역 z 인덱스. 여러 오버레이가 화면에서 겹쳐지면 전역 Z 인덱스가 큰 오버레이가 작은 오버레이를
+                        <p>전역 Z 인덱스. 여러 오버레이가 화면에서 겹쳐지면 전역 Z 인덱스가 큰 오버레이가 작은 오버레이를
 덮습니다. 또한 값이 <code>0</code> 이상이면 오버레이가 심벌 위에, <code>0</code> 미만이면 심벌 아래에 그려집니다.</p>
 
                       </div>
@@ -646,7 +646,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>오버레이가 보이는 최소 줌 레벨.</p>
+                        <p>오버레이가 보이는 최소 줌 레벨. 지도의 줌 레벨이 오버레이의 최소 줌 레벨보다 작을 경우 오버레이는 화면에 나타나지
+않으며 이벤트도 받지 못합니다.</p>
 
 <p>기본값은 <code>NMF_MIN_ZOOM</code>입니다.</p>
 
@@ -680,7 +681,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>오버레이가 보이는 최대 줌 레벨.</p>
+                        <p>오버레이가 보이는 최대 줌 레벨. 지도의 줌 레벨이 오버레이의 최대 줌 레벨보다 클 경우 오버레이는 화면에 나타나지 않으며
+이벤트도 받지 못합니다.</p>
 
 <p>기본값은 <code>NMF_MAX_ZOOM</code>입니다.</p>
 
