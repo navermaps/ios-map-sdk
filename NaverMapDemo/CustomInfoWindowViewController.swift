@@ -78,7 +78,7 @@ class CustomInfoWindowViewController: MapViewController {
         let marker2 = NMFMarker(position: NMGLatLng(lat: 37.56138, lng: 126.97970))
         marker2.angle = 270.0
         marker2.touchHandler = { [weak self] (overlay: NMFOverlay) -> Bool in
-            self?.infoWindow.open(with: marker2, align: .left)
+            self?.infoWindow.open(with: marker2, alignType: NMFAlignType.left)
             return true
         }
         marker2.userInfo = ["title" : "Marker 2"]

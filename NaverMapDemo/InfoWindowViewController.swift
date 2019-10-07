@@ -48,7 +48,7 @@ class InfoWindowViewController: MapViewController {
         marker2.touchHandler = { [weak self] (overlay: NMFOverlay) -> Bool in
             self?.infoWindow.close()
             self?.defaultInfoWindowImage.title = marker2.userInfo["tag"] as! String
-            self?.infoWindow.open(with: marker2, align: .left)
+            self?.infoWindow.open(with: marker2, alignType: NMFAlignType.left)
             return true
         }
         marker2.userInfo = ["tag" : "Marker 2"]

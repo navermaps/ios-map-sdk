@@ -52,7 +52,8 @@ class MarkerViewController: MapViewController {
         
         let markerWithCaption = NMFMarker(position: NMGLatLng(lat: 37.56436, lng: 126.97499))
         markerWithCaption.iconImage = NMF_MARKER_IMAGE_YELLOW
-        markerWithCaption.captionAlign = .left
+        markerWithCaption.captionMinZoom = 12.0
+        markerWithCaption.captionAligns = [NMFAlignType.left]
         markerWithCaption.captionText = "☀캡션이 있는 마커🎉"
         markerWithCaption.mapView = mapView
         
@@ -68,7 +69,16 @@ class MarkerViewController: MapViewController {
         let tintColorMarker = NMFMarker(position: NMGLatLng(lat: 37.56500, lng: 126.9783881))
         tintColorMarker.iconImage = NMF_MARKER_IMAGE_BLACK
         tintColorMarker.iconTintColor = UIColor.red
+        tintColorMarker.captionText = "틴트가 들어간 마커"
+        tintColorMarker.zIndex = 5
         tintColorMarker.alpha = 0.5
+        tintColorMarker.isHideCollidedCaptions = true
         tintColorMarker.mapView = mapView
+        
+        let collidedMarker = NMFMarker(position: NMGLatLng(lat: 37.56450, lng: 126.9783830))
+        collidedMarker.iconImage = NMF_MARKER_IMAGE_GREEN
+        collidedMarker.captionAligns = [NMFAlignType.left, NMFAlignType.right]
+        collidedMarker.captionText = "캡션이 겹치면 다른곳으로 정렬하는 마커"
+        collidedMarker.mapView = mapView
     }
 }
