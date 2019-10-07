@@ -1101,32 +1101,32 @@ marker.captionText = @&quot;Very very very very very very very very very long ca
 <p>The following figure shows a marker&#x2019;s caption with the limited width.</p>
 <p><img src="../assets/5-2-caption-width.png" alt="Caption width specified"></p>
 <h3 id="alignment">Alignment</h3>
-<p>A cation is placed beneath an icon by default, but you can change the alignment with the <a href="ref://../reference/Classes/NMFMarker.html#/c%3Aobjc%28cs%29NMFMarker%28py%29captionAlign" target="_blank"><code>captionAlign</code></a> property. There are 9 available options including top, bottom, left, right, diagonal directions and center, which are defined in the <a href="ref://../reference/Enums/NMFAlign.html" target="_blank"><code>NMFAlign</code></a> enum.</p>
+<p>A cation is placed beneath an icon by default, but you can change the alignment with the <a href="ref://../reference/Classes/NMFMarker.html#/c%3Aobjc%28cs%29NMFMarker%28py%29captionAligns" target="_blank"><code>captionAligns</code></a> property. There are 9 available options including top, bottom, left, right, diagonal directions and center, which are defined in the <a href="ref://../reference/Classes/NMFAlignType.html" target="_blank"><code>NMFAlignType</code></a> object.</p>
 <p>The following code example places a marker&#x2019;s caption above an icon.</p>
-<p><div id="d9238e8d7701d3ab84d8b1c0f0b3d1ca" class="gbcg gbcg-codegroup">
+<p><div id="ecac54a7cd298a3d3983f07acd20845d" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-8be15fb6e44202469f22f3868a51e0c5" class="gbcg-selector gbcg-active" data-tab="0-8be15fb6e44202469f22f3868a51e0c5" data-tab-category="undefined">Swift</a>
-    <a id="select-1-91a51962e052b166e8698bd82556d4dc" class="gbcg-selector" data-tab="1-91a51962e052b166e8698bd82556d4dc" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-18f6e82cfee2cabccf9672c21aab6c5c" class="gbcg-selector gbcg-active" data-tab="0-18f6e82cfee2cabccf9672c21aab6c5c" data-tab-category="undefined">Swift</a>
+    <a id="select-1-ac0850ace4accd25c05fb27ba38fecd8" class="gbcg-selector" data-tab="1-ac0850ace4accd25c05fb27ba38fecd8" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-8be15fb6e44202469f22f3868a51e0c5" class="gbcg-tab-item gbcb-Swift">
-        <pre><code class="lang-Swift">marker.captionAlign = .top
+      <div id="0-18f6e82cfee2cabccf9672c21aab6c5c" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">marker.captionAligns = [<span class="hljs-type">NMFAlignType</span>.top]
 </code></pre>
       </div>
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-8be15fb6e44202469f22f3868a51e0c5" id="swift">Swift</h3>
-        <div id="0-8be15fb6e44202469f22f3868a51e0c5" class="gbcg-tab-item gbcb-Swift">
-          <pre><code class="lang-Swift">marker.captionAlign = .top
+        <h3 class="gbcg-tabname 0-18f6e82cfee2cabccf9672c21aab6c5c" id="swift">Swift</h3>
+        <div id="0-18f6e82cfee2cabccf9672c21aab6c5c" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">marker.captionAligns = [<span class="hljs-type">NMFAlignType</span>.top]
 </code></pre>
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-91a51962e052b166e8698bd82556d4dc" id="objective-c">Objective-C</h3>
-        <div id="1-91a51962e052b166e8698bd82556d4dc" class="gbcg-tab-item gbcb-Objective-C">
-          <pre><code class="lang-Objective-C">marker.captionAlign = NMFAlignTop;
+        <h3 class="gbcg-tabname 1-ac0850ace4accd25c05fb27ba38fecd8" id="objective-c">Objective-C</h3>
+        <div id="1-ac0850ace4accd25c05fb27ba38fecd8" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">marker.captionAligns = @[NMFAlignType.top];
 </code></pre>
         </div>
       </div>
@@ -1588,7 +1588,7 @@ for (NMFMarker *marker in normalMarkers) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Marker","level":"2.5.2","depth":2,"next":{"title":"Info Window","level":"2.5.3","depth":2,"path":"5-3.md","ref":"5-3.md","articles":[]},"previous":{"title":"Overlays","level":"2.5.1","depth":2,"path":"5-1.md","ref":"5-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-2.md","mtime":"2019-08-12T03:16:56.880Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-12T03:16:58.300Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Marker","level":"2.5.2","depth":2,"next":{"title":"Info Window","level":"2.5.3","depth":2,"path":"5-3.md","ref":"5-3.md","articles":[]},"previous":{"title":"Overlays","level":"2.5.1","depth":2,"path":"5-1.md","ref":"5-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-2.md","mtime":"2019-10-07T08:54:30.129Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-07T08:54:31.050Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NMFIndoorLevel Class Reference</title>
+    <title>NMFAlignType Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/objc/Class/NMFIndoorLevel" class="dashAnchor"></a>
+    <a name="//apple_ref/objc/Class/NMFAlignType" class="dashAnchor"></a>
 
-    <a title="NMFIndoorLevel Class Reference"></a>
+    <a title="NMFAlignType Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      NMFIndoorLevel Class Reference
+      NMFAlignType Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -420,20 +420,15 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>NMFIndoorLevel</h1>
+            <h1>NMFAlignType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFIndoorLevel</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFAlignType</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="p">,</span> <span class="n">NSCopying</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>하나의 실내지도 층을 나타내는 불변 클래스. 하나의 실내지도 층은 다른 층과 연결될 수 있습니다. 이 클래스의 인스턴스는
-직접 생성할 수 없고 <code><a href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a></code>을 이용해서 가져올 수 있습니다.</p>
-<div class="aside aside-see">
-    <p class="aside-title">See</p>
-    <code><a href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a></code>
-
-</div>
+            <p>오버레이를 어느 방향으로 정렬할지 나타내는 객체.
+속성 객체로만 사용해야 합니다.</p>
 
           </div>
         </section>
@@ -445,9 +440,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFIndoorLevel(py)indoorView"></a>
-                    <a name="//apple_ref/objc/Property/indoorView" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFIndoorLevel(py)indoorView">indoorView</a>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)center"></a>
+                    <a name="//apple_ref/objc/Property/center" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)center">center</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -455,19 +450,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>층에 해당하는 실내지도 뷰.</p>
+                        <p>가운데.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">indoorView</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">center</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indoorView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -477,9 +472,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFIndoorLevel(py)name"></a>
-                    <a name="//apple_ref/objc/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFIndoorLevel(py)name">name</a>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)left"></a>
+                    <a name="//apple_ref/objc/Property/left" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)left">left</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -487,19 +482,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>층의 명칭.</p>
+                        <p>왼쪽.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">name</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">left</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">left</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -509,9 +504,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFIndoorLevel(py)connections"></a>
-                    <a name="//apple_ref/objc/Property/connections" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFIndoorLevel(py)connections">connections</a>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)right"></a>
+                    <a name="//apple_ref/objc/Property/right" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)right">right</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -519,19 +514,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>연결된 층의 실내지도 뷰 목록.</p>
+                        <p>오른쪽.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">connections</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">right</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">right</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -541,9 +536,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFIndoorLevel(im)getConnectionIndex:"></a>
-                    <a name="//apple_ref/objc/Method/-getConnectionIndex:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFIndoorLevel(im)getConnectionIndex:">-getConnectionIndex:</a>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)top"></a>
+                    <a name="//apple_ref/objc/Property/top" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)top">top</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -551,44 +546,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>연결된 층 중 구역 ID가 <code>zoneId</code>인 실내지도 뷰의 인덱스를 반환합니다.</p>
+                        <p>위.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">getConnectionIndex</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">zoneId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">top</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getConnectionIndex</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">top</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>zoneId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>구역 ID.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>실내지도 뷰의 인덱스. 연결된 층 중에 ID가 <code>zoneId</code>인 층이 없을 경우 <code>-1</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -596,9 +568,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFIndoorLevel(im)getConnection:"></a>
-                    <a name="//apple_ref/objc/Method/-getConnection:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFIndoorLevel(im)getConnection:">-getConnection:</a>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)bottom"></a>
+                    <a name="//apple_ref/objc/Property/bottom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)bottom">bottom</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -606,44 +578,149 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>연결된 층 중 구역 ID가 <code>zoneId</code>인 실내지도 뷰를 반환합니다.</p>
+                        <p>아래.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">getConnection</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">zoneId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">bottom</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getConnection</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">bottom</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>zoneId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>구역 ID.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)topLeft"></a>
+                    <a name="//apple_ref/objc/Property/topLeft" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)topLeft">topLeft</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>왼쪽 위.</p>
+
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>실내지도 뷰. 연결된 층 중에 ID가 <code>zoneId</code>인 층이 없을 경우 <code>nil</code>.</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">topLeft</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">topLeft</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)topRight"></a>
+                    <a name="//apple_ref/objc/Property/topRight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)topRight">topRight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오른쪽 위.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">topRight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">topRight</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)bottomRight"></a>
+                    <a name="//apple_ref/objc/Property/bottomRight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)bottomRight">bottomRight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오른쪽 아래.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">bottomRight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">bottomRight</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAlignType(cpy)bottomLeft"></a>
+                    <a name="//apple_ref/objc/Property/bottomLeft" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType(cpy)bottomLeft">bottomLeft</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>왼쪽 아래.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">NMFAlignType</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">bottomLeft</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">bottomLeft</span><span class="p">:</span> <span class="kt">NMFAlignType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

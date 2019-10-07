@@ -975,32 +975,32 @@ marker2.touchHandler = handler;
 <h2 id="placement">Placement</h2>
 <p>You can specify the alignment of an info window, the image anchor and the gap with the target position, in order to display the info window at the precise location, without using the default speech bubble image.</p>
 <h3 id="alignment">Alignment</h3>
-<p>An info window is placed above a marker by default, but you can change the alignment with <a href="ref://../reference/Classes/NMFInfoWindow.html#/c%3Aobjc%28cs%29NMFInfoWindow%28im%29openWithMarker:align:" target="_blank"><code>-openWithMarker:align:</code></a>. There are 9 available options including top, bottom, left, right, diagonal directions and center, which are defined in the <a href="ref://../reference/Enums/NMFAlign.html" target="_blank"><code>NMFAlign</code></a> enum.</p>
+<p>An info window is placed above a marker by default, but you can change the alignment with <a href="ref://../reference/Classes/NMFInfoWindow.html#/c%3Aobjc%28cs%29NMFInfoWindow%28im%29openWithMarker:alignType:" target="_blank"><code>-openWithMarker:alignType:</code></a>. There are 9 available options including top, bottom, left, right, diagonal directions and center, which are defined in the <a href="ref://../reference/Classes/NMFAlignType.html" target="_blank"><code>NMFAlignType</code></a> object.</p>
 <p>The following code example places an info window on the right side of a marker.</p>
-<p><div id="8c794b03c3010aba7aafa6b89285b298" class="gbcg gbcg-codegroup">
+<p><div id="93572aed47657c7e1bf4e26be44e0f20" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-fe6c7c16c67765a683e54ee9fd220e73" class="gbcg-selector gbcg-active" data-tab="0-fe6c7c16c67765a683e54ee9fd220e73" data-tab-category="undefined">Swift</a>
-    <a id="select-1-e5799602eef45bd3ada3dab7ee8eb71d" class="gbcg-selector" data-tab="1-e5799602eef45bd3ada3dab7ee8eb71d" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-83fe97954883b8d8c6f80d22bd49f07a" class="gbcg-selector gbcg-active" data-tab="0-83fe97954883b8d8c6f80d22bd49f07a" data-tab-category="undefined">Swift</a>
+    <a id="select-1-18013b4fc3f39d4d6b065a754c5f6bc7" class="gbcg-selector" data-tab="1-18013b4fc3f39d4d6b065a754c5f6bc7" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-fe6c7c16c67765a683e54ee9fd220e73" class="gbcg-tab-item gbcb-Swift">
-        <pre><code class="lang-Swift">infoWindow.open(with: marker, align: .<span class="hljs-keyword">right</span>)
+      <div id="0-83fe97954883b8d8c6f80d22bd49f07a" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">infoWindow.open(with: marker, alignType: <span class="hljs-type">NMFAlignType</span>.<span class="hljs-keyword">right</span>)
 </code></pre>
       </div>
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-fe6c7c16c67765a683e54ee9fd220e73" id="swift">Swift</h3>
-        <div id="0-fe6c7c16c67765a683e54ee9fd220e73" class="gbcg-tab-item gbcb-Swift">
-          <pre><code class="lang-Swift">infoWindow.open(with: marker, align: .<span class="hljs-keyword">right</span>)
+        <h3 class="gbcg-tabname 0-83fe97954883b8d8c6f80d22bd49f07a" id="swift">Swift</h3>
+        <div id="0-83fe97954883b8d8c6f80d22bd49f07a" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">infoWindow.open(with: marker, alignType: <span class="hljs-type">NMFAlignType</span>.<span class="hljs-keyword">right</span>)
 </code></pre>
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-e5799602eef45bd3ada3dab7ee8eb71d" id="objective-c">Objective-C</h3>
-        <div id="1-e5799602eef45bd3ada3dab7ee8eb71d" class="gbcg-tab-item gbcb-Objective-C">
-          <pre><code class="lang-Objective-C">[infoWindow openWithMarker:marker align:NMFAlignRight];
+        <h3 class="gbcg-tabname 1-18013b4fc3f39d4d6b065a754c5f6bc7" id="objective-c">Objective-C</h3>
+        <div id="1-18013b4fc3f39d4d6b065a754c5f6bc7" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">[infoWindow openWithMarker:marker alignType:NMFAlign.right];
 </code></pre>
         </div>
       </div>
@@ -1165,7 +1165,7 @@ infoWindow.offsetX = -25;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Info Window","level":"2.5.3","depth":2,"next":{"title":"Shapes","level":"2.5.4","depth":2,"path":"5-4.md","ref":"5-4.md","articles":[]},"previous":{"title":"Marker","level":"2.5.2","depth":2,"path":"5-2.md","ref":"5-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-3.md","mtime":"2019-08-12T03:16:56.880Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-12T03:16:58.300Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Info Window","level":"2.5.3","depth":2,"next":{"title":"Shapes","level":"2.5.4","depth":2,"path":"5-4.md","ref":"5-4.md","articles":[]},"previous":{"title":"Marker","level":"2.5.2","depth":2,"path":"5-2.md","ref":"5-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-3.md","mtime":"2019-10-07T08:54:30.129Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-07T08:54:31.050Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

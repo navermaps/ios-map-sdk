@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E5%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E6%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -167,6 +167,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/NMFAlign.html">NMFAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFAlignType.html">NMFAlignType</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFGroundOverlay.html">NMFGroundOverlay</a>
@@ -479,7 +482,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span> <span class="p">(</span><span class="o">^</span><span class="n">NMFOverlayTouchHandler</span><span class="p">)(</span><span class="n"><a href="Classes/NMFOverlay.html">NMFOverlay</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">__weak</span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span> <span class="p">(</span><span class="o">^</span><span class="n">NMFOverlayTouchHandler</span><span class="p">)(</span><span class="n"><a href="Classes/NMFOverlay.html">NMFOverlay</a></span> <span class="o">*</span><span class="n">__weak</span> <span class="n">_Nonnull</span><span class="p">)</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -509,6 +512,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>오버레이를 어느 방향으로 정렬할지 나타내는 열거형.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Deprecated. <code><a href="Classes/NMFAlignType.html">NMFAlignType</a></code>을 사용하세요.
+
+</div>
 
                         <a href="Enums/NMFAlign.html" class="slightly-smaller">See more</a>
                       </div>
@@ -522,6 +530,40 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">NMFAlign</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAlignType"></a>
+                    <a name="//apple_ref/objc/Class/NMFAlignType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAlignType">NMFAlignType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>오버레이를 어느 방향으로 정렬할지 나타내는 객체.
+속성 객체로만 사용해야 합니다.</p>
+
+                        <a href="Classes/NMFAlignType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFAlignType</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="p">,</span> <span class="n">NSCopying</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFAlignType</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span><span class="p">,</span> <span class="kt">NSCopying</span></code></pre>
 
                         </div>
                       </div>
@@ -1147,7 +1189,7 @@ asset, <code>UIImage</code>, <code>NSBundle</code> 등으로부터 인스턴스�
       </article>
     </div>
     <section class="footer">
-      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
     </section>
   </body>
 </div>
