@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +11,13 @@
         <!--MapTypes-->
         <scene sceneID="PHs-bn-yky">
             <objects>
-                <viewController title="MapTypesAndLayerGroupsViewController" id="xC7-fY-ZDb" userLabel="MapTypes" customClass="MapTypesAndLayerGroupsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapTypesAndLayerGroupsViewController" id="xC7-fY-ZDb" userLabel="MapTypes" customClass="MapTypesAndLayerGroupsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BxT-rw-ha7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-36-Ncq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 유형:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-bH-O20">
                                         <rect key="frame" x="8" y="0.0" width="80" height="44"/>
@@ -84,7 +82,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goX-52-RvI" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -119,12 +117,12 @@
             </objects>
             <point key="canvasLocation" x="-407" y="-816"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--MapTypes Navigation-->
         <scene sceneID="Uuf-ro-6qJ">
             <objects>
-                <navigationController storyboardIdentifier="MapTypes" id="k85-zD-yK3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapTypes" id="k85-zD-yK3" userLabel="MapTypes Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q0I-wY-fZI">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -138,13 +136,13 @@
         <!--DisplayOptions-->
         <scene sceneID="D1H-u6-yX1">
             <objects>
-                <viewController title="DisplayOptionsViewController" id="ABn-Mc-Ttx" userLabel="DisplayOptions" customClass="DisplayOptionsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="DisplayOptionsViewController" id="ABn-Mc-Ttx" userLabel="DisplayOptions" customClass="DisplayOptionsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmz-NG-LlY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-oN-2hm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="176"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="176"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 밝기:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM1-C2-W4j">
                                         <rect key="frame" x="8" y="0.0" width="76" height="44"/>
@@ -285,7 +283,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-i1-WdX" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -324,12 +322,12 @@
             </objects>
             <point key="canvasLocation" x="1081" y="-816"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--DisplayOptions Navigation-->
         <scene sceneID="nMm-Hj-6ju">
             <objects>
-                <navigationController storyboardIdentifier="DisplayOptions" id="Nft-Xb-Cak" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DisplayOptions" id="Nft-Xb-Cak" userLabel="DisplayOptions Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U3A-br-b3Q">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -340,12 +338,12 @@
             </objects>
             <point key="canvasLocation" x="353" y="-816"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--IndoorMap Navigation-->
         <scene sceneID="A5K-W7-vaM">
             <objects>
-                <navigationController storyboardIdentifier="IndoorMap" id="ZjP-Di-cFf" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="IndoorMap" id="ZjP-Di-cFf" userLabel="IndoorMap Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3nG-vM-zZ8">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -356,16 +354,16 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="5"/>
         </scene>
-        <!--IndoorMapViewController-->
+        <!--IndoorMap-->
         <scene sceneID="0YX-l0-HbF">
             <objects>
-                <viewController title="IndoorMapViewController" id="B2e-mv-Ftc" userLabel="IndoorMapViewController" customClass="IndoorMapViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IndoorMapViewController" id="B2e-mv-Ftc" userLabel="IndoorMap" customClass="IndoorMapViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uvo-xE-SGw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ns3-7k-XfB" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -400,13 +398,13 @@
         <!--NightMode-->
         <scene sceneID="W2H-fv-xEZ">
             <objects>
-                <viewController title="NightModeViewController" id="3nW-4h-gIb" userLabel="NightMode" customClass="NightModeViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NightModeViewController" id="3nW-4h-gIb" userLabel="NightMode" customClass="NightModeViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fV2-GP-CwC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-jO-qNJ" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -420,7 +418,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lp7-u9-Axq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIX-lb-gyt">
                                         <rect key="frame" x="8" y="7" width="49" height="31"/>
@@ -471,12 +469,12 @@
             </objects>
             <point key="canvasLocation" x="1081" y="5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--NightMode Navigation-->
         <scene sceneID="SLN-t1-QOM">
             <objects>
-                <navigationController storyboardIdentifier="NightMode" id="IlG-7K-tdu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NightMode" id="IlG-7K-tdu" userLabel="NightMode Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IvN-sX-XEd">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -490,13 +488,13 @@
         <!--Locale-->
         <scene sceneID="nie-od-QgT">
             <objects>
-                <viewController title="MapTypesAndLayerGroupsViewController" id="J9n-kU-qkY" userLabel="Locale" customClass="LocaleViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapTypesAndLayerGroupsViewController" id="J9n-kU-qkY" userLabel="Locale" customClass="LocaleViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DO6-8H-FZF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWD-DE-10y">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언어 설정:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-55-eIn">
                                         <rect key="frame" x="8" y="0.0" width="80" height="44"/>
@@ -545,7 +543,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jR1-ba-8nY" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -580,12 +578,12 @@
             </objects>
             <point key="canvasLocation" x="-407.19999999999999" y="757.87106446776613"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Locale Navigation-->
         <scene sceneID="L5t-oT-7Gd">
             <objects>
-                <navigationController storyboardIdentifier="Locale" id="dlO-FG-0cR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Locale" id="dlO-FG-0cR" userLabel="Locale Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sY9-FR-jBJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -599,13 +597,13 @@
         <!--LiteMode-->
         <scene sceneID="qoR-l2-2Au">
             <objects>
-                <viewController title="NightModeViewController" id="BuF-EO-VBV" userLabel="LiteMode" customClass="LiteModeViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NightModeViewController" id="BuF-EO-VBV" userLabel="LiteMode" customClass="LiteModeViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gFY-dJ-Odi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-dq-9U7" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -619,7 +617,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-Z3-0ZG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-yO-W6a">
                                         <rect key="frame" x="8" y="7" width="49" height="31"/>
@@ -670,12 +668,12 @@
             </objects>
             <point key="canvasLocation" x="1081" y="759"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--LiteMode Navigation-->
         <scene sceneID="zwO-CX-ELt">
             <objects>
-                <navigationController storyboardIdentifier="LiteMode" id="9Uq-hJ-v9s" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LiteMode" id="9Uq-hJ-v9s" userLabel="LiteMode Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ocg-m5-cJq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
