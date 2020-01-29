@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E6%2E1%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -223,6 +223,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
               </li>
@@ -547,7 +550,7 @@
                       <div class="abstract">
                         <p>숨김 속성. <code>YES</code>일 경우 오버레이는 화면에 나타나지 않으며 이벤트도 받지 못합니다.
 숨김 속성은 명시적으로 지정하지 않는 한 변하지 않습니다. 즉, 오버레이가 현재 보이는 지도 영역의 바깥쪽으로
-나가더라도 숨김 속성이 &lsquo;YES&#39;로 변하지는 않습니다.</p>
+나가더라도 숨김 속성이 <code>YES</code>로 변하지는 않습니다.</p>
 
 <p>기본값은 <code>NO</code>입니다.</p>
 
@@ -649,8 +652,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>오버레이가 보이는 최소 줌 레벨. 지도의 줌 레벨이 오버레이의 최소 줌 레벨보다 작을 경우 오버레이는 화면에 나타나지
-않으며 이벤트도 받지 못합니다.</p>
+                        <p>오버레이가 보이는 최소 줌 레벨.</p>
 
 <p>기본값은 <code>NMF_MIN_ZOOM</code>입니다.</p>
 
@@ -684,8 +686,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>오버레이가 보이는 최대 줌 레벨. 지도의 줌 레벨이 오버레이의 최대 줌 레벨보다 클 경우 오버레이는 화면에 나타나지 않으며
-이벤트도 받지 못합니다.</p>
+                        <p>오버레이가 보이는 최대 줌 레벨.</p>
 
 <p>기본값은 <code>NMF_MAX_ZOOM</code>입니다.</p>
 
@@ -700,6 +701,76 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxZoom</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)isMinZoomInclusive"></a>
+                    <a name="//apple_ref/objc/Property/isMinZoomInclusive" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)isMinZoomInclusive">isMinZoomInclusive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 줌 레벨과 오버레이의 최소 줌 레벨이 동일할 때 오버레이를 보일지 여부를 반환합니다.
+만약 <code>YES</code>이면 오버레이가 나타나고 <code>NO</code>이면 나타나지 않습니다.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isMinZoomInclusive</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isMinZoomInclusive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFOverlay(py)isMaxZoomInclusive"></a>
+                    <a name="//apple_ref/objc/Property/isMaxZoomInclusive" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFOverlay(py)isMaxZoomInclusive">isMaxZoomInclusive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 줌 레벨과 오버레이의 최대 줌 레벨이 동일할 때 오버레이를 보일지 여부를 반환합니다.
+만약 <code>YES</code>이면 오버레이가 나타나고 <code>NO</code>이면 나타나지 않습니다.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isMaxZoomInclusive</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isMaxZoomInclusive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

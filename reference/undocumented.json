@@ -625,14 +625,14 @@
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/src/NMFUtils.h",
-      "line": 6,
+      "line": 7,
       "symbol": "ScreenScaleFactor",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/src/NMFUtils.h",
-      "line": 16,
+      "line": 17,
       "symbol": "",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
       "warning": "undocumented"

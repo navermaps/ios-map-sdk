@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E6%2E1%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -223,6 +223,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
               </li>
@@ -701,9 +704,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>진척률. <code>0</code>~<code>1</code>로 지정합니다. 경로선에서 <code>0</code>~<code>progress</code>의 선형은 지나온 경로로 간주되어
-<code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)passedColor">passedColor</a></code>와 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)passedOutlineColor">passedOutlineColor</a></code>가 사용됩니다.
-<code>progress</code>~<code>1</code>의 선형은 지나갈 경로로 간주되어 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)color">color</a></code>와 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)passedColor">passedColor</a></code>가 사용됩니다.</p>
+                        <p>진척률. 값의 범위는 <code>-1</code>~<code>1</code>입니다. 경로는 진척률을 기준으로 지나온 경로와 지나갈 경로로 구분됩니다. 지나온 경로에는
+<code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)passedColor">passedColor</a></code>와 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)passedOutlineColor">passedOutlineColor</a></code>가 사용되고 지나갈 경로에는 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)color">color</a></code>와 <code><a href="../Classes/NMFPath.html#/c:objc(cs)NMFPath(py)outlineColor">outlineColor</a></code>가 사용됩니다.</p>
+
+<ul>
+<li>진척률을 양수로 지정하면 첫 좌표부터 진척률만큼 떨어진 지점까지의 선형은 지나온 경로로, 나머지는 지나갈 경로로 간주됩니다.</li>
+<li>진척률을 음수로 지정하면 마지막 좌표부터 -진척률만큼 떨어진 지점까지의 선형은 지나온 경로로, 나머지는 지나갈 경로로 간주됩니다.</li>
+<li>진척률을 <code>0</code>으로 지정하면 모든 선형이 지나갈 경로로 간주됩니다.</li>
+</ul>
 
 <p>기본값은 <code>0</code>입니다.</p>
 
