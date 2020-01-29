@@ -1,3 +1,25 @@
+# 3.7.0
+
+Release Date: 2020-01-29
+
+### 버그 수정
+
+- 카메라의 영역을 제한하고 영역 바깥쪽에서 제스처로 지도를 스크롤하면 카메라가 잘못된 위치로 이동하는 현상 수정 
+- 코드로 `NMFNaverMapView` 생성 시 최초 로딩이 안되는 현상 수정
+- 두 개 이상의 맵뷰 생성 시 첫 번째 맵뷰 제외하고 최초 로딩이 안되는 현상 수정
+
+### 새로운 기능
+
+- 지도의 줌 레벨과 오버레이의 최소/최대 줌 레벨이 동일할 때 오버레이를 보일지 여부를 지정하는 기능 추가
+  - `NMFOverlay.isMinZoomInclusive` / `NMFOverlay.isMaxZoomInclusive`
+- 특정 영역이 화면에 온전히 보이는 최대 줌 레벨을 반환하는 유틸리티 메서드 추가
+  - `NMFCameraUtils.getFittableZoomLevelWith`
+
+### 개선
+
+- 경로선 진척률을 음수로 지정할 수 있도록 개선
+  - `NMFPath.progress` / `NMFMultipartPath.progress`
+
 # 3.6.1
 
 Release Date: 2019-12-11
