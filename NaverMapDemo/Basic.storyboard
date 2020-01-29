@@ -65,5 +65,37 @@
             </objects>
             <point key="canvasLocation" x="-154.40000000000001" y="90.404797601199405"/>
         </scene>
+        <!--MapViewCreatedInCode Navigation-->
+        <scene sceneID="kQH-6E-4ii">
+            <objects>
+                <navigationController storyboardIdentifier="MapViewCreatedInCodeController" id="Pbe-dv-5Sp" userLabel="MapViewCreatedInCode Navigation" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EIi-ct-nTw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZhN-PT-5ci" kind="relationship" relationship="rootViewController" id="E90-We-6wU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LS8-D1-ZNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="837"/>
+        </scene>
+        <!--MapViewCreatedInCode-->
+        <scene sceneID="1aX-SM-wge">
+            <objects>
+                <viewController title="MapViewCreatedInCode" id="ZhN-PT-5ci" userLabel="MapViewCreatedInCode" customClass="MapViewCreatedInCodeController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbp-az-QCk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hd6-Kk-YUr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map View Created in Code" id="6af-DG-9PG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ewk-fg-ZMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="836"/>
+        </scene>
     </scenes>
 </document>

@@ -1,5 +1,5 @@
  /*
-  Copyright 2018-2019 NAVER Corp.
+  Copyright 2018-2020 NAVER Corp.
   
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,12 +19,22 @@ import UIKit
 import NMapsMap
 
 class MinMaxZoomViewController: MapViewController {
-
+    @IBOutlet weak var zoomView: ZoomLevelView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         mapView.minZoomLevel = 10
         mapView.maxZoomLevel = 16
+        
+        zoomView.setZoomLevel(mapView.zoomLevel)
     }
-
+    
+    func mapViewIdle(_ mapView: NMFMapView) {
+        zoomView.setZoomLevel(mapView.zoomLevel)
+    }
+    
+    func mapView(_ mapView: NMFMapView, regionWillChangeAnimated animated: Bool, byReason reason: Int) {
+        zoomView.setZoomLevel(mapView.zoomLevel)
+    }
 }

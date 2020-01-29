@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -563,7 +563,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P0W-kP-xto">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P0W-kP-xto">
                                         <rect key="frame" x="72" y="7" width="270" height="30"/>
                                         <connections>
                                             <action selector="respondToProgress:" destination="1R9-ys-8MY" eventType="valueChanged" id="kun-MT-ppm"/>
@@ -741,7 +741,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.30000001192092896" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BCt-Yq-nQA">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BCt-Yq-nQA">
                                         <rect key="frame" x="72" y="7" width="270" height="30"/>
                                         <connections>
                                             <action selector="respondToProgress:" destination="RKR-BM-KpR" eventType="valueChanged" id="c9S-UA-Rkv"/>
@@ -924,6 +924,101 @@
             </objects>
             <point key="canvasLocation" x="1024.8" y="3510.4947526236883"/>
         </scene>
+        <!--OverlayMinMaxZoomNavigation-->
+        <scene sceneID="f36-LL-9fY">
+            <objects>
+                <navigationController storyboardIdentifier="OverlayMinMaxZoom" id="Lyo-gR-tfK" userLabel="OverlayMinMaxZoomNavigation" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HbD-ep-cEv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nL3-u1-Ufi" kind="relationship" relationship="rootViewController" id="PvG-UB-RqF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJY-rN-Kqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="4195"/>
+        </scene>
+        <!--OverlayMinMaxZoom-->
+        <scene sceneID="pT3-PC-HCr">
+            <objects>
+                <viewController title="OverlayMinMaxZoomViewController" id="nL3-u1-Ufi" userLabel="OverlayMinMaxZoom" customClass="OverlayMinMaxZoomController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbk-yJ-gZe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UP-Ya-BTa" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="nL3-u1-Ufi" id="4wA-Zm-tcQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOx-gX-LH1" customClass="ZoomLevelView" customModule="SDK_Demo" customModuleProvider="target">
+                                <rect key="frame" x="334" y="104" width="64" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="cEo-zH-VEx"/>
+                                    <constraint firstAttribute="width" constant="64" id="sPs-s7-VDd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeg-io-8xW">
+                                <rect key="frame" x="340" y="768" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.82745098039215681" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="lzA-1X-jOz"/>
+                                    <constraint firstAttribute="height" constant="44" id="sbF-TT-62C"/>
+                                </constraints>
+                                <state key="normal" image="btnRefresh">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionRefresh:" destination="nL3-u1-Ufi" eventType="touchUpInside" id="OEx-PZ-HCu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MWi-aS-fRh" firstAttribute="trailing" secondItem="HOx-gX-LH1" secondAttribute="trailing" constant="16" id="1Cv-C0-ga5"/>
+                            <constraint firstItem="5UP-Ya-BTa" firstAttribute="top" secondItem="MWi-aS-fRh" secondAttribute="top" id="93M-lA-DIG"/>
+                            <constraint firstAttribute="bottom" secondItem="5UP-Ya-BTa" secondAttribute="bottom" id="CfN-in-wlT"/>
+                            <constraint firstAttribute="trailing" secondItem="5UP-Ya-BTa" secondAttribute="trailing" id="PEt-8t-lPQ"/>
+                            <constraint firstItem="HOx-gX-LH1" firstAttribute="top" secondItem="MWi-aS-fRh" secondAttribute="top" constant="16" id="Wv3-iD-Vq9"/>
+                            <constraint firstItem="5UP-Ya-BTa" firstAttribute="leading" secondItem="MWi-aS-fRh" secondAttribute="leading" id="nFG-Wc-vMC"/>
+                            <constraint firstItem="MWi-aS-fRh" firstAttribute="bottom" secondItem="zeg-io-8xW" secondAttribute="bottom" constant="50" id="oj8-ai-lpF"/>
+                            <constraint firstItem="MWi-aS-fRh" firstAttribute="trailing" secondItem="zeg-io-8xW" secondAttribute="trailing" constant="30" id="rzC-4Y-Uvj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MWi-aS-fRh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Overlay Min/Max Zoom" id="9jw-gl-cbU"/>
+                    <connections>
+                        <outlet property="naverMapView" destination="5UP-Ya-BTa" id="z9v-Fu-ac2"/>
+                        <outlet property="zoomView" destination="HOx-gX-LH1" id="Ovc-wZ-CEr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpf-ES-8tw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="4198"/>
+        </scene>
         <!--GlobalZIndex Navigation-->
         <scene sceneID="9Wy-0l-ghf">
             <objects>
@@ -998,4 +1093,7 @@
             <point key="canvasLocation" x="-1855" y="752"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnRefresh" width="24" height="24"/>
+    </resources>
 </document>

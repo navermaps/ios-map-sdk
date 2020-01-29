@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,11 +45,26 @@
                                     <outlet property="delegate" destination="74N-4v-lQG" id="UIn-M9-id8"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-oy-OcA" customClass="ZoomLevelView" customModule="SDK_Demo" customModuleProvider="target">
+                                <rect key="frame" x="295" y="60" width="64" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="1ss-Xt-4au"/>
+                                    <constraint firstAttribute="height" constant="36" id="InP-jI-KjV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eF1-6k-1mK" firstAttribute="leading" secondItem="Djn-oy-qKj" secondAttribute="leading" id="Ag6-eB-g5a"/>
+                            <constraint firstItem="Djn-oy-qKj" firstAttribute="trailing" secondItem="BzL-oy-OcA" secondAttribute="trailing" constant="16" id="YPV-eH-jdQ"/>
                             <constraint firstItem="eF1-6k-1mK" firstAttribute="top" secondItem="Djn-oy-qKj" secondAttribute="top" id="Zcn-FG-Ngh"/>
+                            <constraint firstItem="BzL-oy-OcA" firstAttribute="top" secondItem="Djn-oy-qKj" secondAttribute="top" constant="16" id="cQI-X6-zee"/>
                             <constraint firstItem="eF1-6k-1mK" firstAttribute="bottom" secondItem="MYB-89-9e7" secondAttribute="bottom" id="dna-UI-FcI"/>
                             <constraint firstItem="eF1-6k-1mK" firstAttribute="trailing" secondItem="Djn-oy-qKj" secondAttribute="trailing" id="hfx-Y0-c9k"/>
                         </constraints>
@@ -58,6 +73,7 @@
                     <navigationItem key="navigationItem" title="Min/Max Zoom" id="QGp-5x-anm"/>
                     <connections>
                         <outlet property="naverMapView" destination="eF1-6k-1mK" id="FOj-gQ-Jum"/>
+                        <outlet property="zoomView" destination="BzL-oy-OcA" id="yzn-E4-lwE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znP-xx-a62" userLabel="First Responder" sceneMemberID="firstResponder"/>
