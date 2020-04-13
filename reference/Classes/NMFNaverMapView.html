@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E8%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -94,6 +94,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -227,13 +236,28 @@
                 <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFZoomControlView.html">NMFZoomControlView</a>
               </li>
             </ul>
           </li>
@@ -430,7 +454,7 @@
 
                 </div>
               </div>
-            <p>지도의 컨트롤을 내장한 지도 뷰 클래스. 컨트롤을 비활성화하더라도 API를 호출하면 여전히 카메라를 움직일 수 있습니다.</p>
+            <p>지도의 컨트롤을 내장한 지도 뷰 클래스.</p>
 
           </div>
         </section>
@@ -489,7 +513,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>지도 뷰에 관련된 업데이트 및 비동기 작업의 결과를 알려주는 델리게이트.</p>
+                        <p>지도 뷰에 관련된 업데이트 및 비동기 작업의 결과를 알려주는 델리게이트. 이 속성은 더이상 사용이 권장되지 않습니다. 대신 <code><a href="../Classes/NMFMapView.html">NMFMapView</a></code>의 <code>touchDelegate</code>, <code>addCameraDelegate</code>/<code>removeCameraDelegate</code>, <code>addOptionDelegate</code>/<code>removeOptionDelegate</code>를 사용하세요.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     <code><a href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a></code>
@@ -521,7 +545,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>나침반이 활성화되어 있는지 여부.</p>
+                        <p>나침반 활성화 여부.</p>
 
 <p>기본값은 <code>YES</code>입니다.</p>
 
@@ -555,7 +579,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>축척 바가 활성화되어 있는지 여부.</p>
+                        <p>축척 바 활성화 여부.</p>
 
 <p>기본값은 <code>YES</code>입니다.</p>
 
@@ -589,7 +613,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>줌 컨트롤이 활성화되어 있는지 여부.</p>
+                        <p>줌 컨트롤 활성화 여부.</p>
 
 <p>기본값은 <code>YES</code>입니다.</p>
 
@@ -623,7 +647,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>실내지도 패널이 활성화되어 있는지 여부.</p>
+                        <p>실내지도 층 피커 활성화 여부.</p>
 
 <p>기본값은 <code>NO</code>입니다.</p>
 
@@ -691,7 +715,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>위치 추적 모드.</p>
+                        <p>위치 추적 모드.  이 속성은 더이상 사용이 권장되지 않습니다. 대신 <code><a href="../Classes/NMFMapView.html">NMFMapView</a></code>의 <code>positionMode</code>를 사용하세요.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     <code><a href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a></code>

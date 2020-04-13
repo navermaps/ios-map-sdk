@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E8%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -94,6 +94,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -227,13 +236,28 @@
                 <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFZoomControlView.html">NMFZoomControlView</a>
               </li>
             </ul>
           </li>
@@ -567,9 +591,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>NMFMapView</code>의 위임자.</p>
+                        <p><code>NMFMapView</code>의 위임자. 이 속성은 더이상 사용이 권장되지 않습니다. 대신 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)touchDelegate">touchDelegate</a></code>, <code>addCameraDelegate</code>/<code>removeCameraDelegate</code>, <code>addOptionDelegate</code>/<code>removeOptionDelegate</code>를 사용하세요.</p>
 
-<p>지도 뷰의 위임자를 이용해 지도에 오버레이와 관련된 정보나 화면 갱신 여부 등의 메시지를 전달합니다.</p>
+<p>만약 <code>delegate</code>와 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)touchDelegate">touchDelegate</a></code>가 모두 지정되면 <code>delegate</code>는 무시되고 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)touchDelegate">touchDelegate</a></code>만이 동작합니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -579,6 +603,218 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)touchDelegate"></a>
+                    <a name="//apple_ref/objc/Property/touchDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)touchDelegate">touchDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 터치에 대한 위임자. 지도 탭, 심벌 탭 등 지도와 관련된 터치 이벤트가 전달됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a></span><span class="o">&gt;</span>
+    <span class="n">touchDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)addCameraDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-addCameraDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)addCameraDelegate:">-addCameraDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라의 움직임에 대한 위임자를 등록합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addCameraDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)removeCameraDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-removeCameraDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)removeCameraDelegate:">-removeCameraDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라의 움직임에 대한 위임자를 해제합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeCameraDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)addOptionDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-addOptionDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)addOptionDelegate:">-addOptionDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 옵션 변경에 대한 위임자를 등록합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addOptionDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)removeOptionDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-removeOptionDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)removeOptionDelegate:">-removeOptionDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 옵션 변경에 대한 위임자를 해제합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeOptionDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -616,7 +852,7 @@
 <li>줌 레벨이 커지거나 작아지면 지도 심벌도 일정 정도 함께 커지거나 작아집니다.</li>
 <li>`mapType` 지도 유형을 사용할 수 없습니다.</li>
 <li>`setLayerGroup:isEnabled:`, `getLayerGroupEnabled:`, `indoorMapEnabled`, `nightModeEnabled`, `lightness`, `buildingHeight`, `symbolScale`, `symbolPerspectiveRatio`가 동작하지 않습니다.</li>
-<li>`NMFMapViewDelegate.mapView:didTapSymbol:`이 호출되지 않습니다.</li>
+<li>`NMFMapViewTouchDelegate.mapView:didTapSymbol:`이 호출되지 않습니다.</li>
 <li>`NMFMarker.isHideCollidedSymbols`가 동작하지 않습니다.</li>
 </ul>
 
@@ -749,7 +985,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>지도의 패딩. 패딩에 해당하는 부분은 지도의 콘텐츠 영역에서 제외됩니다. 따라서 패딩을 변경하면 비록 화면에 나타나는 지도의 모습은 변하지 않지만
-카메라의 위치는 변경되며, <code>mapView(:regionWillChangeAnimated:byReason:)</code>이 호출됩니다.</p>
+카메라의 위치는 변경되며, <code><a href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a></code>의 메서드가 호출됩니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -862,6 +1098,43 @@
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mapType</span><span class="p">:</span> <span class="kt"><a href="../Enums/NMFMapType.html">NMFMapType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)isDark"></a>
+                    <a name="//apple_ref/objc/Method/-isDark" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)isDark">-isDark</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도가 어두운지 여부를 반환합니다. 야간 모드가 활성화되어 있거나 지도의 유형이 <code>NMFMapTypeSatellite</code>
+또는 <code>NMFMapTypeHybrid</code>일 경우 어두운 것으로 간주됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isDark</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isDark</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>어두울 경우 <code>YES</code>, 그렇지 않을 경우 <code>NO</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -2312,6 +2585,40 @@
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)positionMode"></a>
+                    <a name="//apple_ref/objc/Property/positionMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)positionMode">positionMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>위치 추적 모드.</p>
+
+<p><code><a href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a></code> 객체.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a></span> <span class="n">positionMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">positionMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

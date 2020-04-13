@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E8%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -94,6 +94,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -227,13 +236,28 @@
                 <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFZoomControlView.html">NMFZoomControlView</a>
               </li>
             </ul>
           </li>
@@ -523,9 +547,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>타일 목록을 갱신할 때 <code>-mapViewIdle:</code> 대신 <code>-mapViewRegionIsChanging::</code>를
-사용할지 여부를 설정합니다. <code>-mapViewRegionIsChanging::</code>를 사용하면 목록이 더 빠르게 갱신되지만
-성능이 하락합니다.
+                        <p>타일 목록을 갱신할 때 <code>-mapViewCameraIdle:</code> 대신 <code>-mapView:cameraIsChangingByReason:</code>을 사용할지 여부를 설정합니다.
+<code>-mapView:cameraIsChangingByReason:</code>을 사용하면 목록이 더 빠르게 갱신되지만 성능이 하락합니다.
 기본값 <code>NO</code>.</p>
 
                       </div>

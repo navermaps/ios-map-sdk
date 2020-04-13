@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E8%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -94,6 +94,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -227,13 +236,28 @@
                 <a class="nav-group-task-link" href="Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFScaleView.html">NMFScaleView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/NMFZoomControlView.html">NMFZoomControlView</a>
               </li>
             </ul>
           </li>
@@ -436,6 +460,155 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFCompassView"></a>
+                    <a name="//apple_ref/objc/Class/NMFCompassView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFCompassView">NMFCompassView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>나침반 컨트롤.</p>
+
+                        <a href="Classes/NMFCompassView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFCompassView</span> <span class="p">:</span> <span class="nc">UIImageView</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFCompassView</span> <span class="p">:</span> <span class="kt">UIImageView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFIndoorLevelPickerView"></a>
+                    <a name="//apple_ref/objc/Class/NMFIndoorLevelPickerView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFIndoorLevelPickerView">NMFIndoorLevelPickerView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>실내지도 층 피커 컨트롤.</p>
+
+                        <a href="Classes/NMFIndoorLevelPickerView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFIndoorLevelPickerView</span>
+    <span class="p">:</span> <span class="nc">UIView</span> <span class="o">&lt;</span><span class="n">UITableViewDelegate</span><span class="p">,</span> <span class="n">UITableViewDataSource</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFIndoorLevelPickerView</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="kt">UITableViewDelegate</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFLocationButton"></a>
+                    <a name="//apple_ref/objc/Class/NMFLocationButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFLocationButton">NMFLocationButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현위치 버튼 컨트롤.</p>
+
+                        <a href="Classes/NMFLocationButton.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFLocationButton</span> <span class="p">:</span> <span class="nc">UIButton</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFLocationButton</span> <span class="p">:</span> <span class="kt">UIButton</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFScaleView"></a>
+                    <a name="//apple_ref/objc/Class/NMFScaleView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFScaleView">NMFScaleView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>축척 바 컨트롤.</p>
+
+                        <a href="Classes/NMFScaleView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFScaleView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFScaleView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFTileCoverHelper"></a>
                     <a name="//apple_ref/objc/Class/NMFTileCoverHelper" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFTileCoverHelper">NMFTileCoverHelper</a>
@@ -576,6 +749,43 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFCameraUtils</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFZoomControlView"></a>
+                    <a name="//apple_ref/objc/Class/NMFZoomControlView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFZoomControlView">NMFZoomControlView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>줌 버튼 컨트롤.</p>
+
+                        <a href="Classes/NMFZoomControlView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFZoomControlView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFZoomControlView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                         </div>
                       </div>

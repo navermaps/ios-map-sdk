@@ -16,35 +16,35 @@
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/platform/darwin/src/NMFIndoorLevel.h",
-      "line": 36,
+      "line": 29,
       "symbol": "NMFIndoorLevel.+indoorLevel:LevelId:Name:Connections:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/platform/darwin/src/NMFIndoorRegion.h",
-      "line": 25,
+      "line": 18,
       "symbol": "NMFIndoorRegion.+indoorRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/platform/darwin/src/NMFIndoorView.h",
-      "line": 28,
+      "line": 21,
       "symbol": "NMFIndoorView.hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/platform/darwin/src/NMFIndoorZone.h",
-      "line": 37,
+      "line": 30,
       "symbol": "NMFIndoorZone.hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap/ios/platform/darwin/src/NMFIndoorZone.h",
-      "line": 39,
+      "line": 32,
       "symbol": "NMFIndoorZone.+indoorZone:defaultLevelIndex:Levels:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -582,13 +582,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/user/Documents/vectormap/ios/src/NMFCompassView.h",
-      "line": 10,
-      "symbol": "NMFCompassView",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/user/Documents/vectormap/ios/src/NMFLocationManager.h",
       "line": 7,
       "symbol": "NMFLocationManager",
@@ -600,13 +593,6 @@
       "line": 29,
       "symbol": "NMFLocationManagerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/user/Documents/vectormap/ios/src/NMFMapScaleView.h",
-      "line": 11,
-      "symbol": "NMFMapScaleView",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {

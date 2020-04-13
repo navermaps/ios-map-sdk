@@ -1044,12 +1044,12 @@ NSLog(@&quot;&#xB300;&#xC0C1; &#xC9C0;&#xC810; &#xC704;&#xB3C4;: %f, &#xB300;&#x
 </div></p>
 <p>&#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; <a href="4-1.html">&#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</a> &#xBB38;&#xC11C;&#xC758; <a href="4-1.html#%EC%BB%A8%ED%8A%B8%EB%A1%A4">&#xCEE8;&#xD2B8;&#xB864;</a> &#xC808;&#xC744; &#xCC38;&#xACE0;&#xD558;&#xC138;&#xC694;.</p>
 <h3 id="ui-&#xC774;&#xBCA4;&#xD2B8;">UI &#xC774;&#xBCA4;&#xD2B8;</h3>
-<p>&#xC9C0;&#xB3C4;&#xC758; &#xD0ED; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC73C;&#xB824;&#xBA74; <code>-onMapView:handleSingleTapGesture:</code> &#xB300;&#xC2E0; <a href="ref://../reference/Protocols/NMFMapViewDelegate.html#/c%3Aobjc%28pl%29NMFMapViewDelegate%28im%29didTapMapView:LatLng:" target="_blank"><code>-didTapMapView:LatLng:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xCF5C;&#xBC31; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC9C0;&#xB3C4;&#xC758; &#xD0ED; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC73C;&#xB824;&#xBA74; <code>-onMapView:handleSingleTapGesture:</code> &#xB300;&#xC2E0; <a href="ref://../reference/Protocols/NMFMapViewDelegate.html#/c%3Aobjc%28pl%29NMFMapViewDelegate%28im%29mapView:didTapMap:point:" target="_blank"><code>-mapView:didTapMap:point</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xCF5C;&#xBC31; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xC758; &#xD0ED; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC544; &#xD0ED;&#xB41C; &#xC88C;&#xD45C;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p><div id="e39fd6387d826e193743e9da69f5a8fe" class="gbcg gbcg-codegroup">
+<p><div id="8146678dbae5f94bd1cfb8a39360f855" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
     <a id="select-0-58767fc214a1492f106197a2722fa9db" class="gbcg-selector gbcg-active" data-tab="0-58767fc214a1492f106197a2722fa9db" data-tab-category="migration">2.x</a>
-    <a id="select-1-e8527e7def1b7656cd797ea4103674c0" class="gbcg-selector" data-tab="1-e8527e7def1b7656cd797ea4103674c0" data-tab-category="migration">3.x</a>
+    <a id="select-1-dfbdfeed97449cdf629e82cf8bba6e89" class="gbcg-selector" data-tab="1-dfbdfeed97449cdf629e82cf8bba6e89" data-tab-category="migration">3.x</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
@@ -1073,9 +1073,9 @@ NSLog(@&quot;&#xB300;&#xC0C1; &#xC9C0;&#xC810; &#xC704;&#xB3C4;: %f, &#xB300;&#x
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-e8527e7def1b7656cd797ea4103674c0" id="3x">3.x</h3>
-        <div id="1-e8527e7def1b7656cd797ea4103674c0" class="gbcg-tab-item gbcb-3.x">
-          <pre><code class="lang-Objective-C">- (void)didTapMapView:(CGPoint)point LatLng:(NMGLatLng *)latlng {
+        <h3 class="gbcg-tabname 1-dfbdfeed97449cdf629e82cf8bba6e89" id="3x">3.x</h3>
+        <div id="1-dfbdfeed97449cdf629e82cf8bba6e89" class="gbcg-tab-item gbcb-3.x">
+          <pre><code class="lang-Objective-C">- (void)mapView:(NMFMapView *)mapView didTapMap:(NMGLatLng *)latlng point:(CGPoint)point {
     NSLog(@&quot;&#xD0ED; : %f, %f&quot;, latlng.lat, latlng.lng);
 }
 </code></pre>
@@ -1683,7 +1683,7 @@ locationOverlay.hidden = NO;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.x → 3.x 마이그레이션 가이드","level":"2.1","depth":1,"next":{"title":"시작하기","level":"3.1","depth":1,"path":"1.md","ref":"1.md","articles":[]},"previous":{"title":"소개","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"migration.md","mtime":"2020-01-29T08:31:11.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-29T08:31:12.130Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.x → 3.x 마이그레이션 가이드","level":"2.1","depth":1,"next":{"title":"시작하기","level":"3.1","depth":1,"path":"1.md","ref":"1.md","articles":[]},"previous":{"title":"소개","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"migration.md","mtime":"2020-04-13T09:44:35.744Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T09:44:37.301Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

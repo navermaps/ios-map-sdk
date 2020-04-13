@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E7%2E0%2Fdocsets%2FNaverMap%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E8%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -94,6 +94,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -227,13 +236,28 @@
                 <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFZoomControlView.html">NMFZoomControlView</a>
               </li>
             </ul>
           </li>
@@ -498,6 +522,113 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFProjection(im)latlngFromPoint:atZoom:atTilt:atHeading:withWrap:"></a>
+                    <a name="//apple_ref/objc/Method/-latlngFromPoint:atZoom:atTilt:atHeading:withWrap:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)latlngFromPoint:atZoom:atTilt:atHeading:withWrap:">-latlngFromPoint:atZoom:atTilt:atHeading:withWrap:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>화면 좌표를 카메라가 지정된 줌 레벨, 틸트/베어링 각도일 때의 위경도 좌표로 변환합니다. 일반적인 상황에는 <code>-latlngFromPoint:point:</code>를 사용하세요.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">latlngFromPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span>
+                                <span class="nf">atZoom</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zoom</span>
+                                <span class="nf">atTilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span>
+                             <span class="nf">atHeading</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">heading</span>
+                              <span class="nf">withWrap</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">wrap</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">latlng</span><span class="p">(</span><span class="n">from</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="n">atZoom</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">atTilt</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">atHeading</span> <span class="nv">heading</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">withWrap</span> <span class="nv">wrap</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>화면 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>줌 레벨.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>틸트 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>베어링 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>wrap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>좌표를 랩핑할지 여부.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>위경도 좌표. <code>point</code>가 <code>nil</code>이거나 화면 좌표의 범위가 위경도 좌표로 표현할 수 있는 범위를 벗어난 경우 유효하지 않은(<code>NMGLatLng.isValid()</code>가 <code>NO</code>인) 좌표가 반환됩니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFProjection(im)pointFromLatLng:"></a>
                     <a name="//apple_ref/objc/Method/-pointFromLatLng:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFProjection(im)pointFromLatLng:">-pointFromLatLng:</a>
@@ -537,6 +668,113 @@
                               <td>
                                 <div>
                                   <p>위경도 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>화면 좌표. <code>coord</code>가 <code>nil</code>이거나, 위경도 좌표의 범위가 화면 좌표로 표현할 수 있는 범위를 벗어난 경우 유효하지 않은(<code>CGPoint.x</code> 또는 <code>CGPoint.y</code>가 무한대인) 좌표가 반환됩니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFProjection(im)pointFromLatLng:atZoom:atTilt:atHeading:withShortestPath:"></a>
+                    <a name="//apple_ref/objc/Method/-pointFromLatLng:atZoom:atTilt:atHeading:withShortestPath:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFProjection(im)pointFromLatLng:atZoom:atTilt:atHeading:withShortestPath:">-pointFromLatLng:atZoom:atTilt:atHeading:withShortestPath:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>위경도 좌표를 카메라가 지정된 줌 레벨, 틸트/베어링 각도일 때의 화면 좌표로 변환합니다. 일반적인 상황에는 <code>-pointFromLatLng:coord:</code>를 사용하세요.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nf">pointFromLatLng</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">coord</span>
+                    <span class="nf">atZoom</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zoom</span>
+                    <span class="nf">atTilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span>
+                 <span class="nf">atHeading</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">heading</span>
+          <span class="nf">withShortestPath</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">shortestPath</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">point</span><span class="p">(</span><span class="n">from</span> <span class="nv">coord</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span><span class="p">,</span> <span class="n">atZoom</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">atTilt</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">atHeading</span> <span class="nv">heading</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">withShortestPath</span> <span class="nv">shortestPath</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coord</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>위경도 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>줌 레벨.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>틸트 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>베어링 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shortestPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>가까운 좌표를 사용할지 여부.</p>
                                 </div>
                               </td>
                             </tr>

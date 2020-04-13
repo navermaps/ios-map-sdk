@@ -967,6 +967,64 @@ mapView.setLayerGroup(<span class="hljs-type">NMF_LAYER_GROUP_TRANSIT</span>, is
 <h2 id="&#xCD08;&#xAE30;-&#xC635;&#xC158;-&#xC9C0;&#xC815;">&#xCD08;&#xAE30; &#xC635;&#xC158; &#xC9C0;&#xC815;</h2>
 <p>Interface Builder&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; <code>NMFMapView</code>&#xB098; <code>NMFNaverMapView</code>&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xB54C; &#xC635;&#xC158;&#xC758; &#xCD08;&#xAE43;&#xAC12;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC1D;&#xCCB4;&#xB97C; &#xC9C1;&#xC811; &#xC0DD;&#xC131;&#xD560; &#xB54C;&#xB294; <code>-viewDidLoad</code> &#xB4F1;&#xC758; &#xBDF0; &#xCEE8;&#xD2B8;&#xB864;&#xB7EC; &#xB77C;&#xC774;&#xD504; &#xC0AC;&#xC774;&#xD074; &#xC2DC;&#xC791; &#xD568;&#xC218;&#xC5D0;&#xC11C; &#xCD08;&#xAE43;&#xAC12;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p><img src="../assets/2-3-ib.png" alt="InterfaceBuilder&#xC5D0;&#xC11C; &#xC635;&#xC158; &#xC9C0;&#xC815;"></p>
+<h2 id="&#xC635;&#xC158;-&#xBCC0;&#xACBD;-&#xC774;&#xBCA4;&#xD2B8;">&#xC635;&#xC158; &#xBCC0;&#xACBD; &#xC774;&#xBCA4;&#xD2B8;</h2>
+<p>&#xC9C0;&#xB3C4; &#xC720;&#xD615;, &#xB514;&#xC2A4;&#xD50C;&#xB808;&#xC774; &#xC635;&#xC158; &#xB4F1; &#xC9C0;&#xB3C4;&#xC640; &#xAD00;&#xB828;&#xB41C; &#xC635;&#xC158;&#xC774; &#xBCC0;&#xACBD;&#xB418;&#xBA74; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. <code>NMFMapView</code>&#xB97C; &#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xBDF0; &#xCEE8;&#xD2B8;&#xB864;&#xB7EC;&#xC5D0; <a href="ref://../reference/Protocols/NMFMapViewOptionDelegate.html" target="_blank"><code>NMFMapViewOptionDelegate</code></a> &#xD504;&#xB85C;&#xD1A0;&#xCF5C;&#xC744; &#xC120;&#xC5B8;&#xD558;&#xACE0;, <a href="ref://../reference/Classes/NMFMapView.html#/c%3Aobjc%28cs%29NMFMapView%28py%addOptionDelegate" target="_blank"><code>-mapView:addOptionDelegate</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB85C; &#xB4F1;&#xB85D;&#xD558;&#xBA74; &#xC635;&#xC158; &#xBCC0;&#xACBD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB3C4;&#xC758; &#xC635;&#xC158;&#xC774; &#xBCC0;&#xACBD;&#xB418;&#xBA74; <a href="ref://../reference/Protocols/NMFMapViewOptionDelegate.html#/c%3Aobjc%28pl%29NMFMapViewOptionDelegate%28im%29mapViewOptionChanged:" target="_blank"><code>-mapViewOptionChanged:</code></a> &#xCF5C;&#xBC31; &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774; &#xC774;&#xBCA4;&#xD2B8;&#xB294; &#xC9C0;&#xB3C4;&#xC758; &#xC635;&#xC158;&#xC5D0; &#xB530;&#xB77C; UI&#xB098; &#xB2E4;&#xB978; &#xC18D;&#xC131;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xACE0;&#xC790; &#xD560; &#xB54C; &#xC720;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xC9C0;&#xB3C4;&#xAC00; &#xC57C;&#xAC04; &#xBAA8;&#xB4DC;&#xB85C; &#xBCC0;&#xACBD;&#xB418;&#xBA74; &#xB9C8;&#xCEE4;&#xC758; &#xC0C9;&#xC0C1;&#xB3C4; &#xC5B4;&#xB450;&#xC6B4; &#xC0C9;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD574;&#xC57C; &#xC790;&#xC5F0;&#xC2A4;&#xB7EC;&#xC6B4;&#xB370;, &#xC774;&#xB7F0; &#xACBD;&#xC6B0;&#xC5D0; &#xC635;&#xC158; &#xBCC0;&#xACBD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xC758; &#xC57C;&#xAC04; &#xBAA8;&#xB4DC; &#xD65C;&#xC131;&#xD654; &#xC5EC;&#xBD80;&#xC5D0; &#xB530;&#xB77C; &#xB9C8;&#xCEE4;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="73da735e25f4069c10c3dee92cad161f" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-facdfc2e7db2e5bee5e6012cb9f65b64" class="gbcg-selector gbcg-active" data-tab="0-facdfc2e7db2e5bee5e6012cb9f65b64" data-tab-category="undefined">Swift</a>
+    <a id="select-1-01d349a7fbec8acb19f33f3727199100" class="gbcg-selector" data-tab="1-01d349a7fbec8acb19f33f3727199100" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-facdfc2e7db2e5bee5e6012cb9f65b64" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-type">NMFMarker</span> marker = ...
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapViewOptionChanged</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView)</span></span> {
+    <span class="hljs-keyword">if</span> mapView.isNightModeEnabled {
+        marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_LIGHTBLUE</span>
+    } <span class="hljs-keyword">else</span> {
+        marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_BLUE</span>
+    }   
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-facdfc2e7db2e5bee5e6012cb9f65b64" id="swift">Swift</h3>
+        <div id="0-facdfc2e7db2e5bee5e6012cb9f65b64" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-type">NMFMarker</span> marker = ...
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapViewOptionChanged</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView)</span></span> {
+    <span class="hljs-keyword">if</span> mapView.isNightModeEnabled {
+        marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_LIGHTBLUE</span>
+    } <span class="hljs-keyword">else</span> {
+        marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_BLUE</span>
+    }   
+}
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-01d349a7fbec8acb19f33f3727199100" id="objective-c">Objective-C</h3>
+        <div id="1-01d349a7fbec8acb19f33f3727199100" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMFMarker *marker = ...
+
+- (void)mapViewOptionChanged:(NMFMapView *)mapView {
+    if (mapView.nightModeEnabled) {
+        marker.iconImage = NMF_MARKER_IMAGE_LIGHTBLUE;
+    } else {
+        marker.iconImage = NMF_MARKER_IMAGE_BLUE;
+    }
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
 
                                 
                                 </section>
@@ -1006,7 +1064,7 @@ mapView.setLayerGroup(<span class="hljs-type">NMF_LAYER_GROUP_TRANSIT</span>, is
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"지도 옵션","level":"3.2.3","depth":2,"next":{"title":"카메라","level":"3.3","depth":1,"ref":"","articles":[{"title":"카메라와 투영","level":"3.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},{"title":"카메라 이동","level":"3.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]}]},"previous":{"title":"좌표 객체","level":"3.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"2-3.md","mtime":"2020-01-29T08:31:11.196Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-29T08:31:12.130Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"지도 옵션","level":"3.2.3","depth":2,"next":{"title":"카메라","level":"3.3","depth":1,"ref":"","articles":[{"title":"카메라와 투영","level":"3.3.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},{"title":"카메라 이동","level":"3.3.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]}]},"previous":{"title":"좌표 객체","level":"3.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"2-3.md","mtime":"2020-04-13T09:44:35.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-13T09:44:37.301Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
