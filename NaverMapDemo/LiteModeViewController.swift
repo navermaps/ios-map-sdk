@@ -25,8 +25,6 @@ class LiteModeViewController: MapViewController {
         mapView.liteModeEnabled = true;
     }
 
-    // MARK: - IBAction
-
     @IBAction func respondToLiteMode(_ sender: UISwitch) {
         mapView.liteModeEnabled = sender.isOn
     }

@@ -26,4 +26,5 @@ class IndoorMapViewController: MapViewController {
         mapView.isIndoorMapEnabled = true
         mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(NMGLatLng(lat: 37.5116620, lng: 127.0594274), zoom: 16)))
     }
+
 }

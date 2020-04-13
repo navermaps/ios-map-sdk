@@ -32,8 +32,6 @@ class ControlSettingsViewController: MapViewController {
         mapView.isIndoorMapEnabled = true
     }
     
-    // MARK: - IBAction
-
     @IBAction func respondToSwitch(_ sender: UISwitch) {
         switch sender.tag {
         case 0: // compass

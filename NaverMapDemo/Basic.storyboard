@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C54-20-7ag">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C54-20-7ag">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,13 +42,16 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="fVN-ay-PYu" id="7VX-ns-Qpy"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="top" secondItem="7oY-Gl-3dv" secondAttribute="top" id="Ht5-vi-Jtd"/>
-                            <constraint firstItem="r2U-09-aYm" firstAttribute="leading" secondItem="vii-Sj-vgO" secondAttribute="leading" id="kxo-z6-m8s"/>
-                            <constraint firstItem="r2U-09-aYm" firstAttribute="trailing" secondItem="vii-Sj-vgO" secondAttribute="trailing" id="vfK-jp-Ewm"/>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="leading" secondItem="7oY-Gl-3dv" secondAttribute="leading" id="kxo-z6-m8s"/>
+                            <constraint firstItem="r2U-09-aYm" firstAttribute="trailing" secondItem="7oY-Gl-3dv" secondAttribute="trailing" id="vfK-jp-Ewm"/>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="bottom" secondItem="vii-Sj-vgO" secondAttribute="bottom" id="vqr-qP-LWn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7oY-Gl-3dv"/>

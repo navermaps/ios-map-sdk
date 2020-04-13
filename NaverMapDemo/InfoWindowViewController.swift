@@ -17,14 +17,13 @@
 
 import UIKit
 import NMapsMap
+
 class InfoWindowViewController: MapViewController {
     var infoWindow = NMFInfoWindow()
     var defaultInfoWindowImage = NMFInfoWindowDefaultTextSource.data()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mapView.touchDelegate = self
 
         infoWindow.dataSource = defaultInfoWindowImage
         defaultInfoWindowImage.title = "인포 윈도우"
@@ -55,12 +54,8 @@ class InfoWindowViewController: MapViewController {
         marker2.userInfo = ["tag" : "Marker 2"]
         marker2.mapView = mapView
     }
-}
-
- // MARK:- MapView Touch Delegate
- 
- extension InfoWindowViewController: NMFMapViewTouchDelegate {
-    func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
+    
+    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
         infoWindow.close()
         
         let latlngStr = String(format: "좌표:(%.5f, %.5f)", latlng.lat, latlng.lng)
@@ -68,4 +63,5 @@ class InfoWindowViewController: MapViewController {
         infoWindow.position = latlng
         infoWindow.open(with: mapView)
     }
- }
+    
+}

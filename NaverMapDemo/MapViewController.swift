@@ -21,20 +21,29 @@ import NMapsMap
 public let DEFAULT_CAMERA_POSITION = NMFCameraPosition(NMGLatLng(lat: 37.5666102, lng: 126.9783881), zoom: 14, tilt: 0, heading: 0)
 public let primaryColor = UIColor(red: 25.0/255.0, green: 192.0/255.0, blue: 46.0/255.0, alpha: 1)
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, NMFMapViewDelegate {
     @IBOutlet weak var naverMapView: NMFNaverMapView!
-    var mapView: NMFMapView {
-        return naverMapView.mapView
-    }
+    weak var mapView: NMFMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 211/255, blue: 83/255, alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        mapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
+        mapView = naverMapView.mapView
+        naverMapView.mapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
     }
- }
+    
+    deinit {
+        mapView = nil
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+}
 
 extension NMGLatLng {
     func positionString() -> String {

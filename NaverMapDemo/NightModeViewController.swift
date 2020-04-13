@@ -26,12 +26,9 @@ class NightModeViewController: MapViewController {
         NMGLatLng(lat: 37.56138, lng: 126.97970)
     ]
     var markers: [NMFMarker] = []
-    var isNightModeEnabled = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mapView.addOptionDelegate(delegate: self)
         
         mapView.mapType = .navi
         mapView.isNightModeEnabled = true
@@ -42,27 +39,14 @@ class NightModeViewController: MapViewController {
             marker.mapView = mapView
             markers.append(marker)
         }
+        
     }
-
-    // MARK: - IBAction
 
     @IBAction func respondToNightMode(_ sender: UISwitch) {
         mapView.isNightModeEnabled = sender.isOn
-    }
-}
-
- extension NightModeViewController: NMFMapViewOptionDelegate {
-    func mapViewOptionChanged(_ mapView: NMFMapView) {
-        if (isNightModeEnabled != mapView.isNightModeEnabled) {
-            isNightModeEnabled = mapView.isNightModeEnabled
-            
-            mapView.backgroundColor = isNightModeEnabled ? NMFDefaultBackgroundDarkColor : NMFDefaultBackgroundLightColor
-            mapView.backgroundImage = isNightModeEnabled ? NMFDefaultBackgroundDarkImage : NMFDefaultBackgroundLightImage
-            
-            let iconName = isNightModeEnabled ? "mSNormalNight" : "mSNormal"
-            for marker in markers {
-                marker.iconImage = NMFOverlayImage(name: iconName, in: Bundle.naverMapFramework())
-            }
+        for marker in markers {
+            marker.iconImage = NMFOverlayImage(name: sender.isOn ? "mSNormalNight" : "mSNormal", in: Bundle.naverMapFramework())
         }
     }
- }
+
+}

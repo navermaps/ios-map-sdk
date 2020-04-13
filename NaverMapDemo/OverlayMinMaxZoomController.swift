@@ -30,11 +30,7 @@ class OverlayMinMaxZoomController: MapViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mapView.addCameraDelegate(delegate: self)
-        
         resetCamera()
-        
         let marker1: NMFMarker = NMFMarker()
         marker1.iconImage = NMF_MARKER_IMAGE_RED
         marker1.position = NMGLatLng(lat: 37.56713851901027, lng: 126.97891430703686)
@@ -78,28 +74,21 @@ class OverlayMinMaxZoomController: MapViewController {
         zoomView.setZoomLevel(mapView.zoomLevel)
     }
     
-    // MARK:- IBAction
-
     @IBAction func actionRefresh(_ sender: UIButton) {
         resetCamera()
     }
     
-    // MARK:- Internal
     func resetCamera() {
         let cameraUpdate: NMFCameraUpdate = NMFCameraUpdate(scrollTo: DEFAULT_CAMERA_POSITION.target, zoomTo: 16.0)
         cameraUpdate.animation = .easeIn
         mapView.moveCamera(cameraUpdate)
     }
-}
 
-// MARK:- MapView Camera Delegate
-
-extension OverlayMinMaxZoomController: NMFMapViewCameraDelegate {
-    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
+    func mapViewIdle(_ mapView: NMFMapView) {
         zoomView.setZoomLevel(mapView.zoomLevel)
     }
     
-    func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
+    func mapView(_ mapView: NMFMapView, regionWillChangeAnimated animated: Bool, byReason reason: Int) {
         zoomView.setZoomLevel(mapView.zoomLevel)
     }
 }

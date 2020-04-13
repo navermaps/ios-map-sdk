@@ -36,8 +36,6 @@ class ContentPaddingViewController: MapViewController {
         mapView.moveCamera(NMFCameraUpdate(scrollTo: coord1))
     }
     
-    // MARK: - IBAction
-
     @IBAction func respondToMoveCamera(_ sender: UIButton) {
         let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? coord1 : coord2)
         camUpdate.animation = .fly

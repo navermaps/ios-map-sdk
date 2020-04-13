@@ -21,10 +21,19 @@ class MapClickEventViewController: MapViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        mapView.touchDelegate = self
     }
-
+    
+    // MARK: - MapView Delegate
+    
+    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+        let alertController = UIAlertController(title: "지도 클릭", message: latlng.positionString(), preferredStyle: .alert)
+        present(alertController, animated: true) {
+            DispatchQueue.main.asyncAfter(deadline: (DispatchTime.now() + 0.5), execute: {
+                alertController.dismiss(animated: true, completion: nil)
+            })
+        }
+    }
+    
     // MARK: - IBAction
     
     @IBAction func respondToLongPress(_ sender: UILongPressGestureRecognizer) {
@@ -41,16 +50,3 @@ class MapClickEventViewController: MapViewController {
     }
     
 }
-
- // MARK:- MapView Touch Delegate
- 
- extension MapClickEventViewController: NMFMapViewTouchDelegate {
-     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
-        let alertController = UIAlertController(title: "지도 클릭", message: latlng.positionString(), preferredStyle: .alert)
-        present(alertController, animated: true) {
-            DispatchQueue.main.asyncAfter(deadline: (DispatchTime.now() + 0.5), execute: {
-                alertController.dismiss(animated: true, completion: nil)
-            })
-        }
-    }
- }
