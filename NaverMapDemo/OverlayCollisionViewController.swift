@@ -145,6 +145,7 @@ class OverlayCollisionViewController: MapViewController {
         marker.isForceShowIcon = important && forceShowIcon
     }
     
+    // MARK: - IBAction
     @IBAction func respondToHideCollidedSymbols(_ sender: UISwitch) {
         for marker in markers {
             marker.isHideCollidedSymbols = sender.isOn

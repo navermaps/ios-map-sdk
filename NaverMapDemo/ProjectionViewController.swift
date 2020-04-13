@@ -12,12 +12,12 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  */
+*/
 
 import Foundation
- import NMapsMap
- 
- class ProjectionViewController: MapViewController {
+import NMapsMap
+
+class ProjectionViewController: MapViewController {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var crossHair: UIImageView!
@@ -26,23 +26,27 @@ import Foundation
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mapView.addCameraDelegate(delegate: self)
+        
         marker.position = mapView.cameraPosition.target
         marker.mapView = mapView
     }
     
-    func updateCrosshairCoord() {
-        if crossHair != nil {
-            let coord = mapView.projection.latlng(from: crossHair.center)
-            textView.text = String(format: "화면좌표: (%.1f, %.1f)\n지도좌표: (%.5f, %.5f)", crossHair.center.x, crossHair.center.y, coord.lat, coord.lng)
-        }
+    func update() {
+        let point = mapView.projection.point(from: marker.position)
+        marker.captionText = String(format: "화면좌표: (%.1f, %.1f)\n지도 좌표: (%.5f, %.5f)", point.x, point.y, marker.position.lat, marker.position.lng)
+        
+        let coord = mapView.projection.latlng(from: crossHair.center)
+        textView.text = String(format: "화면좌표: (%.1f, %.1f)\n지도좌표: (%.5f, %.5f)", crossHair.center.x, crossHair.center.y, coord.lat, coord.lng)
+    }
+}
+
+extension ProjectionViewController: NMFMapViewCameraDelegate {
+    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
+        update()
     }
     
-    func mapView(_ mapView: NMFMapView, regionWillChangeAnimated animated: Bool, byReason reason: Int) {
-        let point = mapView.projection.point(from: marker.position)
-        DispatchQueue.main.async { [weak self] in
-            guard let marker = self?.marker else { return }
-            marker.captionText = String(format: "화면좌표: (%.1f, %.1f)\n지도 좌표: (%.5f, %.5f)", point.x, point.y, marker.position.lat, marker.position.lng)
-            self?.updateCrosshairCoord()
-        }
+    func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
+        update()
     }
- }
+}

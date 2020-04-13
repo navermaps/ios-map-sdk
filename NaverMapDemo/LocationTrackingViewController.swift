@@ -35,7 +35,7 @@ class LocationTrackingViewController: MapViewController {
     
     func updateStateName() {
         var stateStr = ""
-        switch naverMapView.positionMode {
+        switch mapView.positionMode {
         case .disabled:
             stateStr = "None"
         case .normal:
@@ -50,27 +50,29 @@ class LocationTrackingViewController: MapViewController {
         selectButton.title = stateStr
     }
     
+    // MARK: - IBAction
+    
     @IBAction func respondToTypeSelect(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "None",
-                                               style: naverMapView.positionMode == .disabled ? .destructive : .default,
+                                               style: mapView.positionMode == .disabled ? .destructive : .default,
                                                handler: { [weak self] (action) in
-                                                self?.naverMapView.positionMode = .disabled
+                                                self?.mapView.positionMode = .disabled
         }))
         alertController.addAction(UIAlertAction(title: "No Follow",
-                                               style: naverMapView.positionMode == .normal ? .destructive : .default,
+                                               style: mapView.positionMode == .normal ? .destructive : .default,
                                                handler: { [weak self] (action) in
-                                                self?.naverMapView.positionMode = .normal
+                                                self?.mapView.positionMode = .normal
         }))
         alertController.addAction(UIAlertAction(title: "Follow",
-                                               style: naverMapView.positionMode == .direction ? .destructive : .default,
+                                               style: mapView.positionMode == .direction ? .destructive : .default,
                                                handler: { [weak self] (action) in
-                                                self?.naverMapView.positionMode = .direction
+                                                self?.mapView.positionMode = .direction
         }))
         alertController.addAction(UIAlertAction(title: "Face",
-                                               style: naverMapView.positionMode == .compass ? .destructive : .default,
+                                               style: mapView.positionMode == .compass ? .destructive : .default,
                                                handler: { [weak self] (action) in
-                                                self?.naverMapView.positionMode = .compass
+                                                self?.mapView.positionMode = .compass
         }))
         if UIDevice.current.userInterfaceIdiom == .pad {
             if let popoverController = alertController.popoverPresentationController {

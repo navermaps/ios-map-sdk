@@ -1,30 +1,32 @@
- /*
-  Copyright 2018-2020 NAVER Corp.
-  
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-  
-  http://www.apache.org/licenses/LICENSE-2.0
-  
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-*/
+/*
+ Copyright 2018-2020 NAVER Corp.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
 
 import UIKit
 import NMapsMap
 
 class PickAllViewController: MapViewController {
-
+    
     @IBOutlet weak var textView: UITextView!
     var circleView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        mapView.touchDelegate = self
+        
         let marker1 = NMFMarker(position: NMGLatLng(lat: 37.56752, lng: 126.97385))
         marker1.captionText = "Marker 1"
         marker1.mapView = mapView
@@ -53,10 +55,11 @@ class PickAllViewController: MapViewController {
         }
         circleView.center = point
     }
-    
-    // MARK: - MapView Delegate
+}
 
-    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+// MARK:- MapView Touch Delegate
+extension PickAllViewController: NMFMapViewTouchDelegate {
+    func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
         var pickableListStr = ""
         for pickable in mapView.pickAll(point, withTolerance: 30) {
             if let symbol = pickable as? NMFSymbol {
