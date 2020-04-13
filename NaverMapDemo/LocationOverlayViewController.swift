@@ -32,7 +32,8 @@ class LocationOverlayViewController: MapViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mapView.delegate = self
+        mapView.touchDelegate = self
+        
         let locationOverlay = naverMapView.mapView.locationOverlay
         locationOverlay.location = DEFAULT_CAMERA_POSITION.target
         locationOverlay.circleOutlineWidth = 0
@@ -107,18 +108,18 @@ class LocationOverlayViewController: MapViewController {
     }
     
     // MARK:- IBActions
-    
     @IBAction func respondToHeadingSlider(_ sender: UISlider) {
         let locationOverlay = naverMapView.mapView.locationOverlay
         locationOverlay.heading = CGFloat(sender.value)
         headingLabel.text = "\(Int(sender.value))°"
     }
-    
-    // MARK:- MapView Delegate
-    
-    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+}
+ 
+ // MARK:- MapView Touch Delegate
+ 
+ extension LocationOverlayViewController: NMFMapViewTouchDelegate {
+     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
         naverMapView.mapView.locationOverlay.location = latlng
         circleAnimation(true)
     }
-
-}
+ }

@@ -1,10 +1,3 @@
-//
-//  ZoomLevelView.swift
-//  NaverMapDemo
-//
-//  Created by hyejin on 31/12/2019.
-//  Copyright © 2019 NaverCorp. All rights reserved.
-//
 
 import UIKit
 

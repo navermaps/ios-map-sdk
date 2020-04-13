@@ -18,7 +18,7 @@
 import UIKit
 import NMapsMap
 
-class MapViewCreatedInCodeController: UIViewController, NMFMapViewDelegate {
+class MapViewCreatedInCodeController: UIViewController {
     let naverMapView = NMFNaverMapView()
     
     override func viewDidLoad() {

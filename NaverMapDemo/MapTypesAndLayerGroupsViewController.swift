@@ -26,6 +26,7 @@ class MapTypesAndLayerGroupsViewController: MapViewController {
         mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(DEFAULT_CAMERA_POSITION.target, zoom: 16, tilt: 40, heading: 0)))
     }
     
+    // MARK: - IBAction
     @IBAction func respondToMapType(_ sender: UIButton) {
         let alertController = UIAlertController(title: "지도 유형", message: nil, preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "Basic", style: .default, handler: { [weak self] (action) in

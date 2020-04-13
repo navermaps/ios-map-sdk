@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MinMaxZoom" id="xcX-yk-B1f" userLabel="MinMaxZoom Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V7K-Ah-eck">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -29,11 +29,11 @@
             <objects>
                 <viewController title="MinMaxZoomViewController" id="74N-4v-lQG" userLabel="MinMaxZoom" customClass="MinMaxZoomViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYB-89-9e7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF1-6k-1mK" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -41,12 +41,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="74N-4v-lQG" id="UIn-M9-id8"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-oy-OcA" customClass="ZoomLevelView" customModule="SDK_Demo" customModuleProvider="target">
-                                <rect key="frame" x="295" y="60" width="64" height="36"/>
+                                <rect key="frame" x="334" y="104" width="64" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="1ss-Xt-4au"/>
@@ -85,7 +82,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Extent" id="5gh-4w-fKN" userLabel="MapExtent Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1mM-TU-eh2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -101,11 +98,11 @@
             <objects>
                 <viewController title="ExtentViewController" id="257-wA-ua8" userLabel="MapExtent" customClass="ExtentViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cj-FV-6Sz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-qe-n9i" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -113,9 +110,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="257-wA-ua8" id="TFs-e5-no2"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,11 +135,11 @@
             <objects>
                 <viewController title="ContentPaddingViewController" id="XYM-dO-TNL" userLabel="ContentPadding" customClass="ContentPaddingViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gn2-dc-Ppa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOe-8H-L73" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -153,12 +147,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="XYM-dO-TNL" id="Wcd-DO-O6I"/>
-                                </connections>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDl-Sn-DyU" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -168,7 +159,7 @@
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nma-2I-2Lk" userLabel="LeftView">
-                                <rect key="frame" x="0.0" y="84" width="20" height="483"/>
+                                <rect key="frame" x="0.0" y="128" width="20" height="634"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -178,7 +169,7 @@
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-x8-zGc" userLabel="RightView">
-                                <rect key="frame" x="315" y="84" width="60" height="483"/>
+                                <rect key="frame" x="354" y="128" width="60" height="634"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -188,7 +179,7 @@
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOX-9b-rBm" userLabel="BottomView">
-                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -198,7 +189,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvB-QY-DdA">
-                                <rect key="frame" x="311" y="603" width="44" height="44"/>
+                                <rect key="frame" x="350" y="798" width="44" height="44"/>
                                 <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="MVE-9i-cnq"/>
@@ -255,7 +246,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ContentPadding" id="O06-Y2-ZMK" userLabel="ContentPadding Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2rw-aJ-3W7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -271,7 +262,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ControlSettings" id="NE9-z8-pFM" userLabel="ControlSettings Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Chf-Pw-bpy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -282,16 +273,158 @@
             </objects>
             <point key="canvasLocation" x="448" y="729"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4BM-dx-i7W">
+            <objects>
+                <navigationController storyboardIdentifier="CustomControl" id="kk6-nL-1I6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aPR-3B-BfP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Oqd-FZ-E13" kind="relationship" relationship="rootViewController" id="u1e-Pp-sL6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZR-8k-oTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="1430"/>
+        </scene>
+        <!--CustomControl-->
+        <scene sceneID="r2B-pM-Svy">
+            <objects>
+                <viewController title="CustomControlLayoutViewController" id="Oqd-FZ-E13" userLabel="CustomControl" customClass="CustomControlLayoutViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mvT-ul-TxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIG-AG-Fh9" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showScaleBar" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-WL-KJs" customClass="NMFLocationButton">
+                                <rect key="frame" x="352" y="152" width="52" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="S92-Kh-OCG"/>
+                                    <constraint firstAttribute="height" constant="52" id="hzm-HQ-KgA"/>
+                                </constraints>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bBm-aV-mEa" customClass="NMFCompassView">
+                                <rect key="frame" x="360" y="98" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B2H-81-nT3"/>
+                                    <constraint firstAttribute="width" constant="44" id="z7I-6J-PRj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-34-yew" customClass="NMFZoomControlView">
+                                <rect key="frame" x="10" y="723" width="46" height="89"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ss4-wO-Bv3"/>
+                                    <constraint firstAttribute="height" constant="89" id="WlK-3c-EEp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-cF-04S" customClass="NMFScaleView">
+                                <rect key="frame" x="294" y="836" width="40" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="sIZ-8i-Uqt"/>
+                                    <constraint firstAttribute="width" constant="40" id="z4A-86-g8c"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="scaleBarWidthConstraint" destination="z4A-86-g8c" id="Uz2-Hj-gvM"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wG-6r-5G2" customClass="NMFIndoorLevelPickerView">
+                                <rect key="frame" x="352" y="583" width="52" height="209"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="asx-zT-xVe"/>
+                                    <constraint firstAttribute="height" constant="209" id="j6z-sM-L6P"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="sja-L2-ntg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="viewHeightConstraint" destination="j6z-sM-L6P" id="W6s-iw-Hfa"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBR-uu-idj">
+                                <rect key="frame" x="354" y="802" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.82745098039215681" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2PI-y3-Enf"/>
+                                    <constraint firstAttribute="height" constant="50" id="K4M-7y-JL4"/>
+                                </constraints>
+                                <state key="normal" image="btnRefresh"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeLayout:" destination="Oqd-FZ-E13" eventType="touchUpInside" id="xwC-Xl-UOm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NBR-uu-idj" firstAttribute="leading" secondItem="QPo-cF-04S" secondAttribute="trailing" constant="20" id="2Vn-sv-vkY"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="trailing" secondItem="bBm-aV-mEa" secondAttribute="trailing" constant="10" id="7T2-H0-kQf"/>
+                            <constraint firstItem="QPo-cF-04S" firstAttribute="leading" secondItem="uaN-YY-ib5" secondAttribute="leading" constant="10" id="ApL-rq-8qp"/>
+                            <constraint firstItem="kIG-AG-Fh9" firstAttribute="leading" secondItem="mvT-ul-TxJ" secondAttribute="leading" id="CkT-6Y-Dj0"/>
+                            <constraint firstAttribute="bottom" secondItem="kIG-AG-Fh9" secondAttribute="bottom" id="GXY-Yq-Pt8"/>
+                            <constraint firstItem="Ha7-WL-KJs" firstAttribute="trailing" secondItem="bBm-aV-mEa" secondAttribute="trailing" id="Qf9-bb-NvT"/>
+                            <constraint firstItem="NBR-uu-idj" firstAttribute="top" secondItem="0wG-6r-5G2" secondAttribute="bottom" constant="10" id="Szr-mp-CCr"/>
+                            <constraint firstItem="bBm-aV-mEa" firstAttribute="top" secondItem="uaN-YY-ib5" secondAttribute="top" constant="10" id="YzS-eR-c4O"/>
+                            <constraint firstAttribute="trailing" secondItem="kIG-AG-Fh9" secondAttribute="trailing" id="ZC6-L3-oGJ"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="bottom" secondItem="9P9-34-yew" secondAttribute="bottom" constant="50" id="e0c-hO-4jx"/>
+                            <constraint firstItem="kIG-AG-Fh9" firstAttribute="top" secondItem="uaN-YY-ib5" secondAttribute="top" id="eH1-7I-4Wq"/>
+                            <constraint firstItem="Ha7-WL-KJs" firstAttribute="top" secondItem="bBm-aV-mEa" secondAttribute="bottom" constant="10" id="eVo-4E-2Yd"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="trailing" secondItem="NBR-uu-idj" secondAttribute="trailing" constant="10" id="fN8-GS-sxP"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="bottom" secondItem="NBR-uu-idj" secondAttribute="bottom" constant="10" id="kaL-0y-G3l"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="trailing" secondItem="0wG-6r-5G2" secondAttribute="trailing" constant="10" id="lf8-cx-edD"/>
+                            <constraint firstItem="9P9-34-yew" firstAttribute="leading" secondItem="uaN-YY-ib5" secondAttribute="leading" constant="10" id="p3u-SD-rz5"/>
+                            <constraint firstItem="uaN-YY-ib5" firstAttribute="bottom" secondItem="QPo-cF-04S" secondAttribute="bottom" constant="10" id="z3I-8z-pzl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uaN-YY-ib5"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ApL-rq-8qp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Control Layout" id="cDQ-cm-icJ"/>
+                    <connections>
+                        <outlet property="compassView" destination="bBm-aV-mEa" id="Chi-Hg-Pn8"/>
+                        <outlet property="indoorLevelPickerView" destination="0wG-6r-5G2" id="tPH-e7-xPm"/>
+                        <outlet property="locationButton" destination="Ha7-WL-KJs" id="WWP-9F-Dhy"/>
+                        <outlet property="naverMapView" destination="kIG-AG-Fh9" id="8fo-n6-xDi"/>
+                        <outlet property="scaleView" destination="QPo-cF-04S" id="Rvj-u5-7tn"/>
+                        <outlet property="scaleViewLeftAlignConstraint" destination="ApL-rq-8qp" id="SNq-YZ-Pk4"/>
+                        <outlet property="scaleViewRightAlignConstraint" destination="2Vn-sv-vkY" id="EPG-68-6yW"/>
+                        <outlet property="zoomControlView" destination="9P9-34-yew" id="cVj-ff-CPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b03-UM-5Mk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="1421"/>
+        </scene>
         <!--ControlSettings-->
         <scene sceneID="j27-zR-gO5">
             <objects>
                 <viewController title="ControlSettingViewController" id="evK-us-CYI" userLabel="ControlSettings" customClass="ControlSettingsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZR7-GE-aZE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUj-Gt-Pxi" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -300,12 +433,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="evK-us-CYI" id="8OQ-0m-UaH"/>
-                                </connections>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahm-2o-zw0">
-                                <rect key="frame" x="0.0" y="44" width="375" height="51"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="right" semanticContentAttribute="forceLeftToRight" distribution="equalSpacing" alignment="center" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcp-wu-pbS">
                                         <rect key="frame" x="10" y="0.0" width="712.5" height="51"/>
@@ -399,14 +529,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ET2-UY-WiM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Control Settings" id="HZc-Ur-928" userLabel="Control Settings">
-                        <barButtonItem key="rightBarButtonItem" title="Logo" id="BI1-lm-Nri">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="respondToLogoPosition:" destination="evK-us-CYI" id="rrS-Nh-9Rd"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Control Settings" id="HZc-Ur-928" userLabel="Control Settings"/>
                     <connections>
                         <outlet property="naverMapView" destination="mUj-Gt-Pxi" id="VM0-bg-tzf"/>
                     </connections>
@@ -420,7 +543,7 @@
             <objects>
                 <navigationController storyboardIdentifier="GestureSettings" id="6el-gO-688" userLabel="GestureSettings" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EHk-V2-kfI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -436,11 +559,11 @@
             <objects>
                 <viewController title="GestureSettingsViewController" id="RDU-FK-jqK" userLabel="GestureSettings" customClass="GestureSettingsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uvy-3n-hSo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-OD-QFR" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -448,12 +571,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="RDU-FK-jqK" id="tfY-jr-9IS"/>
-                                </connections>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-ul-cUJ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="51"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="right" semanticContentAttribute="forceLeftToRight" distribution="equalSpacing" alignment="center" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-23-zhz">
                                         <rect key="frame" x="10" y="0.0" width="512.5" height="51"/>
@@ -558,6 +678,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnRefresh" width="24" height="24"/>
         <image name="ic_play_arrow_white" width="24" height="24"/>
     </resources>
 </document>

@@ -2,8 +2,8 @@
 /* Class = "UILabel"; text = "네이버지도 SDK Demo"; ObjectID = "0XM-y9-sOw"; */
 "0XM-y9-sOw.text" = "네이버지도 SDK Demo";
 
-/* Class = "UILabel"; text = "컨텐츠 패딩 사용"; ObjectID = "0bg-mg-Hpk"; */
-"0bg-mg-Hpk.text" = "컨텐츠 패딩 사용";
+/* Class = "UILabel"; text = "콘텐츠 패딩 사용"; ObjectID = "0bg-mg-Hpk"; */
+"0bg-mg-Hpk.text" = "콘텐츠 패딩 사용";
 
 /* Class = "UILabel"; text = "Map Click Event"; ObjectID = "1l3-3V-6L7"; */
 "1l3-3V-6L7.text" = "Map Click Event";

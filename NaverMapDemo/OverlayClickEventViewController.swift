@@ -21,6 +21,8 @@ class OverlayClickEventViewController: MapViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mapView.touchDelegate = self
 
         let sdkBundle = Bundle.naverMapFramework()
         let marker1 = NMFMarker(position: NMGLatLng(lat: 37.57207, lng: 126.97917))
@@ -55,10 +57,12 @@ class OverlayClickEventViewController: MapViewController {
         marker3.captionText = "이벤트 리스너 없음"
         marker3.mapView = mapView
     }
-
-    // MARK: - MapView Delegate
-    
-    func didTapMapView(_ point: CGPoint, latLng latlng: NMGLatLng) {
+ }
+ 
+ // MARK:- MapView Touch Delegate
+ 
+ extension OverlayClickEventViewController: NMFMapViewTouchDelegate {
+     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
         let alertController = UIAlertController(title: "지도 클릭", message: latlng.positionString(), preferredStyle: .alert)
         present(alertController, animated: true) {
             DispatchQueue.main.asyncAfter(deadline: (DispatchTime.now() + 0.5), execute: {
@@ -66,5 +70,4 @@ class OverlayClickEventViewController: MapViewController {
             })
         }
     }
-
-}
+ }

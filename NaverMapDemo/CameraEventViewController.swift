@@ -23,33 +23,23 @@ class CameraEventViewController: MapViewController {
     @IBOutlet weak var moveButton: UIButton!
     @IBOutlet weak var changeLabel: UILabel!
     @IBOutlet weak var idleLabel: UILabel!
-    
+    @IBOutlet weak var noticeLabel: UILabel!
+
     let camPositionFormat = "(%.5f, %.5f) / %.2f / %.2f / %.2f"
     let coord1 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
     let coord2 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
     
-    var positionFlag: Bool = false
     var moving: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mapView.addCameraDelegate(delegate: self)
+        
         let marker1 = NMFMarker(position: coord1)
         marker1.mapView = mapView
         let marker2 = NMFMarker(position: coord2)
         marker2.mapView = mapView
-    }
-    
-    // MARK:- MapView Delegate
-    
-    func mapViewRegionIsChanging(_ mapView: NMFMapView, byReason reason: Int) {
-        let camPosition = mapView.cameraPosition
-        changeLabel.text = String(format: camPositionFormat, camPosition.target.lat, camPosition.target.lng, camPosition.zoom, camPosition.tilt, camPosition.heading)
-    }
-    
-    func mapViewIdle(_ mapView: NMFMapView) {
-        let camPosition = mapView.cameraPosition
-        idleLabel.text = String(format: camPositionFormat, camPosition.target.lat, camPosition.target.lng, camPosition.zoom, camPosition.tilt, camPosition.heading)
     }
     
     // MARK:- IBActions
@@ -58,26 +48,56 @@ class CameraEventViewController: MapViewController {
         if moving {
             mapView.cancelTransitions()
         } else {
-            let camUpdate = NMFCameraUpdate(scrollTo: positionFlag ? coord2 : coord1)
-            camUpdate.animation = .fly
-            camUpdate.animationDuration = 5
-            
-            mapView.moveCamera(camUpdate) { [weak self] isCancelled in
-                self?.moving = false
-                self?.moveButton.isSelected = false
-                let alert = UIAlertController(title: isCancelled ? "카메라 이동 취소" : "카메라 이동 완료",
-                                              message: nil,
-                                              preferredStyle: .alert)
-                self?.present(alert, animated: true, completion: {
-                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
-                        alert.dismiss(animated: true, completion: nil)
-                    })
-                })
+            self.moveCamera(coord1) { [weak self] isCancelled in
+                if isCancelled {
+                     self?.setIdle(isCancelled)
+                } else {
+                    guard let coord2 = self?.coord2 else { return }
+                    self?.moveCamera(coord2) { [weak self] isCancelled in
+                        self?.setIdle(isCancelled)
+                    }
+                }
             }
+            
             moving = true
             moveButton.isSelected = true
-            positionFlag = !positionFlag
         }
     }
+    
+    func moveCamera(_ target: NMGLatLng, completionHandler: ((Bool) -> Void)? = nil) {
+        let camUpdate = NMFCameraUpdate(scrollTo: target)
+        camUpdate.animation = .fly
+        camUpdate.animationDuration = 3
+        mapView.moveCamera(camUpdate) { isCancelled in
+            completionHandler?(isCancelled)
+        }
+    }
+    
+    func setIdle(_ isCancelled: Bool) {
+        moving = false
+        moveButton.isSelected = false
+        noticeLabel.text = isCancelled ? "카메라 이동 취소" : "카메라 이동 완료"
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
+            self.noticeLabel.text = ""
+        })
+    }
+}
 
+// MARK:- MapView Camera Delegate
+
+extension CameraEventViewController: NMFMapViewCameraDelegate {
+    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
+        let camPosition = mapView.cameraPosition
+        changeLabel.text = String(format: camPositionFormat, camPosition.target.lat, camPosition.target.lng, camPosition.zoom, camPosition.tilt, camPosition.heading)
+    }
+    
+    func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
+        let camPosition = mapView.cameraPosition
+        changeLabel.text = String(format: camPositionFormat, camPosition.target.lat, camPosition.target.lng, camPosition.zoom, camPosition.tilt, camPosition.heading)
+    }
+    
+    func mapViewCameraIdle(_ mapView: NMFMapView) {
+        let camPosition = mapView.cameraPosition
+        idleLabel.text = String(format: camPositionFormat, camPosition.target.lat, camPosition.target.lng, camPosition.zoom, camPosition.tilt, camPosition.heading)
+    }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,9 +26,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="rhY-pc-EIF" id="Pky-X7-Zay"/>
-                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-Vb-IcJ">
                                 <rect key="frame" x="311" y="603" width="44" height="44"/>
@@ -121,9 +118,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="IjP-Uu-4eb" id="U62-ds-Rvc"/>
-                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-tL-cG0">
                                 <rect key="frame" x="311" y="603" width="44" height="44"/>
@@ -184,9 +178,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="dEG-Zf-nMK" id="gZs-lW-5bt"/>
-                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-Rv-FWR">
                                 <rect key="frame" x="311" y="603" width="44" height="44"/>
@@ -263,9 +254,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="gXd-q8-WY8" id="qKd-FY-lyp"/>
-                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l0-4r-SZg">
                                 <rect key="frame" x="311" y="603" width="44" height="44"/>
@@ -395,9 +383,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="tjK-ZP-MYU" id="CGe-0N-E6N"/>
-                                </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-RI-jWa">
                                 <rect key="frame" x="180.5" y="388.5" width="14" height="14"/>
@@ -491,15 +476,23 @@
                                     <constraint firstAttribute="bottom" secondItem="pHm-Qg-rtj" secondAttribute="bottom" constant="8" id="l2Y-Yk-KTd"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yn-xG-rWC">
+                                <rect key="frame" x="187.5" y="647" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tLS-xA-NLe" firstAttribute="leading" secondItem="iM7-OP-YoT" secondAttribute="leading" id="AKQ-w3-OLf"/>
                             <constraint firstItem="MA7-iS-3Xx" firstAttribute="top" secondItem="tLS-xA-NLe" secondAttribute="bottom" id="BZf-JC-LDF"/>
+                            <constraint firstAttribute="bottom" secondItem="8Yn-xG-rWC" secondAttribute="bottom" constant="20" id="Czg-49-Vf7"/>
                             <constraint firstItem="tLS-xA-NLe" firstAttribute="trailing" secondItem="iM7-OP-YoT" secondAttribute="trailing" id="LuG-8g-6wy"/>
                             <constraint firstItem="D99-PG-Zo0" firstAttribute="bottom" secondItem="Hbb-RI-jWa" secondAttribute="top" constant="7" id="PZk-8W-3b1"/>
                             <constraint firstItem="MA7-iS-3Xx" firstAttribute="trailing" secondItem="iM7-OP-YoT" secondAttribute="trailing" id="Uef-qO-pQc"/>
                             <constraint firstItem="iM7-OP-YoT" firstAttribute="trailing" secondItem="TLm-Ur-K64" secondAttribute="trailing" constant="20" id="Up0-zF-AIv"/>
+                            <constraint firstItem="8Yn-xG-rWC" firstAttribute="centerX" secondItem="7LM-Vl-xGl" secondAttribute="centerX" id="W7b-Mj-IQz"/>
                             <constraint firstItem="tLS-xA-NLe" firstAttribute="top" secondItem="iM7-OP-YoT" secondAttribute="top" id="bYm-lP-LRa"/>
                             <constraint firstItem="MA7-iS-3Xx" firstAttribute="leading" secondItem="iM7-OP-YoT" secondAttribute="leading" id="eAK-SZ-sG6"/>
                             <constraint firstItem="iM7-OP-YoT" firstAttribute="bottom" secondItem="TLm-Ur-K64" secondAttribute="bottom" constant="20" id="eCl-ga-gFe"/>
@@ -516,6 +509,7 @@
                         <outlet property="idleLabel" destination="wgw-2Y-sD6" id="YTA-DV-2F1"/>
                         <outlet property="moveButton" destination="TLm-Ur-K64" id="vZu-uR-KD3"/>
                         <outlet property="naverMapView" destination="MA7-iS-3Xx" id="DQx-g7-8cb"/>
+                        <outlet property="noticeLabel" destination="8Yn-xG-rWC" id="pE9-aC-C7M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWl-ne-T0G" userLabel="First Responder" sceneMemberID="firstResponder"/>

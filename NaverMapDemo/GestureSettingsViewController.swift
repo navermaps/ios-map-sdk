@@ -25,6 +25,8 @@ class GestureSettingsViewController: MapViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - IBAction
+
     @IBAction func respondToSwitch(_ sender: UISwitch) {
         switch sender.tag {
         case 0: // scroll

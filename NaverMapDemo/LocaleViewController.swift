@@ -25,6 +25,7 @@ class LocaleViewController: MapViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - IBAction
 
     @IBAction func respondToLocale(_ sender: UIButton) {
         let alertController = UIAlertController(title: "언어 설정", message: nil, preferredStyle: .actionSheet)

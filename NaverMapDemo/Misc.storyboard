@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,9 +41,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showLocationButton" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Tmt-RU-rna" id="El9-Ua-XFg"/>
-                                </connections>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-jm-sg7">
                                 <rect key="frame" x="298" y="606" width="49" height="31"/>
@@ -119,9 +116,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="OAC-z8-8CX" id="9DH-vE-ntc"/>
-                                </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-q2-h8A">
                                 <rect key="frame" x="0.0" y="355.5" width="375" height="311.5"/>
@@ -207,9 +201,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="L9z-Py-Sla" id="M7I-cV-1dE"/>
-                                </connections>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlC-Kh-avB">
                                 <rect key="frame" x="0.0" y="435.5" width="375" height="231.5"/>
@@ -278,9 +269,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Hyu-86-MdC" id="2Z0-9T-wI3"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -336,9 +324,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="x6e-Sy-4Re" id="HAn-hA-kmX"/>
-                                </connections>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="화면좌표: (x.x, y.y) 지도좌표: (lat, lng)" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guL-Wi-7Rx">
                                 <rect key="frame" x="165" y="597" width="180" height="40"/>
