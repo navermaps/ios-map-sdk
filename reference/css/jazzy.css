@@ -118,7 +118,6 @@ pre code {
   @media (min-width: 768px) {
     .content-wrapper {
       flex-direction: row; } }
-
 .header {
   display: flex;
   padding: 8px;
@@ -166,7 +165,6 @@ pre code {
       overflow: hidden;
       background: #fbfbfb;
       border-right: 1px solid #ddd; } }
-
 .nav-groups {
   list-style-type: none;
   padding-left: 0; }
@@ -202,7 +200,6 @@ pre code {
       flex: 1;
       padding-bottom: 60px;
       max-width: 80%; } }
-
 .section {
   padding: 0 32px;
   border-bottom: 1px solid #ddd; }
@@ -351,6 +348,7 @@ pre code {
 
 html.dash .header, html.dash .breadcrumbs, html.dash .navigation {
   display: none; }
+
 html.dash .height-container {
   display: block; }
 
@@ -358,6 +356,7 @@ html.dash .height-container {
   font-family: 'Open Sans';
   src: url("../fonts/opensans-regular.eot");
   src: url("../fonts/opensans-regular.eot#iefix") format("embedded-opentype"), url("../fonts/opensans-regular.woff") format("woff"); }
+
 @font-face {
   font-family: 'Open Sans Bold';
   src: url("../fonts/opensans-bold.eot");
