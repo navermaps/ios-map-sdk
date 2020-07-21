@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "438AA5E4213D416A004D1053"
-               BuildableName = "SDK Demo.app"
+               BuildableName = "NaverMapDemo.app"
                BlueprintName = "NaverMapDemo"
                ReferencedContainer = "container:NaverMapDemo.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "438AA5E4213D416A004D1053"
-            BuildableName = "SDK Demo.app"
+            BuildableName = "NaverMapDemo.app"
             BlueprintName = "NaverMapDemo"
             ReferencedContainer = "container:NaverMapDemo.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "438AA5E4213D416A004D1053"
-            BuildableName = "SDK Demo.app"
+            BuildableName = "NaverMapDemo.app"
             BlueprintName = "NaverMapDemo"
             ReferencedContainer = "container:NaverMapDemo.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "438AA5E4213D416A004D1053"
-            BuildableName = "SDK Demo.app"
+            BuildableName = "NaverMapDemo.app"
             BlueprintName = "NaverMapDemo"
             ReferencedContainer = "container:NaverMapDemo.xcodeproj">
          </BuildableReference>

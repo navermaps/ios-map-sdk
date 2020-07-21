@@ -1,3 +1,49 @@
+# 3.9.0
+
+Release Date: 2020-07-21
+
+### 새로운 기능
+
+- 마커 보조 캡션의 최소/최대 줌 레벨을 주 캡션과 별도로 지정할 수 있도록 속성 제공
+  - `NMFMarker.subCaptionMinZoom` / `NMFMarker.subCaptionMaxZoom`
+
+### 개선
+
+- `NMFInfoWindow.dataSource` weak 속성 제거
+
+### 버그 수정
+
+- 전화 걸기 창 나왔을 때 회전 시 지도가 일부만 그려지는 현상 수정
+- 지적편집도 활성화시 지도를 틸트하지 않아도 3D 건물이 보이는 현상 수정
+- 스크롤 제스처를 비활성화해도 일부 제스처에 의해 카메라의 위치가 변경되는 현상 수정
+- `NMFMapView.positionMode` 지정 시 `NMFMapView` 객체가 소멸되지 않는 현상 수정
+
+# 3.8.0
+
+Release Date: 2020-04-10
+
+### 새로운 기능
+
+- 지도 컨트롤을 커스텀하게 배치할 수 있도록 기본 컨트롤을 API로 제공
+- 지도 옵션이 변경되면 이벤트를 받을 수 있도록 `NMFMapViewOptionDelegate` 추가
+- `NMFMapViewDelegate`를 대체하는 `NMFMapViewTouchDelegate` 및 `NMFMapViewCameraDelegate` 추가
+- `NMFNaverMapView.positionMode`를 대체하는 `NMFMapView.positionMode` 추가
+
+### 개선
+
+- 마커간 우선순위가 동일할 경우 아이콘이 먼저 자리를 잡은 후 캡션이 자리를 잡도록 개선
+- 마커 캡션의 오프셋에 음수를 지정할 수 있도록 개선
+- 위치 서비스 사용 권한이 `Always`일 때도 위치 추적 모드를 사용할 수 있도록 개선
+
+### 버그 수정
+
+- `NMFMarker.subCaptionRequestedWidth`를 변경해도 보조 캡션의 너비가 즉시 변경되지 않는 현상 수정
+- `NMFCircleOverlay`를 기본 생성자로 생성하면 크래시가 발생하는 오류 수정
+- `NMGLatLngBounds`가 클 때 `NMFUtils.getFittableZoomLevelWith:insets:mapView` 및 `NMFCameraUpdate.cameraUpdateWithFitBounds`에 오차가 발생하는 오류 수정
+- 앱이 다크 모드일 때 `NMFInfoWindow`의 텍스트가 나타나지 않는 현상 수정
+- 인터넷이 오프라인일 때 캐시가 되어있더라도 심벌이 나타나지 않는 현상 수정
+- 인터넷이 오프라인에서 온라인으로 전환되더라도 지도가 로딩되지 않는 현상 수정
+
 # 3.7.0
 
 Release Date: 2020-01-29
