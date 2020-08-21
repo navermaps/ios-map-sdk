@@ -1,3 +1,15 @@
+# 3.9.1
+
+Release Date: 2020-08-21
+
+### 개선
+
+- 지도에 나타나는 심벌의 밀도 개선
+
+### 버그 수정
+
+- `NMFNaverMapView.mapView.positionMode` 에 `disabled` 가 아닌 값 지정하면, 종료 시 지도 객체가 소멸되지 않는 현상 수정
+
 # 3.9.0
 
 Release Date: 2020-07-21
