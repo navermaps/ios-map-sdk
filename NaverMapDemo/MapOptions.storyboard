@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
         <!--MinMaxZoom-->
         <scene sceneID="boJ-P8-xuI">
             <objects>
-                <viewController title="MinMaxZoomViewController" id="74N-4v-lQG" userLabel="MinMaxZoom" customClass="MinMaxZoomViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MinMaxZoomViewController" id="74N-4v-lQG" userLabel="MinMaxZoom" customClass="MinMaxZoomViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYB-89-9e7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showZoomControls" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-oy-OcA" customClass="ZoomLevelView" customModule="SDK_Demo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-oy-OcA" customClass="ZoomLevelView" customModule="NaverMapDemo" customModuleProvider="target">
                                 <rect key="frame" x="334" y="104" width="64" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -96,7 +96,7 @@
         <!--MapExtent-->
         <scene sceneID="FO9-zv-uIp">
             <objects>
-                <viewController title="ExtentViewController" id="257-wA-ua8" userLabel="MapExtent" customClass="ExtentViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ExtentViewController" id="257-wA-ua8" userLabel="MapExtent" customClass="ExtentViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cj-FV-6Sz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
         <!--ContentPadding-->
         <scene sceneID="kW0-3o-maJ">
             <objects>
-                <viewController title="ContentPaddingViewController" id="XYM-dO-TNL" userLabel="ContentPadding" customClass="ContentPaddingViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ContentPaddingViewController" id="XYM-dO-TNL" userLabel="ContentPadding" customClass="ContentPaddingViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gn2-dc-Ppa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,17 +149,17 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDl-Sn-DyU" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="wMI-rP-UCM"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ytm-ac-UoT"/>
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nma-2I-2Lk" userLabel="LeftView">
-                                <rect key="frame" x="0.0" y="128" width="20" height="634"/>
+                                <rect key="frame" x="0.0" y="188" width="20" height="574"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -169,7 +169,7 @@
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-x8-zGc" userLabel="RightView">
-                                <rect key="frame" x="354" y="128" width="60" height="634"/>
+                                <rect key="frame" x="354" y="188" width="60" height="574"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -186,6 +186,63 @@
                                 </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="j41-zL-Zci"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwl-uP-J0O">
+                                <rect key="frame" x="0.0" y="88" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="콘텐츠 영역:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zri-GS-pyQ">
+                                        <rect key="frame" x="8" y="8" width="90" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="Ieg-WY-Mif"/>
+                                            <constraint firstAttribute="width" constant="90" id="JbL-sX-kuO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0, 0) (0, 0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-H9-wsX">
+                                        <rect key="frame" x="106" y="8" width="300" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="ilB-07-8eT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체 영역:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOb-4o-AuF">
+                                        <rect key="frame" x="8" y="43" width="90" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="7jP-g9-D9l"/>
+                                            <constraint firstAttribute="width" constant="90" id="eB4-7O-Fue"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0, 0) (0, 0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4NM-so-7y6">
+                                        <rect key="frame" x="106" y="43" width="300" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="wxO-Ft-UTz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4NM-so-7y6" firstAttribute="leading" secondItem="EOb-4o-AuF" secondAttribute="trailing" constant="8" id="2W0-3e-wIg"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUR-H9-wsX" secondAttribute="trailing" constant="8" id="8ae-PK-Svt"/>
+                                    <constraint firstItem="BUR-H9-wsX" firstAttribute="top" secondItem="qwl-uP-J0O" secondAttribute="top" constant="8" id="BIt-vh-46W"/>
+                                    <constraint firstItem="Zri-GS-pyQ" firstAttribute="top" secondItem="qwl-uP-J0O" secondAttribute="top" constant="8" id="OAY-rR-2E4"/>
+                                    <constraint firstAttribute="bottom" secondItem="4NM-so-7y6" secondAttribute="bottom" constant="8" id="WZo-cH-aGC"/>
+                                    <constraint firstItem="EOb-4o-AuF" firstAttribute="leading" secondItem="qwl-uP-J0O" secondAttribute="leading" constant="8" id="cf9-wp-KHV"/>
+                                    <constraint firstAttribute="bottom" secondItem="EOb-4o-AuF" secondAttribute="bottom" constant="8" id="hxg-g4-Gzc"/>
+                                    <constraint firstItem="Zri-GS-pyQ" firstAttribute="leading" secondItem="qwl-uP-J0O" secondAttribute="leading" constant="8" id="iEN-xa-AlJ"/>
+                                    <constraint firstAttribute="height" constant="80" id="jLL-Fs-xv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="4NM-so-7y6" secondAttribute="trailing" constant="8" id="o3X-by-eHb"/>
+                                    <constraint firstItem="BUR-H9-wsX" firstAttribute="leading" secondItem="Zri-GS-pyQ" secondAttribute="trailing" constant="8" id="zif-20-axl"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvB-QY-DdA">
@@ -211,10 +268,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="EDl-Sn-DyU" secondAttribute="trailing" id="2ab-1s-J2e"/>
+                            <constraint firstItem="3Gh-jT-mpg" firstAttribute="trailing" secondItem="EDl-Sn-DyU" secondAttribute="trailing" id="2ab-1s-J2e"/>
                             <constraint firstItem="OOX-9b-rBm" firstAttribute="leading" secondItem="3Gh-jT-mpg" secondAttribute="leading" id="2fL-ug-cq4"/>
                             <constraint firstItem="3Gh-jT-mpg" firstAttribute="trailing" secondItem="bvB-QY-DdA" secondAttribute="trailing" constant="20" id="4Ia-dI-ezO"/>
                             <constraint firstItem="ivf-x8-zGc" firstAttribute="trailing" secondItem="3Gh-jT-mpg" secondAttribute="trailing" id="7Do-vf-UKG"/>
+                            <constraint firstItem="qwl-uP-J0O" firstAttribute="top" secondItem="3Gh-jT-mpg" secondAttribute="top" id="7yg-fn-Fsf"/>
                             <constraint firstItem="nma-2I-2Lk" firstAttribute="leading" secondItem="3Gh-jT-mpg" secondAttribute="leading" id="8kt-Pj-l7J"/>
                             <constraint firstItem="ZOe-8H-L73" firstAttribute="top" secondItem="3Gh-jT-mpg" secondAttribute="top" id="A2G-GV-ezz"/>
                             <constraint firstItem="nma-2I-2Lk" firstAttribute="top" secondItem="EDl-Sn-DyU" secondAttribute="bottom" id="ELU-qe-ee6"/>
@@ -225,21 +283,25 @@
                             <constraint firstItem="ivf-x8-zGc" firstAttribute="top" secondItem="EDl-Sn-DyU" secondAttribute="bottom" id="OFc-TP-sEt"/>
                             <constraint firstItem="OOX-9b-rBm" firstAttribute="top" secondItem="ivf-x8-zGc" secondAttribute="bottom" id="PNf-xx-YGy"/>
                             <constraint firstItem="OOX-9b-rBm" firstAttribute="trailing" secondItem="3Gh-jT-mpg" secondAttribute="trailing" id="dRB-6X-UMT"/>
+                            <constraint firstItem="qwl-uP-J0O" firstAttribute="leading" secondItem="3Gh-jT-mpg" secondAttribute="leading" id="dnY-5W-MTh"/>
                             <constraint firstItem="EDl-Sn-DyU" firstAttribute="top" secondItem="3Gh-jT-mpg" secondAttribute="top" id="f3e-vl-8ak"/>
                             <constraint firstItem="OOX-9b-rBm" firstAttribute="top" secondItem="nma-2I-2Lk" secondAttribute="bottom" id="qWv-Wt-khd"/>
-                            <constraint firstItem="EDl-Sn-DyU" firstAttribute="leading" secondItem="gn2-dc-Ppa" secondAttribute="leading" id="rpB-lX-fvJ"/>
+                            <constraint firstItem="3Gh-jT-mpg" firstAttribute="trailing" secondItem="qwl-uP-J0O" secondAttribute="trailing" id="rLP-hM-k8j"/>
+                            <constraint firstItem="EDl-Sn-DyU" firstAttribute="leading" secondItem="3Gh-jT-mpg" secondAttribute="leading" id="rpB-lX-fvJ"/>
                             <constraint firstItem="ZOe-8H-L73" firstAttribute="bottom" secondItem="gn2-dc-Ppa" secondAttribute="bottom" id="vqW-6o-Y1R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Gh-jT-mpg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Content Padding" id="97q-aK-Sbr"/>
                     <connections>
+                        <outlet property="contentBoundsLabel" destination="BUR-H9-wsX" id="1Wd-eh-YJc"/>
+                        <outlet property="coveringBoundsLabel" destination="4NM-so-7y6" id="e6U-oE-7p7"/>
                         <outlet property="naverMapView" destination="ZOe-8H-L73" id="z3U-av-G6d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n12-ok-kFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-428" y="729"/>
+            <point key="canvasLocation" x="-428.98550724637687" y="728.57142857142856"/>
         </scene>
         <!--ContentPadding Navigation-->
         <scene sceneID="img-LR-JpF">
@@ -292,7 +354,7 @@
         <!--CustomControl-->
         <scene sceneID="r2B-pM-Svy">
             <objects>
-                <viewController title="CustomControlLayoutViewController" id="Oqd-FZ-E13" userLabel="CustomControl" customClass="CustomControlLayoutViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CustomControlLayoutViewController" id="Oqd-FZ-E13" userLabel="CustomControl" customClass="CustomControlLayoutViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mvT-ul-TxJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,7 +480,7 @@
         <!--ControlSettings-->
         <scene sceneID="j27-zR-gO5">
             <objects>
-                <viewController title="ControlSettingViewController" id="evK-us-CYI" userLabel="ControlSettings" customClass="ControlSettingsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ControlSettingViewController" id="evK-us-CYI" userLabel="ControlSettings" customClass="ControlSettingsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZR7-GE-aZE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +619,7 @@
         <!--GestureSettings-->
         <scene sceneID="e57-zN-6uM">
             <objects>
-                <viewController title="GestureSettingsViewController" id="RDU-FK-jqK" userLabel="GestureSettings" customClass="GestureSettingsViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GestureSettingsViewController" id="RDU-FK-jqK" userLabel="GestureSettings" customClass="GestureSettingsViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uvy-3n-hSo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

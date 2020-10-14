@@ -5,8 +5,9 @@
 ### CocoaPods 구성
 
 - CocoaPods 인스톨이 필요합니다.
-- # **<span style="color:red">대용량 파일을 받기 위해 [git-lfs](https://git-lfs.github.com) 설치가 필요합니다.</span>**
-- git-lfs를 설치하지 않으면 바이너리대신 설정파일만 받아오게 되어 [컴파일시 오류](https://github.com/navermaps/ios-map-sdk/issues/1)가 납니다. 정상적으로 다운받은 프레임워크의 용량은 대략 190MB 내외입니다.
+- 대용량 파일을 받기 위해 [git-lfs](https://git-lfs.github.com) 설치가 필요합니다.
+  - git-lfs 를 설치하지 않으면 바이너리 대신 설정 파일만 받아오게 되어 컴파일 시 오류가 납니다. git-lfs 를 통해 정상적으로 다운받은 프레임워크의 용량은 대략 190MB 내외입니다.
+  - git-lfs 설치 후 반드시 초기화 해주어야 합니다.
 
 ```
 sudo gem install cocoapods // cocoapods 설치
@@ -19,11 +20,13 @@ pod install --repo-update
 
 - 네이버 지도 SDK를 사용하기 위해서는 네이버 클라우드 플랫폼에서 클라이언트 ID를 발급받고, 발급받은 ID를 SDK에 지정해야 합니다.
 - 클라이언트 ID 발급
-  1. [네이버 클라우드 플랫폼](https://www.ncloud.com) 콘솔의 **AI·Application Service > AI·NAVER API > Application**에서 애플리케이션을 등록합니다.
-  2. **AI·Application Service > AI·NAVER API > Application**에서 등록한 애플리케이션을 선택해 Client ID값을 확인합니다.
-  3. **AI·Application Service > AI·NAVER API > Application**의 **변경** 화면에서 **Maps**가 선택되어 있는지 확인합니다.
+  1. [네이버 클라우드 플랫폼](https://www.ncloud.com)에 로그인한 후 [콘솔](https://console.ncloud.com)에 들어갑니다.
+  2. **Products & Services**에서 **AI-Application Service** 하위의 **AI·NAVER API**를 선택합니다.
+  3. **Application 등록**을 선택하고 **Maps** 하위의 **Mobile Dynamic Map**을 체크합니다.
+  4. iOS Bundle ID에 `com.naver.maps.map.demo`을 추가하고 등록합니다.
+  5. 등록한 애플리케이션의 인증 정보를 선택해 Client ID를 확인합니다.
 - 클라이언트 ID 지정
-  - `info.plist`의 `NMFClientId`에 네이버 클라우드 플랫폼에서 발급받은 클라이언트 ID를 입력합니다.
+  - `info.plist`의 `NMFClientId`에 발급받은 클라이언트 ID를 입력합니다.
 - 자세한 내용은 [시작하기](https://navermaps.github.io/ios-map-sdk/guide/1.html)를 참고하십시오.
 
 ## Reference

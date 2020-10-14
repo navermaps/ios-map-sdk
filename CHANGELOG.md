@@ -1,3 +1,20 @@
+# 3.10.0
+
+Release Date: 2020-10-14
+
+### 새로운 기능
+
+- 콘텐츠 패딩을 포함한 영역을 반환하는 `NMFMapView.coveringBounds` / `NMFMapView.coveringRegion` 추가
+
+### 개선
+
+- 성능 및 안정성 개선
+
+### 버그 수정
+
+- 카메라를 움직일 때 줌 레벨을 변경하지 않더라도 미세하게 변경되는 현상 수정
+- `isHideCollidedSymbols`가 `true`인 마커와 심벌이 겹칠 때 간혹 심벌이 나타나는 현상 수정
+
 # 3.9.1
 
 Release Date: 2020-08-21

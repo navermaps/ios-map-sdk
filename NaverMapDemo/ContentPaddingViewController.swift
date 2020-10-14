@@ -19,7 +19,10 @@ import UIKit
 import NMapsMap
 
 class ContentPaddingViewController: MapViewController {
-
+    
+    @IBOutlet weak var contentBoundsLabel: UILabel!
+    @IBOutlet weak var coveringBoundsLabel: UILabel!
+    
     let coord1 = NMGLatLng(lat: 37.5666102, lng: 126.9783881)
     let coord2 = NMGLatLng(lat: 35.1798159, lng: 129.0750222)
     var positionFlag: Bool = false
@@ -32,8 +35,10 @@ class ContentPaddingViewController: MapViewController {
         let marker2 = NMFMarker(position: coord2)
         marker2.mapView = mapView
         
-        mapView.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 100, right: 60)
+        mapView.contentInset = UIEdgeInsets(top: 100, left: 20, bottom: 100, right: 60)
         mapView.moveCamera(NMFCameraUpdate(scrollTo: coord1))
+        
+        mapView.addCameraDelegate(delegate: self)
     }
     
     // MARK: - IBAction
@@ -45,5 +50,22 @@ class ContentPaddingViewController: MapViewController {
         mapView.moveCamera(camUpdate)
         positionFlag = !positionFlag
     }
-
-}
+    
+    func updateBounds() {
+        let boundsFormat = "(%1$.4f, %2$.4f) (%3$.4f, %4$.4f)"
+        let content = mapView.contentBounds
+        contentBoundsLabel.text = String(format: boundsFormat, content.southWestLat, content.southWestLng, content.northEastLat, content.northEastLng)
+        let covering = mapView.coveringBounds
+        coveringBoundsLabel.text = String(format: boundsFormat, covering.southWestLat, covering.southWestLng, covering.northEastLat, covering.northEastLng)
+    }
+ }
+ 
+ extension ContentPaddingViewController: NMFMapViewCameraDelegate {
+    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
+        updateBounds()
+    }
+    
+    func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
+       updateBounds()
+    }
+ }
