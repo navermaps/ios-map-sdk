@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.9.1%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps%2Enaver%2Ecom%2Fios%2Dsdk%2Fapi%2F3%2E10%2E0%2Fdocsets%2FNaverMap%2Exml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -932,38 +932,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">backgroundImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)NMFMapView(py)contentBounds"></a>
-                    <a name="//apple_ref/objc/Property/contentBounds" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFMapView(py)contentBounds">contentBounds</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>지도 콘텐츠 영역에 대한 <code><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">contentBounds</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">contentBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2193,6 +2161,71 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFMapView(py)cameraPosition"></a>
+                    <a name="//apple_ref/objc/Property/cameraPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)cameraPosition">cameraPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 콘텐츠 영역 중심에 대한 카메라 위치.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)contentBounds"></a>
+                    <a name="//apple_ref/objc/Property/contentBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)contentBounds">contentBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 콘텐츠 영역에 대한 <code><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></code>.  콘텐츠 패딩이 모두 <code>0</code>이면 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)coveringBounds">coveringBounds</a></code>와 동일한 영역이,
+콘텐츠 패딩이 지정되어 있으면 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)coveringBounds">coveringBounds</a></code>에서 콘텐츠 패딩을 제외한 영역이 반환됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">contentBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">contentBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFMapView(py)contentRegion"></a>
                     <a name="//apple_ref/objc/Property/contentRegion" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFMapView(py)contentRegion">contentRegion</a>
@@ -2203,7 +2236,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>지도의 콘텐츠 영역에 대한 폴리곤 객체.</p>
+                        <p>지도의 콘텐츠 영역에 대한 폴리곤 객체.  콘텐츠 패딩이 모두 <code>0</code>이면 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)coveringRegion">coveringRegion</a></code>과 동일한 폴리곤이,
+콘텐츠 패딩이 지정되어 있으면 <code><a href="../Classes/NMFMapView.html#/c:objc(cs)NMFMapView(py)coveringRegion">coveringRegion</a></code>에서 콘텐츠 패딩을 제외한 폴리곤이 반환됩니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -2225,6 +2259,70 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFMapView(py)coveringBounds"></a>
+                    <a name="//apple_ref/objc/Property/coveringBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)coveringBounds">coveringBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>콘텐츠 패딩을 포함한 지도의 뷰 전체 영역에 대한 <code><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">coveringBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">coveringBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)coveringRegion"></a>
+                    <a name="//apple_ref/objc/Property/coveringRegion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)coveringRegion">coveringRegion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>콘텐츠 패딩을 포함한 지도의 뷰 전체 영역에 대한 폴리곤 객체.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMGPolygon.html">NMGPolygon</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">coveringRegion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">coveringRegion</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGPolygon.html">NMGPolygon</a></span><span class="o">&lt;</span><span class="kt">AnyObject</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFMapView(im)getCoveringTileIds"></a>
                     <a name="//apple_ref/objc/Method/-getCoveringTileIds" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFMapView(im)getCoveringTileIds">-getCoveringTileIds</a>
@@ -2235,7 +2333,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>현재 화면을 커버하는 타일 ID의 목록을 반환합니다.</p>
+                        <p>콘텐츠 패딩을 포함한 지도의 뷰 전체를 완전히 덮는 타일 ID의 목록을 반환합니다.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     NMFTileId
@@ -2258,7 +2356,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>타일 ID의 목록</p>
+                        <p>타일 ID의 목록.</p>
                       </div>
                     </section>
                   </div>
@@ -2276,7 +2374,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>현재 화면을 커버하는 <code>zoom</code> 레벨 타일 ID의 목록을 반환합니다.</p>
+                        <p>콘텐츠 패딩을 포함한 지도의 뷰 전체를 완전히 덮는 <code>zoom</code> 레벨 타일 ID의 목록을 반환합니다.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     NMFTileId
@@ -2318,39 +2416,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>타일 ID의 목록</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)NMFMapView(py)cameraPosition"></a>
-                    <a name="//apple_ref/objc/Property/cameraPosition" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFMapView(py)cameraPosition">cameraPosition</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>지도의 콘텐츠 영역 중심에 대한 카메라 위치.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cameraPosition</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
+                        <p>타일 ID의 목록.</p>
                       </div>
                     </section>
                   </div>
@@ -2835,7 +2901,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
     </section>
   </body>
 </div>

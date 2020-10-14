@@ -2,14 +2,14 @@
   "warnings": [
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFCameraUpdateParams.h",
-      "line": 25,
+      "line": 26,
       "symbol": "NMFCameraUpdateParams.isScrolled",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFCameraUpdateParams.h",
-      "line": 32,
+      "line": 33,
       "symbol": "NMFCameraUpdateParams.-cameraPositionWithMap:pivot:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -23,7 +23,7 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFIndoorRegion.h",
-      "line": 18,
+      "line": 19,
       "symbol": "NMFIndoorRegion.+indoorRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -37,14 +37,14 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFIndoorZone.h",
-      "line": 30,
+      "line": 31,
       "symbol": "NMFIndoorZone.hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFIndoorZone.h",
-      "line": 32,
+      "line": 33,
       "symbol": "NMFIndoorZone.+indoorZone:defaultLevelIndex:Levels:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -58,161 +58,182 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFPathColor.h",
-      "line": 45,
+      "line": 47,
       "symbol": "NMFPathColor.+pathColorWithColor:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFPathColor.h",
-      "line": 47,
+      "line": 49,
       "symbol": "NMFPathColor.+pathColorWithColor:outlineColor:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFPathColor.h",
-      "line": 50,
+      "line": 52,
       "symbol": "NMFPathColor.+pathColorWithColor:outlineColor:passedColor:passedOutlineColor:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFRendererSelection.h",
+      "line": 5,
+      "symbol": "NMFRendererType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFRendererSelection.h",
+      "line": 5,
+      "symbol": "NMFRendererType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMFRendererSelection.h",
+      "line": 11,
+      "symbol": "NMFRendererSelection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 19,
+      "line": 20,
       "symbol": "NMGBounds.min",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 20,
+      "line": 21,
       "symbol": "NMGBounds.max",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 22,
+      "line": 23,
       "symbol": "NMGBounds.center",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 23,
+      "line": 24,
       "symbol": "NMGBounds.width",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 24,
+      "line": 25,
       "symbol": "NMGBounds.height",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 26,
+      "line": 27,
       "symbol": "NMGBounds.minX",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 27,
+      "line": 28,
       "symbol": "NMGBounds.minY",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 28,
+      "line": 29,
       "symbol": "NMGBounds.maxX",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 29,
+      "line": 30,
       "symbol": "NMGBounds.maxY",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 31,
+      "line": 32,
       "symbol": "NMGBounds.+bounds",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 32,
+      "line": 33,
       "symbol": "NMGBounds.+boundsWithMinX:minY:maxX:maxY:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 33,
+      "line": 34,
       "symbol": "NMGBounds.+boundsWithMinX:minY:width:height:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 34,
+      "line": 35,
       "symbol": "NMGBounds.+boundsWithMin:max:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 36,
+      "line": 37,
       "symbol": "NMGBounds.-hasPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 37,
+      "line": 38,
       "symbol": "NMGBounds.-hasBounds:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 38,
+      "line": 39,
       "symbol": "NMGBounds.-isIntersect:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 39,
+      "line": 40,
       "symbol": "NMGBounds.-intersectionWithBounds:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 40,
+      "line": 41,
       "symbol": "NMGBounds.-expandToPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 41,
+      "line": 42,
       "symbol": "NMGBounds.-unionBounds:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGBounds.h",
-      "line": 45,
+      "line": 46,
       "symbol": "NMGBoundsMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -254,315 +275,315 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 17,
+      "line": 18,
       "symbol": "NMGGeometry",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 27,
+      "line": 28,
       "symbol": "NMGPointable",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 36,
+      "line": 37,
       "symbol": "NMGMultiPointable",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGGeometry.h",
-      "line": 56,
+      "line": 57,
       "symbol": "NMGBoundable",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLng.h",
-      "line": 129,
+      "line": 130,
       "symbol": "NMGLatLngMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 71,
+      "line": 72,
       "symbol": "NMGLatLngBounds.+bounds",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 72,
+      "line": 73,
       "symbol": "NMGLatLngBounds.+latLngBoundsSouthWest:northEast:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 73,
+      "line": 74,
       "symbol": "NMGLatLngBounds.+latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 126,
+      "line": 127,
       "symbol": "NMGLatLngBoundsMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 35,
+      "line": 36,
       "symbol": "NMGLineString.+lineString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 36,
+      "line": 37,
       "symbol": "NMGLineString.+lineStringWithPoints:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 37,
+      "line": 38,
       "symbol": "NMGLineString.-initWithPoints:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 39,
+      "line": 40,
       "symbol": "NMGLineString.-pointAtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 40,
+      "line": 41,
       "symbol": "NMGLineString.-segmentAtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 42,
+      "line": 43,
       "symbol": "NMGLineString.-addPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 43,
+      "line": 44,
       "symbol": "NMGLineString.-insertPoint:atIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 44,
+      "line": 45,
       "symbol": "NMGLineString.-removePointAtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 45,
+      "line": 46,
       "symbol": "NMGLineString.-removePoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLineString.h",
-      "line": 47,
+      "line": 48,
       "symbol": "NMGLineString.-convertRing",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 18,
+      "line": 19,
       "symbol": "NMGMultiPolygon.polygons",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 20,
+      "line": 21,
       "symbol": "NMGMultiPolygon.+multiPolygon",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 21,
+      "line": 22,
       "symbol": "NMGMultiPolygon.+multiPolygonWithPolygons:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 23,
+      "line": 24,
       "symbol": "NMGMultiPolygon.-initWithPolygons:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 24,
+      "line": 25,
       "symbol": "NMGMultiPolygon.-addPolygon:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 25,
+      "line": 26,
       "symbol": "NMGMultiPolygon.-insertPolygon:AtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGMultiPolygon.h",
-      "line": 26,
+      "line": 27,
       "symbol": "NMGMultiPolygon.-removePolygonAtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 16,
+      "line": 17,
       "symbol": "NMGPoint.x",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 17,
+      "line": 18,
       "symbol": "NMGPoint.y",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 19,
+      "line": 20,
       "symbol": "NMGPoint.+point",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 20,
+      "line": 21,
       "symbol": "NMGPoint.+pointWithX:y:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 22,
+      "line": 23,
       "symbol": "NMGPoint.-initWithX:y:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPoint.h",
-      "line": 34,
+      "line": 35,
       "symbol": "NMGPointMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 33,
+      "line": 34,
       "symbol": "NMGPolygon.+polygon",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 34,
+      "line": 35,
       "symbol": "NMGPolygon.+polygonWithRing:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 35,
+      "line": 36,
       "symbol": "NMGPolygon.+polygonWithRing:interiorRings:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 37,
+      "line": 38,
       "symbol": "NMGPolygon.-initWithRing:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 38,
+      "line": 39,
       "symbol": "NMGPolygon.-initWithRing:interiorRings:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 39,
+      "line": 40,
       "symbol": "NMGPolygon.-addInteriorRing:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGPolygon.h",
-      "line": 40,
+      "line": 41,
       "symbol": "NMGPolygon.-removeInteriorRingAtIndex:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGSegment.h",
-      "line": 27,
+      "line": 28,
       "symbol": "NMGSegment.+segment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGSegment.h",
-      "line": 28,
+      "line": 29,
       "symbol": "NMGSegment.+segmentFrom:to:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGSegment.h",
-      "line": 29,
+      "line": 30,
       "symbol": "NMGSegment.-initWithFrom:to:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGTm128.h",
-      "line": 91,
+      "line": 92,
       "symbol": "NMGTm128Make",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGUtmk.h",
-      "line": 91,
+      "line": 92,
       "symbol": "NMGUtmkMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGWebMercatorCoord.h",
-      "line": 109,
+      "line": 110,
       "symbol": "NMGWebMercatorCoordMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -583,14 +604,14 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/src/NMFLocationManager.h",
-      "line": 7,
+      "line": 9,
       "symbol": "NMFLocationManager",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/src/NMFLocationManager.h",
-      "line": 29,
+      "line": 31,
       "symbol": "NMFLocationManagerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
@@ -604,7 +625,7 @@
     },
     {
       "file": "/Users/user/Documents/vectormap_app/ios/src/NMFOverlayImage.h",
-      "line": 93,
+      "line": 95,
       "symbol": "NMFOverlayImage.-invalidate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
