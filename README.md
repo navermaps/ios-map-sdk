@@ -2,19 +2,26 @@
 
 ## How To Run
 
-### CocoaPods 구성
+### SDK 최신 버전(3.10.0) 업데이트
 
-- CocoaPods 인스톨이 필요합니다.
-- 대용량 파일을 받기 위해 [git-lfs](https://git-lfs.github.com) 설치가 필요합니다.
-  - git-lfs 를 설치하지 않으면 바이너리 대신 설정 파일만 받아오게 되어 컴파일 시 오류가 납니다. git-lfs 를 통해 정상적으로 다운받은 프레임워크의 용량은 대략 190MB 내외입니다.
-  - git-lfs 설치 후 반드시 초기화 해주어야 합니다.
-
+1. CocoaPods 인스톨이 필요합니다.
 ```
-sudo gem install cocoapods // cocoapods 설치
-brew install git-lfs       // homebrew 사용시 git-lfs 설치
-git-lfs install            // git-lfs 이니셜라이즈
+sudo gem install cocoapods
+```
+2. **대용량 파일을 받기 위해 [git-lfs](https://git-lfs.github.com) 설치가 필요합니다.**
+   - git-lfs 를 설치하지 않으면 바이너리 대신 설정 파일만 받아오게 되어 컴파일 시 오류가 납니다. git-lfs 를 통해 정상적으로 다운받은 프레임워크의 용량은 대략 190MB 내외입니다.
+```
+brew install git-lfs
+```
+3. **git-lfs 설치 후 반드시 초기화 해주어야 합니다.**
+```
+git-lfs install
+```
+4. SDK 를 최신 버전으로 업데이트 합니다.
+```
 pod install --repo-update
 ```
+  - 만약 최신 버전으로 업데이트가 안되면, Podfile 을 열어서 버전을 명시해 주고(`pod 'NMapsMap','3.10.0'`), 위의 명령을 다시 실행합니다.
 
 ### 클라이언트 ID 지정
 
