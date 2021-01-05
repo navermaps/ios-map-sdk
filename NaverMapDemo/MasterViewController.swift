@@ -1,5 +1,5 @@
  /*
-  Copyright 2018-2020 NAVER Corp.
+  Copyright 2018-2021 NAVER Corp.
   
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -61,7 +61,7 @@ class MasterViewController: UITableViewController {
         
         alertController.addAction(UIAlertAction(title: "버전 정보", style: .default, handler: { [weak self] (action) in
             var versionString = "Version \(Bundle.naverMapFramework().infoDictionary?["CFBundleShortVersionString"] as! String)\n\n"
-            versionString += "Copyright © 2018-2019 NAVER Corp.\nAll rights reserved."
+            versionString += "Copyright © 2018-2021 NAVER Corp.\nAll rights reserved."
             let alert = UIAlertController(title: "NAVER Map iOS SDK", message: versionString, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
             let paragraphStyle = NSMutableParagraphStyle()
