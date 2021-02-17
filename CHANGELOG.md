@@ -1,3 +1,20 @@
+# 3.11.0
+
+Release Date: 2021-02-17
+
+### 새로운 기능
+
+- 마커 캡션이 `isHideCollidedCaptions`이 `true`인 다른 마커와 겹치더라도 항상 노출되도록 하는 옵션 추가
+  - `NMFMarker.isForceShowCaption`
+
+### 개선
+
+- 심벌 겹침 처리 로직 개선
+
+### 버그 수정
+
+- `NMFMapView.positionMode` 변경 시 서브 아이콘 사라지는 현상 수정
+
 # 3.10.2
 
 Release Date: 2021-01-05

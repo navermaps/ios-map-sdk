@@ -104,6 +104,7 @@ class OverlayCollisionViewController: MapViewController {
     ])
     var markers: [NMFMarker] = []
     var forceShowIcon: Bool = false
+    var forceShowCaption: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -143,6 +144,7 @@ class OverlayCollisionViewController: MapViewController {
         marker.zIndex = important ? 1 : 0
         marker.tag = UInt(truncating: NSNumber(value: important))
         marker.isForceShowIcon = important && forceShowIcon
+        marker.isForceShowCaption = important && forceShowCaption
     }
     
     // MARK: - IBAction
@@ -163,11 +165,18 @@ class OverlayCollisionViewController: MapViewController {
             marker.isHideCollidedCaptions = sender.isOn
         }
     }
-
-    @IBAction func respondToForceShow(_ sender: UISwitch) {
+    
+    @IBAction func respondToForceShowIcon(_ sender: UISwitch) {
         for marker in markers {
             let important = Bool(truncating: marker.tag as NSNumber)
             marker.isForceShowIcon = important && sender.isOn
+        }
+    }
+    
+    @IBAction func respondToForceShowCaption(_ sender: UISwitch) {
+        for marker in markers {
+            let important = Bool(truncating: marker.tag as NSNumber)
+            marker.isForceShowCaption = important && sender.isOn
         }
     }
     
