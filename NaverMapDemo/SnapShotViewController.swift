@@ -20,16 +20,16 @@ import NMapsMap
 class SnapShotViewController: MapViewController {
     
     @IBOutlet weak var snapShotView: UIImageView!
+    @IBOutlet weak var showControls: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     // MARK: - IBActions
     
     @IBAction func respondToSnapshot(_ sender: UIButton) {
-        naverMapView.takeSnapShot { [weak self] (image) in
+        naverMapView.takeSnapshot(withShowControls: self.showControls.isOn) {[weak self] (image) in
             DispatchQueue.main.async {
                 self?.snapShotView.image = image
             }

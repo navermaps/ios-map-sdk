@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +28,7 @@
         <!--LocationTracking-->
         <scene sceneID="uKF-eJ-vqe">
             <objects>
-                <viewController title="LocationTrackingViewController" id="Tmt-RU-rna" userLabel="LocationTracking" customClass="LocationTrackingViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LocationTrackingViewController" id="Tmt-RU-rna" userLabel="LocationTracking" customClass="LocationTrackingViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tv4-8z-dW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,6 +54,7 @@
                                 </connections>
                             </switch>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vMk-Km-itJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -63,7 +65,6 @@
                             <constraint firstItem="Ugd-DB-iLH" firstAttribute="bottom" secondItem="tv4-8z-dW2" secondAttribute="bottom" id="jce-Kh-FYF"/>
                             <constraint firstItem="vMk-Km-itJ" firstAttribute="bottom" secondItem="8pq-jm-sg7" secondAttribute="bottom" constant="30" id="wTA-xZ-F3S"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vMk-Km-itJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Location Tracking" id="rBf-OK-M8Y">
                         <barButtonItem key="rightBarButtonItem" title="None" id="uAa-Mu-c0e">
@@ -101,13 +102,30 @@
         <!--SnapShot-->
         <scene sceneID="0sB-oa-Wow">
             <objects>
-                <viewController title="SnapShotViewController" id="OAC-z8-8CX" userLabel="SnapShot" customClass="SnapShotViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SnapShotViewController" id="OAC-z8-8CX" userLabel="SnapShot" customClass="SnapShotViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4et-0g-qH6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJn-Bj-MgO" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-iY-ASx">
+                                        <rect key="frame" x="8" y="10" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지도 컨트롤 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBL-ij-PEt">
+                                        <rect key="frame" x="70" y="15" width="245" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-e7-qXs" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="311.5"/>
+                                <rect key="frame" x="0.0" y="380.5" width="375" height="286.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -117,11 +135,8 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showIndoorLevelPicker" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-q2-h8A">
-                                <rect key="frame" x="0.0" y="355.5" width="375" height="311.5"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U7-pM-GXD">
-                                <rect key="frame" x="321" y="301.5" width="44" height="44"/>
+                                <rect key="frame" x="321" y="613" width="44" height="44"/>
                                 <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="DbP-U0-YkW"/>
@@ -140,32 +155,40 @@
                                     <action selector="respondToSnapshot:" destination="OAC-z8-8CX" eventType="touchUpInside" id="DIL-Qp-spI"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-q2-h8A">
+                                <rect key="frame" x="0.0" y="94" width="375" height="286.5"/>
+                            </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="A9y-Ut-iLb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="bottom" secondItem="A9y-Ut-iLb" secondAttribute="centerY" id="0U5-FR-Yy9"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="4CK-bu-yqR"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="trailing" secondItem="5U7-pM-GXD" secondAttribute="trailing" constant="10" id="DEe-Q9-O99"/>
+                            <constraint firstItem="ZJn-Bj-MgO" firstAttribute="bottom" secondItem="Nou-q2-h8A" secondAttribute="top" id="4cW-eP-9Eh"/>
+                            <constraint firstItem="ZJn-Bj-MgO" firstAttribute="top" secondItem="A9y-Ut-iLb" secondAttribute="top" id="5pe-ju-jvR"/>
+                            <constraint firstItem="eqm-e7-qXs" firstAttribute="top" secondItem="Nou-q2-h8A" secondAttribute="bottom" id="CYz-4B-Y1k"/>
+                            <constraint firstItem="ZJn-Bj-MgO" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="Flt-AK-I2Q"/>
                             <constraint firstItem="Nou-q2-h8A" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="J1l-pP-bSn"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="bottom" secondItem="5U7-pM-GXD" secondAttribute="bottom" constant="10" id="JKb-Uz-tyM"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="trailing" secondItem="A9y-Ut-iLb" secondAttribute="trailing" id="UI2-IV-aJn"/>
-                            <constraint firstItem="Nou-q2-h8A" firstAttribute="top" secondItem="eqm-e7-qXs" secondAttribute="bottom" id="UQs-mG-n8V"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="top" secondItem="A9y-Ut-iLb" secondAttribute="top" id="avD-9i-tgB"/>
+                            <constraint firstAttribute="bottom" secondItem="5U7-pM-GXD" secondAttribute="bottom" constant="10" id="JKb-Uz-tyM"/>
+                            <constraint firstItem="Nou-q2-h8A" firstAttribute="top" secondItem="A9y-Ut-iLb" secondAttribute="top" constant="50" id="QB7-rk-0TD"/>
+                            <constraint firstItem="A9y-Ut-iLb" firstAttribute="trailing" secondItem="eqm-e7-qXs" secondAttribute="trailing" id="Qpt-fV-xhP"/>
+                            <constraint firstItem="eqm-e7-qXs" firstAttribute="height" secondItem="Nou-q2-h8A" secondAttribute="height" id="a9a-LV-IqW"/>
+                            <constraint firstItem="5U7-pM-GXD" firstAttribute="trailing" secondItem="eqm-e7-qXs" secondAttribute="trailing" constant="-10" id="iIM-Z4-QHC"/>
+                            <constraint firstItem="ZJn-Bj-MgO" firstAttribute="trailing" secondItem="A9y-Ut-iLb" secondAttribute="trailing" id="qH5-ll-Wsl"/>
                             <constraint firstItem="Nou-q2-h8A" firstAttribute="trailing" secondItem="A9y-Ut-iLb" secondAttribute="trailing" id="smI-W1-es7"/>
-                            <constraint firstItem="Nou-q2-h8A" firstAttribute="height" secondItem="eqm-e7-qXs" secondAttribute="height" id="yhR-fJ-8X8"/>
+                            <constraint firstAttribute="bottom" secondItem="eqm-e7-qXs" secondAttribute="bottom" id="v7j-pW-Wlj"/>
+                            <constraint firstItem="eqm-e7-qXs" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="zNn-Pa-9hN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="A9y-Ut-iLb"/>
                     </view>
                     <navigationItem key="navigationItem" title="SnapShot" id="btI-Cq-leb"/>
                     <connections>
                         <outlet property="naverMapView" destination="eqm-e7-qXs" id="SJw-VN-K5i"/>
+                        <outlet property="showControls" destination="0wn-iY-ASx" id="nJh-OK-E4P"/>
                         <outlet property="snapShotView" destination="Nou-q2-h8A" id="GL7-fE-dS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGG-IF-HbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="4"/>
+            <point key="canvasLocation" x="1152.8" y="3.1484257871064472"/>
         </scene>
         <!--PickAll Navigation-->
         <scene sceneID="rGD-FW-pdE">
@@ -186,7 +209,7 @@
         <!--PickAll-->
         <scene sceneID="bwe-yV-swt">
             <objects>
-                <viewController title="PickAllViewController" id="L9z-Py-Sla" userLabel="PickAll" customClass="PickAllViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PickAllViewController" id="L9z-Py-Sla" userLabel="PickAll" customClass="PickAllViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvh-6q-b5E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +232,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ts2-h8-XDL"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -223,7 +247,6 @@
                             <constraint firstItem="ppm-t3-oW9" firstAttribute="bottom" secondItem="ZlC-Kh-avB" secondAttribute="top" id="l6b-xL-WkC"/>
                             <constraint firstItem="ppm-t3-oW9" firstAttribute="leading" secondItem="ts2-h8-XDL" secondAttribute="leading" id="xVG-HU-82h"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ts2-h8-XDL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pick All Overlays &amp; Symbols" id="in8-1X-LOe"/>
                     <connections>
@@ -254,7 +277,7 @@
         <!--TileCoverHelper-->
         <scene sceneID="l3D-2l-9EV">
             <objects>
-                <viewController title="PickAllViewController" id="Hyu-86-MdC" userLabel="TileCoverHelper" customClass="TileCoverHelperViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PickAllViewController" id="Hyu-86-MdC" userLabel="TileCoverHelper" customClass="TileCoverHelperViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1x-pO-KAf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,6 +294,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="v6N-On-PYu"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -279,7 +303,6 @@
                             <constraint firstItem="QCU-QV-Uzj" firstAttribute="bottom" secondItem="v6N-On-PYu" secondAttribute="bottom" id="aUc-xF-kbM"/>
                             <constraint firstItem="QCU-QV-Uzj" firstAttribute="leading" secondItem="v6N-On-PYu" secondAttribute="leading" id="myM-Ud-n0P"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="v6N-On-PYu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tile Cover Helper" id="MwR-ke-Auc"/>
                     <connections>
@@ -309,7 +332,7 @@
         <!--Projection-->
         <scene sceneID="OlU-Hh-R6y">
             <objects>
-                <viewController title="PickAllViewController" id="x6e-Sy-4Re" userLabel="Projection" customClass="ProjectionViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PickAllViewController" id="x6e-Sy-4Re" userLabel="Projection" customClass="ProjectionViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEb-zN-mh8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,6 +366,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="UG9-X3-xS7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -355,7 +379,6 @@
                             <constraint firstItem="Hhz-CA-d3I" firstAttribute="top" secondItem="UG9-X3-xS7" secondAttribute="top" id="k3e-qR-oaI"/>
                             <constraint firstItem="Hhz-CA-d3I" firstAttribute="bottom" secondItem="UG9-X3-xS7" secondAttribute="bottom" id="m08-aq-WQD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="UG9-X3-xS7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Projection" id="KzZ-ad-4LR"/>
                     <connections>
@@ -372,5 +395,8 @@
     <resources>
         <image name="ic_photo_camera_white" width="24" height="24"/>
         <image name="pointer" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

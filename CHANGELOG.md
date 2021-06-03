@@ -1,3 +1,26 @@
+# 3.12.0
+
+Release Date: 2021-06-02
+
+### 새로운 기능
+
+- 스냅숏 촬영시 지도 컨트롤을 제외시키는 옵션 추가
+  - `NMFNaverMapView.takeSnapshotWithShowControls:complete`
+
+### 개선
+
+- 카메라의 화각 상향
+- 카메라의 최대 틸트 63도로 상향
+  - `NMF_MAXIMUM_TILT`
+
+### 버그 수정
+
+- `symbolScale` 및 / `symbolPerspectiveRatio` 변경시 심벌이 즉시 재배치되지 않는 현상 수정
+- 도로명 심벌이 카메라 이동시마다 좌우로 반복해 반전되는 현상 수정
+- `NMFLocationOverlay.subIcon` 지정 후 `NMFMapView.positionMode` 변경 시 서브 아이콘이 사라지는 현상 수정
+- 내비 지도에서 일부 심벌이 나타나지 않는 현상 수정
+- 카메라 애니매이션 중 탭해서 멈추는 경우 `NMFMapViewCameraDelegate.mapViewCameraIdle` 호출 안되는 현상 수정
+
 # 3.11.0
 
 Release Date: 2021-02-17

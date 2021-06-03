@@ -24,6 +24,21 @@ class IndoorMapViewController: MapViewController {
         super.viewDidLoad()
 
         mapView.isIndoorMapEnabled = true
+        mapView.addIndoorSelectionDelegate(delegate: self)
         mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(NMGLatLng(lat: 37.5116620, lng: 127.0594274), zoom: 16)))
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        mapView.removeIndoorSelectionDelegate(delegate: self)
+    }
+}
+
+ extension IndoorMapViewController: NMFIndoorSelectionDelegate {
+    func indoorSelectionDidChanged(_ indoorSelection: NMFIndoorSelection?) {
+        if let selection = indoorSelection, let name = indoorSelection?.level.name {
+            print("index: \(selection.levelIndex), level name: \(name)")
+        }
     }
 }

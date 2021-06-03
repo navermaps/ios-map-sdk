@@ -21,10 +21,20 @@ class LocationTrackingViewController: MapViewController {
     
     @IBOutlet weak var selectButton: UIBarButtonItem!
 
+    private let locationManager = NMFLocationManager.sharedInstance()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        locationManager?.add(self)
+
         naverMapView.addObserver(self, forKeyPath: "positionMode", options: [.new, .old, .prior], context: nil)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        locationManager?.remove(self)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -89,5 +99,8 @@ class LocationTrackingViewController: MapViewController {
     @IBAction func respondToShowSwitch(_ sender: UISwitch) {
         naverMapView.showLocationButton = sender.isOn
     }
+}
+
+extension LocationTrackingViewController: NMFLocationManagerDelegate {
 
 }

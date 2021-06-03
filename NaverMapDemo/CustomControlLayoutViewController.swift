@@ -28,8 +28,13 @@ class CustomControlLayoutViewController: MapViewController {
     @IBOutlet weak var scaleViewLeftAlignConstraint: NSLayoutConstraint!
     @IBOutlet weak var scaleViewRightAlignConstraint: NSLayoutConstraint!
 
+    private let locationManager = NMFLocationManager.sharedInstance()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        locationManager?.add(self)
+
         compassView.mapView = mapView
         locationButton.mapView = mapView
         scaleView.mapView = mapView
@@ -37,6 +42,12 @@ class CustomControlLayoutViewController: MapViewController {
         indoorLevelPickerView.mapView = mapView
         mapView.isIndoorMapEnabled = true
         mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(NMGLatLng(lat: 37.5116620, lng: 127.0594274), zoom: 16)))
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        locationManager?.remove(self)
     }
     
     @IBAction func changeLayout(_ sender: UIButton) {
@@ -51,4 +62,8 @@ class CustomControlLayoutViewController: MapViewController {
             scaleViewRightAlignConstraint.isActive = true
         }
     }
+}
+
+extension CustomControlLayoutViewController: NMFLocationManagerDelegate {
+
 }
