@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.11.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.12.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -147,6 +147,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFIndoorSelectionDelegate.html">NMFIndoorSelectionDelegate</a>
               </li>
             </ul>
           </li>
@@ -359,6 +362,18 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAXIMUM_TILT">NMF_MAXIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAX_ZOOM">NMF_MAX_ZOOM</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MINIMUM_TILT">NMF_MINIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MIN_ZOOM">NMF_MIN_ZOOM</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFMultipartPath.h@NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX">NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX</a>
@@ -753,7 +768,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>현재 지도의 스냅숏을 <code>UIImage</code>로 촬영합니다.</p>
+                        <p>현재 지도의 스냅숏을 촬영합니다. 스냅숏이 촬영되면 <code>complete</code> 가 호출됩니다.
+<code>takeSnapShot:YES complete:complete</code> 와 동일합니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -773,6 +789,71 @@
                         <h4>Parameters</h4>
                         <table class="graybox">
                           <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>지도 스냅숏이 촬영되면 실행되는 블록 메서드.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFNaverMapView(im)takeSnapshotWithShowControls:complete:"></a>
+                    <a name="//apple_ref/objc/Method/-takeSnapshotWithShowControls:complete:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFNaverMapView(im)takeSnapshotWithShowControls:complete:">-takeSnapshotWithShowControls:complete:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>컨트롤을 포함한 현재 지도의 스냅숏을 촬영합니다. 스냅숏이 촬영되면 <code>complete</code> 가 호출됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">takeSnapshotWithShowControls</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">showControls</span>
+                            <span class="nf">complete</span><span class="p">:</span>
+                                <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">complete</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">takeSnapshot</span><span class="p">(</span><span class="n">withShowControls</span> <span class="nv">showControls</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIImage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>showControls</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>컨트롤 노출 여부. 노출할 경우 <code>YES</code>, 그렇지 않을 경우 <code>NO</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
                             <tr>
                               <td>
                                 <code>

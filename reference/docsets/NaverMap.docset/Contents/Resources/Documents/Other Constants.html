@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.11.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.12.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -147,6 +147,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFIndoorSelectionDelegate.html">NMFIndoorSelectionDelegate</a>
               </li>
             </ul>
           </li>
@@ -361,6 +364,18 @@
                 <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAXIMUM_TILT">NMF_MAXIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAX_ZOOM">NMF_MAX_ZOOM</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MINIMUM_TILT">NMF_MINIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MIN_ZOOM">NMF_MIN_ZOOM</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFMultipartPath.h@NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX">NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX</a>
               </li>
               <li class="nav-group-task">
@@ -483,6 +498,134 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">NMF_ARROWHEAD_PATH_OVERLAY_GLOBAL_Z_INDEX</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:NMFCameraCommon.h@NMF_MIN_ZOOM"></a>
+                    <a name="//apple_ref/objc/Constant/NMF_MIN_ZOOM" class="dashAnchor"></a>
+                    <a class="token" href="#/c:NMFCameraCommon.h@NMF_MIN_ZOOM">NMF_MIN_ZOOM</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도에서 표현할 수 있는 최소 줌 레벨.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">NMF_MIN_ZOOM</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">NMF_MIN_ZOOM</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:NMFCameraCommon.h@NMF_MAX_ZOOM"></a>
+                    <a name="//apple_ref/objc/Constant/NMF_MAX_ZOOM" class="dashAnchor"></a>
+                    <a class="token" href="#/c:NMFCameraCommon.h@NMF_MAX_ZOOM">NMF_MAX_ZOOM</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도에서 표현할 수 있는 최대 줌 레벨.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">NMF_MAX_ZOOM</span> <span class="o">=</span> <span class="mi">21</span><span class="p">.</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">NMF_MAX_ZOOM</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:NMFCameraCommon.h@NMF_MINIMUM_TILT"></a>
+                    <a name="//apple_ref/objc/Constant/NMF_MINIMUM_TILT" class="dashAnchor"></a>
+                    <a class="token" href="#/c:NMFCameraCommon.h@NMF_MINIMUM_TILT">NMF_MINIMUM_TILT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도에서 표현할 수 있는 최소 기울기 각도.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">NMF_MINIMUM_TILT</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">NMF_MINIMUM_TILT</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:NMFCameraCommon.h@NMF_MAXIMUM_TILT"></a>
+                    <a name="//apple_ref/objc/Constant/NMF_MAXIMUM_TILT" class="dashAnchor"></a>
+                    <a class="token" href="#/c:NMFCameraCommon.h@NMF_MAXIMUM_TILT">NMF_MAXIMUM_TILT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도에서 표현할 수 있는 최대 기울기 각도.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">NMF_MAXIMUM_TILT</span> <span class="o">=</span> <span class="mi">63</span><span class="p">.</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">NMF_MAXIMUM_TILT</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
