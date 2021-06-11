@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,7 +28,6 @@
 		438AA5F2213D416B004D1053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438AA5F1213D416B004D1053 /* Assets.xcassets */; };
 		438AA5F5213D416B004D1053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438AA5F3213D416B004D1053 /* LaunchScreen.storyboard */; };
 		438AA601213D41A5004D1053 /* NMapsMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438AA600213D41A5004D1053 /* NMapsMap.framework */; };
-		438AA602213D41A5004D1053 /* NMapsMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438AA600213D41A5004D1053 /* NMapsMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		438AA613213D4D8C004D1053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AA612213D4D8C004D1053 /* MapViewController.swift */; };
 		438AA615213D4DAB004D1053 /* Basic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438AA614213D4DAB004D1053 /* Basic.storyboard */; };
 		4390A88421551DC90008CDC8 /* MinMaxZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390A88221551DC90008CDC8 /* MinMaxZoomViewController.swift */; };
@@ -61,6 +60,7 @@
 		43F5EED42161AE7E00244E08 /* PickAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5EED32161AE7E00244E08 /* PickAllViewController.swift */; };
 		43F5EEE02161E3F600244E08 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F5EEDF2161E3F600244E08 /* Misc.storyboard */; };
 		43F9639B2199792E009DAF98 /* LiteModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F9639A2199792E009DAF98 /* LiteModeViewController.swift */; };
+		ACA3B2BAC397016908649B03 /* Pods_NaverMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B935CF47DD870CD5A92CF673 /* Pods_NaverMapDemo.framework */; };
 		CE12305C21F5C3E100A9B9FC /* GlobalZIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12305B21F5C3E100A9B9FC /* GlobalZIndexViewController.swift */; };
 		CE13A1D7238FAEF800CB412D /* OverlayMinMaxZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13A1D6238FAEF800CB412D /* OverlayMinMaxZoomController.swift */; };
 		CE59BCBB23E9638100038596 /* CustomInfoWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59BCBA23E9638100038596 /* CustomInfoWindowView.swift */; };
@@ -71,20 +71,6 @@
 		CE76D7D523C2FF860007F0D6 /* CustomControlLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76D7D423C2FF860007F0D6 /* CustomControlLayoutViewController.swift */; };
 		CEFA47D7239DF3D500835034 /* MapViewCreatedInCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA47D6239DF3D500835034 /* MapViewCreatedInCodeController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		438AA5FF213D4196004D1053 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				438AA602213D41A5004D1053 /* NMapsMap.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		431076CE215A49F0008F170F /* ContentPaddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPaddingViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +134,8 @@
 		43F5EED32161AE7E00244E08 /* PickAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAllViewController.swift; sourceTree = "<group>"; };
 		43F5EEDF2161E3F600244E08 /* Misc.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
 		43F9639A2199792E009DAF98 /* LiteModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteModeViewController.swift; sourceTree = "<group>"; };
+		68D570658891495665FF6C4D /* Pods-NaverMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMapDemo.release.xcconfig"; path = "Target Support Files/Pods-NaverMapDemo/Pods-NaverMapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B935CF47DD870CD5A92CF673 /* Pods_NaverMapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverMapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE12305B21F5C3E100A9B9FC /* GlobalZIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalZIndexViewController.swift; sourceTree = "<group>"; };
 		CE13A1D6238FAEF800CB412D /* OverlayMinMaxZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayMinMaxZoomController.swift; sourceTree = "<group>"; };
 		CE59BCBA23E9638100038596 /* CustomInfoWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoWindowView.swift; sourceTree = "<group>"; };
@@ -157,6 +145,7 @@
 		CE5BB40423BB264900FF24A3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		CE76D7D423C2FF860007F0D6 /* CustomControlLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlLayoutViewController.swift; sourceTree = "<group>"; };
 		CEFA47D6239DF3D500835034 /* MapViewCreatedInCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCreatedInCodeController.swift; sourceTree = "<group>"; };
+		EF0A0F60A23E0F74E7977BE6 /* Pods-NaverMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMapDemo.debug.xcconfig"; path = "Target Support Files/Pods-NaverMapDemo/Pods-NaverMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				438AA601213D41A5004D1053 /* NMapsMap.framework in Frameworks */,
+				ACA3B2BAC397016908649B03 /* Pods_NaverMapDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +215,8 @@
 				438AA600213D41A5004D1053 /* NMapsMap.framework */,
 				438AA5E7213D416A004D1053 /* NaverMapDemo */,
 				438AA5E6213D416A004D1053 /* Products */,
+				AB0522AB24BFA69059C9940A /* Pods */,
+				A18AD1122D9152AB701A4328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -310,6 +302,23 @@
 			name = MISC;
 			sourceTree = "<group>";
 		};
+		A18AD1122D9152AB701A4328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B935CF47DD870CD5A92CF673 /* Pods_NaverMapDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0522AB24BFA69059C9940A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF0A0F60A23E0F74E7977BE6 /* Pods-NaverMapDemo.debug.xcconfig */,
+				68D570658891495665FF6C4D /* Pods-NaverMapDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE59BCB923E9636700038596 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,10 +353,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 438AA5F9213D416B004D1053 /* Build configuration list for PBXNativeTarget "NaverMapDemo" */;
 			buildPhases = (
+				D0E604157D87A2B534C5B329 /* [CP] Check Pods Manifest.lock */,
 				438AA5E1213D416A004D1053 /* Sources */,
 				438AA5E2213D416A004D1053 /* Frameworks */,
 				438AA5E3213D416A004D1053 /* Resources */,
-				438AA5FF213D4196004D1053 /* Embed Frameworks */,
+				79187CF2467F9D041E3DDCF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,6 +427,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79187CF2467F9D041E3DDCF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMapDemo/Pods-NaverMapDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMapDemo/Pods-NaverMapDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverMapDemo/Pods-NaverMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E604157D87A2B534C5B329 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverMapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		438AA5E1213D416A004D1053 /* Sources */ = {
@@ -620,8 +672,8 @@
 		};
 		438AA5FA213D416B004D1053 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0A0F60A23E0F74E7977BE6 /* Pods-NaverMapDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZLBE8REV9L;
@@ -645,8 +697,8 @@
 		};
 		438AA5FB213D416B004D1053 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D570658891495665FF6C4D /* Pods-NaverMapDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;

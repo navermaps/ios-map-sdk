@@ -1,3 +1,12 @@
+# 3.13.0
+
+Release Date: 2021-06-11
+
+### 새로운 기능
+
+- 실내 지도 뷰를 나타내도록 요청하는 메서드 추가
+  - `NMFMapView.requestIndoorView`
+
 # 3.12.0
 
 Release Date: 2021-06-02
