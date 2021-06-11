@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.12.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.13.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2145,6 +2145,59 @@
                               <td>
                                 <div>
                                   <p><code><a href="../Protocols/NMFIndoorSelectionDelegate.html">NMFIndoorSelectionDelegate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)requestIndoorView:"></a>
+                    <a name="//apple_ref/objc/Method/-requestIndoorView:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)requestIndoorView:">-requestIndoorView:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>실내지도 뷰를 나타내도록 요청합니다. 이 메서드를 호출하더라도 실내지도 뷰가 즉시 나타나는 것이 보장되지 않으며,
+요청된 실내지도 뷰를 포함하는 영역이 포커스되어야 그 뷰가 나타납니다. 단, 요청된 실내지도 뷰를 포함하는 영역이
+이미 포커스되어 있을 경우 즉시 그 뷰가 나타납니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">requestIndoorView</span><span class="p">:(</span><span class="n"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">indoorView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">request</span><span class="p">(</span><span class="n">_</span> <span class="nv">indoorView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFIndoorView.html">NMFIndoorView</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indoorView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>실내지도 뷰. 요청을 취소할 경우 <code>nil</code>.</p>
                                 </div>
                               </td>
                             </tr>
