@@ -18,7 +18,7 @@ import UIKit
 import NMapsMap
 
 class OverlayMinMaxZoomController: MapViewController {
-    @IBOutlet weak var zoomView: ZoomLevelView!
+    @IBOutlet weak var zoomView: ValueView!
     
     let marker1Caption: String = "[15, 17]"
     let marker2Caption: String = "(15, 17]"
@@ -75,7 +75,7 @@ class OverlayMinMaxZoomController: MapViewController {
         marker4.isMaxZoomInclusive = false
         marker4.mapView = mapView
                 
-        zoomView.setZoomLevel(mapView.zoomLevel)
+        zoomView.setValue(mapView.zoomLevel)
     }
     
     // MARK:- IBAction
@@ -96,10 +96,10 @@ class OverlayMinMaxZoomController: MapViewController {
 
 extension OverlayMinMaxZoomController: NMFMapViewCameraDelegate {
     func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
-        zoomView.setZoomLevel(mapView.zoomLevel)
+        zoomView.setValue(mapView.zoomLevel)
     }
     
     func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
-        zoomView.setZoomLevel(mapView.zoomLevel)
+        zoomView.setValue(mapView.zoomLevel)
     }
 }

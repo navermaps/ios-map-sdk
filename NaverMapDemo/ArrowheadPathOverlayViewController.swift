@@ -20,19 +20,39 @@ import NMapsMap
 
 class ArrowheadPathOverlayViewController: MapViewController {
 
-    let coord = [NMGLatLng(lat: 37.568003, lng: 126.9772503),
+    let coord1 = [NMGLatLng(lat: 37.568003, lng: 126.9782503),
+                  NMGLatLng(lat: 37.5701573, lng: 126.9782503),
+                  NMGLatLng(lat: 37.5701573, lng: 126.9803745)]
+
+    let coord2 = [NMGLatLng(lat: 37.568003, lng: 126.9772503),
                   NMGLatLng(lat: 37.5701573, lng: 126.9772503),
-                  NMGLatLng(lat: 37.5701573, lng: 126.9793745)]
+                  NMGLatLng(lat: 37.5701573, lng: 126.9751261)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let turnSignalOverlay = NMFArrowheadPath(coord)
-        turnSignalOverlay?.width = 10
-        turnSignalOverlay?.color = UIColor.white
-        turnSignalOverlay?.outlineWidth = 2
-        turnSignalOverlay?.outlineColor = primaryColor
-        turnSignalOverlay?.mapView = mapView
+        let arrowheadPathOverlay = NMFArrowheadPath(coord1)
+        arrowheadPathOverlay?.width = 10
+        arrowheadPathOverlay?.color = UIColor.white
+        arrowheadPathOverlay?.outlineWidth = 2
+        arrowheadPathOverlay?.outlineColor = primaryColor
+        arrowheadPathOverlay?.mapView = mapView
+        
+        let shadowOverlay = NMFArrowheadPath(coord2)
+        shadowOverlay?.width = 10
+        shadowOverlay?.color = UIColor.black.withAlphaComponent(0.5)
+        shadowOverlay?.outlineWidth = 2
+        shadowOverlay?.outlineColor = UIColor.darkGray
+        shadowOverlay?.mapView = mapView
+        
+        let elevationOverlay = NMFArrowheadPath(coord2)
+        elevationOverlay?.width = 10
+        elevationOverlay?.color = UIColor.white
+        elevationOverlay?.outlineWidth = 2
+        elevationOverlay?.outlineColor = primaryColor
+        elevationOverlay?.elevation = 5
+        elevationOverlay?.mapView = mapView
+        
+        mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(NMGLatLng(lat: 37.5701573, lng: 126.9777503), zoom: 14, tilt: 50, heading: 0)))
     }
-
 }

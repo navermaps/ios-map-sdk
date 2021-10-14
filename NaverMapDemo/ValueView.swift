@@ -1,8 +1,8 @@
 
 import UIKit
 
-internal class ZoomLevelView: UIView, NibLoadable {
-    @IBOutlet weak var zoomLevelLabel: UILabel!
+internal class ValueView: UIView, NibLoadable {
+    @IBOutlet weak var valueLabel: UILabel!
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -14,8 +14,8 @@ internal class ZoomLevelView: UIView, NibLoadable {
         setupUIFromNib()
     }
 
-    func setZoomLevel(_ zoomLevel: Double) {
-        zoomLevelLabel.text = String(format: "%.2f", zoomLevel)
+    func setValue(_ value: Double) {
+        valueLabel.text = String(format: "%.2f", value)
     }
 }
 
