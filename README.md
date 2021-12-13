@@ -30,7 +30,7 @@ pod install --repo-update
   1. [네이버 클라우드 플랫폼](https://www.ncloud.com)에 로그인한 후 [콘솔](https://console.ncloud.com)에 들어갑니다.
   2. **Products & Services**에서 **AI-Application Service** 하위의 **AI·NAVER API**를 선택합니다.
   3. **Application 등록**을 선택하고 **Maps** 하위의 **Mobile Dynamic Map**을 체크합니다.
-  4. iOS Bundle ID에 `com.naver.maps.map.demo`을 추가하고 등록합니다.
+  4. iOS Bundle ID에 `com.navercorp.maps.map.demo`을 추가하고 등록합니다.
   5. 등록한 애플리케이션의 인증 정보를 선택해 Client ID를 확인합니다.
 - 클라이언트 ID 지정
   - `info.plist`의 `NMFClientId`에 발급받은 클라이언트 ID를 입력합니다.
