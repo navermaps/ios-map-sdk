@@ -1,3 +1,14 @@
+# 3.14.1
+
+Release Date: 2022-01-24
+
+### 버그 수정
+
+- 개발 가이드 예제 코드 오타 수정
+  - `NMFPolylineOverlay`, `NMFPolygonOverlay`
+- NMFInfoWindowDefaultTextSource.h 에서 UIKit.h 헤더 대소문자 정정
+- SDK 데모 github readme 의 번들 아이디 정정
+
 # 3.14.0
 
 Release Date: 2021-10-13
