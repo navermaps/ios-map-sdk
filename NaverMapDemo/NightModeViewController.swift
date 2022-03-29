@@ -32,9 +32,11 @@ class NightModeViewController: MapViewController {
         super.viewDidLoad()
         
         mapView.addOptionDelegate(delegate: self)
-        
-        mapView.mapType = .navi
+
         mapView.isNightModeEnabled = true
+        mapView.backgroundColor = NMFDefaultBackgroundDarkColor
+        mapView.backgroundImage = NMFDefaultBackgroundDarkImage
+        mapView.mapType = .navi
 
         for latlng in markerCoords {
             let marker = NMFMarker(position: latlng)
