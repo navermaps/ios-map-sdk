@@ -625,14 +625,14 @@
     },
     {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMapsMap.h",
-      "line": 6,
+      "line": 4,
       "symbol": "NaverMapFrameworkVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMapsMap.h",
-      "line": 9,
+      "line": 7,
       "symbol": "NaverMapFrameworVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"

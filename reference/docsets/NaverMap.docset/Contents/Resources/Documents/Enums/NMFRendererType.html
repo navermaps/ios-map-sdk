@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NMFCompassView Class Reference</title>
+    <title>NMFRendererType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/objc/Class/NMFCompassView" class="dashAnchor"></a>
+    <a name="//apple_ref/objc/Enum/NMFRendererType" class="dashAnchor"></a>
 
-    <a title="NMFCompassView Class Reference"></a>
+    <a title="NMFRendererType Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      NMFCompassView Class Reference
+      NMFRendererType Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -471,15 +471,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>NMFCompassView</h1>
+            <h1>NMFRendererType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">NMFCompassView</span> <span class="p">:</span> <span class="nc">UIImageView</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">NMFRendererType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
 
                 </div>
               </div>
-            <p>나침반 컨트롤.</p>
+            <p>렌더러 유형.</p>
 
           </div>
         </section>
@@ -491,9 +490,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFCompassView(py)mapView"></a>
-                    <a name="//apple_ref/objc/Property/mapView" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFCompassView(py)mapView">mapView</a>
+                    <a name="/c:@E@NMFRendererType@NMFRendererTypeOpenGL"></a>
+                    <a name="//apple_ref/objc/Case/NMFRendererTypeOpenGL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@NMFRendererType@NMFRendererTypeOpenGL">NMFRendererTypeOpenGL</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -501,21 +500,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>이 컨트롤과 연결할 지도 객체. <code>nil</code>일 경우 컨트롤이 동작하지 않습니다.</p>
-
-<p>기본값은 <code>nil</code>입니다.</p>
+                        <p>OpenGL ES 2.0.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFMapView.html">NMFMapView</a></span> <span class="o">*</span><span class="n">mapView</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">NMFRendererTypeOpenGL</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMapView.html">NMFMapView</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">openGL</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@NMFRendererType@NMFRendererTypeMetal"></a>
+                    <a name="//apple_ref/objc/Case/NMFRendererTypeMetal" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@NMFRendererType@NMFRendererTypeMetal">NMFRendererTypeMetal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Metal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NMFRendererTypeMetal</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">metal</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NMFCompassView Class Reference</title>
+    <title>NMFRendererOptions Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/objc/Class/NMFCompassView" class="dashAnchor"></a>
+    <a name="//apple_ref/objc/Class/NMFRendererOptions" class="dashAnchor"></a>
 
-    <a title="NMFCompassView Class Reference"></a>
+    <a title="NMFRendererOptions Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -36,7 +36,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      NMFCompassView Class Reference
+      NMFRendererOptions Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -471,15 +471,16 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>NMFCompassView</h1>
+            <h1>NMFRendererOptions</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">NMFCompassView</span> <span class="p">:</span> <span class="nc">UIImageView</span></code></pre>
+<span class="k">@interface</span> <span class="nc">NMFRendererOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>나침반 컨트롤.</p>
+            <p>지도의 렌더링 관련 옵션을 지정하는 클래스. 지도 객체가 생성된 후에는 속성을 변경해도 지도에 적용되지 않습니다.
+이 클래스는 싱글턴 클래스로, <code>shared</code>를 이용해 인스턴스를 가져올 수 있습니다.</p>
 
           </div>
         </section>
@@ -491,9 +492,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)NMFCompassView(py)mapView"></a>
-                    <a name="//apple_ref/objc/Property/mapView" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)NMFCompassView(py)mapView">mapView</a>
+                    <a name="/c:objc(cs)NMFRendererOptions(cpy)shared"></a>
+                    <a name="//apple_ref/objc/Property/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFRendererOptions(cpy)shared">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -501,21 +502,87 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>이 컨트롤과 연결할 지도 객체. <code>nil</code>일 경우 컨트롤이 동작하지 않습니다.</p>
-
-<p>기본값은 <code>nil</code>입니다.</p>
+                        <p>싱글턴 인스턴스.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/NMFMapView.html">NMFMapView</a></span> <span class="o">*</span><span class="n">mapView</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NMFRendererOptions</span> <span class="o">*</span><span class="n">shared</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMapView.html">NMFMapView</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">NMFRendererOptions</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFRendererOptions(py)rendererType"></a>
+                    <a name="//apple_ref/objc/Property/rendererType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFRendererOptions(py)rendererType">rendererType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 렌더러 유형을 지정하거나 반환합니다. 디바이스가 <code>NMFRendererTypeMetal</code>을 지원하지 않으면 <code>NMFRendererTypeOpenGL</code>이 지정됩니다.</p>
+
+<p>기본값은 <code>NMFRendererTypeOpenGL</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/NMFRendererType.html">NMFRendererType</a></span> <span class="n">rendererType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rendererType</span><span class="p">:</span> <span class="kt"><a href="../Enums/NMFRendererType.html">NMFRendererType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFRendererOptions(py)msaa4x"></a>
+                    <a name="//apple_ref/objc/Property/msaa4x" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFRendererOptions(py)msaa4x">msaa4x</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>4x MSAA를 적용할지 여부를 지정하거나 반환합니다.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">msaa4x</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">msaa4x</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
