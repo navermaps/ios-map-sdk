@@ -21,7 +21,7 @@ git-lfs install
 ```
 pod install --repo-update
 ```
-  - 만약 최신 버전으로 업데이트가 안되면, Podfile 을 열어서 버전을 명시해 주고(`pod 'NMapsMap','3.10.0'`), 위의 명령을 다시 실행합니다.
+  - 만약 최신 버전으로 업데이트가 안되면, Podfile 을 열어서 버전을 명시해 주고(`pod 'NMapsMap','3.15.0'`), 위의 명령을 다시 실행합니다.
 
 ### 클라이언트 ID 지정
 
