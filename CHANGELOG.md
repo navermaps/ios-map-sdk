@@ -1,3 +1,18 @@
+# 3.15.0
+
+Release Date: 2022-04-27
+
+### 새로운 기능
+
+- Metal 렌더러 선택 기능 추가
+  - `NMFRendererOptions.rendererType`
+- 4x MSAA를 활성화하는 기능 추가
+  - `NMFRendererOptions.msaa4x`
+
+### 개선
+
+- 초기 로딩 속도 향상
+
 # 3.14.2
 
 Release Date: 2021-03-29
