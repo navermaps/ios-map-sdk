@@ -296,21 +296,7 @@
     },
     {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 73,
-      "symbol": "NMGLatLngBounds.+latLngBoundsSouthWest:northEast:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 74,
-      "symbol": "NMGLatLngBounds.+latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGLatLngBounds.h",
-      "line": 127,
+      "line": 153,
       "symbol": "NMGLatLngBoundsMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -562,7 +548,7 @@
     },
     {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMGeometryFramework/NMGWebMercatorCoord.h",
-      "line": 110,
+      "line": 119,
       "symbol": "NMGWebMercatorCoordMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

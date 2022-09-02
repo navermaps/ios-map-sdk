@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.15.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.16.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -814,6 +814,224 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsWithLatLngs:"></a>
+                    <a name="//apple_ref/objc/Method/+latLngBoundsWithLatLngs:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsWithLatLngs:">+latLngBoundsWithLatLngs:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>latLngs</code>의 좌표를 모두 포함하는 최소한의 <code>NMGLatLngBounds</code> 객체를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">latLngBoundsWithLatLngs</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">latLngs</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">latLngs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latLngs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>포함할 좌표들</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>NMGLatLngBounds</code> 객체</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsSouthWest:northEast:"></a>
+                    <a name="//apple_ref/objc/Method/+latLngBoundsSouthWest:northEast:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsSouthWest:northEast:">+latLngBoundsSouthWest:northEast:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>남서쪽과 북동쪽 좌표로부터 객체를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">latLngBoundsSouthWest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">southWest</span>
+                                    <span class="nf">northEast</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">northEast</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">southWest</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span><span class="p">,</span> <span class="nv">northEast</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMGLatLng.html">NMGLatLng</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>southWest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>남서쪽 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>northEast</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>북동쪽 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>NMGLatLngBounds</code> 객체</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:"></a>
+                    <a name="//apple_ref/objc/Method/+latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMGLatLngBounds(cm)latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:">+latLngBoundsWithSouthWestLat:southWestLng:northEastLat:northEastLng:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>남서쪽과 북동쪽 좌표로부터 객체를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">latLngBoundsWithSouthWestLat</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">southWestLat</span>
+                                        <span class="nf">southWestLng</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">southWestLng</span>
+                                        <span class="nf">northEastLat</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">northEastLat</span>
+                                        <span class="nf">northEastLng</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">northEastLng</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">southWestLat</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">southWestLng</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">northEastLat</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">northEastLng</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>southWestLat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>남서쪽 좌표의 위도</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>southWestLng</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>남서쪽 좌표의 경도</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>northEastLat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>북동쪽 좌표의 위도</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>northEastLng</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>북동쪽 좌표의 경도</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>NMGLatLngBounds</code> 객체</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMGLatLngBounds(im)hasPoint:"></a>
                     <a name="//apple_ref/objc/Method/-hasPoint:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMGLatLngBounds(im)hasPoint:">-hasPoint:</a>
@@ -1151,7 +1369,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
     </section>
   </body>
 </div>
