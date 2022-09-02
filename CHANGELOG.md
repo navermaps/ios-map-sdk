@@ -1,3 +1,15 @@
+# 3.16.0
+
+Release Date: 2021-09-02
+
+### 새로운 기능
+
+- 카메라 좌표를 유지하면서 콘텐츠 패딩을 지정하는 `NMFMapView.setContentInset:keepCamera:` 추가
+
+### 개선
+
+- 시뮬레이터인 경우 Metal 렌더러를 디폴트로 설정
+
 # 3.15.0
 
 Release Date: 2022-04-27

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LocationTracking" id="7lb-k0-nNP" userLabel="LocationTracking Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Abm-ze-M5F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,11 +30,11 @@
             <objects>
                 <viewController title="LocationTrackingViewController" id="Tmt-RU-rna" userLabel="LocationTracking" customClass="LocationTrackingViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tv4-8z-dW2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-DB-iLH" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -44,7 +44,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-jm-sg7">
-                                <rect key="frame" x="298" y="606" width="49" height="31"/>
+                                <rect key="frame" x="351" y="831" width="49" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="OaZ-bD-gu2"/>
                                     <constraint firstAttribute="width" constant="47" id="co9-t8-XYe"/>
@@ -55,11 +55,11 @@
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vMk-Km-itJ"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ugd-DB-iLH" firstAttribute="leading" secondItem="vMk-Km-itJ" secondAttribute="leading" id="Whe-Mr-f4H"/>
-                            <constraint firstItem="Ugd-DB-iLH" firstAttribute="trailing" secondItem="vMk-Km-itJ" secondAttribute="trailing" id="bYN-7n-DlJ"/>
+                            <constraint firstItem="Ugd-DB-iLH" firstAttribute="leading" secondItem="tv4-8z-dW2" secondAttribute="leading" id="Whe-Mr-f4H"/>
+                            <constraint firstItem="Ugd-DB-iLH" firstAttribute="trailing" secondItem="tv4-8z-dW2" secondAttribute="trailing" id="bYN-7n-DlJ"/>
                             <constraint firstItem="vMk-Km-itJ" firstAttribute="trailing" secondItem="8pq-jm-sg7" secondAttribute="trailing" constant="30" id="eeU-S3-cWJ"/>
                             <constraint firstItem="Ugd-DB-iLH" firstAttribute="top" secondItem="vMk-Km-itJ" secondAttribute="top" id="hb1-f5-kzS"/>
                             <constraint firstItem="Ugd-DB-iLH" firstAttribute="bottom" secondItem="tv4-8z-dW2" secondAttribute="bottom" id="jce-Kh-FYF"/>
@@ -88,7 +88,7 @@
             <objects>
                 <navigationController storyboardIdentifier="SnapShot" id="Lez-nd-X8Y" userLabel="SnapShot Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rnt-mI-EEl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -104,11 +104,11 @@
             <objects>
                 <viewController title="SnapShotViewController" id="OAC-z8-8CX" userLabel="SnapShot" customClass="SnapShotViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4et-0g-qH6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJn-Bj-MgO" userLabel="Header View">
-                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="50"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-iY-ASx">
                                         <rect key="frame" x="8" y="10" width="49" height="31"/>
@@ -125,7 +125,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-e7-qXs" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="380.5" width="375" height="286.5"/>
+                                <rect key="frame" x="0.0" y="532" width="428" height="394"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -136,7 +136,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U7-pM-GXD">
-                                <rect key="frame" x="321" y="613" width="44" height="44"/>
+                                <rect key="frame" x="374" y="872" width="44" height="44"/>
                                 <color key="backgroundColor" red="0.35297641159999998" green="0.76917326450000001" blue="0.31763556599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="DbP-U0-YkW"/>
@@ -156,27 +156,28 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-q2-h8A">
-                                <rect key="frame" x="0.0" y="94" width="375" height="286.5"/>
+                                <rect key="frame" x="0.0" y="138" width="428" height="394"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A9y-Ut-iLb"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZJn-Bj-MgO" firstAttribute="bottom" secondItem="Nou-q2-h8A" secondAttribute="top" id="4cW-eP-9Eh"/>
                             <constraint firstItem="ZJn-Bj-MgO" firstAttribute="top" secondItem="A9y-Ut-iLb" secondAttribute="top" id="5pe-ju-jvR"/>
                             <constraint firstItem="eqm-e7-qXs" firstAttribute="top" secondItem="Nou-q2-h8A" secondAttribute="bottom" id="CYz-4B-Y1k"/>
                             <constraint firstItem="ZJn-Bj-MgO" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="Flt-AK-I2Q"/>
-                            <constraint firstItem="Nou-q2-h8A" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="J1l-pP-bSn"/>
+                            <constraint firstItem="Nou-q2-h8A" firstAttribute="leading" secondItem="4et-0g-qH6" secondAttribute="leading" id="J1l-pP-bSn"/>
                             <constraint firstAttribute="bottom" secondItem="5U7-pM-GXD" secondAttribute="bottom" constant="10" id="JKb-Uz-tyM"/>
                             <constraint firstItem="Nou-q2-h8A" firstAttribute="top" secondItem="A9y-Ut-iLb" secondAttribute="top" constant="50" id="QB7-rk-0TD"/>
-                            <constraint firstItem="A9y-Ut-iLb" firstAttribute="trailing" secondItem="eqm-e7-qXs" secondAttribute="trailing" id="Qpt-fV-xhP"/>
+                            <constraint firstAttribute="trailing" secondItem="eqm-e7-qXs" secondAttribute="trailing" id="Qpt-fV-xhP"/>
                             <constraint firstItem="eqm-e7-qXs" firstAttribute="height" secondItem="Nou-q2-h8A" secondAttribute="height" id="a9a-LV-IqW"/>
                             <constraint firstItem="5U7-pM-GXD" firstAttribute="trailing" secondItem="eqm-e7-qXs" secondAttribute="trailing" constant="-10" id="iIM-Z4-QHC"/>
                             <constraint firstItem="ZJn-Bj-MgO" firstAttribute="trailing" secondItem="A9y-Ut-iLb" secondAttribute="trailing" id="qH5-ll-Wsl"/>
-                            <constraint firstItem="Nou-q2-h8A" firstAttribute="trailing" secondItem="A9y-Ut-iLb" secondAttribute="trailing" id="smI-W1-es7"/>
+                            <constraint firstItem="Nou-q2-h8A" firstAttribute="trailing" secondItem="4et-0g-qH6" secondAttribute="trailing" id="smI-W1-es7"/>
                             <constraint firstAttribute="bottom" secondItem="eqm-e7-qXs" secondAttribute="bottom" id="v7j-pW-Wlj"/>
-                            <constraint firstItem="eqm-e7-qXs" firstAttribute="leading" secondItem="A9y-Ut-iLb" secondAttribute="leading" id="zNn-Pa-9hN"/>
+                            <constraint firstItem="eqm-e7-qXs" firstAttribute="leading" secondItem="4et-0g-qH6" secondAttribute="leading" id="zNn-Pa-9hN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SnapShot" id="btI-Cq-leb"/>
@@ -195,7 +196,7 @@
             <objects>
                 <navigationController storyboardIdentifier="PickAll" id="692-qX-yfC" userLabel="PickAll Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="emx-Ua-QEY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -211,11 +212,11 @@
             <objects>
                 <viewController title="PickAllViewController" id="L9z-Py-Sla" userLabel="PickAll" customClass="PickAllViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvh-6q-b5E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppm-t3-oW9" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="391.5"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -226,26 +227,26 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlC-Kh-avB">
-                                <rect key="frame" x="0.0" y="435.5" width="375" height="231.5"/>
+                                <rect key="frame" x="0.0" y="570" width="428" height="356"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ts2-h8-XDL"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="leading" secondItem="ts2-h8-XDL" secondAttribute="leading" id="028-ne-rOH"/>
-                            <constraint firstItem="ppm-t3-oW9" firstAttribute="trailing" secondItem="ts2-h8-XDL" secondAttribute="trailing" id="8VZ-dY-Y6A"/>
-                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="trailing" secondItem="ts2-h8-XDL" secondAttribute="trailing" id="Eg0-cW-8AB"/>
+                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="leading" secondItem="nvh-6q-b5E" secondAttribute="leading" id="028-ne-rOH"/>
+                            <constraint firstItem="ppm-t3-oW9" firstAttribute="trailing" secondItem="nvh-6q-b5E" secondAttribute="trailing" id="8VZ-dY-Y6A"/>
+                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="trailing" secondItem="nvh-6q-b5E" secondAttribute="trailing" id="Eg0-cW-8AB"/>
                             <constraint firstItem="ZlC-Kh-avB" firstAttribute="top" secondItem="ts2-h8-XDL" secondAttribute="centerY" constant="80" id="Eqx-Cz-3mS">
                                 <variation key="heightClass=compact-widthClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="bottom" secondItem="ts2-h8-XDL" secondAttribute="bottom" id="ODA-hZ-YLr"/>
+                            <constraint firstItem="ZlC-Kh-avB" firstAttribute="bottom" secondItem="nvh-6q-b5E" secondAttribute="bottom" id="ODA-hZ-YLr"/>
                             <constraint firstItem="ppm-t3-oW9" firstAttribute="top" secondItem="ts2-h8-XDL" secondAttribute="top" id="PR0-ds-1NW"/>
                             <constraint firstItem="ppm-t3-oW9" firstAttribute="bottom" secondItem="ZlC-Kh-avB" secondAttribute="top" id="l6b-xL-WkC"/>
-                            <constraint firstItem="ppm-t3-oW9" firstAttribute="leading" secondItem="ts2-h8-XDL" secondAttribute="leading" id="xVG-HU-82h"/>
+                            <constraint firstItem="ppm-t3-oW9" firstAttribute="leading" secondItem="nvh-6q-b5E" secondAttribute="leading" id="xVG-HU-82h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pick All Overlays &amp; Symbols" id="in8-1X-LOe"/>
@@ -263,7 +264,7 @@
             <objects>
                 <navigationController storyboardIdentifier="TileCoverHelper" id="DEE-Q1-KOI" userLabel="TileCoverHelper Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b1l-bn-YL9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -279,11 +280,11 @@
             <objects>
                 <viewController title="PickAllViewController" id="Hyu-86-MdC" userLabel="TileCoverHelper" customClass="TileCoverHelperViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1x-pO-KAf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCU-QV-Uzj" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -295,13 +296,13 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v6N-On-PYu"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="QCU-QV-Uzj" firstAttribute="top" secondItem="v6N-On-PYu" secondAttribute="top" id="Nee-OK-EZU"/>
-                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="trailing" secondItem="v6N-On-PYu" secondAttribute="trailing" id="Qtf-ED-WLf"/>
-                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="bottom" secondItem="v6N-On-PYu" secondAttribute="bottom" id="aUc-xF-kbM"/>
-                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="leading" secondItem="v6N-On-PYu" secondAttribute="leading" id="myM-Ud-n0P"/>
+                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="trailing" secondItem="N1x-pO-KAf" secondAttribute="trailing" id="Qtf-ED-WLf"/>
+                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="bottom" secondItem="N1x-pO-KAf" secondAttribute="bottom" id="aUc-xF-kbM"/>
+                            <constraint firstItem="QCU-QV-Uzj" firstAttribute="leading" secondItem="N1x-pO-KAf" secondAttribute="leading" id="myM-Ud-n0P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tile Cover Helper" id="MwR-ke-Auc"/>
@@ -318,7 +319,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Projection" id="P7J-Yp-Mee" userLabel="Projection Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uX7-eR-3el">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -334,11 +335,11 @@
             <objects>
                 <viewController title="PickAllViewController" id="x6e-Sy-4Re" userLabel="Projection" customClass="ProjectionViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEb-zN-mh8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-CA-d3I" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -349,7 +350,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="화면좌표: (x.x, y.y) 지도좌표: (lat, lng)" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guL-Wi-7Rx">
-                                <rect key="frame" x="165" y="597" width="180" height="40"/>
+                                <rect key="frame" x="218" y="822" width="180" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HQe-zL-tSB"/>
@@ -359,7 +360,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="QvS-6E-PpK">
-                                <rect key="frame" x="141" y="603" width="14" height="14"/>
+                                <rect key="frame" x="194" y="828" width="14" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="14" id="1Lx-v8-zPq"/>
                                     <constraint firstAttribute="height" constant="14" id="2vu-BR-cZ1"/>
@@ -367,17 +368,17 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UG9-X3-xS7"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UG9-X3-xS7" firstAttribute="bottom" secondItem="guL-Wi-7Rx" secondAttribute="bottom" constant="30" id="6wH-40-TEV"/>
                             <constraint firstItem="guL-Wi-7Rx" firstAttribute="leading" secondItem="QvS-6E-PpK" secondAttribute="trailing" constant="10" id="M0G-pU-S7g"/>
                             <constraint firstItem="UG9-X3-xS7" firstAttribute="trailing" secondItem="guL-Wi-7Rx" secondAttribute="trailing" constant="30" id="M9v-em-fI9"/>
                             <constraint firstItem="QvS-6E-PpK" firstAttribute="top" secondItem="guL-Wi-7Rx" secondAttribute="top" constant="6" id="aFr-fo-NDG"/>
-                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="leading" secondItem="UG9-X3-xS7" secondAttribute="leading" id="aWL-JJ-1K8"/>
-                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="trailing" secondItem="UG9-X3-xS7" secondAttribute="trailing" id="iJb-bK-CDR"/>
+                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="leading" secondItem="cEb-zN-mh8" secondAttribute="leading" id="aWL-JJ-1K8"/>
+                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="trailing" secondItem="cEb-zN-mh8" secondAttribute="trailing" id="iJb-bK-CDR"/>
                             <constraint firstItem="Hhz-CA-d3I" firstAttribute="top" secondItem="UG9-X3-xS7" secondAttribute="top" id="k3e-qR-oaI"/>
-                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="bottom" secondItem="UG9-X3-xS7" secondAttribute="bottom" id="m08-aq-WQD"/>
+                            <constraint firstItem="Hhz-CA-d3I" firstAttribute="bottom" secondItem="cEb-zN-mh8" secondAttribute="bottom" id="m08-aq-WQD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Projection" id="KzZ-ad-4LR"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C54-20-7ag">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C54-20-7ag">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MapViewController" id="C54-20-7ag" userLabel="MapView Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j0t-WM-U7M">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -27,13 +27,13 @@
         <!--MapView-->
         <scene sceneID="Rqh-Yi-6ef">
             <objects>
-                <viewController title="MapView" id="fVN-ay-PYu" userLabel="MapView" customClass="MapViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapView" id="fVN-ay-PYu" userLabel="MapView" customClass="MapViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vii-Sj-vgO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2U-09-aYm" customClass="NMFNaverMapView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showCompass" value="YES"/>
@@ -44,14 +44,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7oY-Gl-3dv"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="top" secondItem="7oY-Gl-3dv" secondAttribute="top" id="Ht5-vi-Jtd"/>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="leading" secondItem="vii-Sj-vgO" secondAttribute="leading" id="kxo-z6-m8s"/>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="trailing" secondItem="vii-Sj-vgO" secondAttribute="trailing" id="vfK-jp-Ewm"/>
                             <constraint firstItem="r2U-09-aYm" firstAttribute="bottom" secondItem="vii-Sj-vgO" secondAttribute="bottom" id="vqr-qP-LWn"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7oY-Gl-3dv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map View" id="t67-Sr-mCe"/>
                     <connections>
@@ -67,7 +67,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MapViewCreatedInCodeController" id="Pbe-dv-5Sp" userLabel="MapViewCreatedInCode Navigation" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EIi-ct-nTw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -81,12 +81,12 @@
         <!--MapViewCreatedInCode-->
         <scene sceneID="1aX-SM-wge">
             <objects>
-                <viewController title="MapViewCreatedInCode" id="ZhN-PT-5ci" userLabel="MapViewCreatedInCode" customClass="MapViewCreatedInCodeController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapViewCreatedInCode" id="ZhN-PT-5ci" userLabel="MapViewCreatedInCode" customClass="MapViewCreatedInCodeController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbp-az-QCk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hd6-Kk-YUr"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map View Created in Code" id="6af-DG-9PG"/>
                 </viewController>

@@ -27,10 +27,14 @@ class MapViewCreatedInCodeController: UIViewController {
         self.view.addSubview(naverMapView)
         
         naverMapView.translatesAutoresizingMaskIntoConstraints = false
-        naverMapView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
-        naverMapView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1).isActive = true
-        naverMapView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        naverMapView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        if #available(iOS 11.0, *) {
+            naverMapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        } else {
+            naverMapView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        }
+        naverMapView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        naverMapView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        naverMapView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         
         naverMapView.mapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
     }

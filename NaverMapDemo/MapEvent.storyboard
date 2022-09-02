@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
         <!--MapClickEvent-->
         <scene sceneID="bgf-8d-ECF">
             <objects>
-                <viewController title="MapClickEventViewController" id="PbB-14-KEc" userLabel="MapClickEvent" customClass="MapClickEventViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapClickEventViewController" id="PbB-14-KEc" userLabel="MapClickEvent" customClass="MapClickEventViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hdF-ZQ-8wD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,15 +44,15 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="X17-NM-AyF"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="9VO-NU-ldN" firstAttribute="leading" secondItem="X17-NM-AyF" secondAttribute="leading" id="PbQ-mU-K6Z"/>
+                            <constraint firstItem="9VO-NU-ldN" firstAttribute="leading" secondItem="hdF-ZQ-8wD" secondAttribute="leading" id="PbQ-mU-K6Z"/>
                             <constraint firstItem="9VO-NU-ldN" firstAttribute="top" secondItem="X17-NM-AyF" secondAttribute="top" id="Pif-cX-ZtS"/>
                             <constraint firstItem="9VO-NU-ldN" firstAttribute="bottom" secondItem="hdF-ZQ-8wD" secondAttribute="bottom" id="SSo-zL-a9Z"/>
-                            <constraint firstItem="9VO-NU-ldN" firstAttribute="trailing" secondItem="X17-NM-AyF" secondAttribute="trailing" id="nZa-UC-Vev"/>
+                            <constraint firstItem="9VO-NU-ldN" firstAttribute="trailing" secondItem="hdF-ZQ-8wD" secondAttribute="trailing" id="nZa-UC-Vev"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="X17-NM-AyF"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="LmQ-k3-UVV" appends="YES" id="MXW-5J-5Hc"/>
                         </connections>
@@ -91,7 +91,7 @@
         <!--OverlayClickEvent-->
         <scene sceneID="FZV-AA-Epk">
             <objects>
-                <viewController title="OverlayClickEventViewController" id="e3P-vy-RAW" userLabel="OverlayClickEvent" customClass="OverlayClickEventViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="OverlayClickEventViewController" id="e3P-vy-RAW" userLabel="OverlayClickEvent" customClass="OverlayClickEventViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhZ-Vw-78m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,14 +108,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SEb-AA-4qA"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FOh-jb-IeI" firstAttribute="leading" secondItem="SEb-AA-4qA" secondAttribute="leading" id="22J-Eg-qUp"/>
+                            <constraint firstItem="FOh-jb-IeI" firstAttribute="leading" secondItem="VhZ-Vw-78m" secondAttribute="leading" id="22J-Eg-qUp"/>
                             <constraint firstItem="FOh-jb-IeI" firstAttribute="bottom" secondItem="VhZ-Vw-78m" secondAttribute="bottom" id="D2w-9E-9tQ"/>
-                            <constraint firstItem="FOh-jb-IeI" firstAttribute="trailing" secondItem="SEb-AA-4qA" secondAttribute="trailing" id="FcO-tB-Zs7"/>
+                            <constraint firstItem="FOh-jb-IeI" firstAttribute="trailing" secondItem="VhZ-Vw-78m" secondAttribute="trailing" id="FcO-tB-Zs7"/>
                             <constraint firstItem="FOh-jb-IeI" firstAttribute="top" secondItem="SEb-AA-4qA" secondAttribute="top" id="b7D-pC-I1F"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SEb-AA-4qA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Overlay Click Event" id="lVW-X2-RTy"/>
                     <connections>
@@ -145,7 +145,7 @@
         <!--SymbolClickEvent-->
         <scene sceneID="LHb-D0-R7w">
             <objects>
-                <viewController title="SymbolClickEventViewController" id="bdz-My-kEL" userLabel="SymbolClickEvent" customClass="SymbolClickEventViewController" customModule="SDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SymbolClickEventViewController" id="bdz-My-kEL" userLabel="SymbolClickEvent" customClass="SymbolClickEventViewController" customModule="NaverMapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mOS-WC-y0O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,14 +162,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tmb-ec-HXR"/>
+                        <color key="backgroundColor" red="0.0083867944780000002" green="0.78171372409999995" blue="0.23500731590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CmO-Fr-qeH" firstAttribute="trailing" secondItem="tmb-ec-HXR" secondAttribute="trailing" id="14n-yc-EHm"/>
-                            <constraint firstItem="CmO-Fr-qeH" firstAttribute="leading" secondItem="tmb-ec-HXR" secondAttribute="leading" id="DRc-8d-wJL"/>
+                            <constraint firstItem="CmO-Fr-qeH" firstAttribute="trailing" secondItem="mOS-WC-y0O" secondAttribute="trailing" id="14n-yc-EHm"/>
+                            <constraint firstItem="CmO-Fr-qeH" firstAttribute="leading" secondItem="mOS-WC-y0O" secondAttribute="leading" id="DRc-8d-wJL"/>
                             <constraint firstItem="CmO-Fr-qeH" firstAttribute="top" secondItem="tmb-ec-HXR" secondAttribute="top" id="XHj-3f-cs5"/>
                             <constraint firstItem="CmO-Fr-qeH" firstAttribute="bottom" secondItem="mOS-WC-y0O" secondAttribute="bottom" id="nrx-76-VVi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tmb-ec-HXR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Symbol Click Event" id="ZHN-q8-ojk"/>
                     <connections>
