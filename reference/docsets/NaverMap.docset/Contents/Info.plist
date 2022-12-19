@@ -17,6 +17,6 @@
     <key>DashDocSetFamily</key>
       <string>dashtoc</string>
     <key>DashDocSetFallbackURL</key>
-      <string>https://maps.naver.com/ios-sdk/api/3.16.0/</string>
+      <string>https://maps.naver.com/ios-sdk/api/3.16.1/</string>
   </dict>
 </plist>
