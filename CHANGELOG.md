@@ -5,6 +5,7 @@ Release Date: 2022-12-19
 ### 버그 수정
 
 - `NMFMapView.positionMode`가 `NMFMyPositionNormal`일 때 사용자 위치 오버레이가 업데이되지 않는 오류 수정
+- `NMFMapView.pickAll:withTolerance`에서 `tolerance`가 `0`일 때 일부 오버레이 및 심벌이 피킹되지 않는 오류 수정
 
 # 3.16.0
 
