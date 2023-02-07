@@ -1,3 +1,11 @@
+# 3.16.2
+
+Release Date: 2022-02-07
+
+### 버그 수정
+
+- `NMFArrowheadPath`의 터치 핸들러가 호출되지 않는 문제 수정
+
 # 3.16.1
 
 Release Date: 2022-12-19

@@ -1,5 +1,5 @@
  /*
-    Copyright 2018-2022 NAVER Corp.
+    Copyright 2018-2023 NAVER Corp.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let splitViewController = window!.rootViewController as! UISplitViewController
         splitViewController.delegate = self
         
-//        NMFAuthManager.shared().clientId = "YOUR_CLIENT_ID_HERE"
+        //NMFAuthManager.shared().clientId = "YOUR_CLIENT_ID_HERE"
         
         return true
     }
