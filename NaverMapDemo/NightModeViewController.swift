@@ -35,7 +35,7 @@ class NightModeViewController: MapViewController {
 
         mapView.isNightModeEnabled = true
         mapView.backgroundColor = NMFDefaultBackgroundDarkColor
-        mapView.backgroundImage = NMFDefaultBackgroundDarkImage
+        mapView.backgroundImage = NMFMapView.defaultBackgroundDarkImage
         mapView.mapType = .navi
 
         for latlng in markerCoords {
@@ -55,11 +55,11 @@ class NightModeViewController: MapViewController {
 
  extension NightModeViewController: NMFMapViewOptionDelegate {
     func mapViewOptionChanged(_ mapView: NMFMapView) {
-        if (isNightModeEnabled != mapView.isNightModeEnabled) {
+        if isNightModeEnabled != mapView.isNightModeEnabled {
             isNightModeEnabled = mapView.isNightModeEnabled
             
             mapView.backgroundColor = isNightModeEnabled ? NMFDefaultBackgroundDarkColor : NMFDefaultBackgroundLightColor
-            mapView.backgroundImage = isNightModeEnabled ? NMFDefaultBackgroundDarkImage : NMFDefaultBackgroundLightImage
+            mapView.backgroundImage = isNightModeEnabled ? NMFMapView.defaultBackgroundDarkImage : NMFMapView.defaultBackgroundLightImage
             
             let iconName = isNightModeEnabled ? "mSNormalNight" : "mSNormal"
             for marker in markers {

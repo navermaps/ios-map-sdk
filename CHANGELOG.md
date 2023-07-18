@@ -1,3 +1,18 @@
+# 3.17.0
+
+Release Date: 2023-07-18
+
+### 새로운 기능
+
+- 지도를 강제 새로고침하는 메서드 추가
+  - `NMFMapView.forceRefresh`
+
+### 버그 수정
+
+- 아이패드에서 백그라운드 진입 시 `NMFMapViewDelegate.mapViewIdle` 호출되는 오류 수정
+- 위성 지도로 전환 시 로고가 변경되지 않는 오류 수정
+- 테스트 시 멈추는 문제 수정
+
 # 3.16.2
 
 Release Date: 2022-02-07
