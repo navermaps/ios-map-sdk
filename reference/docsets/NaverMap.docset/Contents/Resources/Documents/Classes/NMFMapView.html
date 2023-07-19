@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.16.2%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.17.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -488,6 +488,70 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(cpy)defaultBackgroundLightImage"></a>
+                    <a name="//apple_ref/objc/Property/defaultBackgroundLightImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(cpy)defaultBackgroundLightImage">defaultBackgroundLightImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>기본 밝은 배경 이미지.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">defaultBackgroundLightImage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">defaultBackgroundLightImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(cpy)defaultBackgroundDarkImage"></a>
+                    <a name="//apple_ref/objc/Property/defaultBackgroundDarkImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(cpy)defaultBackgroundDarkImage">defaultBackgroundDarkImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>기본 어두운 배경 이미지.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">defaultBackgroundDarkImage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">defaultBackgroundDarkImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1654,6 +1718,39 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showOpenSourceLicense</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)forceRefresh"></a>
+                    <a name="//apple_ref/objc/Method/-forceRefresh" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)forceRefresh">-forceRefresh</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 화면을 강제로 새로고침합니다. 실시간 교통정보 등 지도 화면에 나타나는 실시간성 데이터는 적시에 자동으로
+새로고침되므로 이 메서드를 별도로 호출할 필요가 없습니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">forceRefresh</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">forceRefresh</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -3178,7 +3275,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
     </section>
   </body>
 </div>
