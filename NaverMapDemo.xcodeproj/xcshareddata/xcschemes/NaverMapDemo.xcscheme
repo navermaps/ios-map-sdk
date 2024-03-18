@@ -37,6 +37,17 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE56F6F12A41013C00E75518"
+               BuildableName = "NaverMapDemoTests.xctest"
+               BlueprintName = "NaverMapDemoTests"
+               ReferencedContainer = "container:NaverMapDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

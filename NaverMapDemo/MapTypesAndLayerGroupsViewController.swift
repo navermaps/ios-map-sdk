@@ -1,5 +1,5 @@
  /*
-  Copyright 2018-2023 NAVER Corp.
+  Copyright 2018-2024 NAVER Corp.
   
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -44,6 +44,10 @@ class MapTypesAndLayerGroupsViewController: MapViewController {
         alertController.addAction(UIAlertAction(title: "Hybrid", style: .default, handler: { [weak self] (action) in
             self?.mapView.mapType = .hybrid
             sender.setTitle("Hybrid", for: .normal)
+        }))
+        alertController.addAction(UIAlertAction(title: "NaviHybrid", style: .default, handler: { [weak self] (action) in
+            self?.mapView.mapType = .naviHybrid
+            sender.setTitle("NaviHybrid", for: .normal)
         }))
         alertController.addAction(UIAlertAction(title: "Terrain", style: .default, handler: { [weak self] (action) in
             self?.mapView.mapType = .terrain

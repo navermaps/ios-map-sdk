@@ -1,3 +1,14 @@
+# 3.18.0
+
+Release Date: 2024-03-18
+
+### 새로운 기능
+
+- 마커 클러스터링 기능 추가
+  - `NMCClusterer`
+- 내비게이션용 위성 지도 유형 추가
+  - `NMFMapTypeNaviHybrid`
+
 # 3.17.0
 
 Release Date: 2023-07-18

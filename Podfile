@@ -7,6 +7,6 @@ target 'NaverMapDemo' do
 
   # Pods for NaverMapDemo
   
-  pod 'NMapsMap'
+  pod 'NMapsMap', '3.18.0'
 
 end
