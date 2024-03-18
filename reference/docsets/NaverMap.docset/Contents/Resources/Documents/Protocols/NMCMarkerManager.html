@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NMCMarkerManager Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://map.naver.com/favicon.ico?v20140331' type='image/x-icon' />
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/NMCMarkerManager" class="dashAnchor"></a>
+
+    <a title="NMCMarkerManager Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          NAVER Map iOS SDK
+        </a>
+        
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.18.0%2Fdocsets%2FNaverMap.xml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">NAVER Map iOS SDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NMCMarkerManager Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../NMapsGeometry.html">NMapsGeometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLng.html">NMGLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPoint.html">NMGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGBounds">NMGBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLatLngBounds.html">NMGLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGLineString.html">NMGLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGPolygon.html">NMGPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../NMapsGeometry.html#/c:objc(cs)NMGMultiPolygon">NMGMultiPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGSegment.html">NMGSegment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtmk.html">NMGUtmk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGTm128.html">NMGTm128</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGWebMercatorCoord.html">NMGWebMercatorCoord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMGUtils.html">NMGUtils</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Map.html">Map</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFRendererOptions.html">NMFRendererOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMapView.html">NMFMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMapType.html">NMFMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewDelegate.html">NMFMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewTouchDelegate.html">NMFMapViewTouchDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewCameraDelegate.html">NMFMapViewCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraPosition.html">NMFCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdate.html">NMFCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFCameraUpdateAnimation.html">NMFCameraUpdateAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUpdateParams.html">NMFCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFProjection.html">NMFProjection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFSymbol.html">NMFSymbol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFNaverMapView.html">NMFNaverMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFMyPositionMode.html">NMFMyPositionMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Indoor.html">Indoor</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorRegion.html">NMFIndoorRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorZone.html">NMFIndoorZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevel.html">NMFIndoorLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorView.html">NMFIndoorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorSelection.html">NMFIndoorSelection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFIndoorSelectionDelegate.html">NMFIndoorSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Overlay.html">Overlay</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlay.html">NMFOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFOverlayImage.html">NMFOverlayImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFOverlayImageDataSource.html">NMFOverlayImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:NMFOverlay.h@T@NMFOverlayTouchHandler">NMFOverlayTouchHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationOverlay.html">NMFLocationOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMarker.html">NMFMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFInfoWindow.html">NMFInfoWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAlign.html">NMFAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFAlignType.html">NMFAlignType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFGroundOverlay.html">NMFGroundOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCircleOverlay.html">NMFCircleOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPath.html">NMFPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPathColor.html">NMFPathColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFMultipartPath.html">NMFMultipartPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolygonOverlay.html">NMFPolygonOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFPolylineOverlay.html">NMFPolylineOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFArrowheadPath.html">NMFArrowheadPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Overlay.html#/c:objc(pl)NMFPickable">NMFPickable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineCap.html">NMFOverlayLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFOverlayLineJoin.html">NMFOverlayLineJoin</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Clustering.html">Clustering</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCBuilder.html">NMCBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCCluster.html">NMCCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCClusterer.html">NMCClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCClusteringKey.html">NMCClusteringKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCClusterMarkerInfo.html">NMCClusterMarkerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCClusterMarkerUpdater.html">NMCClusterMarkerUpdater</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Clustering.html#/c:NMCClustererUpdateCallback.h@T@NMCClustererUpdateCallback">NMCClustererUpdateCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCComplexBuilder.html">NMCComplexBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultClusterMarkerUpdater.html">NMCDefaultClusterMarkerUpdater</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultDistanceStrategy.html">NMCDefaultDistanceStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultLeafMarkerUpdater.html">NMCDefaultLeafMarkerUpdater</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultMarkerManager.html">NMCDefaultMarkerManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultPositioningStrategy.html">NMCDefaultPositioningStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultTagMergeStrategy.html">NMCDefaultTagMergeStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCDefaultThresholdStrategy.html">NMCDefaultThresholdStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCDistanceStrategy.html">NMCDistanceStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCLeaf.html">NMCLeaf</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCLeafMarkerInfo.html">NMCLeafMarkerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCLeafMarkerUpdater.html">NMCLeafMarkerUpdater</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMCNode.html">NMCNode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCPositioningStrategy.html">NMCPositioningStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCTagMergeStrategy.html">NMCTagMergeStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCThresholdStrategy.html">NMCThresholdStrategy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../etc.html">etc</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFAuthManager.html">NMFAuthManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFAuthState.html">NMFAuthState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFAuthManagerDelegate.html">NMFAuthManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFCompassView.html">NMFCompassView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFGeometryUtils.html">NMFGeometryUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFIndoorLevelPickerView.html">NMFIndoorLevelPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFTileCoverHelper.html">NMFTileCoverHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFTileId.html">NMFTileId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/NMFZoomControlView.html">NMFZoomControlView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMCClusterer.h@NMC_DEFAULT_ANIMATION_DURATION">NMC_DEFAULT_ANIMATION_DURATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMCDefaultMarkerManager.h@NMC_DEFAULT_MAX_POOL_SIZE">NMC_DEFAULT_MAX_POOL_SIZE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMCClusterer.h@NMC_DEFAULT_SCREEN_DISTANCE">NMC_DEFAULT_SCREEN_DISTANCE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFDefaultBackgroundDarkColor">NMFDefaultBackgroundDarkColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFDefaultBackgroundDarkImage">NMFDefaultBackgroundDarkImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFDefaultBackgroundLightColor">NMFDefaultBackgroundLightColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFDefaultBackgroundLightImage">NMFDefaultBackgroundLightImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl">NMFMapChangedByControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByDeveloper">NMFMapChangedByDeveloper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByGesture">NMFMapChangedByGesture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByLocation">NMFMapChangedByLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFArrowheadPath.h@NMF_ARROWHEAD_PATH_OVERLAY_GLOBAL_Z_INDEX">NMF_ARROWHEAD_PATH_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCircleOverlay.h@NMF_CIRCLE_OVERLAY_GLOBAL_Z_INDEX">NMF_CIRCLE_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_CLUSTER_ANCHOR_DEFAULT">NMF_CLUSTER_ANCHOR_DEFAULT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_DEFAULT_ANIMATION_DURATION">NMF_DEFAULT_ANIMATION_DURATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_DEFAULT_MAXIMUM_TILT">NMF_DEFAULT_MAXIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFGroundOverlay.h@NMF_GROUND_OVERLAY_GLOBAL_Z_INDEX">NMF_GROUND_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFInfoWindow.h@NMF_INFO_WINDOW_GLOBAL_Z_INDEX">NMF_INFO_WINDOW_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_BICYCLE">NMF_LAYER_GROUP_BICYCLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_BUILDING">NMF_LAYER_GROUP_BUILDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_CADASTRAL">NMF_LAYER_GROUP_CADASTRAL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_MOUNTAIN">NMF_LAYER_GROUP_MOUNTAIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_TRAFFIC">NMF_LAYER_GROUP_TRAFFIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LAYER_GROUP_TRANSIT">NMF_LAYER_GROUP_TRANSIT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_LOCATION_OVERLAY_DEFAULT_COLOR">NMF_LOCATION_OVERLAY_DEFAULT_COLOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFLocationOverlay.h@NMF_LOCATION_OVERLAY_GLOBAL_Z_INDEX">NMF_LOCATION_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFLocationOverlay.h@NMF_LOCATION_OVERLAY_SIZE_AUTO">NMF_LOCATION_OVERLAY_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_ANCHOR_DEFAULT">NMF_MARKER_ANCHOR_DEFAULT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFMarker.h@NMF_MARKER_GLOBAL_Z_INDEX">NMF_MARKER_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_BLACK">NMF_MARKER_IMAGE_BLACK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_BLUE">NMF_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_CLUSTER_HIGH_DENSITY">NMF_MARKER_IMAGE_CLUSTER_HIGH_DENSITY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_CLUSTER_LOW_DENSITY">NMF_MARKER_IMAGE_CLUSTER_LOW_DENSITY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_CLUSTER_MEDIUM_DENSITY">NMF_MARKER_IMAGE_CLUSTER_MEDIUM_DENSITY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_DEFAULT">NMF_MARKER_IMAGE_DEFAULT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_GRAY">NMF_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_GREEN">NMF_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_LIGHTBLUE">NMF_MARKER_IMAGE_LIGHTBLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_PINK">NMF_MARKER_IMAGE_PINK</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_RED">NMF_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMF_MARKER_IMAGE_YELLOW">NMF_MARKER_IMAGE_YELLOW</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFMarker.h@NMF_MARKER_SIZE_AUTO">NMF_MARKER_SIZE_AUTO</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAXIMUM_TILT">NMF_MAXIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MAX_ZOOM">NMF_MAX_ZOOM</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MINIMUM_TILT">NMF_MINIMUM_TILT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraCommon.h@NMF_MIN_ZOOM">NMF_MIN_ZOOM</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFMultipartPath.h@NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX">NMF_MULTI_PART_PATH_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFPath.h@NMF_PATH_OVERLAY_GLOBAL_Z_INDEX">NMF_PATH_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFPolygonOverlay.h@NMF_POLYGON_OVERLAY_GLOBAL_Z_INDEX">NMF_POLYGON_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFPolylineOverlay.h@NMF_POLYLINE_OVERLAY_GLOBAL_Z_INDEX">NMF_POLYLINE_OVERLAY_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGConstants.h@NMG_EARTH_RADIUS">NMG_EARTH_RADIUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LATITUDE">NMG_LAT_LNG_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MAXIMUM_LONGITUDE">NMG_LAT_LNG_MAXIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LATITUDE">NMG_LAT_LNG_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGLatLng.h@NMG_LAT_LNG_MINIMUM_LONGITUDE">NMG_LAT_LNG_MINIMUM_LONGITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_X">NMG_TM128_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGTm128.h@NMG_TM128_MAXIMUM_Y">NMG_TM128_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_X">NMG_TM128_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGTm128.h@NMG_TM128_MINIMUM_Y">NMG_TM128_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_X">NMG_UTMK_MAXIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGUtmk.h@NMG_UTMK_MAXIMUM_Y">NMG_UTMK_MAXIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_X">NMG_UTMK_MINIMUM_X</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGUtmk.h@NMG_UTMK_MINIMUM_Y">NMG_UTMK_MINIMUM_Y</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_LATITUDE">NMG_WEB_MERCATOR_MAXIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MAXIMUM_XY">NMG_WEB_MERCATOR_MAXIMUM_XY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_LATITUDE">NMG_WEB_MERCATOR_MINIMUM_LATITUDE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMGWebMercatorCoord.h@NMG_WEB_MERCATOR_MINIMUM_XY">NMG_WEB_MERCATOR_MINIMUM_XY</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Enumerations.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFLogoAlign.html">NMFLogoAlign</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NMFRendererType.html">NMFRendererType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMCMarkerManager.html">NMCMarkerManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/NMFTileCoverHelperDelegate.html">NMFTileCoverHelperDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>NMCMarkerManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">NMCMarkerManager</span></code></pre>
+
+                </div>
+              </div>
+            <p><code><a href="../Classes/NMCClusterer.html">NMCClusterer</a></code>에서 노출하는 마커 객체를 관리하는 인터페이스.</p>
+
+<p>마커가 지도에 처음 노출되면 <code>retainMarker:</code> 메서드가 호출되며, 더 이상 노출되지 않으면
+<code>releaseMarker:</code> 메서드가 호출됩니다.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="../Classes/NMCComplexBuilder.html#/c:objc(cs)NMCComplexBuilder(py)markerManager">NMCComplexBuilder.markerManager</a></code>
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)NMCMarkerManager(im)retainMarker:"></a>
+                    <a name="//apple_ref/objc/Method/-retainMarker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)NMCMarkerManager(im)retainMarker:">-retainMarker:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>info</code>를 노출할 마커 객체를 반환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">retainMarker</span><span class="p">:(</span><span class="n"><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">info</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retainMarker</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NMFMarker.html">NMFMarker</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>info</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>노출이 필요한 <code><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>노출할 <code><a href="../Classes/NMFMarker.html">NMFMarker</a></code> 객체</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)NMCMarkerManager(im)releaseMarker::"></a>
+                    <a name="//apple_ref/objc/Method/-releaseMarker::" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)NMCMarkerManager(im)releaseMarker::">-releaseMarker::</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>더 이상 노출되지 않는 <code>info</code>의 <code>marker</code>를 정리합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">releaseMarker</span><span class="p">:(</span><span class="n"><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">info</span><span class="o">:</span><span class="p">(</span><span class="n"><a href="../Classes/NMFMarker.html">NMFMarker</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="n">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">releaseMarker</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/NMFMarker.html">NMFMarker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>info</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>더 이상 노출되지 않는 <code><a href="../Classes/NMCMarkerInfo.html">NMCMarkerInfo</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>marker</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>더 이상 노출되지 않는 <code><a href="../Classes/NMFMarker.html">NMFMarker</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section>
+  </body>
+</div>
+</html>

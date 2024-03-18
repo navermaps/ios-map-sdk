@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMCClusterer.h",
+      "line": 46,
+      "symbol": "NMCClusterer.-initWithThresholdStrategy:DistanceStrategy:PositioningStrategy:TagMergeStrategy:MarkerManager:ClusterMarkerUpdater:LeafMarkerUpdater:MinClusteringZoom:MaxClusteringZoom:MinIndexingZoom:MaxIndexingZoom:MaxScreenDistance:AnimationDuration:UpdateOnChange:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/platform/darwin/src/NMFCameraUpdateParams.h",
       "line": 26,
       "symbol": "NMFCameraUpdateParams.isScrolled",

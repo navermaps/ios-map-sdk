@@ -1,0 +1,1572 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>마커 클러스터링 · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="5-7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">마이그레이션 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="migration.html">
+            
+                <a href="migration.html">
+            
+                    
+                    2.x → 3.x 마이그레이션 가이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">개발 가이드</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    상호작용
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5.8" data-path="5-8.html">
+            
+                <a href="5-8.html">
+            
+                    
+                    마커 클러스터링
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="ref://../reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="ref://../guide-en/">
+            
+                    
+                    English(영어)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >마커 클러스터링</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xB9C8;&#xCEE4;-&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;">&#xB9C8;&#xCEE4; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;</h1>
+<p>&#xD55C; &#xD654;&#xBA74;&#xC5D0; &#xB300;&#xB7C9;&#xC758; &#xB9C8;&#xCEE4;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xBA74; &#xC131;&#xB2A5;&#xC774; &#xC800;&#xD558;&#xB420; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xC5EC;&#xB7EC; &#xB9C8;&#xCEE4;&#xAC00; &#xACB9;&#xCCD0; &#xB098;&#xD0C0;&#xB098;&#xBBC0;&#xB85C; &#xC2DC;&#xC778;&#xC131;&#xC774; &#xB5A8;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xB9C8;&#xCEE4;&#xC758; <a href="5-2.html#%EA%B2%B9%EC%B9%A8">&#xACB9;&#xCE68; &#xCC98;&#xB9AC;</a> &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC2DC;&#xC778;&#xC131;&#xC744; &#xC77C;&#xBD80; &#xD5A5;&#xC0C1;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xC73C;&#xB098; &#xACB9;&#xCE68; &#xCC98;&#xB9AC;&#xB85C; &#xC778;&#xD574; &#xAC00;&#xB824;&#xC9C4; &#xB9C8;&#xCEE4;&#xC758; &#xC815;&#xBCF4;&#xB97C; &#xC54C; &#xC218; &#xC5C6;&#xC73C;&#xBA70;, &#xC131;&#xB2A5;&#xB3C4; &#xC5EC;&#xC804;&#xD788; &#xC800;&#xD558;&#xB429;&#xB2C8;&#xB2E4;. &#xB9C8;&#xCEE4; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAE30;&#xB2A5;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC5D0; &#xB530;&#xB77C; &#xADFC;&#xC811;&#xD55C; &#xB9C8;&#xCEE4;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD574; &#xC131;&#xB2A5;&#xACFC; &#xC2DC;&#xC778;&#xC131;&#xC744; &#xBAA8;&#xB450; &#xD5A5;&#xC0C1;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xAE30;&#xBCF8;&#xC801;&#xC778;-&#xC0AC;&#xC6A9;&#xBC95;">&#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC0AC;&#xC6A9;&#xBC95;</h2>
+<h3 id="&#xD0A4;-&#xC815;&#xC758;">&#xD0A4; &#xC815;&#xC758;</h3>
+<p>&#xB9C8;&#xCEE4; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAE30;&#xB2A5;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; &#xB370;&#xC774;&#xD130;&#xC758; &#xD0A4;&#xB97C; &#xC758;&#xBBF8;&#xD558;&#xB294; <a href="ref://../reference/Protocols/NMCClusteringKey.html" target="_blank"><code>NMCClusteringKey</code></a> &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xAD6C;&#xD604;&#xD55C; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xC815;&#xC758;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>NMCClusteringKey</code> &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB294; &#xB370;&#xC774;&#xD130;&#xC758; &#xC88C;&#xD45C;&#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xB450; &#xB370;&#xC774;&#xD130;&#xAC00; &#xB3D9;&#xC77C;&#xD55C;&#xC9C0;&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xC774; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xAD6C;&#xD604;&#xD558;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB294; <code>isEqual:</code>, <code>hash</code> &#xBC0F; <code>copyWithZone:</code>&#xB3C4; &#xAD6C;&#xD604;&#xD558;&#xB294; &#xAC83;&#xC774; &#xAD8C;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;. </p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMCClusteringKey</code>&#xB97C; &#xAD6C;&#xD604;&#xD558;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xC815;&#xC758;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="172874c06f2a883fffd36dd4c1d9c881" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-9fbfdb13e61107d2ada12ae8e38e431f" class="gbcg-selector gbcg-active" data-tab="0-9fbfdb13e61107d2ada12ae8e38e431f" data-tab-category="undefined">Swift</a>
+    <a id="select-1-55de5a3573778c229914f07f1350485f" class="gbcg-selector" data-tab="1-55de5a3573778c229914f07f1350485f" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-9fbfdb13e61107d2ada12ae8e38e431f" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ItemKey</span>: <span class="hljs-title">NSObject</span>, <span class="hljs-title">NMCClusteringKey</span> </span>{
+    <span class="hljs-keyword">let</span> identifier: <span class="hljs-type">Int</span>
+    <span class="hljs-keyword">let</span> position: <span class="hljs-type">NMGLatLng</span>
+
+    <span class="hljs-keyword">init</span>(identifier: <span class="hljs-type">Int</span>, position: <span class="hljs-type">NMGLatLng</span>) {
+        <span class="hljs-keyword">self</span>.identifier = identifier
+        <span class="hljs-keyword">self</span>.position = position
+    }
+
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">markerKey</span><span class="hljs-params">(withIdentifier identifier: Int, position: NMGLatLng)</span></span> -&gt; <span class="hljs-type">ItemKey</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">ItemKey</span>(identifier: identifier, position: position)
+    }
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">isEqual</span><span class="hljs-params">(<span class="hljs-number">_</span> o: Any?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> o = o <span class="hljs-keyword">as</span>? <span class="hljs-type">ItemKey</span> <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+        }
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span> === o {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+        }
+
+        <span class="hljs-keyword">return</span> o.identifier == <span class="hljs-keyword">self</span>.identifier
+    }
+
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">var</span> hash: <span class="hljs-type">Int</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.identifier
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">copy</span><span class="hljs-params">(with zone: NSZone? = <span class="hljs-literal">nil</span>)</span></span> -&gt; <span class="hljs-type">Any</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-keyword">self</span>.identifier, position: <span class="hljs-keyword">self</span>.position)
+    }
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-9fbfdb13e61107d2ada12ae8e38e431f" id="swift">Swift</h3>
+        <div id="0-9fbfdb13e61107d2ada12ae8e38e431f" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ItemKey</span>: <span class="hljs-title">NSObject</span>, <span class="hljs-title">NMCClusteringKey</span> </span>{
+    <span class="hljs-keyword">let</span> identifier: <span class="hljs-type">Int</span>
+    <span class="hljs-keyword">let</span> position: <span class="hljs-type">NMGLatLng</span>
+
+    <span class="hljs-keyword">init</span>(identifier: <span class="hljs-type">Int</span>, position: <span class="hljs-type">NMGLatLng</span>) {
+        <span class="hljs-keyword">self</span>.identifier = identifier
+        <span class="hljs-keyword">self</span>.position = position
+    }
+
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">markerKey</span><span class="hljs-params">(withIdentifier identifier: Int, position: NMGLatLng)</span></span> -&gt; <span class="hljs-type">ItemKey</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">ItemKey</span>(identifier: identifier, position: position)
+    }
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">isEqual</span><span class="hljs-params">(<span class="hljs-number">_</span> o: Any?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
+        <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> o = o <span class="hljs-keyword">as</span>? <span class="hljs-type">ItemKey</span> <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+        }
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">self</span> === o {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+        }
+
+        <span class="hljs-keyword">return</span> o.identifier == <span class="hljs-keyword">self</span>.identifier
+    }
+
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">var</span> hash: <span class="hljs-type">Int</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>.identifier
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">copy</span><span class="hljs-params">(with zone: NSZone? = <span class="hljs-literal">nil</span>)</span></span> -&gt; <span class="hljs-type">Any</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-keyword">self</span>.identifier, position: <span class="hljs-keyword">self</span>.position)
+    }
+}
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-55de5a3573778c229914f07f1350485f" id="objective-c">Objective-C</h3>
+        <div id="1-55de5a3573778c229914f07f1350485f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface ItemKey: NSObject&lt;NMCClusteringKey&gt;
+
+@property (nonatomic) NSInteger identifier;
+@property (nonatomic) NMGLatLng *position;
+
++ (instancetype)markerKeyWithIdentifier:(NSInteger)identifier Position:(NMGLatLng *)position;
+
+@end
+
+@implementation ItemKey
+
++ (instancetype)markerKeyWithIdentifier:(NSInteger)identifier Position:(NMGLatLng *)position {
+    return [[ItemKey alloc] initWithIdentifier:identifier Position:position];
+}
+
+- (instancetype)initWithIdentifier:(NSInteger)identifier Position:(NMGLatLng *)position {
+    self = [super init];
+    if (self) {
+        _identifier = identifier;
+        _position = position;
+    }
+
+    return self;
+}
+
+- (BOOL)isEqual:(id)object {
+    if (self == object) {
+        return YES;
+    }
+
+    if (object == nil || [self class] != [object class]) {
+        return NO;
+    }
+
+    ItemKey *key = object;
+    return key.identifier == self.identifier;
+}
+
+- (NSUInteger)hash {
+    return self.identifier;
+}
+
+- (nonnil id)copyWithZone:(nilable NSZone *)zone {
+    return [[[self class] alloc] initWithIdentifier:self.identifier Position:self.position];
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;-&#xC0DD;&#xC131;">&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC; &#xC0DD;&#xC131;</h3>
+<p>&#xC2E4;&#xC81C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xB3D9;&#xC791;&#xC740; <a href="ref://../reference/Classes/NMCClusterer.html" target="_blank"><code>NMCClusterer</code></a> &#xAC1D;&#xCCB4;&#xAC00; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. <code>NMCClusterer</code> &#xD074;&#xB798;&#xC2A4;&#xC758; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB824;&#xBA74; <a href="ref://../reference/Classes/NMCBuilder.html" target="_blank"><code>NMCBuilder</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. <code>NMCBuilder</code>&#xB294; &#xB370;&#xC774;&#xD130;&#xC758; &#xD0A4;&#xB97C; &#xC758;&#xBBF8;&#xD558;&#xB294; &#xD0C0;&#xC785; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC694;&#xAD6C;&#xD558;&#xBBC0;&#xB85C; &#xC55E;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xD6C4; <a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28im%29build" target="_blank"><code>-build</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xBA74; <code>NMCClusterer</code> &#xAC1D;&#xCCB4;&#xAC00; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMCClusterer</code> &#xAC1D;&#xCCB4;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="61ab4e642235b230682ba9964a219788" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-0743f799e984b43874f9fdfcc42d6ed0" class="gbcg-selector gbcg-active" data-tab="0-0743f799e984b43874f9fdfcc42d6ed0" data-tab-category="undefined">Swift</a>
+    <a id="select-1-93e7070adb877401ab6002c6fad1e05c" class="gbcg-selector" data-tab="1-93e7070adb877401ab6002c6fad1e05c" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-0743f799e984b43874f9fdfcc42d6ed0" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> builder = <span class="hljs-type">NMCBuilder</span>&lt;<span class="hljs-type">ItemKey</span>&gt;()
+<span class="hljs-keyword">let</span> clusterer = builder.build()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-0743f799e984b43874f9fdfcc42d6ed0" id="swift">Swift</h3>
+        <div id="0-0743f799e984b43874f9fdfcc42d6ed0" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> builder = <span class="hljs-type">NMCBuilder</span>&lt;<span class="hljs-type">ItemKey</span>&gt;()
+<span class="hljs-keyword">let</span> clusterer = builder.build()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-93e7070adb877401ab6002c6fad1e05c" id="objective-c">Objective-C</h3>
+        <div id="1-93e7070adb877401ab6002c6fad1e05c" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NMCBuilder *builder = [[NMCBuilder alloc] init];
+NMCClusterer *clusterer = [builder build];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB370;&#xC774;&#xD130;-&#xCD94;&#xAC00;">&#xB370;&#xC774;&#xD130; &#xCD94;&#xAC00;</h3>
+<p>&#xB9C8;&#xCEE4; &#xB370;&#xC774;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB824;&#xBA74; &#xC0DD;&#xC131;&#xD55C; <code>NMCClusterer</code> &#xAC1D;&#xCCB4;&#xC758; <a href="ref://../reference/Classes/NMCClusterer.html#/c%3Aobjc%28cs%29NMCClusterer%28im%29add%3A%3A" target="_blank"><code>-add::</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD638;&#xCD9C;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB370;&#xC774;&#xD130;&#xC5D0;&#xB294; &#xD0A4;&#xC640; &#xBCC4;&#xB3C4;&#xB85C; &#xD0DC;&#xADF8;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70;, &#xD544;&#xC694;&#xCE58; &#xC54A;&#xC744; &#xACBD;&#xC6B0; <code>nil</code>&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC5D0; &#xB370;&#xC774;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="d678920d119fb10eb102aa8dbf13517d" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-1a4eb4ef283710f12870f589983699d6" class="gbcg-selector gbcg-active" data-tab="0-1a4eb4ef283710f12870f589983699d6" data-tab-category="undefined">Swift</a>
+    <a id="select-1-d85cd04db717dd37b94129948f83dd72" class="gbcg-selector" data-tab="1-d85cd04db717dd37b94129948f83dd72" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-1a4eb4ef283710f12870f589983699d6" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">1</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.372</span>, lng: <span class="hljs-number">127.113</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">2</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.366</span>, lng: <span class="hljs-number">127.106</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">3</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.365</span>, lng: <span class="hljs-number">127.157</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">4</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.361</span>, lng: <span class="hljs-number">127.105</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">5</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.368</span>, lng: <span class="hljs-number">127.110</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">6</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.360</span>, lng: <span class="hljs-number">127.106</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">7</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.363</span>, lng: <span class="hljs-number">127.111</span>)), <span class="hljs-literal">nil</span>)
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-1a4eb4ef283710f12870f589983699d6" id="swift">Swift</h3>
+        <div id="0-1a4eb4ef283710f12870f589983699d6" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">1</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.372</span>, lng: <span class="hljs-number">127.113</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">2</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.366</span>, lng: <span class="hljs-number">127.106</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">3</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.365</span>, lng: <span class="hljs-number">127.157</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">4</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.361</span>, lng: <span class="hljs-number">127.105</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">5</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.368</span>, lng: <span class="hljs-number">127.110</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">6</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.360</span>, lng: <span class="hljs-number">127.106</span>)), <span class="hljs-literal">nil</span>)
+clusterer.add(<span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">7</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.363</span>, lng: <span class="hljs-number">127.111</span>)), <span class="hljs-literal">nil</span>)
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-d85cd04db717dd37b94129948f83dd72" id="objective-c">Objective-C</h3>
+        <div id="1-d85cd04db717dd37b94129948f83dd72" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">[clusterer add:[[ItemKey alloc] initWithIdentifier:1 Position:NMGLatLngMake(37.372, 127.113)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:2 Position:NMGLatLngMake(37.366, 127.106)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:3 Position:NMGLatLngMake(37.365, 127.157)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:4 Position:NMGLatLngMake(37.361, 127.105)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:5 Position:NMGLatLngMake(37.368, 127.110)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:6 Position:NMGLatLngMake(37.360, 127.106)] :nil];
+[clusterer add:[[ItemKey alloc] initWithIdentifier:7 Position:NMGLatLngMake(37.363, 127.111)] :nil];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>&#xB370;&#xC774;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xB54C;&#xB294; <code>-add::</code> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC5EC;&#xB7EC; &#xBC88; &#xD638;&#xCD9C;&#xD558;&#xAE30;&#xBCF4;&#xB2E4; <a href="ref://../reference/Classes/NMCClusterer.html#/c%3Aobjc%28cs%29NMCClusterer%28im%29addAll%3A" target="_blank"><code>-addAll:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD55C; &#xBC88;&#xB9CC; &#xD638;&#xCD9C;&#xD558;&#xBA74; &#xC131;&#xB2A5;&#xC774; &#xD5A5;&#xC0C1;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>-addAll:</code>&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="14d38202a6bf540c9c22251acd3ef1d1" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-ef932f809210ddb7c7f59d99c69bf72b" class="gbcg-selector gbcg-active" data-tab="0-ef932f809210ddb7c7f59d99c69bf72b" data-tab-category="undefined">Swift</a>
+    <a id="select-1-c6edf2d2ddbe9829894f16a97dfe234a" class="gbcg-selector" data-tab="1-c6edf2d2ddbe9829894f16a97dfe234a" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-ef932f809210ddb7c7f59d99c69bf72b" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> keyTagMap = [
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">1</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.372</span>, lng: <span class="hljs-number">127.113</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">2</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.366</span>, lng: <span class="hljs-number">127.106</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">3</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.365</span>, lng: <span class="hljs-number">127.157</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">4</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.361</span>, lng: <span class="hljs-number">127.105</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">5</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.368</span>, lng: <span class="hljs-number">127.110</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">6</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.360</span>, lng: <span class="hljs-number">127.106</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">7</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.363</span>, lng: <span class="hljs-number">127.111</span>)): <span class="hljs-type">NSNull</span>()
+]
+clusterer.addAll(keyTagMap);
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-ef932f809210ddb7c7f59d99c69bf72b" id="swift">Swift</h3>
+        <div id="0-ef932f809210ddb7c7f59d99c69bf72b" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> keyTagMap = [
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">1</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.372</span>, lng: <span class="hljs-number">127.113</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">2</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.366</span>, lng: <span class="hljs-number">127.106</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">3</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.365</span>, lng: <span class="hljs-number">127.157</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">4</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.361</span>, lng: <span class="hljs-number">127.105</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">5</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.368</span>, lng: <span class="hljs-number">127.110</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">6</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.360</span>, lng: <span class="hljs-number">127.106</span>)): <span class="hljs-type">NSNull</span>(),
+    <span class="hljs-type">ItemKey</span>(identifier: <span class="hljs-number">7</span>, position: <span class="hljs-type">NMGLatLng</span>(lat: <span class="hljs-number">37.363</span>, lng: <span class="hljs-number">127.111</span>)): <span class="hljs-type">NSNull</span>()
+]
+clusterer.addAll(keyTagMap);
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-c6edf2d2ddbe9829894f16a97dfe234a" id="objective-c">Objective-C</h3>
+        <div id="1-c6edf2d2ddbe9829894f16a97dfe234a" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">NSDictionary *keyTagMap = @{
+    [[ItemKey alloc] initWithIdentifier:1 Position:NMGLatLngMake(37.372, 127.113)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:2 Position:NMGLatLngMake(37.366, 127.106)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:3 Position:NMGLatLngMake(37.365, 127.157)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:4 Position:NMGLatLngMake(37.361, 127.105)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:5 Position:NMGLatLngMake(37.368, 127.110)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:6 Position:NMGLatLngMake(37.360, 127.106)]: [NSNull null],
+    [[ItemKey alloc] initWithIdentifier:7 Position:NMGLatLngMake(37.363, 127.111)]: [NSNull null]
+};
+[clusterer addAll:keyTagMap];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC9C0;&#xB3C4;-&#xAC1D;&#xCCB4;-&#xC9C0;&#xC815;">&#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4; &#xC9C0;&#xC815;</h3>
+<p><code>NMCClusterer</code> &#xAC1D;&#xCCB4;&#xC758; <a href="ref://../reference/Classes/NMCClusterer.html#/c%3Aobjc%28cs%29NMCClusterer%28py%29mapView" target="_blank"><code>mapView</code></a> &#xC18D;&#xC131;&#xC5D0; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC5D0; &#xB530;&#xB77C; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB41C; &#xB9C8;&#xCEE4;&#xAC00; &#xB098;&#xD0C0;&#xB098;&#xBA70;, &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB41C; &#xB9C8;&#xCEE4;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xAC00; &#xD3BC;&#xCCD0;&#xC9C0;&#xB294; &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xB85C; &#xD655;&#xB300;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC5D0; &#xC9C0;&#xB3C4; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="a126355c8ab2afa0c824f22be6413439" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-fcc1f034f2e41243b9ce61c6bf1a85fd" class="gbcg-selector gbcg-active" data-tab="0-fcc1f034f2e41243b9ce61c6bf1a85fd" data-tab-category="undefined">Swift</a>
+    <a id="select-1-7565f44ce68ed23dda9f5a6b158f244c" class="gbcg-selector" data-tab="1-7565f44ce68ed23dda9f5a6b158f244c" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-fcc1f034f2e41243b9ce61c6bf1a85fd" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">clusterer.mapView = mapView
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-fcc1f034f2e41243b9ce61c6bf1a85fd" id="swift">Swift</h3>
+        <div id="0-fcc1f034f2e41243b9ce61c6bf1a85fd" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">clusterer.mapView = mapView
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-7565f44ce68ed23dda9f5a6b158f244c" id="objective-c">Objective-C</h3>
+        <div id="1-7565f44ce68ed23dda9f5a6b158f244c" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">clusterer.mapView = mapView;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-8-simple-clustering-1.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; 1"> <img src="../assets/5-8-simple-clustering-2.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; 2">
+<img src="../assets/5-8-simple-clustering-3.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; 3"> <img src="../assets/5-8-simple-clustering-4.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; 4"></p>
+<h2 id="&#xC635;&#xC158;-&#xC0AC;&#xC6A9;">&#xC635;&#xC158; &#xC0AC;&#xC6A9;</h2>
+<p><code>NMCBuilder</code>&#xC758; &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xAC70;&#xB9AC;, &#xCD5C;&#xC18C;/&#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;, &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158; &#xC5EC;&#xBD80;, &#xD074;&#xB7EC;&#xC2A4;&#xD130;/&#xB2E8;&#xB9D0; &#xB9C8;&#xCEE4; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xC635;&#xC158;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;-&#xAC70;&#xB9AC;">&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAC70;&#xB9AC;</h3>
+<p><a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29screenDistance" target="_blank"><code>screenDistance</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xAE30;&#xC900; &#xAC70;&#xB9AC;&#xB97C; pt &#xB2E8;&#xC704;&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC5D0; &#xCD94;&#xAC00;&#xB41C; &#xB450; &#xB370;&#xC774;&#xD130;&#xC758; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xAC00; &#xAE30;&#xC900; &#xAC70;&#xB9AC;&#xBCF4;&#xB2E4; &#xAC00;&#xAE5D;&#xB2E4;&#xBA74; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC5B4; &#xD558;&#xB098;&#xC758; &#xB9C8;&#xCEE4;&#xB85C; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC758; &#xAE30;&#xC900; &#xAC70;&#xB9AC;&#xB97C; 20DP&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="566df6bb2d4d0aacd69482d384ac77c6" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-b6ed7709522e1bda3a761b0d012b05b2" class="gbcg-selector gbcg-active" data-tab="0-b6ed7709522e1bda3a761b0d012b05b2" data-tab-category="undefined">Swift</a>
+    <a id="select-1-74990142248c0a43d664322ab9312878" class="gbcg-selector" data-tab="1-74990142248c0a43d664322ab9312878" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-b6ed7709522e1bda3a761b0d012b05b2" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">builder.screenDistance = <span class="hljs-number">20</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-b6ed7709522e1bda3a761b0d012b05b2" id="swift">Swift</h3>
+        <div id="0-b6ed7709522e1bda3a761b0d012b05b2" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">builder.screenDistance = <span class="hljs-number">20</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-74990142248c0a43d664322ab9312878" id="objective-c">Objective-C</h3>
+        <div id="1-74990142248c0a43d664322ab9312878" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">builder.screenDistance = 20;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-8-screen-distance-1.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAC70;&#xB9AC; 1"> <img src="../assets/5-8-screen-distance-2.png" alt="&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAC70;&#xB9AC; 2"></p>
+<h3 id="&#xCD5C;&#xC18C;-&#xBC0F;-&#xCD5C;&#xB300;-&#xC90C;-&#xB808;&#xBCA8;">&#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;</h3>
+<p><a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29minZoom" target="_blank"><code>minZoom</code></a> &#xBC0F; <a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29maxZoom" target="_blank"><code>maxZoom</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xCD5C;&#xC18C; &#xBC0F; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xC744; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC774; &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xBCF4;&#xB2E4; &#xB0AE;&#xAC70;&#xB098; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xBCF4;&#xB2E4; &#xB192;&#xB2E4;&#xBA74; &#xB450; &#xB370;&#xC774;&#xD130;&#xAC00; &#xD654;&#xBA74;&#xC0C1; &#xAE30;&#xC900; &#xAC70;&#xB9AC;&#xBCF4;&#xB2E4; &#xAC00;&#xAE5D;&#xB354;&#xB77C;&#xB3C4; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xC774; 4&#xC774;&#xACE0; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xC774; 16&#xC774;&#xB77C;&#xBA74;, &#xCE74;&#xBA54;&#xB77C;&#xC758; &#xC90C; &#xB808;&#xBCA8;&#xC744; 3 &#xC774;&#xD558;&#xB85C; &#xCD95;&#xC18C;&#xD558;&#xB354;&#xB77C;&#xB3C4; 4&#xB808;&#xBCA8;&#xC758; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xAC00; &#xB354; &#xC774;&#xC0C1; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC9C0; &#xC54A;&#xACE0; &#xADF8;&#xB300;&#xB85C; &#xC720;&#xC9C0;&#xB418;&#xBA70;, 17 &#xC774;&#xC0C1;&#xC73C;&#xB85C; &#xD655;&#xB300;&#xD558;&#xBA74; &#xBAA8;&#xB4E0; &#xB370;&#xC774;&#xD130;&#xAC00; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC9C0; &#xC54A;&#xACE0; &#xB0B1;&#xAC1C;&#xB85C; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC758; &#xCD5C;&#xC18C; &#xB808;&#xBCA8;&#xC744; 4, &#xCD5C;&#xB300; &#xB808;&#xBCA8;&#xC744; 16&#xC73C;&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="ccf8cbdb534b5ca6841899e7c90b8e54" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-beb786e3f6f0830ea0b948e948a7c553" class="gbcg-selector gbcg-active" data-tab="0-beb786e3f6f0830ea0b948e948a7c553" data-tab-category="undefined">Swift</a>
+    <a id="select-1-b53beb704450047d3032cc2351ece921" class="gbcg-selector" data-tab="1-b53beb704450047d3032cc2351ece921" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-beb786e3f6f0830ea0b948e948a7c553" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">builder.minZoom = <span class="hljs-number">4</span>
+builder.maxZoom = <span class="hljs-number">16</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-beb786e3f6f0830ea0b948e948a7c553" id="swift">Swift</h3>
+        <div id="0-beb786e3f6f0830ea0b948e948a7c553" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">builder.minZoom = <span class="hljs-number">4</span>
+builder.maxZoom = <span class="hljs-number">16</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-b53beb704450047d3032cc2351ece921" id="objective-c">Objective-C</h3>
+        <div id="1-b53beb704450047d3032cc2351ece921" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">builder.minZoom = 4;
+builder.maxZoom = 16;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xD655;&#xB300;&#xCD95;&#xC18C;-&#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;">&#xD655;&#xB300;/&#xCD95;&#xC18C; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;</h3>
+<p><a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29animate" target="_blank"><code>animate</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xCE74;&#xBA54;&#xB77C; &#xD655;&#xB300;/&#xCD95;&#xC18C;&#xC2DC; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xAC00; &#xD3BC;&#xCCD0;&#xC9C0;&#xB294;/&#xD569;&#xCCD0;&#xC9C0;&#xB294; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD560;&#xC9C0; &#xC5EC;&#xBD80;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC560;&#xB2C8;&#xBA54;&#xC774;&#xC158;&#xC744; &#xC801;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="d09311c01f77f5e0187118e714cfc76f" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-2f83dcb8b6e46bc686fda02da73ef0b9" class="gbcg-selector gbcg-active" data-tab="0-2f83dcb8b6e46bc686fda02da73ef0b9" data-tab-category="undefined">Swift</a>
+    <a id="select-1-67d7cb9e9d47602018dbe0be5d4e7483" class="gbcg-selector" data-tab="1-67d7cb9e9d47602018dbe0be5d4e7483" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-2f83dcb8b6e46bc686fda02da73ef0b9" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">builder.animate = <span class="hljs-literal">false</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-2f83dcb8b6e46bc686fda02da73ef0b9" id="swift">Swift</h3>
+        <div id="0-2f83dcb8b6e46bc686fda02da73ef0b9" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">builder.animate = <span class="hljs-literal">false</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-67d7cb9e9d47602018dbe0be5d4e7483" id="objective-c">Objective-C</h3>
+        <div id="1-67d7cb9e9d47602018dbe0be5d4e7483" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">builder.animate = NO;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB9C8;&#xCEE4;-&#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;">&#xB9C8;&#xCEE4; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;</h3>
+<p><a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29clusterMarkerUpdater" target="_blank"><code>clusterMarkerUpdater</code></a> &#xBC0F; <a href="ref://../reference/Classes/NMCBuilder.html#/c%3Aobjc%28cs%29NMCBuilder%28py%29leafMarkerUpdater" target="_blank"><code>leafMarkerUpdater</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC640; &#xB2E8;&#xB9D0;(leaf) &#xB9C8;&#xCEE4;&#xB97C; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB9C8;&#xCEE4;&#xB97C; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD558;&#xB824;&#xBA74; <code>clusterMarkerUpdater</code> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; <a href="ref://../reference/Protocols/NMCClusterMarkerUpdater.html" target="_blank"><code>NMCClusterMarkerUpdater</code></a> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB9C8;&#xCEE4;&#xAC00; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB0A0; &#xB54C;&#xB9C8;&#xB2E4; <a href="ref://../reference/Protocols/NMCClusterMarkerUpdater.html#/c%3Aobjc%28pl%29NMCClusterMarkerUpdater%28im%29updateClusterMarker%3A%3A" target="_blank"><code>-updateClusterMarker::</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; <a href="ref://../reference/Classes/NMCClusterMarkerInfo.html" target="_blank"><code>NMCClusterMarkerInfo</code></a>&#xC640; &#xC774;&#xB97C; &#xD45C;&#xD604;&#xD560; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xAC00; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;. <code>NMCClusterMarkerInfo</code>&#xC5D0;&#xB294; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC758; &#xD06C;&#xAE30;, &#xB178;&#xCD9C;&#xB418;&#xB294; &#xCD5C;&#xC18C;/&#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;, &#xD0DC;&#xADF8; &#xB4F1; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB9C8;&#xCEE4;&#xC758; &#xC815;&#xBCF4;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xB97C; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xC758; &#xC18D;&#xC131;&#xC5D0; &#xBC18;&#xC601;&#xD558;&#xBA74; &#xC9C0;&#xB3C4; &#xD654;&#xBA74;&#xC5D0;&#xB3C4; &#xBC18;&#xC601;&#xB429;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC778; <a href="ref://../reference/Classes/NMCDefaultClusterMarkerUpdater.html" target="_blank"><code>NMCDefaultClusterMarkerUpdater</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xCEA1;&#xC158;&#xC73C;&#xB85C; &#xB178;&#xCD9C;&#xD558;&#xACE0; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xD074;&#xB9AD; &#xC2DC; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xAC00; &#xD3BC;&#xCCD0;&#xC9C0;&#xB294; &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xB85C; &#xD655;&#xB300;&#xD558;&#xB294; &#xAE30;&#xB2A5; &#xB4F1;&#xC744; &#xC774;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC774;&#xB97C; &#xC0C1;&#xC18D;&#xBC1B;&#xC544; &#xD544;&#xC694;&#xD55C; &#xBD80;&#xBD84;&#xB9CC; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E8;&#xB9D0; &#xB9C8;&#xCEE4;&#xB97C; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD558;&#xB824;&#xBA74; <code>leafMarkerUpdater</code> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; <a href="ref://../reference/Protocols/NMCLeafMarkerUpdater.html" target="_blank"><code>NMCLeafMarkerUpdater</code></a> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB2E8;&#xC77C; &#xB9C8;&#xCEE4;&#xAC00; &#xC9C0;&#xB3C4;&#xC5D0; &#xB098;&#xD0C0;&#xB0A0; &#xB54C;&#xB9C8;&#xB2E4; <a href="ref://../reference/Protocols/NMCLeafMarkerUpdater.html#/c%3Aobjc%28pl%29NMCLeafMarkerUpdater%28im%29updateLeafMarker%3A%3A" target="_blank"><code>-updateLeafMarker::</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; <a href="ref://../reference/Classes/NMCLeafMarkerInfo.html" target="_blank"><code>NMCLeafMarkerInfo</code></a>&#xC640; &#xC774;&#xB97C; &#xD45C;&#xD604;&#xD560; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xAC00; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;. <code>NMCLeafMarkerInfo</code>&#xC5D0;&#xB294; &#xB370;&#xC774;&#xD130;&#xAC00; &#xB178;&#xCD9C;&#xB418;&#xB294; &#xCD5C;&#xC18C;/&#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;, &#xD0DC;&#xADF8; &#xB4F1; &#xB2E8;&#xB9D0; &#xB9C8;&#xCEE4;&#xC758; &#xC815;&#xBCF4;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xB97C; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xC758; &#xC18D;&#xC131;&#xC5D0; &#xBC18;&#xC601;&#xD558;&#xBA74; &#xC9C0;&#xB3C4; &#xD654;&#xBA74;&#xC5D0;&#xB3C4; &#xBC18;&#xC601;&#xB429;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8;&#xAC12;&#xC778; <a href="ref://../reference/Classes/NMCDefaultLeafMarkerUpdater.html" target="_blank"><code>NMCDefaultLeafMarkerUpdater</code></a>&#xB97C; &#xC0C1;&#xC18D;&#xBC1B;&#xC544; &#xD544;&#xC694;&#xD55C; &#xBD80;&#xBD84;&#xB9CC; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD55C;&#xD3B8; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xB294; &#xD654;&#xBA74;&#xC5D0; &#xB098;&#xD0C0;&#xB098;&#xC57C; &#xD558;&#xB294; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xBC0F; &#xB2E8;&#xB9D0; &#xB370;&#xC774;&#xD130;&#xB9CC;&#xC744; &#xB9C8;&#xCEE4;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4; &#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xC9C0;&#xB3C4;&#xC5D0; &#xCD94;&#xAC00;/&#xC81C;&#xAC70;&#xD558;&#xBA70;, &#xC81C;&#xAC70;&#xB41C; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC7AC;&#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xB54C;&#xBB38;&#xC5D0; <code>-updateClusterMarker::</code>, <code>-updateLeafMarker::</code> &#xBA54;&#xC11C;&#xB4DC;&#xB85C; &#xC804;&#xB2EC;&#xB418;&#xB294; &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xC5D0;&#xB294; &#xC774;&#xC804; &#xB370;&#xC774;&#xD130;&#xC758; &#xC18D;&#xC131;&#xC774; &#xC5EC;&#xC804;&#xD788; &#xBC18;&#xC601;&#xB418;&#xC5B4; &#xC788;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xB9C8;&#xCEE4;&#xB97C; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xACBD;&#xC6B0; &#xD544;&#xC694;&#xD55C; &#xC18D;&#xC131;&#xC744; &#xBE60;&#xC9D0;&#xC5C6;&#xC774; &#xB36E;&#xC5B4;&#xC50C;&#xC6CC;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC758; &#xD06C;&#xAE30; &#xBC0F; &#xB370;&#xC774;&#xD130;&#xC758; ID&#xC5D0; &#xB530;&#xB77C; &#xB9C8;&#xCEE4; &#xC544;&#xC774;&#xCF58;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xACE0;, &#xB2E8;&#xB9D0; &#xB9C8;&#xCEE4;&#xB97C; &#xD074;&#xB9AD;&#xD588;&#xC744; &#xB54C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xD558;&#xB3C4;&#xB85D; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="2615c74c72f32f97d4eb98770c9c2d7b" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-a8eb10b38430c652112a1904d651c4b8" class="gbcg-selector gbcg-active" data-tab="0-a8eb10b38430c652112a1904d651c4b8" data-tab-category="undefined">Swift</a>
+    <a id="select-1-33257425556a10a9230b67ad0c4d114b" class="gbcg-selector" data-tab="1-33257425556a10a9230b67ad0c4d114b" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-a8eb10b38430c652112a1904d651c4b8" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> icons: [<span class="hljs-type">NMFOverlayImage</span>] = [ <span class="hljs-type">NMF_MARKER_IMAGE_BLUE</span>, <span class="hljs-type">NMF_MARKER_IMAGE_GREEN</span>, <span class="hljs-type">NMF_MARKER_IMAGE_RED</span>, <span class="hljs-type">NMF_MARKER_IMAGE_YELLOW</span> ]
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClusterMarkerUpdater</span>: <span class="hljs-title">NMCDefaultClusterMarkerUpdater</span> </span>{
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">updateClusterMarker</span><span class="hljs-params">(<span class="hljs-number">_</span> info: NMCClusterMarkerInfo, <span class="hljs-number">_</span> marker: NMFMarker)</span></span> {
+        <span class="hljs-keyword">super</span>.updateClusterMarker(info, marker)
+        <span class="hljs-keyword">if</span> info.size &lt; <span class="hljs-number">3</span> {
+            marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_CLUSTER_LOW_DENSITY</span>
+        } <span class="hljs-keyword">else</span> {
+            marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_CLUSTER_MEDIUM_DENSITY</span>
+        }
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LeafMarkerUpdater</span>: <span class="hljs-title">NMCDefaultLeafMarkerUpdater</span> </span>{
+    <span class="hljs-keyword">var</span> clusterer: <span class="hljs-type">NMCClusterer</span>&lt;<span class="hljs-type">ItemKey</span>&gt;?
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">updateLeafMarker</span><span class="hljs-params">(<span class="hljs-number">_</span> info: NMCLeafMarkerInfo, <span class="hljs-number">_</span> marker: NMFMarker)</span></span> {
+        <span class="hljs-keyword">super</span>.updateLeafMarker(info, marker)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> key = info.key <span class="hljs-keyword">as</span>? <span class="hljs-type">ItemKey</span> {
+            marker.iconImage = icons[key.identifier % icons.<span class="hljs-built_in">count</span>]
+            marker.touchHandler = { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] (o: <span class="hljs-type">NMFOverlay</span>) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+                <span class="hljs-keyword">self</span>?.clusterer?.remove(key)
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+            }
+        }
+    }
+}
+
+builder.clusterMarkerUpdater = <span class="hljs-type">ClusterMarkerUpdater</span>()
+builder.leafMarkerUpdater = <span class="hljs-type">LeafMarkerUpdater</span>()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-a8eb10b38430c652112a1904d651c4b8" id="swift">Swift</h3>
+        <div id="0-a8eb10b38430c652112a1904d651c4b8" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-keyword">let</span> icons: [<span class="hljs-type">NMFOverlayImage</span>] = [ <span class="hljs-type">NMF_MARKER_IMAGE_BLUE</span>, <span class="hljs-type">NMF_MARKER_IMAGE_GREEN</span>, <span class="hljs-type">NMF_MARKER_IMAGE_RED</span>, <span class="hljs-type">NMF_MARKER_IMAGE_YELLOW</span> ]
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClusterMarkerUpdater</span>: <span class="hljs-title">NMCDefaultClusterMarkerUpdater</span> </span>{
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">updateClusterMarker</span><span class="hljs-params">(<span class="hljs-number">_</span> info: NMCClusterMarkerInfo, <span class="hljs-number">_</span> marker: NMFMarker)</span></span> {
+        <span class="hljs-keyword">super</span>.updateClusterMarker(info, marker)
+        <span class="hljs-keyword">if</span> info.size &lt; <span class="hljs-number">3</span> {
+            marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_CLUSTER_LOW_DENSITY</span>
+        } <span class="hljs-keyword">else</span> {
+            marker.iconImage = <span class="hljs-type">NMF_MARKER_IMAGE_CLUSTER_MEDIUM_DENSITY</span>
+        }
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LeafMarkerUpdater</span>: <span class="hljs-title">NMCDefaultLeafMarkerUpdater</span> </span>{
+    <span class="hljs-keyword">var</span> clusterer: <span class="hljs-type">NMCClusterer</span>&lt;<span class="hljs-type">ItemKey</span>&gt;?
+
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">updateLeafMarker</span><span class="hljs-params">(<span class="hljs-number">_</span> info: NMCLeafMarkerInfo, <span class="hljs-number">_</span> marker: NMFMarker)</span></span> {
+        <span class="hljs-keyword">super</span>.updateLeafMarker(info, marker)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> key = info.key <span class="hljs-keyword">as</span>? <span class="hljs-type">ItemKey</span> {
+            marker.iconImage = icons[key.identifier % icons.<span class="hljs-built_in">count</span>]
+            marker.touchHandler = { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] (o: <span class="hljs-type">NMFOverlay</span>) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+                <span class="hljs-keyword">self</span>?.clusterer?.remove(key)
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+            }
+        }
+    }
+}
+
+builder.clusterMarkerUpdater = <span class="hljs-type">ClusterMarkerUpdater</span>()
+builder.leafMarkerUpdater = <span class="hljs-type">LeafMarkerUpdater</span>()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-33257425556a10a9230b67ad0c4d114b" id="objective-c">Objective-C</h3>
+        <div id="1-33257425556a10a9230b67ad0c4d114b" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface ClusterMarkerUpdater : NMCDefaultClusterMarkerUpdater
+@end
+
+@implementation ClusterMarkerUpdater
+- (void)updateClusterMarker:(NMCClusterMarkerInfo *)info :(NMFMarker *)marker {
+    [super updateClusterMarker:info :marker];
+    if (info.size &lt; 3) {
+        marker.iconImage = NMF_MARKER_IMAGE_CLUSTER_LOW_DENSITY;
+    } else {
+        marker.iconImage = NMF_MARKER_IMAGE_CLUSTER_MEDIUM_DENSITY;
+    }
+}
+@end
+
+@interface LeafMarkerUpdater : NMCDefaultLeafMarkerUpdater
+@property (nonatomic, weak, nullable) NMCClusterer *clusterer;
+@end
+
+@implementation LeafMarkerUpdater
+- (void)updateLeafMarker:(NMCLeafMarkerInfo * _Nonnull)info :(NMFMarker * _Nonnull)marker {
+    [super updateLeafMarker:info :marker];
+    ItemKey *key = (ItemKey *)info.key;
+    NSArray&lt;NMFOverlayImage *&gt; *icons = @[
+        NMF_MARKER_IMAGE_BLUE,
+        NMF_MARKER_IMAGE_GREEN,
+        NMF_MARKER_IMAGE_RED,
+        NMF_MARKER_IMAGE_YELLOW
+    ];
+    marker.iconImage = icons[key.identifier % icons.count];
+    __block typeof(self) weakSelf = self;
+    marker.touchHandler = ^BOOL(NMFOverlay * _Nonnull __weak overlay) {
+        [weakSelf.clusterer remove:(ItemKey *)info.key];
+        return YES;
+    };
+}
+@end
+
+builder.leafMarkerUpdater = [[LeafMarkerUpdater alloc] init];
+builder.clusterMarkerUpdater = [[ClusterMarkerUpdater alloc] init];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><img src="../assets/5-8-marker-customizing-1.png" alt="&#xB9C8;&#xCEE4; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5; 1"> <img src="../assets/5-8-marker-customizing-2.png" alt="&#xB9C8;&#xCEE4; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5; 2"></p>
+<h2 id="&#xBCF5;&#xC7A1;&#xD55C;-&#xC804;&#xB7B5;-&#xC0AC;&#xC6A9;">&#xBCF5;&#xC7A1;&#xD55C; &#xC804;&#xB7B5; &#xC0AC;&#xC6A9;</h2>
+<p><code>NMCBuilder</code> &#xB300;&#xC2E0; <a href="ref://../reference/Classes/NMCComplexBuilder.html" target="_blank"><code>NMCComplexBuilder</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xAC00; &#xC544;&#xB2CC; &#xB2E4;&#xB978; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD558;&#xB294; &#xB4F1; &#xBCF5;&#xC7A1;&#xD55C; &#xC804;&#xB7B5;&#xACFC; &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xB178;&#xB4DC;">&#xB178;&#xB4DC;</h3>
+<p>&#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xC758; &#xB9C8;&#xCEE4; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xAE30;&#xB2A5;&#xC740; <a href="https://en.wikipedia.org/wiki/Hierarchical_clustering" target="_blank">hierarchical agglomerative clustering</a> &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC5D0; &#xAE30;&#xBC18;&#xD569;&#xB2C8;&#xB2E4;. &#xC989;, &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xC758; &#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8;&#xBD80;&#xD130; &#xC778;&#xC811; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD558;&#xC5EC;, &#xCD5C;&#xC18C; &#xC90C; &#xB808;&#xBCA8;&#xAE4C;&#xC9C0; &#xBC14;&#xD140;-&#xC5C5; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xD2B8;&#xB9AC;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xBA70; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD569;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xD2B8;&#xB9AC;&#xC5D0;&#xC11C; &#xC790;&#xC2DD;&#xC774; &#xC788;&#xB294; &#xB178;&#xB4DC;&#xB294; &#xD074;&#xB7EC;&#xC2A4;&#xD130;, &#xB2E8;&#xB9D0; &#xB178;&#xB4DC;&#xB294; &#xB370;&#xC774;&#xD130;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAC01; &#xB178;&#xB4DC;&#xB294; <a href="ref://../reference/Classes/NMCNode.html" target="_blank"><code>NMCNode</code></a> &#xD074;&#xB798;&#xC2A4;&#xB85C; &#xD45C;&#xD604;&#xB418;&#xBA70;, &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC640; &#xB2E8;&#xB9D0; &#xB178;&#xB4DC;&#xB294; &#xAC01;&#xAC01; <code>NMCNode</code>&#xC758; &#xD558;&#xC704; &#xD074;&#xB798;&#xC2A4;&#xC778; <a href="ref://../reference/Classes/NMCCluster.html" target="_blank"><code>NMCCluster</code></a>&#xC640; <a href="ref://../reference/Classes/NMCLeaf.html" target="_blank"><code>NMCLeaf</code></a>&#xB85C; &#xD45C;&#xD604;&#xB429;&#xB2C8;&#xB2E4;. </p>
+<p>&#xB178;&#xB4DC;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xACF5;&#xD1B5;&#xC801;&#xC73C;&#xB85C; &#xC88C;&#xD45C;, &#xD0DC;&#xADF8;, &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xAC1C;&#xC218;, &#xB178;&#xCD9C;&#xB418;&#xC5B4;&#xC57C; &#xD558;&#xB294; &#xCD5C;&#xC18C;/&#xCD5C;&#xB300; &#xC90C; &#xB808;&#xBCA8; &#xC18D;&#xC131;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xC73C;&#xBA70;, &#xC774;&#xC5D0; &#xB354;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xB294; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xBAA9;&#xB85D;&#xC5D0;, &#xB2E8;&#xB9D0; &#xB178;&#xB4DC;&#xB294; &#xB370;&#xC774;&#xD130;&#xC758; &#xD0A4;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xAE30;&#xC900;-&#xAC70;&#xB9AC;-&#xC804;&#xB7B5;-&#xBC0F;-&#xAC70;&#xB9AC;-&#xCE21;&#xC815;-&#xC804;&#xB7B5;">&#xAE30;&#xC900; &#xAC70;&#xB9AC; &#xC804;&#xB7B5; &#xBC0F; &#xAC70;&#xB9AC; &#xCE21;&#xC815; &#xC804;&#xB7B5;</h3>
+<p><a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29thresholdStrategy" target="_blank"><code>thresholdStrategy</code></a> &#xBC0F; <a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29distanceStrategy" target="_blank"><code>distanceStrategy()</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD2B9;&#xC815; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C; &#xB450; &#xB178;&#xB4DC;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><code>thresholdStrategy</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; <a href="ref://../reference/Protocols/NMCThresholdStrategy.html" target="_blank"><code>NMCThresholdStrategy</code></a>&#xB294; &#xD2B9;&#xC815; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C; &#xB450; &#xB178;&#xB4DC;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xAE30;&#xC900; &#xAC70;&#xB9AC;&#xB97C; &#xAD6C;&#xD558;&#xB294; &#xC804;&#xB7B5;&#xC5D0; &#xB300;&#xD55C; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC774;&#xBA70;, <code>distanceStrategy</code>&#xB85C; &#xC9C0;&#xC815;&#xD558;&#xB294; <a href="ref://../reference/Protocols/NMCDistanceStrategy.html" target="_blank"><code>NMCDistanceStrategy</code></a>&#xB294; &#xD2B9;&#xC815; &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C; &#xB450; &#xB178;&#xB4DC;&#xAC04;&#xC758; &#xAC70;&#xB9AC;&#xB97C; &#xCE21;&#xC815;&#xD558;&#xB294; &#xC804;&#xB7B5;&#xC5D0; &#xB300;&#xD55C; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC989;, &#xB450; &#xB178;&#xB4DC; <code>node1</code>&#xACFC; <code>node2</code>&#xAC00; &#xC788;&#xC744; &#xB54C;, <code>zoom</code> &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C; <code>NMCDistanceStrategy.getDistance:Node1:Node2:</code>&#xAC00; <code>NMCThresholdStrategy.getThreshold:</code>&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xB2E4;&#xBA74; <code>node1</code>&#xACFC; <code>node2</code>&#xB294; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB429;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xC90C; &#xB808;&#xBCA8;&#xC5D0; &#xB530;&#xB77C; &#xAC70;&#xB9AC; &#xAE30;&#xC900;&#xC744; &#xB2EC;&#xB9AC;&#xD558;&#xAC70;&#xB098; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xC640; &#xBB34;&#xAD00;&#xD558;&#xAC8C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; 9&#xB808;&#xBCA8; &#xC774;&#xD558;&#xC5D0;&#xC11C;&#xB294; &#xBB34;&#xC870;&#xAC74; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;, 10~13&#xB808;&#xBCA8;&#xC5D0;&#xC11C;&#xB294; &#xD0DC;&#xADF8;&#xAC00; &#xB3D9;&#xC77C;&#xD560; &#xB54C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;, 14&#xB808;&#xBCA8; &#xC774;&#xC0C1;&#xC5D0;&#xC11C;&#xB294; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xAC00; 70 &#xBBF8;&#xB9CC;&#xC77C; &#xB54C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD558;&#xB3C4;&#xB85D; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<p><div id="52e70a8982eb6f40f0eb69cc2e4b187c" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-a744a0ce83432644e2d7584075e54887" class="gbcg-selector gbcg-active" data-tab="0-a744a0ce83432644e2d7584075e54887" data-tab-category="undefined">Swift</a>
+    <a id="select-1-83eeea9785bb7181004c39e619ea46ed" class="gbcg-selector" data-tab="1-83eeea9785bb7181004c39e619ea46ed" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-a744a0ce83432644e2d7584075e54887" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCThresholdStrategy</span>, <span class="hljs-title">NMCDistanceStrategy</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getThreshold</span><span class="hljs-params">(<span class="hljs-number">_</span> zoom: Int)</span></span> -&gt; <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">11</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">70</span>
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getDistance</span><span class="hljs-params">(<span class="hljs-number">_</span> zoom: Int, node1: NMCNode, node2: NMCNode)</span></span> -&gt; <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">9</span> {
+            <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">13</span>, <span class="hljs-keyword">let</span> tag1 = node1.tag, <span class="hljs-keyword">let</span> tag2 = node2.tag {
+            <span class="hljs-keyword">if</span> tag1.isEqual(tag2) {
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-type">NMCDefaultDistanceStrategy</span>().getDistance(zoom, node1: node1, node2: node2)
+        }
+    }
+}
+
+complexBuilder.thresholdStrategy = <span class="hljs-keyword">self</span>
+complexBuilder.distanceStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-a744a0ce83432644e2d7584075e54887" id="swift">Swift</h3>
+        <div id="0-a744a0ce83432644e2d7584075e54887" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCThresholdStrategy</span>, <span class="hljs-title">NMCDistanceStrategy</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getThreshold</span><span class="hljs-params">(<span class="hljs-number">_</span> zoom: Int)</span></span> -&gt; <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">11</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">70</span>
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getDistance</span><span class="hljs-params">(<span class="hljs-number">_</span> zoom: Int, node1: NMCNode, node2: NMCNode)</span></span> -&gt; <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">9</span> {
+            <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> zoom &lt;= <span class="hljs-number">13</span>, <span class="hljs-keyword">let</span> tag1 = node1.tag, <span class="hljs-keyword">let</span> tag2 = node2.tag {
+            <span class="hljs-keyword">if</span> tag1.isEqual(tag2) {
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-type">NMCDefaultDistanceStrategy</span>().getDistance(zoom, node1: node1, node2: node2)
+        }
+    }
+}
+
+complexBuilder.thresholdStrategy = <span class="hljs-keyword">self</span>
+complexBuilder.distanceStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-83eeea9785bb7181004c39e619ea46ed" id="objective-c">Objective-C</h3>
+        <div id="1-83eeea9785bb7181004c39e619ea46ed" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface ClusteringViewController () &lt;NMCThresholdStrategy, NMCDistanceStrategy&gt;
+@end
+
+@implementation MarkerClusteringStrategyViewController
+- (double)getThreshold:(NSInteger)zoom {
+    if (zoom &lt;= 11) {
+        return 0;
+    } else {
+        return 70;
+    }
+}
+- (double)getDistance:(NSInteger)zoom Node1:(NMCNode * _Nonnull)node1 Node2:(NMCNode * _Nonnull)node2 {
+    if (zoom &lt;= 9) {
+        return -1;
+    } else if (zoom &lt;= 13) {
+        if ([node1.tag isEqual:node2.tag]) {
+            return -1;
+        } else {
+            return 1;
+        }
+    } else {
+        return [[[NMCDefaultDistanceStrategy alloc] init] getDistance:zoom Node1:node1 Node2:node2];
+    }
+}
+@end
+
+complexBuilder.thresholdStrategy = self;
+complexBuilder.distanceStrategy = self;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xCD5C;&#xB300;-&#xD654;&#xBA74;-&#xAC70;&#xB9AC;-&#xC81C;&#xD55C;">&#xCD5C;&#xB300; &#xD654;&#xBA74; &#xAC70;&#xB9AC; &#xC81C;&#xD55C;</h3>
+<p>&#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xC5D0; &#xB300;&#xD574; &#xBAA8;&#xB4E0; &#xC778;&#xC811; &#xB178;&#xB4DC;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xC744; &#xC2DC;&#xB3C4;&#xD558;&#xBA74; &#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;&#xAC00; &#xAE30;&#xD558;&#xAE09;&#xC218;&#xC801;&#xC73C;&#xB85C; &#xC99D;&#xAC00;&#xD558;&#xC5EC; &#xC131;&#xB2A5;&#xC5D0; &#xD070; &#xC545;&#xC601;&#xD5A5;&#xC744; &#xBBF8;&#xCE69;&#xB2C8;&#xB2E4;. &#xB54C;&#xBB38;&#xC5D0; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC0BC;&#xC544; &#xD6C4;&#xBCF4; &#xB178;&#xB4DC;&#xC5D0; &#xB300;&#xD55C; &#xD0D0;&#xC0C9; &#xACF5;&#xAC04;&#xC744; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29maxScreenDistance" target="_blank"><code>maxScreenDistance</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xD560; &#xCD5C;&#xB300; &#xD654;&#xBA74; &#xAC70;&#xB9AC;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC989;, &#xB450; &#xB178;&#xB4DC; <code>node1</code>&#xACFC; <code>node2</code>&#xAC00; &#xC788;&#xC744; &#xB54C;, <code>zoom</code> &#xC90C; &#xB808;&#xBCA8;&#xC5D0;&#xC11C; &#xB450; &#xB178;&#xB4DC;&#xC758; &#xD654;&#xBA74;&#xC0C1; &#xAC70;&#xB9AC;&#xAC00; &#xC774; &#xAC12;&#xBCF4;&#xB2E4; &#xD06C;&#xB2E4;&#xBA74;, <code>NMCDistanceStrategy.getDistance:Node1:Node2:</code>&#xAC00; <code>NMCThresholdStrategy.getThreshold:</code>&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xB354;&#xB77C;&#xB3C4; <code>node1</code>&#xACFC; <code>node2</code>&#xB294; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; <code>NMCThresholdStrategy</code>&#xC640; <code>NMCDistanceStrategy</code>&#xB97C; &#xC9C0;&#xC815;&#xD588;&#xB2E4;&#xBA74; &#xC804;&#xB7B5;&#xC744; &#xACE0;&#xB824;&#xD574; &#xCD5C;&#xC801;&#xC758; &#xAC70;&#xB9AC;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xAC12;&#xC744; &#xB108;&#xBB34; &#xC791;&#xAC8C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC5B4;&#xC57C; &#xD558;&#xB294; &#xB178;&#xB4DC;&#xAC00; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC9C0; &#xC54A;&#xC744; &#xC218; &#xC788;&#xACE0;, &#xB108;&#xBB34; &#xD06C;&#xAC8C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC131;&#xB2A5;&#xC774; &#xC800;&#xD558;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xCD5C;&#xB300; &#xD654;&#xBA74; &#xAC70;&#xB9AC; &#xC81C;&#xD55C;&#xC744; 100DP&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="4164660e95d460fe554eec50ddbcb127" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-f8e9c1f211a1241d0b2faa5aa856aad4" class="gbcg-selector gbcg-active" data-tab="0-f8e9c1f211a1241d0b2faa5aa856aad4" data-tab-category="undefined">Swift</a>
+    <a id="select-1-f25dd15e7ee2718f8ed25b36e3f47125" class="gbcg-selector" data-tab="1-f25dd15e7ee2718f8ed25b36e3f47125" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-f8e9c1f211a1241d0b2faa5aa856aad4" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">complexBuilder.maxScreenDistance = <span class="hljs-number">100</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-f8e9c1f211a1241d0b2faa5aa856aad4" id="swift">Swift</h3>
+        <div id="0-f8e9c1f211a1241d0b2faa5aa856aad4" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">complexBuilder.maxScreenDistance = <span class="hljs-number">100</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-f25dd15e7ee2718f8ed25b36e3f47125" id="objective-c">Objective-C</h3>
+        <div id="1-f25dd15e7ee2718f8ed25b36e3f47125" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">complexBuilder.maxScreenDistance = 100
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xD0DC;&#xADF8;-&#xBCD1;&#xD569;-&#xC804;&#xB7B5;">&#xD0DC;&#xADF8; &#xBCD1;&#xD569; &#xC804;&#xB7B5;</h3>
+<p>&#xB2E8;&#xB9D0; &#xB178;&#xB4DC;&#xC5D0;&#xB294; <code>NMCClusterer.add::</code>&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xD0A4;&#xC640; &#xD0DC;&#xADF8;&#xAC00; &#xC720;&#xC9C0;&#xB429;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xB294; &#xC5EC;&#xB7EC; &#xB178;&#xB4DC;&#xAC00; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC5B4; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xAC83;&#xC774;&#xBBC0;&#xB85C; &#xD0A4;&#xB97C; &#xAC00;&#xC9C8; &#xC218; &#xC5C6;&#xC73C;&#xBA70;, &#xD0DC;&#xADF8; &#xC5ED;&#xC2DC; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB300;&#xC2E0; <a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29tagMergeStrategy" target="_blank"><code>tagMergeStrategy</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xB4E4;&#xC758; &#xD0DC;&#xADF8;&#xB97C; &#xBCD1;&#xD569;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xC758; &#xD0DC;&#xADF8;&#xB85C; &#xC0BC;&#xB294; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC; &#xB178;&#xB4DC;&#xAC00; &#xD558;&#xB098;&#xC758; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB85C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB420; &#xB54C;&#xB9C8;&#xB2E4; <a href="ref://../reference//Protocols/NMCTagMergeStrategy.html#/c%3Aobjc%28pl%29NMCTagMergeStrategy%28im%29mergeTag%3A" target="_blank"><code>-mergeTag:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xB418;&#xB294; <code>NMCCluster</code>&#xC758; <a href="ref://../reference/Classes/NMCCluster.html#/c%3Aobjc%28cs%29NMCCluster%28py%29children" target="_blank"><code>children</code></a>&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xB97C; &#xC21C;&#xD68C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xD0DC;&#xADF8;&#xB97C; &#xBCD1;&#xD569;&#xD574; &#xBC18;&#xD658;&#xD558;&#xBA74; &#xBC18;&#xD658;&#xD55C; &#xAC12;&#xC774; <code>NMCCluster</code>&#xC758; &#xD0DC;&#xADF8;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xB370;&#xC774;&#xD130;&#xC758; &#xD0DC;&#xADF8;&#xAC00; &#xC815;&#xC218;&#xC77C; &#xB54C;, &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xC815;&#xC218;&#xB97C; &#xBAA8;&#xB450; &#xB354;&#xD574; &#xBD80;&#xBAA8; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xC758; &#xD0DC;&#xADF8;&#xB85C; &#xC0BC;&#xB294; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="ffca533699e4d8aabb2bec985be710bc" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-f4458932cd53383d05e7541073d942cc" class="gbcg-selector gbcg-active" data-tab="0-f4458932cd53383d05e7541073d942cc" data-tab-category="undefined">Swift</a>
+    <a id="select-1-48d4f6bb2c7b251012a144dcb76f6e71" class="gbcg-selector" data-tab="1-48d4f6bb2c7b251012a144dcb76f6e71" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-f4458932cd53383d05e7541073d942cc" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCTagMergeStrategy</span> </span>{
+     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTag</span><span class="hljs-params">(<span class="hljs-number">_</span> cluster: NMCCluster)</span></span> -&gt; <span class="hljs-type">NSObject</span>? {
+        <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> node <span class="hljs-keyword">in</span> cluster.children {
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> tag = node.tag <span class="hljs-keyword">as</span>? <span class="hljs-type">NSNumber</span> {
+                sum += tag.intValue
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-type">NSNumber</span>(value: sum)
+    }
+}
+
+complexBuilder.tagMergeStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-f4458932cd53383d05e7541073d942cc" id="swift">Swift</h3>
+        <div id="0-f4458932cd53383d05e7541073d942cc" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCTagMergeStrategy</span> </span>{
+     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTag</span><span class="hljs-params">(<span class="hljs-number">_</span> cluster: NMCCluster)</span></span> -&gt; <span class="hljs-type">NSObject</span>? {
+        <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> node <span class="hljs-keyword">in</span> cluster.children {
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> tag = node.tag <span class="hljs-keyword">as</span>? <span class="hljs-type">NSNumber</span> {
+                sum += tag.intValue
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-type">NSNumber</span>(value: sum)
+    }
+}
+
+complexBuilder.tagMergeStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-48d4f6bb2c7b251012a144dcb76f6e71" id="objective-c">Objective-C</h3>
+        <div id="1-48d4f6bb2c7b251012a144dcb76f6e71" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface ClusteringViewController () &lt;NMCTagMergeStrategy&gt;
+@end
+
+@implementation MarkerClusteringStrategyViewController
+- (NSObject * _Nullable)mergeTag:(NMCCluster * _Nonnull)cluster {
+    int sum = 0;
+    for (NMCNode *node in cluster.children) {
+        sum += ((NSNumber *)node.tag).intValue;
+    }
+    return [NSNumber numberWithInt:sum];
+}
+@end
+
+complexBuilder.tagMergeStrategy = self;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xC88C;&#xD45C;-&#xC804;&#xB7B5;">&#xC88C;&#xD45C; &#xC804;&#xB7B5;</h3>
+<p>&#xB2E8;&#xB9D0; &#xB178;&#xB4DC;&#xC758; &#xC88C;&#xD45C;&#xB294; <code>NMCClusterer.add::</code>&#xB85C; &#xC9C0;&#xC815;&#xD55C; &#xD0A4;&#xC758; &#xC88C;&#xD45C;&#xC785;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xB294; &#xC5EC;&#xB7EC; &#xB178;&#xB4DC;&#xAC00; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB418;&#xC5B4; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xAC83;&#xC774;&#xBBC0;&#xB85C; &#xC88C;&#xD45C;&#xB97C; &#xACC4;&#xC0B0;&#xD574;&#xC11C; &#xC9C0;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29positioningStrategy" target="_blank"><code>positioningStrategy</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xC815;&#xD558;&#xB294; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC; &#xB178;&#xB4DC;&#xAC00; &#xD558;&#xB098;&#xC758; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB85C; &#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB9C1;&#xB420; &#xB54C;&#xB9C8;&#xB2E4; <a href="ref://../reference/Protocols/NMCPositioningStrategy.html#/c%3Aobjc%28pl%29NMCPositioningStrategy%28im%29getPosition%3A" target="_blank"><code>-getPosition:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xB418;&#xB294; <code>NMCCluster</code>&#xC758; <code>children</code>&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xB97C; &#xC21C;&#xD68C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC88C;&#xD45C; &#xB4F1; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xC815;&#xBCF4;&#xB97C; &#xC774;&#xC6A9;&#xD574; <code>NMGWebMercatorCoord</code> &#xC88C;&#xD45C;&#xB97C; &#xBC18;&#xD658;&#xD558;&#xBA74; &#xBC18;&#xD658;&#xD55C; &#xAC12;&#xC774; <code>NMCCluster</code>&#xC758; &#xC88C;&#xD45C;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xBB34;&#xC870;&#xAC74; &#xCCAB; &#xBC88;&#xC9F8; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xD074;&#xB7EC;&#xC2A4;&#xD130; &#xB178;&#xB4DC;&#xC758; &#xC88C;&#xD45C;&#xB85C; &#xC0BC;&#xB294; &#xC804;&#xB7B5;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="50030caa644fcb5e89d183d641abc871" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-046988f00da7345af5fb3c5dbb10dfbf" class="gbcg-selector gbcg-active" data-tab="0-046988f00da7345af5fb3c5dbb10dfbf" data-tab-category="undefined">Swift</a>
+    <a id="select-1-399dc3451d01f10948ed533ed419a8ce" class="gbcg-selector" data-tab="1-399dc3451d01f10948ed533ed419a8ce" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-046988f00da7345af5fb3c5dbb10dfbf" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCPositioningStrategy</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getPosition</span><span class="hljs-params">(<span class="hljs-number">_</span> cluster: NMCCluster)</span></span> -&gt; <span class="hljs-type">NMGWebMercatorCoord</span> {
+        <span class="hljs-keyword">return</span> cluster.children.first!.coord
+    }
+}
+
+complexBuilder.positioningStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-046988f00da7345af5fb3c5dbb10dfbf" id="swift">Swift</h3>
+        <div id="0-046988f00da7345af5fb3c5dbb10dfbf" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">ClusteringViewController</span>: <span class="hljs-title">NMCPositioningStrategy</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getPosition</span><span class="hljs-params">(<span class="hljs-number">_</span> cluster: NMCCluster)</span></span> -&gt; <span class="hljs-type">NMGWebMercatorCoord</span> {
+        <span class="hljs-keyword">return</span> cluster.children.first!.coord
+    }
+}
+
+complexBuilder.positioningStrategy = <span class="hljs-keyword">self</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-399dc3451d01f10948ed533ed419a8ce" id="objective-c">Objective-C</h3>
+        <div id="1-399dc3451d01f10948ed533ed419a8ce" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface ClusteringViewController () &lt;NMCPositioningStrategy&gt;
+@end
+
+@implementation MarkerClusteringStrategyViewController
+- (NMGWebMercatorCoord * _Nonnull)getPosition:(NMCCluster * _Nonnull)cluster { 
+    return cluster.children.firstObject.coord;
+}
+@end
+
+complexBuilder.positioningStrategy = self;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h3 id="&#xB9C8;&#xCEE4;-&#xAD00;&#xB9AC;">&#xB9C8;&#xCEE4; &#xAD00;&#xB9AC;</h3>
+<p>&#xD074;&#xB7EC;&#xC2A4;&#xD130;&#xB7EC;&#xB294; &#xD654;&#xBA74;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xB294; &#xB178;&#xB4DC;&#xB9CC;&#xC744; &#xB9C8;&#xCEE4;&#xB85C; &#xBCC0;&#xD658;&#xD574; &#xB178;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;. &#xB54C;&#xBB38;&#xC5D0; &#xD654;&#xBA74;&#xC5D0; &#xB3D9;&#xC2DC;&#xC5D0; &#xB098;&#xD0C0;&#xB098;&#xB294; &#xB9C8;&#xCEE4;&#xC758; &#xAC1C;&#xC218;&#xB97C; &#xD6A8;&#xACFC;&#xC801;&#xC73C;&#xB85C; &#xC81C;&#xD55C;&#xD560; &#xC218; &#xC788;&#xC73C;&#xBA70; &#xC7AC;&#xC0AC;&#xC6A9;&#xC5D0;&#xB3C4; &#xC720;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xB9C8;&#xCEE4;&#xC758; &#xC18D;&#xC131; &#xC911; &#xBCC0;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC774; &#xC788;&#xB354;&#xB77C;&#xB3C4; &#xB9E4;&#xBC88; &#xB36E;&#xC5B4;&#xC50C;&#xC6CC;&#xC918;&#xC57C; &#xD558;&#xB294; &#xBE44;&#xD6A8;&#xC728;&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><a href="ref://../reference/Classes/NMCComplexBuilder.html#/c%3Aobjc%28cs%29NMCComplexBuilder%28py%29markerManager" target="_blank"><code>markerManager</code></a> &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xB9C8;&#xCEE4;&#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xAC1D;&#xCCB4;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xB9C8;&#xCEE4;&#xB97C; &#xC9C1;&#xC811; &#xAD00;&#xB9AC;&#xD558;&#xC5EC; &#xBE44;&#xD6A8;&#xC728;&#xC744; &#xCD5C;&#xC18C;&#xD654;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB9C8;&#xCEE4; &#xAC1D;&#xCCB4;&#xAC00; &#xD544;&#xC694;&#xD574;&#xC9C0;&#xBA74; <a href="ref://../reference/Protocols/NMCMarkerManager.html#/c%3Aobjc%28pl%29NMCMarkerManager%28im%29retainMarker%3A" target="_blank"><code>-retainMarker:</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00;, &#xBD88;&#xD544;&#xC694;&#xD574;&#xC9C0;&#xBA74; <a href="ref://../reference/Protocols/NMCMarkerManager.html#/c%3Aobjc%28pl%29NMCMarkerManager%28im%29releaseMarker%3A%3A" target="_blank"><code>-releaseMarker::</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBBC0;&#xB85C; <code>NMCClusterMarkerUpdater</code>&#xC640; <code>NMCLeafMarkerUpdater</code>&#xC5D0;&#xC11C; &#xAD00;&#xB9AC;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xC18D;&#xC131;&#xC740; &#xC5EC;&#xAE30;&#xC11C; &#xACF5;&#xD1B5; &#xAD00;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB610;&#xD55C; &#xAE30;&#xBCF8; <code>NMCMarkerManager</code> &#xAD6C;&#xD604;&#xCCB4;&#xC778; <a href="ref://../reference/Classes/NMCDefaultMarkerManager.html" target="_blank"><code>NMCDefaultMarkerManager</code></a>&#xB97C; &#xC0C1;&#xC18D;&#xD558;&#xC5EC; <a href="ref://../reference/Classes/NMCDefaultMarkerManager.html#/c%3Aobjc%28cs%29NMCDefaultMarkerManager%28im%29createMarker" target="_blank"><code>-createMarker</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xB9CC; &#xC624;&#xBC84;&#xB77C;&#xC774;&#xB4DC;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xB807;&#xAC8C; &#xD558;&#xBA74; &#xD6A8;&#xC728;&#xC801;&#xC778; &#xB9C8;&#xCEE4; &#xD480; &#xBC0F; &#xAC1D;&#xCCB4; &#xC7AC;&#xC0AC;&#xC6A9; &#xAE30;&#xB2A5;&#xC744; &#xADF8;&#xB300;&#xB85C; &#xD65C;&#xC6A9;&#xD558;&#xBA74;&#xC11C; &#xACF5;&#xD1B5; &#xC18D;&#xC131;&#xB9CC;&#xC744; &#xAC04;&#xD3B8;&#xD558;&#xAC8C; &#xAD00;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>NMCDefaultMarkerManager</code>&#xB97C; &#xC0C1;&#xC18D;&#xD558;&#xC5EC; &#xC0C8;&#xB85C; &#xC0DD;&#xC131;&#xB418;&#xB294; &#xB9C8;&#xCEE4;&#xC758; &#xC11C;&#xBE0C;&#xCEA1;&#xC158; &#xAD00;&#xB828; &#xC18D;&#xC131;&#xB9CC;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="3cc668ba18f60bdb069aef3e4b3c2eca" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-5135415db8aad5bf784676a316b440be" class="gbcg-selector gbcg-active" data-tab="0-5135415db8aad5bf784676a316b440be" data-tab-category="undefined">Swift</a>
+    <a id="select-1-49641418d879a24bc97888b7f8bbfadf" class="gbcg-selector" data-tab="1-49641418d879a24bc97888b7f8bbfadf" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-5135415db8aad5bf784676a316b440be" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MarkerManager</span>: <span class="hljs-title">NMCDefaultMarkerManager</span> </span>{
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">createMarker</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">NMFMarker</span> {
+        <span class="hljs-keyword">let</span> marker = <span class="hljs-keyword">super</span>.createMarker()
+        marker.subCaptionTextSize = <span class="hljs-number">10</span>
+        marker.subCaptionColor = <span class="hljs-type">UIColor</span>.white
+        marker.subCaptionHaloColor = <span class="hljs-type">UIColor</span>.clear
+        <span class="hljs-keyword">return</span> marker
+    }
+}
+
+complexBuilder.markerManager = <span class="hljs-type">MarkerManager</span>()
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-5135415db8aad5bf784676a316b440be" id="swift">Swift</h3>
+        <div id="0-5135415db8aad5bf784676a316b440be" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MarkerManager</span>: <span class="hljs-title">NMCDefaultMarkerManager</span> </span>{
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">createMarker</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">NMFMarker</span> {
+        <span class="hljs-keyword">let</span> marker = <span class="hljs-keyword">super</span>.createMarker()
+        marker.subCaptionTextSize = <span class="hljs-number">10</span>
+        marker.subCaptionColor = <span class="hljs-type">UIColor</span>.white
+        marker.subCaptionHaloColor = <span class="hljs-type">UIColor</span>.clear
+        <span class="hljs-keyword">return</span> marker
+    }
+}
+
+complexBuilder.markerManager = <span class="hljs-type">MarkerManager</span>()
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-49641418d879a24bc97888b7f8bbfadf" id="objective-c">Objective-C</h3>
+        <div id="1-49641418d879a24bc97888b7f8bbfadf" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">@interface MarkerManager : NMCDefaultMarkerManager
+@end
+
+@implementation MarkerManager
+- (NMFMarker *)createMarker {
+    NMFMarker *marker = [super createMarker];
+    marker.subCaptionTextSize = 10;
+    marker.subCaptionColor = UIColor.whiteColor;
+    marker.subCaptionHaloColor = UIColor.clearColor;
+    return marker;
+}
+@end
+
+complexBuilder.markerManager = [[MarkerManager alloc] init];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5-7.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 경로선과 화살표">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"마커 클러스터링","level":"3.5.8","depth":2,"next":{"title":"API 레퍼런스","level":"4.1","depth":1,"url":"ref://../reference","ref":"ref://../reference","articles":[]},"previous":{"title":"경로선과 화살표","level":"3.5.7","depth":2,"path":"5-7.md","ref":"5-7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"5-8.md","mtime":"2024-03-15T09:14:26.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-15T09:14:27.903Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
