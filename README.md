@@ -14,6 +14,8 @@ pod install --repo-update
 ```
   - 만약 최신 버전으로 업데이트가 안되면, Podfile 을 열어서 버전을 명시해 주고(`pod 'NMapsMap','3.x.x'`), 위의 명령을 다시 실행합니다.
 
+3.17.0 이하 버전은 [NMapsMap-Legacy](https://github.com/navermaps/NMapsMapLegacySpecs)를 이용해 주세요.
+
 ### 클라이언트 ID 지정
 
 - 네이버 지도 SDK를 사용하기 위해서는 네이버 클라우드 플랫폼에서 클라이언트 ID를 발급받고, 발급받은 ID를 SDK에 지정해야 합니다.
