@@ -1,3 +1,12 @@
+# 3.18.1
+
+Release Date: 2024-04-23
+
+### 새로운 기능
+
+- WebP 포멧 지원
+- Private Manifests 대응
+
 # 3.18.0
 
 Release Date: 2024-03-18
