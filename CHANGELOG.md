@@ -1,3 +1,22 @@
+# 3.19.0
+
+Release Date: 2024-07-25
+
+### 새로운 기능
+
+- 콘텐츠 패딩 변경 시 원인을 전달할 수 있도록 `reason` 파라메터 추가
+  - `NMFMapView.setContentInset:reason:`
+  - `NMFMapView.setContentInset:keepCamera:reason:`
+- 콘텐츠 패딩 변경으로 인해 카메라가 움직였음을 의미하는 `NMFMapChangedByContentPadding` 추가
+
+### 개선
+
+- `reason` 파라메터를 지정하지 않고 콘텐츠 패딩 변경 시 원인을 `NMFMapChangedByDeveloper`에서 `NMFMapChangedByContentPadding`으로 변경
+
+### 버그 수정
+
+- `NMFMultipartPath`에 `colorParts`를 지정하지 않으면 크래시가 발생하는 문제 수정
+
 # 3.18.1
 
 Release Date: 2024-04-23
