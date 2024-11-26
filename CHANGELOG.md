@@ -1,3 +1,24 @@
+# 3.20.0
+
+Release Date: 2024-11-25
+
+### 새로운 기능
+
+- 지도 롱 탭 콜백 메서드 추가
+  - `NMFMapViewTouchDelegate.mapView.didLongTapMap:point:`
+- 지도 렌더링에 대한 상태 및 위임자 추가
+  - `NMFMapViewLoadDelegate.mapViewDidFinishLoadingMap`
+  - `NMFMapViewRenderDelegate.mapViewDidFinishRenderingFrame:fully:stable`
+  - `NMFMapView.addLoadDelegate`, `NMFMapView.removeLoadDelegate`, `NMFMapView.addRenderDelegate`, `NMFMapView.removeRenderDelegate`
+  - `NMFMapView.fullyRendered`, `NMFMapView.renderingStable`
+- 지도 최초 로딩에 대한 상태 추가
+  - `NMFMapView.loaded`
+- 폴리곤 오버레이의 테두리를 점선으로 지정하는 속성 추가
+  - `NMFPolygonOverlay.outlinePattern`
+- 콘텐츠 패딩을 제외한 지도 뷰의 너비/높이를 반환하는 속성 추가
+  - `NMFMapView.contentWidth`
+  - `NMFMapView.contentHeight`
+
 # 3.19.0
 
 Release Date: 2024-07-25

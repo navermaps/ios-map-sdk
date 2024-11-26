@@ -18,7 +18,6 @@ import UIKit
 import NMapsMap
 
 class SnapShotViewController: MapViewController {
-    
     @IBOutlet weak var snapShotView: UIImageView!
     @IBOutlet weak var showControls: UISwitch!
     
@@ -29,11 +28,27 @@ class SnapShotViewController: MapViewController {
     // MARK: - IBActions
     
     @IBAction func respondToSnapshot(_ sender: UIButton) {
+        if self.mapView.fullyRendered && self.mapView.renderingStable {
+            takeSnapshot()
+        } else {
+            self.mapView.addRenderDelegate(delegate:self)
+        }
+    }
+    
+    func takeSnapshot() {
         naverMapView.takeSnapshot(withShowControls: self.showControls.isOn) {[weak self] (image) in
             DispatchQueue.main.async {
                 self?.snapShotView.image = image
             }
         }
     }
-    
+}
+
+extension SnapShotViewController: NMFMapViewRenderDelegate {
+    func mapViewDidFinishRenderingFrame(_ mapView: NMFMapView, fully: Bool, stable: Bool) {
+        if fully && stable {
+            takeSnapshot()
+            self.mapView.removeRenderDelegate(delegate:self)
+        }
+    }
 }
