@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.18.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.20.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -106,6 +106,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NMFMapViewOptionDelegate.html">NMFMapViewOptionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFMapViewLoadDelegate.html">NMFMapViewLoadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NMFMapViewRenderDelegate.html">NMFMapViewRenderDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFCameraPosition.html">NMFCameraPosition</a>
@@ -367,6 +373,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other%20Constants.html#/c:@NMFDefaultBackgroundLightImage">NMFDefaultBackgroundLightImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByContentPadding">NMFMapChangedByContentPadding</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByControl">NMFMapChangedByControl</a>
@@ -829,6 +838,74 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(pl)NMFMapViewLoadDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/NMFMapViewLoadDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)NMFMapViewLoadDelegate">NMFMapViewLoadDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 최초 로딩에 대한 콜백 프로토콜. 지도의 데이터가 모두 로딩되어 최초로 화면에 나타나면
+이벤트가 발생합니다. 이벤트는 한 번만 발생하며, 이후에는 카메라가 움직이거나
+지도의 옵션이 변경되어 데이터가 새로 로딩되더라도 발생하지 않습니다.</p>
+
+                        <a href="Protocols/NMFMapViewLoadDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">NMFMapViewLoadDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewLoadDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)NMFMapViewRenderDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/NMFMapViewRenderDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)NMFMapViewRenderDelegate">NMFMapViewRenderDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 렌더링에 대한 콜백 프로토콜.</p>
+
+                        <a href="Protocols/NMFMapViewRenderDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">NMFMapViewRenderDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewRenderDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFCameraPosition"></a>
                     <a name="//apple_ref/objc/Class/NMFCameraPosition" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFCameraPosition">NMFCameraPosition</a>
@@ -1146,7 +1223,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+      <p>© <a class="link" href="https://www.naver.com/" target="_blank" rel="external noopener">NAVER</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
     </section>
   </body>
 </div>

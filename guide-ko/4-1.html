@@ -732,37 +732,49 @@ self.mapView.rotateGestureEnabled = NO;
 <h2 id="ui-&#xC774;&#xBCA4;&#xD2B8;">UI &#xC774;&#xBCA4;&#xD2B8;</h2>
 <p>&#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4; SDK&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xD0ED;&#xC5D0; &#xBC18;&#xC751;&#xD558;&#xB294; &#xB2E4;&#xC591;&#xD55C; UI &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB3C4;&#xC758; &#xD130;&#xCE58; &#xC774;&#xBCA4;&#xD2B8;&#xB294; <code>UIGestureRecognizer</code>&#xB97C; &#xC0C1;&#xC18D;&#xBC1B;&#xC544; &#xAD6C;&#xD604;&#xB418;&#xC5C8;&#xC73C;&#xBBC0;&#xB85C; &#xC81C;&#xC2A4;&#xCC98; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xB54C; &#xACB9;&#xCE58;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xC8FC;&#xC758;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
 <h3 id="&#xC9C0;&#xB3C4;-&#xD0ED;">&#xC9C0;&#xB3C4; &#xD0ED;</h3>
-<p><a href="ref://../reference/Protocols/NMFMapViewTouchDelegate.html" target="_blank"><code>NMFMapView.touchDelegate</code></a> &#xC18D;&#xC131;&#xC5D0; &#xB378;&#xB9AC;&#xAC8C;&#xC774;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xB97C; &#xD0ED;&#xD588;&#xC744; &#xB54C; <a href="ref://../reference/Protocols/NMFMapViewTouchDelegate.html#/c%3Aobjc%28pl%29NMFMapViewTouchDelegate%28im%mapView:didTapMap:point:" target="_blank"><code>-mapView:didTapMap:point</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD130;&#xCE58;&#xB41C; &#xC9C0;&#xC810;&#xC758; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xC640; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xAC00; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;.</p>
-<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xB97C; &#xD0ED;&#xD588;&#xC744; &#xB54C; &#xD0ED;&#xB41C; &#xC9C0;&#xC810;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p><div id="7d141f035aacb54122ce8d327e53e579" class="gbcg gbcg-codegroup">
+<p><a href="ref://../reference/Protocols/NMFMapViewTouchDelegate.html" target="_blank"><code>NMFMapView.touchDelegate</code></a> &#xC18D;&#xC131;&#xC5D0; &#xB378;&#xB9AC;&#xAC8C;&#xC774;&#xD2B8;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xC9C0;&#xB3C4;&#xC5D0; &#xB300;&#xD55C; &#xD0ED; &#xBC0F; &#xB871; &#xD0ED; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB3C4;&#xB97C; &#xD0ED;&#xD588;&#xC744; &#xB54C; <a href="ref://../reference/Protocols/NMFMapViewTouchDelegate.html#/c%3Aobjc%28pl%29NMFMapViewTouchDelegate%28im%mapView:didTapMap:point:" target="_blank"><code>-mapView:didTapMap:point</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00;, &#xB871; &#xD0ED;&#xD588;&#xC744; &#xB54C; <a href="ref://../reference/Protocols/NMFMapViewTouchDelegate.html#/c%3Aobjc%28pl%29NMFMapViewTouchDelegate%28im%mapView:didLongTapMap:point:" target="_blank"><code>-mapView:didLongTapMap:point</code></a> &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB418;&#xBA70;, &#xD130;&#xCE58;&#xB41C; &#xC9C0;&#xC810;&#xC758; &#xD654;&#xBA74; &#xC88C;&#xD45C;&#xC640; &#xC9C0;&#xB3C4; &#xC88C;&#xD45C;&#xAC00; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC9C0;&#xB3C4;&#xB97C; &#xD0ED; &#xBC0F; &#xB871; &#xD0ED;&#xD588;&#xC744; &#xB54C; &#xD130;&#xCE58;&#xB41C; &#xC9C0;&#xC810;&#xC758; &#xC88C;&#xD45C;&#xB97C; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="f4fc8b5c3d959b28138f55da873dbe03" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-b53fc607b5102410048296a6d90b143b" class="gbcg-selector gbcg-active" data-tab="0-b53fc607b5102410048296a6d90b143b" data-tab-category="undefined">Swift</a>
-    <a id="select-1-87daa371c2180a5fcef08b2934b32bd3" class="gbcg-selector" data-tab="1-87daa371c2180a5fcef08b2934b32bd3" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-f51c932b1d2e9c655f3fa115f723e04a" class="gbcg-selector gbcg-active" data-tab="0-f51c932b1d2e9c655f3fa115f723e04a" data-tab-category="undefined">Swift</a>
+    <a id="select-1-b4b720254bf2aa48b4bbceb4cadbc332" class="gbcg-selector" data-tab="1-b4b720254bf2aa48b4bbceb4cadbc332" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-b53fc607b5102410048296a6d90b143b" class="gbcg-tab-item gbcb-Swift">
+      <div id="0-f51c932b1d2e9c655f3fa115f723e04a" class="gbcg-tab-item gbcb-Swift">
         <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapView</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint)</span></span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xD0ED;: <span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapView</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView, didLongTapMap latlng: NMGLatLng, point: CGPoint)</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB871; &#xD0ED;: <span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
 }
 </code></pre>
       </div>
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-b53fc607b5102410048296a6d90b143b" id="swift">Swift</h3>
-        <div id="0-b53fc607b5102410048296a6d90b143b" class="gbcg-tab-item gbcb-Swift">
+        <h3 class="gbcg-tabname 0-f51c932b1d2e9c655f3fa115f723e04a" id="swift">Swift</h3>
+        <div id="0-f51c932b1d2e9c655f3fa115f723e04a" class="gbcg-tab-item gbcb-Swift">
           <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapView</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint)</span></span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xD0ED;: <span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mapView</span><span class="hljs-params">(<span class="hljs-number">_</span> mapView: NMFMapView, didLongTapMap latlng: NMGLatLng, point: CGPoint)</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xB871; &#xD0ED;: <span class="hljs-subst">\(latlng.lat)</span>, <span class="hljs-subst">\(latlng.lng)</span>&quot;</span>)
 }
 </code></pre>
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-87daa371c2180a5fcef08b2934b32bd3" id="objective-c">Objective-C</h3>
-        <div id="1-87daa371c2180a5fcef08b2934b32bd3" class="gbcg-tab-item gbcb-Objective-C">
+        <h3 class="gbcg-tabname 1-b4b720254bf2aa48b4bbceb4cadbc332" id="objective-c">Objective-C</h3>
+        <div id="1-b4b720254bf2aa48b4bbceb4cadbc332" class="gbcg-tab-item gbcb-Objective-C">
           <pre><code class="lang-Objective-C">- (void)mapView:(NMFMapView *)mapView didTapMap:(NMGLatLng *)latlng point:(CGPoint)point {
-    NSLog(@&quot;%f, %f&quot;, latlng.lat, latlng.lng);
+    NSLog(@&quot;&#xD0ED;: %f, %f&quot;, latlng.lat, latlng.lng);
+}
+
+- (void)mapView:(NMFMapView *)mapView didLongTapMap:(NMGLatLng *)latlng point:(CGPoint)point {
+    NSLog(@&quot;&#xB871; &#xD0ED;: %f, %f&quot;, latlng.lat, latlng.lng);
 }
 </code></pre>
         </div>
@@ -925,7 +937,7 @@ self.mapView.rotateGestureEnabled = NO;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"next":{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]},"previous":{"title":"상호작용","level":"3.4","depth":1,"ref":"","articles":[{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"4-1.md","mtime":"2024-03-19T04:50:17.732Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-19T04:50:21.347Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"next":{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]},"previous":{"title":"상호작용","level":"3.4","depth":1,"ref":"","articles":[{"title":"사용자 인터페이스","level":"3.4.1","depth":2,"path":"4-1.md","ref":"4-1.md","articles":[]},{"title":"위치","level":"3.4.2","depth":2,"path":"4-2.md","ref":"4-2.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"4-1.md","mtime":"2024-11-26T06:54:17.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-26T06:54:19.782Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
