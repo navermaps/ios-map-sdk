@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let splitViewController = window!.rootViewController as! UISplitViewController
         splitViewController.delegate = self
         
-        //NMFAuthManager.shared().clientId = "YOUR_CLIENT_ID_HERE"
+        //NMFAuthManager.shared().ncpKeyId = "YOUR_NCP_KEY_ID_HERE"
         
         return true
     }
