@@ -1,3 +1,23 @@
+# 3.21.0
+
+Release Date: 2025-03-20
+
+### 새로운 기능
+
+- 네이버 클라우드 플랫폼 키 ID 인증 방식 지원
+  - `NMFAuthManager.ncpKeyId`
+  - info.plist `NMFNcpKeyId`
+- 커스텀 스타일링 기능 추가
+  - `NMFMapView.customStyleId`
+
+# 3.20.1-alpha04
+
+Release Date: 2025-01-10
+
+### 새로운 기능
+
+- 주행 중 Siri 켰을 때 지도 렌더링 멈추는 문제 수정
+
 # 3.20.0
 
 Release Date: 2024-11-25
