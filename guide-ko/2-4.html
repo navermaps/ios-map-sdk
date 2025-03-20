@@ -1,0 +1,751 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>커스텀 스타일링 · NAVER Map iOS SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-codegroup/code.group.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2-3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    지도와 좌표
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    지도 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    좌표 객체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    지도 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="2-4.html">
+            
+                <a href="2-4.html">
+            
+                    
+                    커스텀 스타일링
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    카메라
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="3-1.html">
+            
+                <a href="3-1.html">
+            
+                    
+                    카메라와 투영
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="3-2.html">
+            
+                <a href="3-2.html">
+            
+                    
+                    카메라 이동
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    상호작용
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="4-1.html">
+            
+                <a href="4-1.html">
+            
+                    
+                    사용자 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="4-2.html">
+            
+                <a href="4-2.html">
+            
+                    
+                    위치
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    오버레이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="5-1.html">
+            
+                <a href="5-1.html">
+            
+                    
+                    오버레이 공통
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="5-2.html">
+            
+                <a href="5-2.html">
+            
+                    
+                    마커
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="5-3.html">
+            
+                <a href="5-3.html">
+            
+                    
+                    정보 창
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="5-4.html">
+            
+                <a href="5-4.html">
+            
+                    
+                    셰이프
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="5-5.html">
+            
+                <a href="5-5.html">
+            
+                    
+                    위치 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="5-6.html">
+            
+                <a href="5-6.html">
+            
+                    
+                    지상 오버레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="5-7.html">
+            
+                <a href="5-7.html">
+            
+                    
+                    경로선과 화살표
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="5-8.html">
+            
+                <a href="5-8.html">
+            
+                    
+                    마커 클러스터링
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">레퍼런스</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="ref://../reference">
+            
+                    
+                    API 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk">
+            
+                    
+                    데모 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <a target="_blank" href="https://github.com/navermaps/ios-map-sdk/blob/master/CHANGELOG.md">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">관련 사이트</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="ref://../guide-en/">
+            
+                    
+                    English(영어)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://navermaps.github.io/android-map-sdk">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://www.ncloud.com">
+            
+                    
+                    네이버 클라우드 플랫폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <a target="_blank" href="https://www.ncloud.com/support/question/service">
+            
+                    
+                    문의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >커스텀 스타일링</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xCEE4;&#xC2A4;&#xD140;-&#xC2A4;&#xD0C0;&#xC77C;&#xB9C1;">&#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C;&#xB9C1;</h1>
+<p><a href="https://style-editor.map.naver.com" target="_blank">&#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130;</a>&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xC9C0;&#xB3C4; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xCEE4;&#xC2A4;&#xD140;-&#xC2A4;&#xD0C0;&#xC77C;-&#xB9CC;&#xB4E4;&#xAE30;">&#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C; &#xB9CC;&#xB4E4;&#xAE30;</h2>
+<p>&#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74; &#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130;&#xC5D0;&#xC11C; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC2A4;&#xD0C0;&#xC77C; ID&#xB97C; &#xBC1C;&#xAE09;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><a href="1.html#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-id-%EB%B0%9C%EA%B8%89">&#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; ID&#xB97C; &#xBC1C;&#xAE09;</a>&#xBC1B;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+<li><a href="https://style-editor.map.naver.com" target="_blank">&#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130;</a>&#xC5D0;&#xC11C; &#xC9C0;&#xB3C4; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xBC1C;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; <a href="https://guide.ncloud-docs.com/docs/application-maps-styleeditor-screen-vpc" target="_blank">&#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130; &#xAC00;&#xC774;&#xB4DC;</a>&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC138;&#xC694;.</li>
+<li>&#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130;&#xC758; <strong>My Style &gt; &#xBA54;&#xB274;(&#x22EE;) &gt; My Style ID &#xD655;&#xC778;</strong> &#xD654;&#xBA74;&#xC5D0;&#xC11C; <strong>My Style ID</strong>&#xB97C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ol>
+<h2 id="&#xCEE4;&#xC2A4;&#xD140;-&#xC2A4;&#xD0C0;&#xC77C;-&#xC801;&#xC6A9;">&#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C; &#xC801;&#xC6A9;</h2>
+<p><code>NMFMapView</code> &#xAC1D;&#xCCB4;&#xC758; <a href="ref://../reference/Classes/NMFMapView.html#/c:objc%28cs%29NMFMapView%28py%29customStyleId" target="_blank"><code>customStyleId</code></a> &#xC18D;&#xC131;&#xC5D0; My Style ID&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C;&#xC774; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xC2A4;&#xD0C0;&#xC77C; ID&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xAE30;&#xBCF8; &#xC2A4;&#xD0C0;&#xC77C;&#xC774; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC2A4;&#xD0C0;&#xC77C; ID&#xAC00; <code>MY_STYLE_ID</code>&#xC778; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC9C0;&#xB3C4;&#xC5D0; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="ebed851aadb2cc65a8f418c695fb3118" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-b3f8057ea57f0b387509f7fa6e0b3846" class="gbcg-selector gbcg-active" data-tab="0-b3f8057ea57f0b387509f7fa6e0b3846" data-tab-category="undefined">Swift</a>
+    <a id="select-1-2b0eaa674ce1469c2878a7f604afde2f" class="gbcg-selector" data-tab="1-2b0eaa674ce1469c2878a7f604afde2f" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-b3f8057ea57f0b387509f7fa6e0b3846" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">mapView.customStyleId = <span class="hljs-string">&quot;MY_STYLE_ID&quot;</span>
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-b3f8057ea57f0b387509f7fa6e0b3846" id="swift">Swift</h3>
+        <div id="0-b3f8057ea57f0b387509f7fa6e0b3846" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">mapView.customStyleId = <span class="hljs-string">&quot;MY_STYLE_ID&quot;</span>
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-2b0eaa674ce1469c2878a7f604afde2f" id="objective-c">Objective-C</h3>
+        <div id="1-2b0eaa674ce1469c2878a7f604afde2f" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">self.mapView.customStyleId = @&quot;MY_STYLE_ID&quot;;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p><a href="ref://../reference/Classes/NMFMapView.html#/c:objc%28cs%29NMFMapView%28im%29setCustomStyleId:LoadHandler:FailHandler:" target="_blank"><code>-setCustomStyleId:LoadHandler:FailHandler:</code></a>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB529; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB529;&#xC5D0; &#xC131;&#xACF5;&#xD558;&#xBA74; <a href="ref://../reference/Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler" target="_blank"><code>NMFCustomStyleLoadHandler</code></a> &#xCF5C;&#xBC31; &#xBA54;&#xC11C;&#xB4DC;&#xAC00;, &#xC2E4;&#xD328;&#xD558;&#xBA74; <a href="ref://../reference/Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler" target="_blank"><code>NMFCustomStyleLoadFailHandler</code></a> &#xCF5C;&#xBC31; &#xBA54;&#xC11C;&#xB4DC;&#xAC00; &#xD638;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC2A4;&#xD0C0;&#xC77C; ID&#xAC00; <code>MY_STYLE_ID</code>&#xC778; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC9C0;&#xB3C4;&#xC5D0; &#xC9C0;&#xC815;&#xD558;&#xACE0; &#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB529; &#xC131;&#xACF5; &#xBC0F; &#xC2E4;&#xD328;&#xC2DC; &#xAC01;&#xAC01; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><div id="28a9c6b9b1253d7d5f9c718d5b9670a5" class="gbcg gbcg-codegroup">
+  <div class="gbcg-tab-selectors">
+    <a id="select-0-f2e60ce65d255ec61f62e5631d9a7a87" class="gbcg-selector gbcg-active" data-tab="0-f2e60ce65d255ec61f62e5631d9a7a87" data-tab-category="undefined">Swift</a>
+    <a id="select-1-d41c47ebb5ad2b009aa9c16ffc137123" class="gbcg-selector" data-tab="1-d41c47ebb5ad2b009aa9c16ffc137123" data-tab-category="undefined">Objective-C</a>
+  </div>
+  <div class="gbcg-tab-contents">
+    <div id="gbcg-tab-container">
+      <div id="0-f2e60ce65d255ec61f62e5631d9a7a87" class="gbcg-tab-item gbcb-Swift">
+        <pre><code class="lang-Swift">mapView.setCustomStyleId(<span class="hljs-string">&quot;MY_STYLE_ID&quot;</span>,
+                        loadHandler: {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC131;&#xACF5;&quot;</span>)
+},
+                        failHandler: { error <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC2E4;&#xD328; - <span class="hljs-subst">\(error)</span>&quot;</span>)
+})
+</code></pre>
+      </div>
+    </div>
+    <div class="gbcg-tab-item-cntr">
+      <div>
+        <h3 class="gbcg-tabname 0-f2e60ce65d255ec61f62e5631d9a7a87" id="swift">Swift</h3>
+        <div id="0-f2e60ce65d255ec61f62e5631d9a7a87" class="gbcg-tab-item gbcb-Swift">
+          <pre><code class="lang-Swift">mapView.setCustomStyleId(<span class="hljs-string">&quot;MY_STYLE_ID&quot;</span>,
+                        loadHandler: {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC131;&#xACF5;&quot;</span>)
+},
+                        failHandler: { error <span class="hljs-keyword">in</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC2E4;&#xD328; - <span class="hljs-subst">\(error)</span>&quot;</span>)
+})
+</code></pre>
+        </div>
+      </div>
+      <div>
+        <h3 class="gbcg-tabname 1-d41c47ebb5ad2b009aa9c16ffc137123" id="objective-c">Objective-C</h3>
+        <div id="1-d41c47ebb5ad2b009aa9c16ffc137123" class="gbcg-tab-item gbcb-Objective-C">
+          <pre><code class="lang-Objective-C">[self.mapView setCustomStyleId:@&quot;MY_STYLE_ID&quot;
+                   LoadHandler:^() {
+    NSLog(@&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC131;&#xACF5;&quot;);
+}
+                   FailHandler:^(NSError *error) {
+    NSLog(@&quot;&#xC2A4;&#xD0C0;&#xC77C; &#xB85C;&#xB4DC; &#xC2E4;&#xD328; - %@&quot;, error.localizedDescription);
+}];
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></p>
+<h2 id="&#xC81C;&#xC57D;">&#xC81C;&#xC57D;</h2>
+<p>&#xCEE4;&#xC2A4;&#xD140; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC801;&#xC6A9;&#xD558;&#xBA74; &#xC9C0;&#xB3C4; &#xC720;&#xD615;&#xACFC; &#xBD80;&#xAC00; &#xC815;&#xBCF4;&#xAC00; &#xC2A4;&#xD0C0;&#xC77C; &#xC5D0;&#xB514;&#xD130;&#xC5D0;&#xC11C; &#xD3B8;&#xC9D1;&#xD55C; &#xB300;&#xB85C; &#xACE0;&#xC815;&#xB418;&#xBA70;, &#xC774;&#xC640; &#xAD00;&#xB828;&#xB41C; &#xC635;&#xC158;&#xC744; &#xBCC0;&#xACBD;&#xD574;&#xB3C4; &#xC601;&#xD5A5;&#xC774; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD574;&#xB2F9;&#xB418;&#xB294; &#xC635;&#xC158;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xC9C0;&#xB3C4; &#xC720;&#xD615;</li>
+<li>&#xB808;&#xC774;&#xC5B4; &#xADF8;&#xB8F9;</li>
+<li>&#xC2E4;&#xB0B4;&#xC9C0;&#xB3C4;</li>
+<li>&#xC57C;&#xAC04; &#xBAA8;&#xB4DC;</li>
+<li>&#xB77C;&#xC774;&#xD2B8; &#xBAA8;&#xB4DC;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2-3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 지도 옵션">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"커스텀 스타일링","level":"1.4.4","depth":2,"next":{"title":"카메라","level":"1.5","depth":1,"ref":"","articles":[{"title":"카메라와 투영","level":"1.5.1","depth":2,"path":"3-1.md","ref":"3-1.md","articles":[]},{"title":"카메라 이동","level":"1.5.2","depth":2,"path":"3-2.md","ref":"3-2.md","articles":[]}]},"previous":{"title":"지도 옵션","level":"1.4.3","depth":2,"path":"2-3.md","ref":"2-3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"2-4.md","mtime":"2025-03-20T09:39:20.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-20T09:39:22.927Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-otherlink/js/otherlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-codegroup/code.group.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

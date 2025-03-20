@@ -550,8 +550,8 @@
 <h2 id="get-client-id">Get Client ID</h2>
 <p>Follow the procedure below to register an application and get a Client ID:</p>
 <ol>
-<li>Go to <strong>AI&#xB7;Application Service &gt; AI&#xB7;NAVER API &gt; Application</strong> in your web console and register an application.</li>
-<li>Check your Client ID by selecting the application registered in <strong>AI&#xB7;Application Service &gt; AI&#xB7;NAVER API &gt; Application</strong>.</li>
+<li>Go to <strong>Services &gt; Application Services &gt; Maps</strong> in your web console and register an application.</li>
+<li>Check your Client ID by selecting the application registered in <strong>Services &gt; Application Services &gt; Maps</strong>.</li>
 <li>Click <strong>Edit</strong> of the application to make sure that <strong>Mobile Dynamic Map</strong> is selected. If it is not selected, an authentication failure error (429) occurs.</li>
 </ol>
 <p>Refer to <a href="https://docs.ncloud.com/en/naveropenapi_v3/application.html" target="_blank">How to Use Application</a> for details.</p>
@@ -569,46 +569,33 @@
 <h2 id="set-client-id">Set Client ID</h2>
 <p>Set your Client ID in the SDK to use the Maps API. You can set your Client ID in the following two different ways.</p>
 <h3 id="set-your-client-id-in-infoplist">Set your Client ID in info.plist</h3>
-<p>You can set your Client ID with <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html#//apple_ref/doc/uid/TP40009254-SW10" target="_blank"><code>Custom Keys</code></a> in <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html" target="_blank"><code>info.plist</code></a>. Add a new element in <code>info.plist</code>, and set <code>NMFClientId</code> in <code>key</code> and your API key in <code>string</code>.</p>
+<p>You can set your Client ID with <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html#//apple_ref/doc/uid/TP40009254-SW10" target="_blank"><code>Custom Keys</code></a> in <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html" target="_blank"><code>info.plist</code></a>. Add a new element in <code>info.plist</code>, and set <code>NMFNcpKeyId</code> in <code>key</code> and your API key in <code>string</code>.</p>
 <p>The following code example shows how to set a Client ID in <code>info.plist</code>.</p>
 <pre><code class="lang-XML"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
 <span class="hljs-meta">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">plist</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.0&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">dict</span>&gt;</span>
 ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>NMFClientId<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>YOUR_CLIENT_ID_HERE<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">dict</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">plist</span>&gt;</span>
-</code></pre>
-<p>For clients for public institutions, specify <code>NMFGovClientId</code>, instead of <code>NMFClientId</code>.</p>
-<p>The following code example shows how to set a client for public institutions in <code>info.plist</code>.</p>
-<pre><code class="lang-XML"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
-<span class="hljs-meta">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">plist</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.0&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">dict</span>&gt;</span>
-...
-    <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>NMFGovClientId<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>YOUR_CLIENT_ID_HERE<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>NMFNcpKeyId<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">string</span>&gt;</span>YOUR_NCP_KEY_ID_HERE<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 ...
 <span class="hljs-tag">&lt;<span class="hljs-name">dict</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">plist</span>&gt;</span>
 </code></pre>
 <h3 id="set-your-client-id-by-making-an-api-call">Set your Client ID by making an API call</h3>
-<p>Instead of editing <code>info.plist</code>, you can set your Client ID by making an API call. Set your Client ID to <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.clientId</code></a> in <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application" target="_blank"><code>-application:didFinishLaunchingWithOptions:</code></a> of <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate" target="_blank"><code>AppDelegate</code></a>. As <code>NMFAuthManager</code> is a singleton class, you should call <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>+shared</code></a> to get an instance.</p>
+<p>Instead of editing <code>info.plist</code>, you can set your Client ID by making an API call. Set your Client ID to <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.ncpKeyId</code></a> in <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application" target="_blank"><code>-application:didFinishLaunchingWithOptions:</code></a> of <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate" target="_blank"><code>AppDelegate</code></a>. As <code>NMFAuthManager</code> is a singleton class, you should call <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>+shared</code></a> to get an instance.</p>
 <p>The following code example shows how to set a Client ID by calling the API.</p>
-<p><div id="440ad0405f8e3b193d0895340a2efd70" class="gbcg gbcg-codegroup">
+<p><div id="1c46fac015ecf3316ba949adcbd48ea0" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-38d16f64116c728aaed5a1a76a932334" class="gbcg-selector gbcg-active" data-tab="0-38d16f64116c728aaed5a1a76a932334" data-tab-category="undefined">Swift</a>
-    <a id="select-1-61bf69470fb45d7f9a88bab749a34bcd" class="gbcg-selector" data-tab="1-61bf69470fb45d7f9a88bab749a34bcd" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-selector gbcg-active" data-tab="0-d612620d95708c1af98eab2e88a56ff6" data-tab-category="undefined">Swift</a>
+    <a id="select-1-ba21971265fd9977524b5817deb74a21" class="gbcg-selector" data-tab="1-ba21971265fd9977524b5817deb74a21" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-38d16f64116c728aaed5a1a76a932334" class="gbcg-tab-item gbcb-Swift">
+      <div id="0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-tab-item gbcb-Swift">
         <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
-    <span class="hljs-type">NMFAuthManager</span>.shared().clientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
+    <span class="hljs-type">NMFAuthManager</span>.shared().ncpKeyId = <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>
 
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
 
@@ -618,11 +605,11 @@
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-38d16f64116c728aaed5a1a76a932334" id="swift">Swift</h3>
-        <div id="0-38d16f64116c728aaed5a1a76a932334" class="gbcg-tab-item gbcb-Swift">
+        <h3 class="gbcg-tabname 0-d612620d95708c1af98eab2e88a56ff6" id="swift">Swift</h3>
+        <div id="0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-tab-item gbcb-Swift">
           <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
-    <span class="hljs-type">NMFAuthManager</span>.shared().clientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
+    <span class="hljs-type">NMFAuthManager</span>.shared().ncpKeyId = <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>
 
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
 
@@ -631,61 +618,11 @@
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-61bf69470fb45d7f9a88bab749a34bcd" id="objective-c">Objective-C</h3>
-        <div id="1-61bf69470fb45d7f9a88bab749a34bcd" class="gbcg-tab-item gbcb-Objective-C">
+        <h3 class="gbcg-tabname 1-ba21971265fd9977524b5817deb74a21" id="objective-c">Objective-C</h3>
+        <div id="1-ba21971265fd9977524b5817deb74a21" class="gbcg-tab-item gbcb-Objective-C">
           <pre><code class="lang-Objective-C">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [NMFAuthManager shared].clientId = @&quot;YOUR_CLIENT_ID_HERE&quot;;
-
-    return YES;
-
-}
-</code></pre>
-        </div>
-      </div>
-    </div>
-  </div>
-</div></p>
-<p>For clients for public institutions, use <a href="ref://../reference/Classes/NMFAuthManager.html#/c:objc%28cs%29NMFAuthManager%28py%29govClientId" target="_blank"><code>govClientId</code></a>, instead of <code>clientId</code>.</p>
-<p>The following code example shows how to set a client for public institutions by calling the API.</p>
-<p><div id="4d0a4a788696228c7b94e362469742f8" class="gbcg gbcg-codegroup">
-  <div class="gbcg-tab-selectors">
-    <a id="select-0-2baaf81798543d752cf97c8c14b177f2" class="gbcg-selector gbcg-active" data-tab="0-2baaf81798543d752cf97c8c14b177f2" data-tab-category="undefined">Swift</a>
-    <a id="select-1-754e09e5a97c374b427115b582ed2bc2" class="gbcg-selector" data-tab="1-754e09e5a97c374b427115b582ed2bc2" data-tab-category="undefined">Objective-C</a>
-  </div>
-  <div class="gbcg-tab-contents">
-    <div id="gbcg-tab-container">
-      <div id="0-2baaf81798543d752cf97c8c14b177f2" class="gbcg-tab-item gbcb-Swift">
-        <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
-
-    <span class="hljs-type">NMFAuthManager</span>.shared().govClientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
-
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
-
-}
-</code></pre>
-      </div>
-    </div>
-    <div class="gbcg-tab-item-cntr">
-      <div>
-        <h3 class="gbcg-tabname 0-2baaf81798543d752cf97c8c14b177f2" id="swift">Swift</h3>
-        <div id="0-2baaf81798543d752cf97c8c14b177f2" class="gbcg-tab-item gbcb-Swift">
-          <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
-
-    <span class="hljs-type">NMFAuthManager</span>.shared().govClientId = <span class="hljs-string">&quot;YOUR_CLIENT_ID_HERE&quot;</span>
-
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
-
-}
-</code></pre>
-        </div>
-      </div>
-      <div>
-        <h3 class="gbcg-tabname 1-754e09e5a97c374b427115b582ed2bc2" id="objective-c">Objective-C</h3>
-        <div id="1-754e09e5a97c374b427115b582ed2bc2" class="gbcg-tab-item gbcb-Objective-C">
-          <pre><code class="lang-Objective-C">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    [NMFAuthManager shared].govClientId = @&quot;YOUR_CLIENT_ID_HERE&quot;;
+    [NMFAuthManager shared].ncpKeyId = @&quot;YOUR_NCP_KEY_ID_HERE&quot;;
 
     return YES;
 
@@ -813,7 +750,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get Started","level":"2.1","depth":1,"next":{"title":"Map and Coordinates","level":"2.2","depth":1,"ref":"","articles":[{"title":"Map Object","level":"2.2.1","depth":2,"path":"2-1.md","ref":"2-1.md","articles":[]},{"title":"Coordinates Object","level":"2.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},{"title":"Map Options","level":"2.2.3","depth":2,"path":"2-3.md","ref":"2-3.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"1.md","mtime":"2024-11-26T06:54:23.887Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-26T06:54:26.163Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get Started","level":"2.1","depth":1,"next":{"title":"Map and Coordinates","level":"2.2","depth":1,"ref":"","articles":[{"title":"Map Object","level":"2.2.1","depth":2,"path":"2-1.md","ref":"2-1.md","articles":[]},{"title":"Coordinates Object","level":"2.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},{"title":"Map Options","level":"2.2.3","depth":2,"path":"2-3.md","ref":"2-3.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"1.md","mtime":"2025-03-20T09:39:27.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-03-20T09:39:29.460Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.20.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.21.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -578,6 +578,17 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NMFTileCoverHelperDelegate.html">NMFTileCoverHelperDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Type Definitions.html">Other Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a>
               </li>
             </ul>
           </li>
@@ -1343,6 +1354,107 @@
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">renderingStable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)customStyleId"></a>
+                    <a name="//apple_ref/objc/Property/customStyleId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)customStyleId">customStyleId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>커스텀 스타일 ID.</p>
+
+<p>기본값은 커스텀 스타일을 사용하지 않음을 의미하는 <code>nil</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">customStyleId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(im)setCustomStyleId:LoadHandler:FailHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-setCustomStyleId:LoadHandler:FailHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(im)setCustomStyleId:LoadHandler:FailHandler:">-setCustomStyleId:LoadHandler:FailHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>커스텀 스타일 ID를 지정합니다. 커스텀 스타일이 로드되면 <code>loadHandler</code>로 지정한 핸들러가, 실패하면 <code>failHandler</code>로 지정한 핸들러가 호출됩니다.</p>
+
+<p>기본값은 커스텀 스타일을 사용하지 않음을 의미하는 <code>nil</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCustomStyleId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">customStyleId</span>
+             <span class="nf">LoadHandler</span><span class="p">:(</span><span class="n"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">loadHandler</span>
+             <span class="nf">FailHandler</span><span class="p">:(</span><span class="n"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">failHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCustomStyleId</span><span class="p">(</span><span class="n">_</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">loadHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a></span><span class="p">?,</span> <span class="nv">failHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>loadHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>커스텀 스타일 로딩 성공에 대한 핸들러.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>커스터 스타일 로딩 실패에 대한 핸들러.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -2423,7 +2535,7 @@
                       <div class="abstract">
                         <p>지도가 렌더링되는 속도(fps, frames per second)를 설정합니다.</p>
 
-<p>기본값은 <code>60</code>입니다.</p>
+<p>기본값은 제한을 두지 않음을 의미하는 <code>0</code>입니다.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     <code>CADisplayLink.preferredFramesPerSecond</code>
