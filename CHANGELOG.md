@@ -11,7 +11,7 @@ Release Date: 2025-06-20
 ### 개선
 
 - 화면 회전 시 `NMFMapViewOptionDelegate.mapViewOptionChanged:` 호출
-- 마커 클러스터링 결과를 안드로이드 버전과 크게 다르지 않게 수정
+- 마커 클러스터링 결과를 안드로이드 버전과 유사하도록 개선
 
 ### 버그 수정
 
