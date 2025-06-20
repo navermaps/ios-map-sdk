@@ -103,4 +103,10 @@ class SimpleClusteringViewController: MapViewController {
         self.clusterer?.addAll(keyTagMap)
         self.clusterer?.mapView = self.mapView
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated);
+        
+        self.clusterer?.clear()
+    }
 }

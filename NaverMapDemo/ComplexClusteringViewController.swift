@@ -116,6 +116,12 @@ class ComplexClusteringViewController: MapViewController {
         self.clusterer?.addAll(keyTagMap)
         self.clusterer?.mapView = self.mapView
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated);
+        
+        self.clusterer?.clear()
+    }
 }
 
 extension ComplexClusteringViewController: NMCThresholdStrategy, NMCDistanceStrategy, NMCTagMergeStrategy,
@@ -145,12 +151,13 @@ extension ComplexClusteringViewController: NMCThresholdStrategy, NMCDistanceStra
     }
     
     func mergeTag(_ cluster: NMCCluster) -> NSObject? {
-        if cluster.maxZoom > 9 {
-            if let tag = cluster.children.first?.tag as? ItemData {
-                return ItemData(name: "", gu: tag.gu)
-            }
+        if cluster.maxZoom <= 9 {
+            return nil;
+        } else {
+            let tag = cluster.children.first?.tag as? ItemData
+            assert(tag != nil)
+            return ItemData(name: "", gu: tag!.gu)
         }
-        return nil;
     }
     
     func updateClusterMarker(_ info: NMCClusterMarkerInfo, _ marker: NMFMarker) {

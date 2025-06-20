@@ -1,3 +1,23 @@
+# 3.22.0
+
+Release Date: 2025-06-20
+
+### 새로운 기능
+
+- 위치 오버레이 아이콘의 투명도를 지정하는 기능 제공
+  - `NMFLocationOverlay.iconAlpha`
+  - `NMFLocationOverlay.subIconAlpha`
+
+### 개선
+
+- 화면 회전 시 `NMFMapViewOptionDelegate.mapViewOptionChanged:` 호출
+- 마커 클러스터링 결과를 안드로이드 버전과 크게 다르지 않게 수정
+
+### 버그 수정
+
+- `NMFCameraUpdateAnimation` 적용 시 최종 카메라 상태의 정밀도가 떨어지는 현상 수정
+- 마커 클러스터링 메모리 릭 발생하는 문제 수정
+
 # 3.21.0
 
 Release Date: 2025-03-20
