@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.21.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.22.1%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -373,6 +373,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFDefaultBackgroundLightImage">NMFDefaultBackgroundLightImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@NMFIndoorFocusRadiusDefault">NMFIndoorFocusRadiusDefault</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Constants.html#/c:NMFCameraUpdate.h@NMFMapChangedByContentPadding">NMFMapChangedByContentPadding</a>
@@ -1380,12 +1383,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">customStyleId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">customStyleId</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1414,14 +1417,14 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCustomStyleId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">customStyleId</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCustomStyleId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">customStyleId</span>
              <span class="nf">LoadHandler</span><span class="p">:(</span><span class="n"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">loadHandler</span>
              <span class="nf">FailHandler</span><span class="p">:(</span><span class="n"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">failHandler</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCustomStyleId</span><span class="p">(</span><span class="n">_</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">loadHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a></span><span class="p">?,</span> <span class="nv">failHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCustomStyleId</span><span class="p">(</span><span class="n">_</span> <span class="nv">customStyleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">loadHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadHandler">NMFCustomStyleLoadHandler</a></span><span class="p">?,</span> <span class="nv">failHandler</span><span class="p">:</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:NMFMapView.h@T@NMFCustomStyleLoadFailHandler">NMFCustomStyleLoadFailHandler</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2982,7 +2985,7 @@
                       <div class="abstract">
                         <p>실내지도 영역의 포커스 유지 반경. pt 단위. 지정할 경우 카메라의 위치가 포커스 유지 반경을 완전히 벗어날 때까지 영역에 대한 포커스가 유지됩니다.</p>
 
-<p>기본값은 <code>20</code>입니다.</p>
+<p>기본값은 <code><a href="../Other%20Constants.html#/c:@NMFIndoorFocusRadiusDefault">NMFIndoorFocusRadiusDefault</a></code> 입니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -2995,6 +2998,40 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indoorFocusRadius</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFMapView(py)indoorActivationRadius"></a>
+                    <a name="//apple_ref/objc/Property/indoorActivationRadius" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFMapView(py)indoorActivationRadius">indoorActivationRadius</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>실내지도 영역을 활성화하는 반경. pt 단위. 반경이 <code>0</code>인 경우, 화면 중심점을 기준으로 실내지도 영역이 활성화됩니다.</p>
+
+<p>기본값은 <code>0</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">indoorActivationRadius</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indoorActivationRadius</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
