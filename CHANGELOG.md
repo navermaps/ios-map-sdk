@@ -1,3 +1,24 @@
+# 3.23.0
+
+Release Date: 2025-09-22
+
+### 새로운 기능
+
+- 지도 데이터의 출처를 가져오는 기능 제공
+  - `NMFAttributionChangeDelegate`
+  - `NMFMapView.addAttributionChangeDelegate:`, `NMFMapView.removeAttributionChangeDelegate`
+  - `NMFMapView.attributions`
+
+### 개선
+
+- 지도 데이터에 대한 출처 표기 추가
+- 축척 바의 위치를 우측으로 조정
+
+### 버그 수정
+
+- 일부 심벌이 어긋난 위치에 렌더링되는 현상 수정
+- 마커 캡션에 `NMFMapView.symbolScale`이 적용되는 현상 수정
+
 # 3.22.1
 
 Release Date: 2025-07-28
@@ -25,7 +46,7 @@ Release Date: 2025-06-20
 ### 개선
 
 - 화면 회전 시 `NMFMapViewOptionDelegate.mapViewOptionChanged:` 호출
-- 마커 클러스터링 결과를 안드로이드 버전과 유사하도록 개선
+- 마커 클러스터링 결과를 안드로이드 버전과 크게 다르지 않게 수정
 
 ### 버그 수정
 
