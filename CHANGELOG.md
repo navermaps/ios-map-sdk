@@ -1,8 +1,11 @@
-# 3.23.2-alpha01
+# 3.23.2
 
-Release Date: 2026-02-24
+Release Date: 2026-03-30
+
+### 버그 수정
 
 - `NMFMapView.logoInteractionEnabled`가 정상 동작하지 않는 문제 수정
+- 위치 추적 기능 사용 시 hang 걸리는 문제 수정
 
 # 3.23.1
 
