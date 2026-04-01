@@ -46,6 +46,8 @@ class ControlSettingsViewController: MapViewController {
             naverMapView.showIndoorLevelPicker = sender.isOn
         case 4: // location
             naverMapView.showLocationButton = sender.isOn
+        case 5: // logo click
+            naverMapView.mapView.logoInteractionEnabled = sender.isOn
         default:
             break
         }

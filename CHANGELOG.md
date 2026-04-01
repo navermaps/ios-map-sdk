@@ -1,3 +1,9 @@
+# 3.23.2-alpha01
+
+Release Date: 2026-02-24
+
+- `NMFMapView.logoInteractionEnabled`가 정상 동작하지 않는 문제 수정
+
 # 3.23.1
 
 Release Date: 2026-01-26
