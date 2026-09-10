@@ -557,7 +557,7 @@
 <p>Refer to <a href="https://guide.ncloud-docs.com/docs/en/application-maps-app-vpc" target="_blank">How to Use Application</a> for details.</p>
 <h2 id="add-dependencies">Add dependencies</h2>
 <p>You can get the NAVER Maps SDK from <a href="https://cocoapods.org/" target="_blank">cocoapods</a>.</p>
-<h1 id="and-you-must-install-git-lfs-for-get-large-file"><strong><span style="color:red">And you must install <a href="https://git-lfs.github.com" target="_blank">git-lfs</a> for get large file.</span></strong></h1>
+<h3 id="cocoapods">CocoaPods</h3>
 <p>Declare dependencies for the NAVER Maps SDK in <code>Podfile</code> of your app project.</p>
 <p>The following code example declares dependencies for the SDK.</p>
 <pre><code class="lang-Ruby">target <span class="hljs-string">&apos;NaverMapDemo&apos;</span> <span class="hljs-keyword">do</span>
@@ -566,6 +566,12 @@
 
 <span class="hljs-keyword">end</span>
 </code></pre>
+<h3 id="distribution-format">Distribution format</h3>
+<p>The NAVER Maps SDK is distributed only as an <code>xcframework</code> containing a dynamic framework.</p>
+<p>Static (<code>MACH_O_TYPE = staticlib</code>) and mergeable (<code>MERGEABLE_LIBRARY = YES</code>) library distributions are not supported. If the SDK is linked or merged into the app binary, features that rely on its framework bundle stop working correctly.</p>
+<blockquote>
+<p>Linking or merging the SDK directly into an app binary or a framework bundled with the app is not a supported configuration.</p>
+</blockquote>
 <h2 id="set-client-id">Set Client ID</h2>
 <p>Set your Client ID in the SDK to use the Maps API. You can set your Client ID in the following two different ways.</p>
 <h3 id="set-your-client-id-in-infoplist">Set your Client ID in info.plist</h3>
@@ -583,19 +589,19 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">plist</span>&gt;</span>
 </code></pre>
 <h3 id="set-your-client-id-by-making-an-api-call">Set your Client ID by making an API call</h3>
-<p>Instead of editing <code>info.plist</code>, you can set your Client ID by making an API call. Set your Client ID to <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.ncpKeyId</code></a> in <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application" target="_blank"><code>-application:didFinishLaunchingWithOptions:</code></a> of <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate" target="_blank"><code>AppDelegate</code></a>. As <code>NMFAuthManager</code> is a singleton class, you should call <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>+shared</code></a> to get an instance.</p>
+<p>Instead of editing <code>info.plist</code>, you can set your Client ID by making an API call. Set <a href="ref://../reference/Classes/NMFNcpKeyClient.html" target="_blank"><code>NMFNcpKeyClient</code></a> to <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.client</code></a> in <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application" target="_blank"><code>-application:didFinishLaunchingWithOptions:</code></a> of <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate" target="_blank"><code>AppDelegate</code></a>. As <code>NMFAuthManager</code> is a singleton class, you should call <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>+shared</code></a> to get an instance.</p>
 <p>The following code example shows how to set a Client ID by calling the API.</p>
-<p><div id="1c46fac015ecf3316ba949adcbd48ea0" class="gbcg gbcg-codegroup">
+<p><div id="b4a461a497d7cb7861c89e397377e40b" class="gbcg gbcg-codegroup">
   <div class="gbcg-tab-selectors">
-    <a id="select-0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-selector gbcg-active" data-tab="0-d612620d95708c1af98eab2e88a56ff6" data-tab-category="undefined">Swift</a>
-    <a id="select-1-ba21971265fd9977524b5817deb74a21" class="gbcg-selector" data-tab="1-ba21971265fd9977524b5817deb74a21" data-tab-category="undefined">Objective-C</a>
+    <a id="select-0-06b63ef9a8c22f1fdacdb4581f0fe468" class="gbcg-selector gbcg-active" data-tab="0-06b63ef9a8c22f1fdacdb4581f0fe468" data-tab-category="undefined">Swift</a>
+    <a id="select-1-566b247da285f7127927c4c7a629099a" class="gbcg-selector" data-tab="1-566b247da285f7127927c4c7a629099a" data-tab-category="undefined">Objective-C</a>
   </div>
   <div class="gbcg-tab-contents">
     <div id="gbcg-tab-container">
-      <div id="0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-tab-item gbcb-Swift">
+      <div id="0-06b63ef9a8c22f1fdacdb4581f0fe468" class="gbcg-tab-item gbcb-Swift">
         <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
-    <span class="hljs-type">NMFAuthManager</span>.shared().ncpKeyId = <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>
+    <span class="hljs-type">NMFAuthManager</span>.shared().client = <span class="hljs-type">NMFNcpKeyClient</span>(ncpKeyId: <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>, beta: <span class="hljs-literal">false</span>)
 
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
 
@@ -605,11 +611,11 @@
     </div>
     <div class="gbcg-tab-item-cntr">
       <div>
-        <h3 class="gbcg-tabname 0-d612620d95708c1af98eab2e88a56ff6" id="swift">Swift</h3>
-        <div id="0-d612620d95708c1af98eab2e88a56ff6" class="gbcg-tab-item gbcb-Swift">
+        <h3 class="gbcg-tabname 0-06b63ef9a8c22f1fdacdb4581f0fe468" id="swift">Swift</h3>
+        <div id="0-06b63ef9a8c22f1fdacdb4581f0fe468" class="gbcg-tab-item gbcb-Swift">
           <pre><code class="lang-Swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)</span></span> -&gt; <span class="hljs-type">Bool</span> {
 
-    <span class="hljs-type">NMFAuthManager</span>.shared().ncpKeyId = <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>
+    <span class="hljs-type">NMFAuthManager</span>.shared().client = <span class="hljs-type">NMFNcpKeyClient</span>(ncpKeyId: <span class="hljs-string">&quot;YOUR_NCP_KEY_ID_HERE&quot;</span>, beta: <span class="hljs-literal">false</span>)
 
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
 
@@ -618,11 +624,11 @@
         </div>
       </div>
       <div>
-        <h3 class="gbcg-tabname 1-ba21971265fd9977524b5817deb74a21" id="objective-c">Objective-C</h3>
-        <div id="1-ba21971265fd9977524b5817deb74a21" class="gbcg-tab-item gbcb-Objective-C">
+        <h3 class="gbcg-tabname 1-566b247da285f7127927c4c7a629099a" id="objective-c">Objective-C</h3>
+        <div id="1-566b247da285f7127927c4c7a629099a" class="gbcg-tab-item gbcb-Objective-C">
           <pre><code class="lang-Objective-C">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [NMFAuthManager shared].ncpKeyId = @&quot;YOUR_NCP_KEY_ID_HERE&quot;;
+    [NMFAuthManager shared].client = [[NMFNcpKeyClient alloc] initWithNcpKeyId:@&quot;YOUR_NCP_KEY_ID_HERE&quot; beta:NO];
 
     return YES;
 
@@ -633,6 +639,9 @@
     </div>
   </div>
 </div></p>
+<blockquote>
+<p>Setting <a href="ref://../reference/Classes/NMFAuthManager.html" target="_blank"><code>NMFAuthManager.ncpKeyId</code></a> directly still works but is deprecated. Using the <code>client</code> approach is recommended.</p>
+</blockquote>
 <h2 id="display-maps">Display maps</h2>
 <p>Set your Client ID and add a <code>NMFMapView</code> to the view controller, and a map is displayed on your app screen.</p>
 <p>The following code example adds <code>NMFMapView</code> to display a map.</p>
@@ -750,7 +759,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get Started","level":"2.1","depth":1,"next":{"title":"Map and Coordinates","level":"2.2","depth":1,"ref":"","articles":[{"title":"Map Object","level":"2.2.1","depth":2,"path":"2-1.md","ref":"2-1.md","articles":[]},{"title":"Coordinates Object","level":"2.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},{"title":"Map Options","level":"2.2.3","depth":2,"path":"2-3.md","ref":"2-3.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"1.md","mtime":"2026-02-24T06:15:56.326Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-02-24T06:15:59.362Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get Started","level":"2.1","depth":1,"next":{"title":"Map and Coordinates","level":"2.2","depth":1,"ref":"","articles":[{"title":"Map Object","level":"2.2.1","depth":2,"path":"2-1.md","ref":"2-1.md","articles":[]},{"title":"Coordinates Object","level":"2.2.2","depth":2,"path":"2-2.md","ref":"2-2.md","articles":[]},{"title":"Map Options","level":"2.2.3","depth":2,"path":"2-3.md","ref":"2-3.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"0.md","ref":"0.md","articles":[]},"dir":"ltr"},"config":{"plugins":["otherlink","codegroup"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"otherlink":{},"codegroup":{"defaultTabName":"Code","rememberTabs":"false","tabNameSeperator":"::"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NAVER Map iOS SDK","gitbook":"*"},"file":{"path":"1.md","mtime":"2026-09-10T01:55:57.579Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-09-10T01:56:00.477Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

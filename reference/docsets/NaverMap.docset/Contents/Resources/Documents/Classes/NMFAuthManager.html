@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.23.1%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.24.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -325,6 +325,9 @@
                 <a class="nav-group-task-link" href="../Classes/NMFAttribution.html">NMFAttribution</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
@@ -338,6 +341,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformClient">NMFNaverCloudPlatformClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformGovClient">NMFNaverCloudPlatformGovClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/NMFScaleView.html">NMFScaleView</a>
@@ -618,8 +630,15 @@
             <p>인증 관리 기능을 담당하는 클래스. 이 클래스는 싱글턴으로, <code>shared</code>를
 이용해 인스턴스를 가져올 수 있습니다.</p>
 
-<p>네이버 지도 SDK를 사용하려면 반드시 클라이언트를 설정하고 인증 및 초기화를 수행해야 합니다. 클라이언트를
-설정하는 방법에는 두 가지가 있습니다.</p>
+<p>네이버 지도 SDK를 사용하려면 반드시 클라이언트를 설정하고 인증 및 초기화를 수행해야 합니다.</p>
+
+<p>권장 방법은 <code>client</code>에 인증 클라이언트(<code><a href="../Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code> 등)를 설정하는 것입니다.</p>
+
+<ul>
+<li>싱글턴 객체인 <code>shared</code>의 <code>client</code>에 <code><a href="../Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code>를 설정합니다.</li>
+</ul>
+
+<p>아래 레거시 방법도 계속 동작하지만, <code>client</code> 방식으로의 전환을 권장합니다.</p>
 
 <ul>
 <li>앱의 info.plist에 <code>NMFNcpKeyId</code>를 String으로 지정합니다.</li>
@@ -710,7 +729,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID.</p>
+                        <p>네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID.
+대신 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)client">client</a></code>에 <code><a href="../Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code>를 설정하세요.</p>
 
                       </div>
                       <div class="declaration">
@@ -742,7 +762,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID. 대신 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)ncpKeyId">ncpKeyId</a></code>를 사용하세요.</p>
+                        <p>네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID.
+대신 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)client">client</a></code>에 <code><a href="../Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformClient">NMFNaverCloudPlatformClient</a></code>를 설정하세요.</p>
 
                       </div>
                       <div class="declaration">
@@ -774,7 +795,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>공공용 네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID. 대신 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)ncpKeyId">ncpKeyId</a></code>를 사용하세요.</p>
+                        <p>공공용 네이버 클라우드 플랫폼 인증을 위한 클라이언트 ID.
+대신 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)client">client</a></code>에 <code><a href="../Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformGovClient">NMFNaverCloudPlatformGovClient</a></code>를 설정하세요.</p>
 
                       </div>
                       <div class="declaration">
@@ -819,6 +841,39 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authState</span><span class="p">:</span> <span class="kt"><a href="../Enums/NMFAuthState.html">NMFAuthState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFAuthManager(py)client"></a>
+                    <a name="//apple_ref/objc/Property/client" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAuthManager(py)client">client</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>인증 클라이언트. 설정 시 SDK 인증을 client 방식(<code><a href="../Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code> 등)으로 수행합니다.
+<code>nil</code>이면 기존 <code><a href="../Classes/NMFAuthManager.html#/c:objc(cs)NMFAuthManager(py)ncpKeyId">ncpKeyId</a></code> 등 레거시 진입점을 사용합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span> <span class="o">*</span><span class="n">client</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

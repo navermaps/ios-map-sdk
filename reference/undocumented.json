@@ -582,6 +582,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFAuthClient.h",
+      "line": 12,
+      "symbol": "NMFAuthClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFAuthClient.h",
+      "line": 13,
+      "symbol": "NMFAuthClient.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFLocationManager.h",
       "line": 9,
       "symbol": "NMFLocationManager",
@@ -600,6 +614,48 @@
       "line": 7,
       "symbol": "NMFMapView(IBAdditions)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNaverCloudPlatformClient.h",
+      "line": 12,
+      "symbol": "NMFNaverCloudPlatformClient.-initWithClientId:beta:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNaverCloudPlatformClient.h",
+      "line": 16,
+      "symbol": "NMFNaverCloudPlatformClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNaverCloudPlatformGovClient.h",
+      "line": 12,
+      "symbol": "NMFNaverCloudPlatformGovClient.-initWithGovClientId:beta:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNaverCloudPlatformGovClient.h",
+      "line": 16,
+      "symbol": "NMFNaverCloudPlatformGovClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNcpKeyClient.h",
+      "line": 10,
+      "symbol": "NMFNcpKeyClient.-initWithNcpKeyId:beta:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/Documents/Naver/vectormap_app/ios/src/NMFNcpKeyClient.h",
+      "line": 13,
+      "symbol": "NMFNcpKeyClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {

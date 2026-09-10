@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.23.1%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.24.0%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -325,6 +325,9 @@
                 <a class="nav-group-task-link" href="Classes/NMFAttribution.html">NMFAttribution</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFCameraUtils.html">NMFCameraUtils</a>
               </li>
               <li class="nav-group-task">
@@ -338,6 +341,15 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFLocationButton.html">NMFLocationButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformClient">NMFNaverCloudPlatformClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformGovClient">NMFNaverCloudPlatformGovClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFScaleView.html">NMFScaleView</a>
@@ -660,6 +672,42 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)NMFAuthClient"></a>
+                    <a name="//apple_ref/objc/Class/NMFAuthClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFAuthClient">NMFAuthClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SDK 인증 클라이언트 추상 클래스. (Android <code>NaverMapSdk.Client</code> 대응)</p>
+
+<p>이 클래스는 직접 인스턴스화할 수 없으며, SDK가 제공하는 구현체
+(<code><a href="Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code> 등)만 사용해야 한다. 기존 <code>ncpKeyId</code> 등 레거시
+진입점과 병행한다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFAuthClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFAuthClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)NMFCompassView"></a>
                     <a name="//apple_ref/objc/Class/NMFCompassView" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)NMFCompassView">NMFCompassView</a>
@@ -754,6 +802,106 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFLocationButton</span> <span class="p">:</span> <span class="kt">UIButton</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFNaverCloudPlatformClient"></a>
+                    <a name="//apple_ref/objc/Class/NMFNaverCloudPlatformClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFNaverCloudPlatformClient">NMFNaverCloudPlatformClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NAVER Cloud Platform 구 콘솔 인증 클라이언트. (Android <code>NaverCloudPlatformClient</code> 대응)</p>
+
+<p>@deprecated 신규 콘솔용 <code><a href="Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code> 를 사용하세요.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFNaverCloudPlatformClient</span> <span class="p">:</span> <span class="nc"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFNaverCloudPlatformClient</span> <span class="p">:</span> <span class="kt"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFNaverCloudPlatformGovClient"></a>
+                    <a name="//apple_ref/objc/Class/NMFNaverCloudPlatformGovClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFNaverCloudPlatformGovClient">NMFNaverCloudPlatformGovClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NAVER Cloud Platform 공공용 인증 클라이언트. (Android <code>NaverCloudPlatformGovClient</code> 대응)</p>
+
+<p>@deprecated 신규 콘솔용 <code><a href="Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a></code> 를 사용하세요.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFNaverCloudPlatformGovClient</span> <span class="p">:</span> <span class="nc"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFNaverCloudPlatformGovClient</span> <span class="p">:</span> <span class="kt"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NMFNcpKeyClient"></a>
+                    <a name="//apple_ref/objc/Class/NMFNcpKeyClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NAVER Cloud Platform 키(신규 콘솔) 인증 클라이언트. (Android <code>NcpKeyClient</code> 대응)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">NMFNcpKeyClient</span> <span class="p">:</span> <span class="nc"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFNcpKeyClient</span> <span class="p">:</span> <span class="kt"><a href="Other%20Classes.html#/c:objc(cs)NMFAuthClient">NMFAuthClient</a></span></code></pre>
 
                         </div>
                       </div>
