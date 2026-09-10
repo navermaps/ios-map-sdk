@@ -1422,55 +1422,6 @@
                                             <segue destination="D1o-fq-m4L" kind="showDetail" id="ltv-qY-2Ab"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ksc-c5-XZh">
-                                        <rect key="frame" x="0.0" y="2252" width="430" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ksc-c5-XZh" id="Qxc-67-R8N">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="70"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lite Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb6-i0-87Q">
-                                                    <rect key="frame" x="18" y="16" width="394" height="19"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="19" id="6r9-h1-eH8"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                    <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저사양 모드 지도 사용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gf-zd-Z0X">
-                                                    <rect key="frame" x="18" y="40" width="394" height="15"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="1Av-zt-4ip"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPL-a7-jHY">
-                                                    <rect key="frame" x="0.0" y="69" width="430" height="1"/>
-                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="Gs2-Wo-ajX"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6Gf-zd-Z0X" firstAttribute="top" secondItem="sb6-i0-87Q" secondAttribute="bottom" constant="5" id="8UO-ZA-Kqb"/>
-                                                <constraint firstItem="yPL-a7-jHY" firstAttribute="leading" secondItem="Qxc-67-R8N" secondAttribute="leading" id="T1C-Ro-N22"/>
-                                                <constraint firstItem="6Gf-zd-Z0X" firstAttribute="leading" secondItem="Qxc-67-R8N" secondAttribute="leading" constant="18" id="U1l-CW-pzx"/>
-                                                <constraint firstAttribute="trailing" secondItem="yPL-a7-jHY" secondAttribute="trailing" id="Zy7-0H-GIs"/>
-                                                <constraint firstAttribute="bottom" secondItem="yPL-a7-jHY" secondAttribute="bottom" id="eU0-mi-s1H"/>
-                                                <constraint firstItem="sb6-i0-87Q" firstAttribute="top" secondItem="Qxc-67-R8N" secondAttribute="top" constant="16" id="fa9-ga-QcF"/>
-                                                <constraint firstAttribute="trailing" secondItem="6Gf-zd-Z0X" secondAttribute="trailing" constant="18" id="j9z-pR-OmU"/>
-                                                <constraint firstItem="sb6-i0-87Q" firstAttribute="leading" secondItem="Qxc-67-R8N" secondAttribute="leading" constant="18" id="lAA-PF-fQ4"/>
-                                                <constraint firstAttribute="trailing" secondItem="sb6-i0-87Q" secondAttribute="trailing" constant="18" id="o2w-Tf-Mef"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Sm7-8y-ICB" kind="showDetail" id="kYe-d8-oDO"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fc6-cX-GOV">
                                         <rect key="frame" x="0.0" y="2322" width="430" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -2686,14 +2637,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7F-Ct-XPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2771" y="-738"/>
-        </scene>
-        <!--LiteMode-->
-        <scene sceneID="wSB-h1-ZRv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Map" referencedIdentifier="LiteMode" id="Sm7-8y-ICB" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8m-Bt-Kfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1918" y="-658"/>
         </scene>
         <!--TileCoverHelper-->
         <scene sceneID="S1V-zU-4ES">

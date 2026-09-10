@@ -1,3 +1,20 @@
+# 3.24.0
+
+Release Date: 2026-09-09
+
+### 개선
+
+- 성능 및 안정성 개선
+
+### Deprecated
+
+- 라이트 모드 지원 종료 예정
+  - `NMFMapView.liteModeEnabled`
+
+### 버그 수정
+
+- `NMFMapView.maxTilt`, `NMFMapView.minZoomLevel`, `NMFMapView.maxZoomLevel` 지정 시 카메라 애니메이션이 중단되거나 화면이 갱신되지 않는 문제 수정
+
 # 3.23.3
 
 Release Date: 2026-07-08
@@ -22,6 +39,10 @@ Release Date: 2026-01-26
 ### 개선
 
 - 지도 로딩 속도 개선
+
+### 버그 수정
+
+- `NMFMarker.captionText`에 빈 문자열을 지정하면 빈 지도를 눌러도 그 마커가 선택되는 문제 수정
 
 # 3.23.0
 
