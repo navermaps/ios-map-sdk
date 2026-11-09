@@ -26,7 +26,7 @@
     
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.24.0%2Fdocsets%2FNaverMap.xml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaps.naver.com%2Fios-sdk%2Fapi%2F3.24.1%2Fdocsets%2FNaverMap.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -343,13 +343,13 @@
                 <a class="nav-group-task-link" href="Classes/NMFLocationButton.html">NMFLocationButton</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformClient">NMFNaverCloudPlatformClient</a>
+                <a class="nav-group-task-link" href="Classes/NMFNaverCloudPlatformClient.html">NMFNaverCloudPlatformClient</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNaverCloudPlatformGovClient">NMFNaverCloudPlatformGovClient</a>
+                <a class="nav-group-task-link" href="Classes/NMFNaverCloudPlatformGovClient.html">NMFNaverCloudPlatformGovClient</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other%20Classes.html#/c:objc(cs)NMFNcpKeyClient">NMFNcpKeyClient</a>
+                <a class="nav-group-task-link" href="Classes/NMFNcpKeyClient.html">NMFNcpKeyClient</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/NMFScaleView.html">NMFScaleView</a>
@@ -761,7 +761,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -794,7 +794,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewTouchDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewTouchDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -827,7 +827,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewCameraDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewCameraDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -860,7 +860,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewOptionDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewOptionDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -895,7 +895,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewLoadDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewLoadDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -928,7 +928,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">NMFMapViewRenderDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">protocol</span> <span class="kt">NMFMapViewRenderDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -1207,7 +1207,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NMFNaverMapView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">class</span> <span class="kt">NMFNaverMapView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                         </div>
                       </div>
