@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426A8350819C0D5F3B34D69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23082A656A1C1B2557F9CB63 /* SceneDelegate.swift */; };
 		431076CF215A49F0008F170F /* ContentPaddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431076CE215A49F0008F170F /* ContentPaddingViewController.swift */; };
 		431076D1215A50F1008F170F /* ControlSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431076D0215A50F1008F170F /* ControlSettingsViewController.swift */; };
 		431076D5215A6DE5008F170F /* GestureSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431076D4215A6DE5008F170F /* GestureSettingsViewController.swift */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		06588A91CEF3F1CAB8E11F66 /* Pods_NaverMapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverMapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23082A656A1C1B2557F9CB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		431076CE215A49F0008F170F /* ContentPaddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPaddingViewController.swift; sourceTree = "<group>"; };
 		431076D0215A50F1008F170F /* ControlSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSettingsViewController.swift; sourceTree = "<group>"; };
 		431076D4215A6DE5008F170F /* GestureSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSettingsViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				43F5EECE2161ADE100244E08 /* MISC */,
 				43EE85A4218FE2C800C99297 /* LICENSE */,
 				438AA5E8213D416A004D1053 /* AppDelegate.swift */,
+				23082A656A1C1B2557F9CB63 /* SceneDelegate.swift */,
 				438AA5EA213D416A004D1053 /* MasterViewController.swift */,
 				438AA5EC213D416A004D1053 /* DetailViewController.swift */,
 				438AA5EE213D416A004D1053 /* Main.storyboard */,
@@ -581,6 +584,7 @@
 				CE76D7D523C2FF860007F0D6 /* CustomControlLayoutViewController.swift in Sources */,
 				438AA5EB213D416A004D1053 /* MasterViewController.swift in Sources */,
 				438AA5E9213D416A004D1053 /* AppDelegate.swift in Sources */,
+				426A8350819C0D5F3B34D69C /* SceneDelegate.swift in Sources */,
 				43DFD14C2148FF67008C77C5 /* CameraUpdateParamsViewController.swift in Sources */,
 				43C3E9402147D0A4008E955B /* GroundOverlayViewController.swift in Sources */,
 				431076D5215A6DE5008F170F /* GestureSettingsViewController.swift in Sources */,
@@ -792,7 +796,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NaverMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -818,7 +822,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NaverMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

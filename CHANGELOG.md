@@ -1,3 +1,25 @@
+# 3.24.1
+
+Release Date: 2026-11-09
+
+### 개선
+
+- 성능 및 안정성 개선
+- Swift Concurrency 지원 개선
+  - 메인 스레드에서 호출되는 델리게이트 프로토콜과 `NMFMapView`, `NMFNaverMapView`, `NMFTileCoverHelper`, `NMFInfoWindowDefaultTextSource`를 `@MainActor`로 표기
+  - 변경되지 않는 일부 타입을 `Sendable`로 표기
+  - Swift 6 언어 모드나 strict concurrency `complete` 설정에서는 위 타입을 메인 스레드 밖에서 사용하는 코드에 경고가 새로 표시될 수 있음
+- SDK 운영 로그 수집 항목 정리
+  - 기존 수집 항목 중 지도 리소스 요청 실패 진단 로그를 제외
+  - 현재 수집 항목: SDK 버전, 앱 번들 ID, 앱 버전, 인증에 사용된 클라이언트 키 식별자, 사용 중인 지도 유형, 라이트 모드 사용 여부
+  - 서비스 안정성 확인 및 오류 진단 목적으로만 활용
+- 인증 클라이언트에 키 ID만 받는 생성자 추가, `beta:` 인자 생성자는 제거
+  - `NMFNcpKeyClient.initWithNcpKeyId:`, `NMFNaverCloudPlatformClient.initWithClientId:`, `NMFNaverCloudPlatformGovClient.initWithGovClientId:`
+
+### 버그 수정
+
+- 앱이 종료되는 과정에서 간헐적으로 크래시가 발생하는 문제 수정
+
 # 3.24.0
 
 Release Date: 2026-09-09

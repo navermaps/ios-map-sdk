@@ -18,17 +18,14 @@ import UIKit
 import NMapsMap
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
-
-    var window: UIWindow?
-
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = window!.rootViewController as! UISplitViewController
-        splitViewController.delegate = self
-        
-        //NMFAuthManager.shared().ncpKeyId = "YOUR_NCP_KEY_ID_HERE"
+        // 키 ID는 Info.plist의 NMFNcpKeyId에서 읽습니다.
+        if let ncpKeyId = Bundle.main.object(forInfoDictionaryKey: "NMFNcpKeyId") as? String {
+            NMFAuthManager.shared().client = NMFNcpKeyClient(ncpKeyId: ncpKeyId)
+        }
         
         return true
     }
@@ -53,13 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-    // MARK: - Split view
-
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
-        
-        return true
     }
 
 }
